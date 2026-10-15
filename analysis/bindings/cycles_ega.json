@@ -26,6 +26,36 @@
       "provenance": "Timer state starts at 0x1f226; separate timer members read and write the dwords at DGROUP+0x9896 and +2, and the group base is independently cross-checked by the message/table data.",
       "staged_by": "port-kbtimer"
     },
+    "_EXT_8623": {
+      "address": "056A:2F83",
+      "confidence": "high",
+      "provenance": "Shared continuation target of independently decoded wrappers at 0x73FF, 0x741F, 0x743F, and the requested 0xB18D wrapper; it loads the prepared BP-frame parameters then rejoins the common body at 0x869F.",
+      "staged_by": "raster-map"
+    },
+    "_EXT_8CCF": {
+      "address": "056A:362F",
+      "confidence": "high",
+      "provenance": "The second 697 dispatch table word at 0xB1E0 targets CS:362F / image 0x8CCF, a decoded local case entry in the independently mapped 8670 table family.",
+      "staged_by": "raster-map"
+    },
+    "_EXT_CA08": {
+      "address": "056A:7368",
+      "confidence": "high",
+      "provenance": "Direct near CALLs at 0x882E and 0x927E resolve to CS:7368 / image 0xCA08; both are outside the table target window and independently identify this helper.",
+      "staged_by": "raster-map"
+    },
+    "_EXT_DBA0": {
+      "address": "056A:8500",
+      "confidence": "high",
+      "provenance": "Direct near CALLs at 0x898A and 0x93AE resolve to CS:8500 / image 0xDBA0; both are outside the table target window and independently identify this helper.",
+      "staged_by": "raster-map"
+    },
+    "_TEXT": {
+      "address": "056A:0000",
+      "confidence": "high for the raster code-segment base in the inventory",
+      "provenance": "analysis/inventory/cycles_ega.json code_segment_bases records segment 1386 at linear base 22176 (0x56A0), including the relocated far-call transfer at image offset 0x0147 to raster entry 0x8670. The raster CS offsets 0x2FD0 (entry 0x8670) and 0x5AD0 (wrapper 0xB170) resolve against this physical base; the binding is the segment base, not either routine start.",
+      "staged_by": "raster-map"
+    },
     "_aNoRoomLeftOnTimerInterru": {
       "address": 125496,
       "confidence": "high",

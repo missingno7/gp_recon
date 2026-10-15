@@ -1,0 +1,28 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_EXT_A689",
+      "loc": "offset16",
+      "offset": 24,
+      "self_relative": true,
+      "target": "_EXT_A689",
+      "width": 2
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": []
+  },
+  "id": "circuit_ega_raster_697_wrapper",
+  "notes": "Strict match produced with canonical tools/search.py; parent integration merges stage/bindings.json over tracked bindings.",
+  "profile": "masm510",
+  "public": "_rcega_697wrap",
+  "schema": 1,
+  "source": "src/engine/graphics/circuit_ega_raster_697_wrapper.asm",
+  "source_sha256": "4198ea6b434884ca7377da7520a60d35e4b46c13fdcdd48888491b374c272c9c",
+  "targets": {
+    "circuit_ega": {
+      "end": 53950,
+      "start": 53924
+    }
+  }
+}

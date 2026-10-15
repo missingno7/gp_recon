@@ -1,0 +1,300 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 186,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 414,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_EXT_9226",
+      "loc": "offset16",
+      "offset": 553,
+      "self_relative": true,
+      "target": "_EXT_9226",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 686,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_EXT_C67A",
+      "loc": "offset16",
+      "offset": 869,
+      "self_relative": true,
+      "target": "_EXT_C67A",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1012,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1014,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1016,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1018,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1020,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1022,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1024,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1026,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1028,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1030,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1032,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1034,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1036,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1038,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1040,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1042,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1044,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1267,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1361,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1459,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1555,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1647,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1735,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1985,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2109,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2237,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2366,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2493,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2616,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2735,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": []
+  },
+  "id": "circuit_ega_raster_entries",
+  "notes": "Strict match produced with canonical tools/search.py; parent integration merges stage/bindings.json over tracked bindings.",
+  "profile": "masm510",
+  "public": "_rcega_entries",
+  "schema": 1,
+  "source": "src/engine/graphics/circuit_ega_raster_entries.asm",
+  "source_sha256": "1d90a1aa4d84c4f7e3434619dbf4d632354ae930df514eaa688bd93bf20ef979",
+  "targets": {
+    "circuit_ega": {
+      "end": 45347,
+      "start": 42610
+    }
+  }
+}

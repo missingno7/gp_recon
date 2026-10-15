@@ -1,0 +1,244 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 0,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 4,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 6,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 8,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 10,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 12,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 14,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_EXT_AD3B",
+      "loc": "offset16",
+      "offset": 16,
+      "self_relative": false,
+      "target": "_EXT_AD3B",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 18,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 20,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 22,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 24,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 26,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 28,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 30,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 248,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 337,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 427,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 515,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 599,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 679,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 928,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1051,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1175,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1297,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1415,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1529,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": []
+  },
+  "id": "circuit_ega_raster_697_dispatch",
+  "notes": "Strict match produced with canonical tools/search.py; parent integration merges stage/bindings.json over tracked bindings.",
+  "profile": "masm510",
+  "public": "_rcega_697dispatch",
+  "schema": 1,
+  "source": "src/engine/graphics/circuit_ega_raster_697_dispatch.asm",
+  "source_sha256": "e0887f9186d1653978a7f59179667a22fa508dc4f19be01c88ea47656de35d36",
+  "targets": {
+    "circuit_ega": {
+      "end": 55533,
+      "start": 54002
+    }
+  }
+}

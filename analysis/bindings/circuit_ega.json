@@ -2,6 +2,30 @@
   "note": "Add further symbols only with target-specific address evidence.",
   "schema": 1,
   "symbols": {
+    "_EXT_9226": {
+      "address": "0000:9226",
+      "confidence": "high",
+      "provenance": "Direct near CALL target 0x9226 is independently reached at callsites 0xA89A and 0xB2D8; the latter lies outside the raster entry module.",
+      "staged_by": "raster-map"
+    },
+    "_EXT_A689": {
+      "address": "0000:A689",
+      "confidence": "high",
+      "provenance": "0xD2A4 wrapper tail-jumps to 0xA689; that address is an internal setup label of the separate caller-proven A672/A6AA/A6DC near-entry family.",
+      "staged_by": "raster-map"
+    },
+    "_EXT_AD3B": {
+      "address": "0000:AD3B",
+      "confidence": "high",
+      "provenance": "0xAD3B is a decoded case label inside the complete A672..B123 module and is selected by the independent 0xD302 dispatch-table word.",
+      "staged_by": "raster-map"
+    },
+    "_EXT_C67A": {
+      "address": "0000:C67A",
+      "confidence": "high",
+      "provenance": "Direct near CALL target 0xC67A is independently reached at callsites 0xA9D6 and 0xB408; the latter lies outside the raster entry module.",
+      "staged_by": "raster-map"
+    },
     "_TEXT": {
       "address": "0000:0000",
       "confidence": "high",

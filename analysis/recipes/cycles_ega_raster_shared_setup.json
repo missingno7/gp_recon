@@ -1,0 +1,19 @@
+{
+  "expected_fixups": [],
+  "expected_relocations": {
+    "cycles_ega": []
+  },
+  "id": "cycles_ega_raster_shared_setup",
+  "notes": "Strict match produced with canonical tools/search.py; parent integration merges stage/bindings.json over tracked bindings.",
+  "profile": "masm510",
+  "public": "_cye_shared_8623",
+  "schema": 1,
+  "source": "src/engine/graphics/cycles_ega_raster_654_entries.asm",
+  "source_sha256": "664d4ca613e7a142d114f3db7bfb2da74a44619297278cb106a5db1cfccfbae8",
+  "targets": {
+    "cycles_ega": {
+      "end": 34416,
+      "start": 34339
+    }
+  }
+}

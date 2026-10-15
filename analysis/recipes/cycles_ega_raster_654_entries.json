@@ -1,0 +1,300 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 80,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 308,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_EXT_CA08",
+      "loc": "offset16",
+      "offset": 447,
+      "self_relative": true,
+      "target": "_EXT_CA08",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 580,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_EXT_DBA0",
+      "loc": "offset16",
+      "offset": 763,
+      "self_relative": true,
+      "target": "_EXT_DBA0",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 906,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 908,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 910,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 912,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 914,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 916,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 918,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 920,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 922,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 924,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 926,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 928,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 930,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 932,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 934,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 936,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 938,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1161,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1255,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1353,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1449,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1541,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1629,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 1885,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2011,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2141,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2272,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2401,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2526,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "_TEXT",
+      "loc": "offset16",
+      "offset": 2647,
+      "self_relative": true,
+      "target": "_TEXT",
+      "width": 2
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": []
+  },
+  "id": "cycles_ega_raster_654_entries",
+  "notes": "Strict match produced with canonical tools/search.py; parent integration merges stage/bindings.json over tracked bindings.",
+  "profile": "masm510",
+  "public": "_cye_654_entries",
+  "schema": 1,
+  "source": "src/engine/graphics/cycles_ega_raster_654_entries.asm",
+  "source_sha256": "664d4ca613e7a142d114f3db7bfb2da74a44619297278cb106a5db1cfccfbae8",
+  "targets": {
+    "cycles_ega": {
+      "end": 37065,
+      "start": 34416
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_EXT_8623",
+      "loc": "offset16",
+      "offset": 30,
+      "self_relative": true,
+      "target": "_EXT_8623",
+      "width": 2
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": []
+  },
+  "id": "cycles_ega_raster_697_wrapper",
+  "notes": "Strict match produced with canonical tools/search.py; parent integration merges stage/bindings.json over tracked bindings.",
+  "profile": "masm510",
+  "public": "_cye_697_wrapper",
+  "schema": 1,
+  "source": "src/engine/graphics/cycles_ega_raster_697_wrapper.asm",
+  "source_sha256": "88fa9a67cae0e8e6b87da29ea3e8ef18f8ece76254848c6a6e4f1d352ed2fae3",
+  "targets": {
+    "cycles_ega": {
+      "end": 45456,
+      "start": 45424
+    }
+  }
+}
