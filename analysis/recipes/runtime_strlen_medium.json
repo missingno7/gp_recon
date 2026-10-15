@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "id": "runtime_strlen_medium",
+  "source": "src/runtime/strlen_medium.asm",
+  "source_sha256": "4833c6a0641bba428a837810ae85017d5a2e50acd36703dcf0583177789183f1",
+  "profile": "masm510",
+  "public": "_runtime_strlen_medium",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {"start": 14470, "end": 14497},
+    "cycles_cga": {"start": 14148, "end": 14175},
+    "cycles_tandy": {"start": 14138, "end": 14165}
+  }
+}

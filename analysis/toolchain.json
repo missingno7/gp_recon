@@ -127,6 +127,28 @@
       ],
       "kind": "c",
       "tool": "msc510"
+    },
+    "masm510-msc-startup": {
+      "kind": "asm",
+      "tool": "masm510",
+      "flags": [],
+      "includes": [
+        {
+          "name": "CMACROS.INC",
+          "path": "C:\\tools\\msc-5.10\\STARTUP\\CMACROS.INC",
+          "sha256": "0cc0bd4d72efdd2ea8ef7130feefa82c79809a76b3ad88f1508a4b11bbef116c"
+        },
+        {
+          "name": "VERSION.INC",
+          "path": "C:\\tools\\msc-5.10\\STARTUP\\VERSION.INC",
+          "sha256": "c3fa9315baced76ee80ba988ef05d13e01a64eddf4e77be02c061d7c926d7c0a"
+        },
+        {
+          "name": "MSDOS.INC",
+          "path": "C:\\tools\\msc-5.10\\STARTUP\\MSDOS.INC",
+          "sha256": "1263518c855099f02fe14fc0eb6d31008a143366515274adca2dc28812ed4d89"
+        }
+      ]
     }
   },
   "runner": {

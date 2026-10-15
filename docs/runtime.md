@@ -58,3 +58,48 @@ No compiler was executed for this experiment. To reproduce and check the scan, r
 ignored `work/research/`; the tracked evidence is never rewritten by a check.
 The report is [runtime_libraries.json](../analysis/runtime_libraries.json),
 and the scanner is [runtime_libraries.py](../tools/research/runtime_libraries.py).
+
+## Function-level attribution and maintained source
+
+The follow-up [runtime_attribution.json](../analysis/runtime_attribution.json) maps
+OMF member code runs to inventory extents for each target. It pins the
+library SHA-256 and member header offset, records the run length and any
+MSC 5.00 counterpart, and retains the inventory classification for audit.
+These are attribution leads: a partial run or a nearby library member does
+not make the entire inventory extent byte-exact. The inventory labels and
+boundaries are still heuristic. Three short Cycles extents marked runtime have
+no 12-byte library run and remain unresolved rather than being assigned a
+member. No DSI modification is demonstrated; partial matches cannot exclude it.
+
+MSC 5.10 `SLIBCR.LIB` and `MLIBCR.LIB` provide the selected member names.
+Most matching runs also occur in the corresponding MSC 5.00 libraries and do
+not discriminate the release. The longer 5.10 runs in Cycles `fseek.c`,
+`fread.c`, and `_open.c` favor 5.10 for those members, not for all game code.
+The direct member rescan identifies 16 Circuit and 27 Cycles extents per
+target classified `game/engine` that contain runtime code runs. This includes
+`STDARGV`, low-level DOS I/O, stream I/O, and formatting members. Some
+`data/unknown` inventory extents also contain runtime code.
+
+Maintained source and strictly checked recipes are separate from library-only
+member evidence. `strlen.asm` and `strlen_medium.asm` reconstruct the
+small- and medium-model `STRLEN` leaves. `sub_2CE77.asm` is a 19-byte CRT0DAT
+helper shared across five targets. `toupper.c` strictly rebuilds its Cycles
+ranges, but its exact installed library member is unconfirmed; its attribution
+remains medium confidence. Each recipe with a `runtime_` ID is replayed by
+`tools/validate.py`; [coverage.py](../tools/coverage.py) reports those ranges
+as runtime bytes even when an older recipe ID also exists.
+
+The `STDARGV` experiment uses the LF-normalized MSC 5.10
+`STARTUP/DOS/STDARGV.ASM` from the pinned installation (Microsoft source, kept local under ignored `work/` and not redistributed), with local `VERSION.INC`, `CMACROS.INC`, and
+`MSDOS.INC` names. The `masm510-msc-startup` profile pins each installed include
+hash and stages it into the scratch build. The installed source SHA-256 is
+`6c40436a25873fa016dcb5dfdcfd980869b3c3e5b45486a25153430a5885f8d8`;
+the LF copy is `139a0af2ae0119163ef47d8b991b546e1677db46c3d3aeee21b98f7b8c8635d5`.
+A fresh build matches all non-fixup
+bytes across the full 398-byte Circuit EGA/CGA routine, and both libraries
+contain matching `STDARGV` runs. Strict replay remains blocked at the two
+`_DATA` member-placement fixups: the pipeline's current DGROUP binding model
+cannot express that segment contribution while enforcing the inventory DGROUP
+base. There is therefore no `STDARGV` promotion recipe or claim of strict
+acceptance. The installed startup source is provenance for the source file;
+the library and oracle runs are separate provenance for attribution.

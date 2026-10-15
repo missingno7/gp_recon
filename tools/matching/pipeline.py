@@ -27,6 +27,17 @@ def load_profile(name: str, root: Path = ROOT) -> tuple[dict, dict]:
         path = Path(item["path"])
         if not path.is_file() or digest(path.read_bytes()) != item["sha256"]:
             raise ValueError(f"toolchain file missing or hash changed: {path}")
+    if "includes" in profile and profile["kind"] != "asm":
+        raise ValueError("pinned includes are supported only for asm profiles")
+    seen = set()
+    for item in profile.get("includes", []):
+        name = item["name"]
+        if name != Path(name).name or not name.upper().endswith(".INC") or name.upper() in seen:
+            raise ValueError(f"invalid or duplicate include name: {name}")
+        seen.add(name.upper())
+        path = Path(item["path"])
+        if not path.is_file() or digest(path.read_bytes()) != item["sha256"]:
+            raise ValueError(f"include file missing or hash changed: {path}")
     if Path(lock["runner"]["path"]).as_posix().lower() != "c:/tools/nmlgcdos/msdos.exe":
         raise ValueError("only the pinned nmlgcdos MS-DOS Player is allowed")
     return profile, lock
@@ -44,6 +55,8 @@ def build(source: Path, profile_name: str, root: Path = ROOT) -> tuple[object, d
     scratch.mkdir(parents=True)
     staged = scratch / ("UNIT.C" if profile["kind"] == "c" else "UNIT.ASM")
     shutil.copyfile(source, staged)
+    for item in profile.get("includes", []):
+        shutil.copyfile(item["path"], scratch / item["name"])
     obj_path = scratch / "UNIT.OBJ"
     executable = lock["tools"][profile["tool"]]["CL.EXE" if profile["kind"] == "c" else "MASM.EXE"]["path"]
     if profile["kind"] == "c":

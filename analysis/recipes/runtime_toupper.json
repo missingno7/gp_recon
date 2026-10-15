@@ -1,6 +1,6 @@
 {
   "expected_fixups": [],
-  "id": "toupper",
+  "id": "runtime_toupper",
   "profile": "msc510-medium-o_gs",
   "public": "_toupper",
   "schema": 1,

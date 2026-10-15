@@ -1,0 +1,19 @@
+{
+  "expected_fixups": [],
+  "id": "runtime_grp_c4f9f805",
+  "profile": "masm510",
+  "public": "_grp_c4f9f805",
+  "schema": 1,
+  "source": "src/runtime/strlen.asm",
+  "source_sha256": "cf36ffcffddd9b6372a515809797e696e4a702ed950986af96bd77de677324fa",
+  "targets": {
+    "circuit_cga": {
+      "end": 49903,
+      "start": 49876
+    },
+    "circuit_ega": {
+      "end": 64025,
+      "start": 63998
+    }
+  }
+}
