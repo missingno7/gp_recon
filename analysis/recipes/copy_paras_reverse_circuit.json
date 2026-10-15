@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "copy_paras_reverse_circuit",
+  "source": "src/engine/fileio/paragraph_copy_circuit.asm",
+  "source_sha256": "a489214f40fa79ab718d2d5127c35c697e9fac692a22d7bf5f00e9fc8beaabde",
+  "profile": "masm510-mx",
+  "public": "_copy_paras_reverse",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 33270,
+      "end": 33353
+    },
+    "circuit_cga": {
+      "start": 37526,
+      "end": 37609
+    }
+  }
+}

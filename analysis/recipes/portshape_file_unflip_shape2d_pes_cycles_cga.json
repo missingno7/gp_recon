@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "portshape_file_unflip_shape2d_pes_cycles_cga",
+  "source": "src/engine/shapes/file_unflip_shape2d_pes_cycles_cga.asm",
+  "source_sha256": "874183a4ffa737ea10d3fb7b796ec58271ff8ea4e5fff993b77887cb35cd5e57",
+  "profile": "masm510-mx",
+  "public": "_file_unflip_shape2d_pes",
+  "targets": {
+    "cycles_cga": {
+      "start": 47984,
+      "end": 48182
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 40,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "DSEG",
+      "frame": "DSEG"
+    },
+    {
+      "offset": 45,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_file_get_shape2d",
+      "frame": "S012_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [
+      48024,
+      48031
+    ]
+  }
+}

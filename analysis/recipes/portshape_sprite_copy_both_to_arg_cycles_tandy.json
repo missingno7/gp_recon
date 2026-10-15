@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "portshape_sprite_copy_both_to_arg_cycles_tandy",
+  "source": "src/engine/sprites/sprite_copy_both_to_arg_cycles_tandy.asm",
+  "source_sha256": "cf88557b4c7a97fb9b4a4455931bd2e300fb060ef22b8ebbe8cb20a21be99df9",
+  "profile": "masm510-mx",
+  "public": "_sprite_copy_both_to_arg",
+  "targets": {
+    "cycles_tandy": {
+      "start": 43526,
+      "end": 43558
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_sprite1",
+      "frame": "S012_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_tandy": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "file_paras_group",
+  "source": "src/engine/fileio/file_paras_group.asm",
+  "source_sha256": "65b7badd1bd2c9f1ab0ce009806f854abffa09fd6bb3733569757edd7c75b998",
+  "profile": "masm510-mx",
+  "public": "_file_paras",
+  "expected_fixups": [
+    {
+      "offset": 76,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_aSFileError_1",
+      "frame": "DSEG"
+    },
+    {
+      "offset": 87,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fatal_error",
+      "frame": "_fatal_error"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 49226,
+      "end": 49390
+    },
+    "cycles_cga": {
+      "start": 22344,
+      "end": 22508
+    },
+    "cycles_tandy": {
+      "start": 22334,
+      "end": 22498
+    }
+  }
+}

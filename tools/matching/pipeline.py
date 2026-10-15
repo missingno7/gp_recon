@@ -122,7 +122,29 @@ def oracle(target: str, root: Path = ROOT) -> tuple[bytes, list[int], dict]:
 def binding_file(target: str, root: Path = ROOT) -> dict:
     if target not in TARGETS:
         raise ValueError(target)
-    return json.loads((root / "analysis/bindings" / f"{target}.json").read_text(encoding="utf-8"))["symbols"]
+    symbols = json.loads((root / "analysis/bindings" / f"{target}.json").read_text(encoding="utf-8"))["symbols"]
+    check_dgroup_bindings(target, symbols, root)
+    return symbols
+
+
+DGROUP_MEMBERS = ("DGROUP", "DSEG", "_DATA", "CONST", "_BSS")
+
+
+def check_dgroup_bindings(target: str, symbols: dict, root: Path = ROOT) -> None:
+    """DGROUP-member frames must sit at the inventory's startup-evidenced DGROUP base.
+
+    Offset fixups cancel the frame segment, so a wrong data-segment binding would
+    otherwise pass silently while giving every data symbol a wrong linear address.
+    """
+    path = root / "analysis/inventory" / f"{target}.json"
+    if not path.is_file():
+        return
+    base = json.loads(path.read_text(encoding="utf-8"))["dgroup_base"]
+    for name in DGROUP_MEMBERS:
+        if name in symbols:
+            linear, segment = address(symbols[name])
+            if linear != base or (segment is not None and segment * 16 != base):
+                raise MatchError(f"{target}: binding {name} = {linear:#x} disagrees with inventory DGROUP base {base:#x}")
 
 
 def address(binding) -> tuple[int, int | None]:

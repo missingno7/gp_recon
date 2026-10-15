@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "portshape_file_get_shape2d_cycles",
+  "source": "src/engine/shapes/file_get_shape2d.asm",
+  "source_sha256": "f744577eaf41fc6ff5ce45f93499c59455c7c15c3c584e7c075ef4bbf7f866eb",
+  "profile": "masm510-mx",
+  "public": "_file_get_shape2d",
+  "targets": {
+    "cycles_ega": {
+      "start": 29055,
+      "end": 29150
+    },
+    "cycles_cga": {
+      "start": 29071,
+      "end": 29166
+    },
+    "cycles_tandy": {
+      "start": 29061,
+      "end": 29156
+    }
+  },
+  "expected_fixups": [],
+  "expected_relocations": {
+    "cycles_ega": [],
+    "cycles_cga": [],
+    "cycles_tandy": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "portshape_nopsub_34736",
+  "source": "src/engine/sprites/seg012_sprite_clear_shared_group.asm",
+  "source_sha256": "95bf359a588ad32cc6c3c37e1da45856fef14a03bbc1104d027110fbaedbce70",
+  "profile": "masm510-mx",
+  "public": "_nopsub_34736",
+  "targets": {
+    "cycles_cga": {
+      "start": 39976,
+      "end": 40012
+    },
+    "cycles_tandy": {
+      "start": 38842,
+      "end": 38878
+    }
+  },
+  "expected_fixups": [],
+  "expected_relocations": {
+    "cycles_cga": [],
+    "cycles_tandy": []
+  }
+}

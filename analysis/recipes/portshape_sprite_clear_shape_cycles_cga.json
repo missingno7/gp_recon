@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "portshape_sprite_clear_shape_cycles_cga",
+  "source": "src/engine/sprites/seg012_sprite_clear_shared_group_cycles_cga.asm",
+  "source_sha256": "0954bee8026cde9c8817a38b99aaaf12a6d6e5823d103e3043264f5a42ba00a9",
+  "profile": "masm510-mx",
+  "public": "_sprite_clear_shape",
+  "targets": {
+    "cycles_cga": {
+      "start": 40048,
+      "end": 40152
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 46,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_sprite1",
+      "frame": "S012_TEXT"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_sprite1",
+      "frame": "S012_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": []
+  }
+}

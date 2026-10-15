@@ -2,10 +2,64 @@
   "note": "Add further symbols only with target-specific address evidence.",
   "schema": 1,
   "symbols": {
+    "DGROUP": {
+      "address": "1599:0000",
+      "confidence": "high",
+      "provenance": "The startup instruction at 0x122 loads the relocated paragraph 0x1599 into DS; independent relocation words elsewhere repeat that segment value. This is independent startup evidence, not the unflip or font fixup under review.",
+      "staged_by": "port-shape"
+    },
+    "DSEG": {
+      "address": "1599:0000",
+      "confidence": "high",
+      "provenance": "The startup instruction at 0x122 loads the relocated paragraph 0x1599 into DS; independent relocation words elsewhere repeat that segment value. This is independent startup evidence, not the unflip or font fixup under review.",
+      "staged_by": "port-shape"
+    },
+    "_aSFileError": {
+      "address": "1599:95A4",
+      "confidence": "medium",
+      "provenance": "Unique \"%s FILE ERROR\\r\" bytes and the independently established DSEG frame place this label at the bound offset; file_read bytes outside the fixup match the staged source.",
+      "staged_by": "port-fileio"
+    },
+    "_aSFileError_1": {
+      "address": "1599:9C08",
+      "confidence": "high",
+      "provenance": "Unique \"%s FILE ERROR\" bytes (without CR); independent references in file_paras_group and file_decomp_paras agree on this DGROUP-relative offset.",
+      "staged_by": "port-fileio"
+    },
+    "_fatal_error": {
+      "address": "056A:0040",
+      "confidence": "medium",
+      "provenance": "Far destination shared by independent file_read, file_paras_group, and file_decomp_paras fatal paths; target has numerous independent incoming calls and a common error-dispatch body.",
+      "staged_by": "port-fileio"
+    },
+    "_file_get_shape2d": {
+      "address": "056A:1ADF",
+      "confidence": "high",
+      "provenance": "Own public start 0x717f and 95-byte fresh strict assembly; independently confirmed segment:offset in xref, cycles_ega.",
+      "staged_by": "port-shape"
+    },
+    "_fontdefseg": {
+      "address": "1599:A1AC",
+      "confidence": "medium",
+      "provenance": "Offset 0xa1ac is independently read as ES/DS in separate target routines at 0x7355, 0x9a04, and 0x9a20; these reads identify the shared segment-valued font pointer. DGROUP base is independently established from repeated relocations.",
+      "staged_by": "port-shape"
+    },
     "_format_u8_decimal3": {
       "address": 7528,
       "confidence": "high for entry address; reconstructed descriptive name",
       "provenance": "analysis/compiler/decimal_proof.json; direct callers documented in docs/decimal.md"
+    },
+    "_sprite1": {
+      "address": "056A:4E8A",
+      "confidence": "medium",
+      "provenance": "The same linked offset 0x4e8a is referenced by separate candidate functions sprite_copy_both_to_arg (0xc1b6) and sprite_copy_arg_to_both (0xc1d6); both independently have their own public start and match after the Cycles 26-word adaptation.",
+      "staged_by": "port-shape"
+    },
+    "_sprite1_unknown2": {
+      "address": "056A:24B2",
+      "confidence": "medium",
+      "provenance": "Census has a reachable-call-target start at 0x7b52; the entry begins with a BP frame and accesses sprite1 fields. Independent caller candidates include 0x96a, 0xa1f, 0xaff, 0xc27, and 0x13dd0; the four calls in sprite_1_unk4 are excluded from that independent set.",
+      "staged_by": "port-shape"
     }
   },
   "target": "cycles_ega"

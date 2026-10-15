@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "file_paras_nofatal",
+  "source": "src/engine/fileio/file_paras_group.asm",
+  "source_sha256": "65b7badd1bd2c9f1ab0ce009806f854abffa09fd6bb3733569757edd7c75b998",
+  "profile": "masm510-mx",
+  "public": "_file_paras_nofatal",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 49244,
+      "end": 49261
+    },
+    "cycles_cga": {
+      "start": 22362,
+      "end": 22379
+    },
+    "cycles_tandy": {
+      "start": 22352,
+      "end": 22369
+    }
+  }
+}

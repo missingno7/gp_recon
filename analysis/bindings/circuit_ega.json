@@ -6,6 +6,12 @@
       "address": 22276,
       "confidence": "high for entry address; reconstructed descriptive name",
       "provenance": "analysis/compiler/decimal_proof.json; direct callers documented in docs/decimal.md"
+    },
+    "_sprite1_unknown2": {
+      "address": "0000:9956",
+      "confidence": "medium",
+      "provenance": "Census records a low-confidence reachable-call-target start at 0x9956 with a BP-frame prologue; the near callee is called by independent routines at 0x26c8, 0x955f, and 0x95c7, in addition to four calls in sprite_1_unk4. Those callsites pass the same five rectangle arguments.",
+      "staged_by": "port-shape"
     }
   },
   "target": "circuit_ega"

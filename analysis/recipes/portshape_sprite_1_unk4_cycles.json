@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "portshape_sprite_1_unk4_cycles",
+  "source": "src/engine/sprites/sprite_1_unk4.c",
+  "source_sha256": "c14d69d1cdfeff15ff31e3d2f0baa22941d864adde183c8c43cb4b711b020bb1",
+  "profile": "msc510-medium-o_gs",
+  "public": "_sprite_1_unk4",
+  "targets": {
+    "cycles_ega": {
+      "start": 83010,
+      "end": 83148
+    },
+    "cycles_cga": {
+      "start": 72946,
+      "end": 73084
+    },
+    "cycles_tandy": {
+      "start": 71402,
+      "end": 71540
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 126,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_sprite1_unknown2",
+      "frame": "_sprite1_unknown2"
+    },
+    {
+      "offset": 102,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_sprite1_unknown2",
+      "frame": "_sprite1_unknown2"
+    },
+    {
+      "offset": 72,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_sprite1_unknown2",
+      "frame": "_sprite1_unknown2"
+    },
+    {
+      "offset": 48,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_sprite1_unknown2",
+      "frame": "_sprite1_unknown2"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": [
+      83138,
+      83114,
+      83084,
+      83060
+    ],
+    "cycles_cga": [
+      73074,
+      73050,
+      73020,
+      72996
+    ],
+    "cycles_tandy": [
+      71530,
+      71506,
+      71476,
+      71452
+    ]
+  }
+}

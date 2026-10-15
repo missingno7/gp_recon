@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "copy_paras_reverse",
+  "source": "src/engine/fileio/paragraph_copy.asm",
+  "source_sha256": "7812e49f84f7e900aad6bd2bb7dad132838c913afafb0c9149febd9e2e055304",
+  "profile": "masm510-mx",
+  "public": "_copy_paras_reverse",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 27288,
+      "end": 27371
+    },
+    "cycles_cga": {
+      "start": 27304,
+      "end": 27387
+    },
+    "cycles_tandy": {
+      "start": 27294,
+      "end": 27377
+    }
+  }
+}

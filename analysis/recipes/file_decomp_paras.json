@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "file_decomp_paras",
+  "source": "src/engine/fileio/file_decomp_paras.asm",
+  "source_sha256": "9ba2349841d7c6dbe0082652cd20358251a2730ede532abc6f4b17c198d7a0f4",
+  "profile": "masm510-mx",
+  "public": "_file_decomp_paras",
+  "expected_fixups": [
+    {
+      "offset": 159,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_aSFileError_1",
+      "frame": "DSEG"
+    },
+    {
+      "offset": 170,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fatal_error",
+      "frame": "_fatal_error"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 49390,
+      "end": 49564
+    },
+    "cycles_cga": {
+      "start": 22508,
+      "end": 22682
+    },
+    "cycles_tandy": {
+      "start": 22498,
+      "end": 22672
+    }
+  }
+}

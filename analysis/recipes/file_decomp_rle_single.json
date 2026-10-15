@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "file_decomp_rle_single",
+  "source": "src/engine/fileio/file_decomp_rle.asm",
+  "source_sha256": "c6b781acb619ba453c243afff749b9d9bb78862bef6f90f15b6c6f18dc97cbdf",
+  "profile": "masm510-mx",
+  "public": "_file_decomp_rle_single",
+  "expected_fixups": [
+    {
+      "offset": 199,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "S012_TEXT",
+      "frame": "S012_TEXT"
+    },
+    {
+      "offset": 213,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "S012_TEXT",
+      "frame": "S012_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 25985,
+      "end": 26200
+    },
+    "cycles_cga": {
+      "start": 26001,
+      "end": 26216
+    },
+    "cycles_tandy": {
+      "start": 25991,
+      "end": 26206
+    }
+  }
+}

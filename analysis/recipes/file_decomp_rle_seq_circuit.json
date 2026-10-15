@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "file_decomp_rle_seq_circuit",
+  "source": "src/engine/fileio/file_decomp_rle_seq_circuit.asm",
+  "source_sha256": "ba19df8f3a7b1c8efe56aa1312b84929f449608a866d8430cd3da6fe6f486289",
+  "profile": "masm510-mx",
+  "public": "_file_decomp_rle_seq",
+  "expected_fixups": [
+    {
+      "offset": 168,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 31476,
+      "end": 31646
+    },
+    "circuit_cga": {
+      "start": 35246,
+      "end": 35416
+    }
+  }
+}

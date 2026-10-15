@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "mmgr_copy_paras",
+  "source": "src/engine/fileio/paragraph_copy.asm",
+  "source_sha256": "7812e49f84f7e900aad6bd2bb7dad132838c913afafb0c9149febd9e2e055304",
+  "profile": "masm510-mx",
+  "public": "_mmgr_copy_paras",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 27216,
+      "end": 27288
+    },
+    "cycles_cga": {
+      "start": 27232,
+      "end": 27304
+    },
+    "cycles_tandy": {
+      "start": 27222,
+      "end": 27294
+    }
+  }
+}

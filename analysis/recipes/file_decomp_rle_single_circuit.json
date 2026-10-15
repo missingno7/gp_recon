@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "file_decomp_rle_single_circuit",
+  "source": "src/engine/fileio/file_decomp_rle_single_circuit.asm",
+  "source_sha256": "6033def18303582579f4f25677d416844f84ead663c6a44ae0488f11848aabf3",
+  "profile": "masm510-mx",
+  "public": "_file_decomp_rle_single",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 31278,
+      "end": 31476
+    },
+    "circuit_cga": {
+      "start": 35048,
+      "end": 35246
+    }
+  }
+}

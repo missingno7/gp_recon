@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "portshape_sprite_1_unk4_circuit",
+  "source": "src/engine/sprites/sprite_1_unk4_circuit.c",
+  "source_sha256": "4a0df2863b1dfd5ac697fcbacfa864bc437657042b5125e9a796951fdedb0719",
+  "profile": "msc510-medium-o_gs",
+  "public": "_sprite_1_unk4",
+  "targets": {
+    "circuit_ega": {
+      "start": 27020,
+      "end": 27149
+    },
+    "circuit_cga": {
+      "start": 28434,
+      "end": 28563
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 120,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_sprite1_unknown2",
+      "frame": "_sprite1_unknown2"
+    },
+    {
+      "offset": 98,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_sprite1_unknown2",
+      "frame": "_sprite1_unknown2"
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_sprite1_unknown2",
+      "frame": "_sprite1_unknown2"
+    },
+    {
+      "offset": 48,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_sprite1_unknown2",
+      "frame": "_sprite1_unknown2"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": [],
+    "circuit_cga": []
+  }
+}

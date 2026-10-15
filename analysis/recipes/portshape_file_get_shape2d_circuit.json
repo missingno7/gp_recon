@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "portshape_file_get_shape2d_circuit",
+  "source": "src/engine/shapes/file_get_shape2d_circuit.asm",
+  "source_sha256": "aa4a8e720264eb18828eaf6800c8d86296436e2e37771c0dd85584b810b9bac8",
+  "profile": "masm510-mx",
+  "public": "_file_get_shape2d",
+  "targets": {
+    "circuit_ega": {
+      "start": 56915,
+      "end": 57010
+    },
+    "circuit_cga": {
+      "start": 47889,
+      "end": 47984
+    }
+  },
+  "expected_fixups": [],
+  "expected_relocations": {
+    "circuit_ega": [],
+    "circuit_cga": []
+  }
+}

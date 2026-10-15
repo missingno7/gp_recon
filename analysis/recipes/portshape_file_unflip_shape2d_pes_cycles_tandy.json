@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "portshape_file_unflip_shape2d_pes_cycles_tandy",
+  "source": "src/engine/shapes/file_unflip_shape2d_pes_cycles_tandy.asm",
+  "source_sha256": "5a9d3b981c9ce57e2e612ea3f080b21a5be62c5dbd571caf2385ea8dab934c6f",
+  "profile": "masm510-mx",
+  "public": "_file_unflip_shape2d_pes",
+  "targets": {
+    "cycles_tandy": {
+      "start": 46402,
+      "end": 46600
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 40,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "DSEG",
+      "frame": "DSEG"
+    },
+    {
+      "offset": 45,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_file_get_shape2d",
+      "frame": "S012_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_tandy": [
+      46442,
+      46449
+    ]
+  }
+}

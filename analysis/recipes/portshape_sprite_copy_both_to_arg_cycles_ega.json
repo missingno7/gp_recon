@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "portshape_sprite_copy_both_to_arg_cycles_ega",
+  "source": "src/engine/sprites/sprite_copy_both_to_arg_cycles_ega.asm",
+  "source_sha256": "3a081234b552b0f53b8f23e22cdad714404fee3aefabbdd32f93f448d25c6df2",
+  "profile": "masm510-mx",
+  "public": "_sprite_copy_both_to_arg",
+  "targets": {
+    "cycles_ega": {
+      "start": 49590,
+      "end": 49622
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_sprite1",
+      "frame": "S012_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "file_decomp_rle_seq",
+  "source": "src/engine/fileio/file_decomp_rle.asm",
+  "source_sha256": "c6b781acb619ba453c243afff749b9d9bb78862bef6f90f15b6c6f18dc97cbdf",
+  "profile": "masm510-mx",
+  "public": "_file_decomp_rle_seq",
+  "expected_fixups": [
+    {
+      "offset": 168,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "S012_TEXT",
+      "frame": "S012_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 26200,
+      "end": 26370
+    },
+    "cycles_cga": {
+      "start": 26216,
+      "end": 26386
+    },
+    "cycles_tandy": {
+      "start": 26206,
+      "end": 26376
+    }
+  }
+}

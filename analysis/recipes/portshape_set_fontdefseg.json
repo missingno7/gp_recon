@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "portshape_set_fontdefseg",
+  "source": "src/engine/fonts/set_fontdefseg.asm",
+  "source_sha256": "0031f4bab53803307aad0cdffd50781eb885743d722a4ab947cb77bf3260ce89",
+  "profile": "masm510-mx",
+  "public": "_set_fontdefseg",
+  "targets": {
+    "cycles_ega": {
+      "start": 42848,
+      "end": 42860
+    },
+    "cycles_cga": {
+      "start": 40838,
+      "end": 40850
+    },
+    "cycles_tandy": {
+      "start": 39694,
+      "end": 39706
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_fontdefseg",
+      "frame": "DGROUP"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": [],
+    "cycles_cga": [],
+    "cycles_tandy": []
+  }
+}

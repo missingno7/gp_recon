@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "portshape_nopsub_326ba",
+  "source": "src/engine/shapes/nopsub_326BA.asm",
+  "source_sha256": "ffe1f6a5581e84b4e0db04c3368b38051cc64352a9733731347dda46375aad03",
+  "profile": "masm510-mx",
+  "public": "_nopsub_326BA",
+  "targets": {
+    "cycles_ega": {
+      "start": 29150,
+      "end": 29186
+    },
+    "cycles_cga": {
+      "start": 29166,
+      "end": 29202
+    },
+    "cycles_tandy": {
+      "start": 29156,
+      "end": 29192
+    }
+  },
+  "expected_fixups": [],
+  "expected_relocations": {
+    "cycles_ega": [],
+    "cycles_cga": [],
+    "cycles_tandy": []
+  }
+}

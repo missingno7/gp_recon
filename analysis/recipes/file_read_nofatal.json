@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "file_read_nofatal",
+  "source": "src/engine/fileio/file_read.asm",
+  "source_sha256": "d6bb8a1091db40e2f8c36cd5cb8788a378d3ad37f60f17309d5225062c1acdb9",
+  "profile": "masm510-mx",
+  "public": "_file_read_nofatal",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 25706,
+      "end": 25721
+    },
+    "cycles_cga": {
+      "start": 25722,
+      "end": 25737
+    },
+    "cycles_tandy": {
+      "start": 25712,
+      "end": 25727
+    }
+  }
+}

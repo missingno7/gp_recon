@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "portshape_sprite_clear_shape_cycles_tandy",
+  "source": "src/engine/sprites/seg012_sprite_clear_shared_group_cycles_tandy.asm",
+  "source_sha256": "a3bf2e8ceb2876451aad063a85120cd7bd01194146979db25c8be9e9d77810fa",
+  "profile": "masm510-mx",
+  "public": "_sprite_clear_shape",
+  "targets": {
+    "cycles_tandy": {
+      "start": 38914,
+      "end": 39011
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 46,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_sprite1",
+      "frame": "S012_TEXT"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_sprite1",
+      "frame": "S012_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_tandy": []
+  }
+}

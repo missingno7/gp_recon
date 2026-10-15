@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "file_read",
+  "source": "src/engine/fileio/file_read.asm",
+  "source_sha256": "d6bb8a1091db40e2f8c36cd5cb8788a378d3ad37f60f17309d5225062c1acdb9",
+  "profile": "masm510-mx",
+  "public": "_file_read",
+  "expected_fixups": [
+    {
+      "offset": 131,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_aSFileError",
+      "frame": "DSEG"
+    },
+    {
+      "offset": 142,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fatal_error",
+      "frame": "_fatal_error"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 25690,
+      "end": 25836
+    },
+    "cycles_cga": {
+      "start": 25706,
+      "end": 25852
+    },
+    "cycles_tandy": {
+      "start": 25696,
+      "end": 25842
+    }
+  }
+}

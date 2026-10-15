@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "file_decomp_paras_nofatal",
+  "source": "src/engine/fileio/file_decomp_paras.asm",
+  "source_sha256": "9ba2349841d7c6dbe0082652cd20358251a2730ede532abc6f4b17c198d7a0f4",
+  "profile": "masm510-mx",
+  "public": "_file_decomp_paras_nofatal",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 49408,
+      "end": 49425
+    },
+    "cycles_cga": {
+      "start": 22526,
+      "end": 22543
+    },
+    "cycles_tandy": {
+      "start": 22516,
+      "end": 22533
+    }
+  }
+}
