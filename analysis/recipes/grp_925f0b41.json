@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "grp_925f0b41",
+  "source": "src/cycles/io/grp_925f0b41.asm",
+  "source_sha256": "728d3e181d18534d1d0c5c412846cd0286dd53e1418bab486bd7d1bd57dcdb31",
+  "profile": "masm510",
+  "public": "_grp_925f0b41",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_ERROR_COUNT",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 22,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_BUFFER",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 33,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_63468620",
+      "frame": "_GRP_63468620"
+    },
+    {
+      "offset": 45,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_ERROR_COUNT",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 59,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_BUFFER",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 74,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_BUFFER",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 88,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_ERROR_COUNT",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 98,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_BYTES_TOTAL",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 18910,
+      "end": 19016
+    },
+    "cycles_ega": {
+      "start": 19232,
+      "end": 19338
+    },
+    "cycles_tandy": {
+      "start": 18900,
+      "end": 19006
+    }
+  }
+}

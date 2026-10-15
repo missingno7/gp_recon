@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "grp_ddba65f3",
+  "source": "src/cycles/text/grp_ddba65f3.asm",
+  "source_sha256": "f6659b1abe03f102205b39ade3a13cce8d32ebe5c201574921caf6bb1ecc5e52",
+  "profile": "masm510",
+  "public": "_grp_ddba65f3",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 27387,
+      "end": 27419
+    },
+    "cycles_ega": {
+      "start": 27371,
+      "end": 27403
+    },
+    "cycles_tandy": {
+      "start": 27377,
+      "end": 27409
+    }
+  }
+}

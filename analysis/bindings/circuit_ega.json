@@ -2805,6 +2805,15 @@
         "grp_1a9a5e95"
       ]
     },
+    "_G_A5BA": {
+      "address": "108F:8C4A",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP byte offset 0x8c4a in grp_1a9a5e95 (circuit_ega); segment 108F is the inventory DGROUP base.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_1a9a5e95"
+      ]
+    },
     "_G_A737": {
       "address": "108F:8DBD",
       "confidence": "high",

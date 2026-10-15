@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "id": "grp_9944d6d9",
+  "source": "src/cycles/engine/grp_9944d6d9.asm",
+  "source_sha256": "84e27ad7ad4ab0403f9249a74d145838befbcbcf9d54ffc02af85245524e7797",
+  "profile": "masm510",
+  "public": "_grp_9944d6d9",
+  "expected_fixups": [
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B218",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B21C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 42,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B224",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B224",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 61,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B224",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 67,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B210",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 71,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B224",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 78,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B228",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 85,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A754",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 98,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B20A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 105,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B228",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 109,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A758",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 116,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B20A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 123,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B224",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 130,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B228",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 134,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A760",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 141,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B218",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 146,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B22C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 151,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B214",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 155,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B21A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 164,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A764",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 183,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_04A48",
+      "frame": "_CSEG_994"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 18560,
+      "end": 18749
+    },
+    "cycles_ega": {
+      "start": 18882,
+      "end": 19071
+    },
+    "cycles_tandy": {
+      "start": 18550,
+      "end": 18739
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "grp_1a9a5e95_cycles_tandy",
+  "source": "src/engine/filesystem/grp_1a9a5e95_cycles_tandy.asm",
+  "source_sha256": "ef6a27c9d2ecc4e9a6341716e792b383cc076cf3e54ba8450a277b299f93cd4a",
+  "profile": "masm510",
+  "public": "_grp_1a9a5e95",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 116,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5BA",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 120,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_TANDY_03FB9",
+      "frame": "SEEK_FILE_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_tandy": {
+      "start": 19534,
+      "end": 19656
+    }
+  }
+}

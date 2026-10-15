@@ -1,7 +1,7 @@
 .8086
 FILL_TEXT SEGMENT WORD PUBLIC 'CODE'
         ASSUME CS:FILL_TEXT
-        EXTRN _G_4802:WORD, _G_480A:WORD, _G_480C:WORD, _G_480E:WORD, _G_4810:WORD, _G_4812:WORD
+        EXTRN _DISP5550_G_4802:WORD, _G_480A:WORD, _G_480C:WORD, _G_480E:WORD, _G_4810:WORD, _G_4812:WORD
         PUBLIC _grp_e76f1ca2
 _grp_e76f1ca2 PROC FAR
         push bp
@@ -9,7 +9,7 @@ _grp_e76f1ca2 PROC FAR
         push ds
         push si
         push di
-        mov ax,word ptr cs:[_G_4802]
+        mov ax,word ptr cs:[_DISP5550_G_4802]
         mov es,ax
         mov dx,word ptr cs:[_G_4812]
         mov bx,word ptr cs:[_G_4810]

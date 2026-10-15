@@ -1,7 +1,7 @@
 .8086
 DISP0_TEXT SEGMENT WORD PUBLIC 'CODE'
         ASSUME CS:DISP0_TEXT
-        EXTRN _G_4802:WORD, _G_4192:WORD
+        EXTRN _DISP0_G_4802:WORD, _G_4192:WORD
         PUBLIC _grp_f88c4c87
 _grp_f88c4c87 PROC FAR
         push bp
@@ -26,7 +26,7 @@ _grp_f88c4c87 PROC FAR
         mov byte ptr [bp-0Eh],al
         mov ax,word ptr [si+8]
         mov word ptr [bp-0Ah],ax
-        mov ax,word ptr cs:[_G_4802]
+        mov ax,word ptr cs:[_DISP0_G_4802]
         mov es,ax
         mov bx,word ptr [si+0Eh]
         shl bx,1

@@ -1,43 +1,32 @@
 {
   "schema": 1,
   "id": "grp_d964a340",
-  "source": "src/cycles/engine/clamp_rectangle.c",
-  "source_sha256": "0564abf544a1b1cdf38782cec46ac8678f674bcb916870ada40000ff2b7474b9",
+  "source": "src/cycles/engine/process_events_module.c",
+  "source_sha256": "9ca60ce0b4bff7982e048b6454beaf3148252971ff3bb4fe2bc5dc854a7a9005",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_d964a340",
-  "targets": {
-    "cycles_cga": {
-      "start": 49904,
-      "end": 50021
-    },
-    "cycles_ega": {
-      "start": 59990,
-      "end": 60107
-    },
-    "cycles_tandy": {
-      "start": 48358,
-      "end": 48475
-    }
-  },
   "expected_fixups": [
     {
       "offset": 108,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_07ff5",
-      "frame": "_fn_cycles_cga_07ff5",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_07ff5"
     }
   ],
-  "expected_relocations": {
-    "cycles_cga": [
-      50014
-    ],
-    "cycles_ega": [
-      60100
-    ],
-    "cycles_tandy": [
-      48468
-    ]
+  "targets": {
+    "cycles_ega": {
+      "start": 59990,
+      "end": 60107
+    },
+    "cycles_cga": {
+      "start": 49904,
+      "end": 50021
+    },
+    "cycles_tandy": {
+      "start": 48358,
+      "end": 48475
+    }
   }
 }

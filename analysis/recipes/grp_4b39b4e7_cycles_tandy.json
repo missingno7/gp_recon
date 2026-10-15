@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "grp_4b39b4e7_cycles_tandy",
+  "source": "src/engine/graphics/grp_4b39b4e7_cycles_tandy.asm",
+  "source_sha256": "9a7396018e853200c4492614109935e66185152e361a5416626ac36b10dc6521",
+  "profile": "masm510",
+  "public": "_grp_4b39b4e7",
+  "expected_fixups": [
+    {
+      "offset": 196,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "CYCLES_TANDY_TEXT",
+      "frame": "CYCLES_TANDY_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_tandy": {
+      "start": 60298,
+      "end": 60502
+    }
+  }
+}

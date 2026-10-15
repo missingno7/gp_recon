@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "id": "grp_556ca7f8",
+  "source": "src/cycles/engine/grp_556ca7f8.asm",
+  "source_sha256": "ed88959ce4cf6761fee6bbd932bc4cd86c5f63c24cd31f54a08cf7df7d58c911",
+  "profile": "masm510",
+  "public": "_grp_556ca7f8",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_09F92",
+      "frame": "_FN_CYCLES_CGA_09F92"
+    },
+    {
+      "offset": 58,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_09F92",
+      "frame": "_FN_CYCLES_CGA_09F92"
+    },
+    {
+      "offset": 135,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_09F92",
+      "frame": "_FN_CYCLES_CGA_09F92"
+    },
+    {
+      "offset": 192,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_12316",
+      "frame": "_FN_CYCLES_CGA_12316"
+    },
+    {
+      "offset": 216,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_12316",
+      "frame": "_FN_CYCLES_CGA_12316"
+    },
+    {
+      "offset": 240,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_12316",
+      "frame": "_FN_CYCLES_CGA_12316"
+    },
+    {
+      "offset": 264,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_12316",
+      "frame": "_FN_CYCLES_CGA_12316"
+    },
+    {
+      "offset": 288,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_12316",
+      "frame": "_FN_CYCLES_CGA_12316"
+    },
+    {
+      "offset": 296,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_059C2",
+      "frame": "_FN_CYCLES_CGA_059C2"
+    },
+    {
+      "offset": 301,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CYCLES_MAIN_TEXT",
+      "frame": "_CYCLES_MAIN_TEXT"
+    },
+    {
+      "offset": 311,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_05ADA",
+      "frame": "_FN_CYCLES_CGA_05ADA"
+    },
+    {
+      "offset": 324,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_07224",
+      "frame": "_FN_CYCLES_CGA_07224"
+    },
+    {
+      "offset": 346,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_05ADA",
+      "frame": "_FN_CYCLES_CGA_05ADA"
+    },
+    {
+      "offset": 354,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_02944",
+      "frame": "_CSEG_A7F8"
+    },
+    {
+      "offset": 357,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_71323DE6",
+      "frame": "_GRP_71323DE6"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 625,
+      "end": 990
+    }
+  }
+}

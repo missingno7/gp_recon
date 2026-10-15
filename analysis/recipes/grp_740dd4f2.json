@@ -1,43 +1,32 @@
 {
   "schema": 1,
   "id": "grp_740dd4f2",
-  "source": "src/cycles/engine/trim_trailing_spaces.c",
-  "source_sha256": "87830821c37359c0e764240d79250ea01c4de78c992d34d0dc123d17f7f82f78",
+  "source": "src/cycles/engine/menu_services_module.c",
+  "source_sha256": "ecef782d06cdd1298def858c0c4143e0727ea7924f6779d87bd32b0bb8fb6f1d",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_740dd4f2",
-  "targets": {
-    "cycles_cga": {
-      "start": 64884,
-      "end": 64942
-    },
-    "cycles_ega": {
-      "start": 74972,
-      "end": 75030
-    },
-    "cycles_tandy": {
-      "start": 63340,
-      "end": 63398
-    }
-  },
   "expected_fixups": [
     {
       "offset": 11,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_grp_5ca87e84",
-      "frame": "_grp_5ca87e84",
-      "self_relative": false
+      "frame": "_grp_5ca87e84"
     }
   ],
-  "expected_relocations": {
-    "cycles_cga": [
-      64897
-    ],
-    "cycles_ega": [
-      74985
-    ],
-    "cycles_tandy": [
-      63353
-    ]
+  "targets": {
+    "cycles_ega": {
+      "start": 74972,
+      "end": 75030
+    },
+    "cycles_cga": {
+      "start": 64884,
+      "end": 64942
+    },
+    "cycles_tandy": {
+      "start": 63340,
+      "end": 63398
+    }
   }
 }

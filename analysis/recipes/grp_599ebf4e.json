@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "grp_599ebf4e",
+  "source": "src/cycles/engine/grp_599ebf4e.asm",
+  "source_sha256": "900b423b5b5167ee793c6fb6695887ffdbbcab5127dc22dae4a4bdb9df8a5406",
+  "profile": "masm510",
+  "public": "_grp_599ebf4e",
+  "expected_fixups": [
+    {
+      "offset": 41,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_BF4E",
+      "frame": "_CSEG_BF4E"
+    },
+    {
+      "offset": 92,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_09C6B296",
+      "frame": "_GRP_09C6B296"
+    },
+    {
+      "offset": 113,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_BF4E",
+      "frame": "_CSEG_BF4E"
+    },
+    {
+      "offset": 138,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_63468620",
+      "frame": "_GRP_63468620"
+    },
+    {
+      "offset": 210,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_63468620",
+      "frame": "_GRP_63468620"
+    },
+    {
+      "offset": 260,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_E22A6934",
+      "frame": "_GRP_E22A6934"
+    },
+    {
+      "offset": 292,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_09C6B296",
+      "frame": "_GRP_09C6B296"
+    },
+    {
+      "offset": 317,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_BF4E",
+      "frame": "_CSEG_BF4E"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 11864,
+      "end": 12190
+    }
+  }
+}

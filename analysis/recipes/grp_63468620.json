@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "grp_63468620",
+  "source": "src/cycles/engine/grp_63468620.asm",
+  "source_sha256": "0077b541f9335317da9878a6e0b3c87b883586323f58b399ee2af30107b520a9",
+  "profile": "masm510",
+  "public": "_grp_63468620",
+  "expected_fixups": [
+    {
+      "offset": 61,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_8620",
+      "frame": "_CSEG_8620"
+    },
+    {
+      "offset": 135,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_04FD6",
+      "frame": "_FN_CYCLES_CGA_04FD6"
+    },
+    {
+      "offset": 186,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_3DE068C9",
+      "frame": "_CSEG_8620"
+    },
+    {
+      "offset": 255,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_09C6B296",
+      "frame": "_GRP_09C6B296"
+    },
+    {
+      "offset": 288,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_GRP_1A9A5E95"
+    },
+    {
+      "offset": 320,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_09C6B296",
+      "frame": "_GRP_09C6B296"
+    },
+    {
+      "offset": 336,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_8620",
+      "frame": "_CSEG_8620"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 12450,
+      "end": 12799
+    }
+  }
+}

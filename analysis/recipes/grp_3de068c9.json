@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "grp_3de068c9",
+  "source": "src/cycles/engine/grp_3de068c9.asm",
+  "source_sha256": "9ee70874d6c019a62198a877593cfeffb7d2d6abde7d913b377140607758f407",
+  "profile": "masm510",
+  "public": "_grp_3de068c9",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A608",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A6A8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 36,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_69AC66A9",
+      "frame": "_GRP_69AC66A9"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 16436,
+      "end": 16546
+    },
+    "cycles_ega": {
+      "start": 16758,
+      "end": 16868
+    },
+    "cycles_tandy": {
+      "start": 16426,
+      "end": 16536
+    }
+  }
+}

@@ -1,69 +1,64 @@
 {
   "schema": 1,
   "id": "grp_15d06500",
-  "source": "src/cycles/engine/store_vertex.c",
-  "source_sha256": "2a9ba58d01e9c17fa18424fd2c2a7b44ace4f3b61d39aa11213e9ac6ecd2da4a",
+  "source": "src/cycles/engine/control_flow_module.c",
+  "source_sha256": "f52cc38e5355ee705a25d97917865a0a97dff55e72ecb80cb31e11771974d6e0",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_15d06500",
-  "targets": {
-    "cycles_cga": {
-      "start": 74890,
-      "end": 74946
-    },
-    "cycles_ega": {
-      "start": 84954,
-      "end": 85010
-    },
-    "cycles_tandy": {
-      "start": 73346,
-      "end": 73402
-    }
-  },
   "expected_fixups": [
     {
       "offset": 36,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_09966",
-      "frame": "_g_09966",
-      "self_relative": false
+      "frame": "_g_09966"
     },
     {
       "offset": 24,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_0996c",
-      "frame": "_g_0996c",
-      "self_relative": false
+      "frame": "_g_0996c"
     },
     {
       "offset": 19,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_0996c",
-      "frame": "_g_0996c",
-      "self_relative": false
+      "frame": "_g_0996c"
     },
     {
       "offset": 15,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_0996a",
-      "frame": "_g_0996a",
-      "self_relative": false
+      "frame": "_g_0996a"
     },
     {
       "offset": 9,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_0996e",
-      "frame": "_g_0996e",
-      "self_relative": false
+      "frame": "_g_0996e"
     }
   ],
-  "expected_relocations": {
-    "cycles_cga": [],
-    "cycles_ega": [],
-    "cycles_tandy": []
+  "targets": {
+    "cycles_ega": {
+      "start": 84954,
+      "end": 85010
+    },
+    "cycles_cga": {
+      "start": 74890,
+      "end": 74946
+    },
+    "cycles_tandy": {
+      "start": 73346,
+      "end": 73402
+    }
   }
 }

@@ -1,99 +1,88 @@
 {
   "schema": 1,
   "id": "grp_944fa82f",
-  "source": "src/cycles/engine/setup_scene.c",
-  "source_sha256": "5083516ce8fc24a317b783402754fc7326b5c5cce1c1f53402133f5f367698f7",
+  "source": "src/cycles/engine/event_menu_module.c",
+  "source_sha256": "e73d7723e04d617956f2f0e02bca62ad63814978b523972012abd8239657dcbc",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_944fa82f",
-  "targets": {
-    "cycles_cga": {
-      "start": 58930,
-      "end": 59013
-    }
-  },
   "expected_fixups": [
     {
       "offset": 78,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_06412",
-      "frame": "_fn_cycles_cga_06412",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_06412"
     },
     {
       "offset": 70,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_072ee",
-      "frame": "_fn_cycles_cga_072ee",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_072ee"
     },
     {
       "offset": 59,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_06403",
-      "frame": "_fn_cycles_cga_06403",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_06403"
     },
     {
       "offset": 51,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_grp_fecf1db3",
-      "frame": "_grp_fecf1db3",
-      "self_relative": false
+      "frame": "_grp_fecf1db3"
     },
     {
       "offset": 35,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_09f14",
-      "frame": "_fn_cycles_cga_09f14",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_09f14"
     },
     {
       "offset": 20,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_grp_e76f1ca2",
-      "frame": "_grp_e76f1ca2",
-      "self_relative": false
+      "frame": "_grp_e76f1ca2"
     },
     {
       "offset": 9,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_0763a",
-      "frame": "_fn_cycles_cga_0763a",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_0763a"
     },
     {
       "offset": 6,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_b9ea",
-      "frame": "_g_b9ea",
-      "self_relative": false
+      "frame": "_g_b9ea"
     },
     {
       "offset": 2,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_b9ec",
-      "frame": "_g_b9ec",
-      "self_relative": false
+      "frame": "_g_b9ec"
     }
   ],
-  "expected_relocations": {
-    "cycles_cga": [
-      59010,
-      59002,
-      58991,
-      58983,
-      58967,
-      58952,
-      58941
-    ]
+  "targets": {
+    "cycles_cga": {
+      "start": 58930,
+      "end": 59013
+    }
   }
 }

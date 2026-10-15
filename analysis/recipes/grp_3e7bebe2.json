@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "grp_3e7bebe2",
+  "source": "src/cycles/engine/grp_3e7bebe2.asm",
+  "source_sha256": "bfe10f5d01462492fb311f0948a956d6ea454841ded402c9d02e9d14e9d5e70e",
+  "profile": "masm510",
+  "public": "_grp_3e7bebe2",
+  "expected_fixups": [
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_95B7",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_959A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 22,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_95C5",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 31,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_95C6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 40,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_95C7",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 49,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_95CB",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 58,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_95CF",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 67,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_95CE",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 76,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_95CD",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 85,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_95C9",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 97,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_0600E",
+      "frame": "_FN_CYCLES_CGA_0600E"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 24488,
+      "end": 24590
+    },
+    "cycles_ega": {
+      "start": 24472,
+      "end": 24574
+    },
+    "cycles_tandy": {
+      "start": 24478,
+      "end": 24580
+    }
+  }
+}

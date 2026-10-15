@@ -1,155 +1,120 @@
 {
   "schema": 1,
   "id": "grp_1c2275e7",
-  "source": "src/cycles/engine/intro_text.c",
-  "source_sha256": "1ed0cccc9dd2cfda6293f2250fdf7f5bacf300887b2f88e4b5c22beabb5f6f5f",
+  "source": "src/cycles/engine/course_render_module.c",
+  "source_sha256": "ce884670b87b6e580dded33f9da66d73fb930acd8c38c82f6123e87fe54329b4",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_1c2275e7",
-  "targets": {
-    "cycles_cga": {
-      "start": 67308,
-      "end": 67384
-    },
-    "cycles_ega": {
-      "start": 77396,
-      "end": 77472
-    },
-    "cycles_tandy": {
-      "start": 65764,
-      "end": 65840
-    }
-  },
   "expected_fixups": [
     {
       "offset": 71,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_059e2",
-      "frame": "_fn_cycles_cga_059e2",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_059e2"
     },
     {
       "offset": 63,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_05ef9",
-      "frame": "_fn_cycles_cga_05ef9",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_05ef9"
     },
     {
       "offset": 54,
       "loc": "base16",
       "width": 2,
+      "self_relative": false,
       "target": "_intro_text_three",
-      "frame": "_intro_text_three",
-      "self_relative": false
+      "frame": "_intro_text_three"
     },
     {
       "offset": 51,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_intro_text_three",
-      "frame": "_intro_text_three",
-      "self_relative": false
+      "frame": "_intro_text_three"
     },
     {
       "offset": 43,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_05ef9",
-      "frame": "_fn_cycles_cga_05ef9",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_05ef9"
     },
     {
       "offset": 34,
       "loc": "base16",
       "width": 2,
+      "self_relative": false,
       "target": "_intro_text_two",
-      "frame": "_intro_text_two",
-      "self_relative": false
+      "frame": "_intro_text_two"
     },
     {
       "offset": 31,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_intro_text_two",
-      "frame": "_intro_text_two",
-      "self_relative": false
+      "frame": "_intro_text_two"
     },
     {
       "offset": 23,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_05ef9",
-      "frame": "_fn_cycles_cga_05ef9",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_05ef9"
     },
     {
       "offset": 14,
       "loc": "base16",
       "width": 2,
+      "self_relative": false,
       "target": "_intro_text_one",
-      "frame": "_intro_text_one",
-      "self_relative": false
+      "frame": "_intro_text_one"
     },
     {
       "offset": 11,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_intro_text_one",
-      "frame": "_intro_text_one",
-      "self_relative": false
+      "frame": "_intro_text_one"
     },
     {
       "offset": 6,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_1007e",
-      "frame": "_fn_cycles_cga_1007e",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_1007e"
     },
     {
       "offset": 1,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_10024",
-      "frame": "_fn_cycles_cga_10024",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_10024"
     }
   ],
-  "expected_relocations": {
-    "cycles_cga": [
-      67381,
-      67373,
-      67362,
-      67353,
-      67342,
-      67333,
-      67322,
-      67316,
-      67311
-    ],
-    "cycles_ega": [
-      77469,
-      77461,
-      77450,
-      77441,
-      77430,
-      77421,
-      77410,
-      77404,
-      77399
-    ],
-    "cycles_tandy": [
-      65837,
-      65829,
-      65818,
-      65809,
-      65798,
-      65789,
-      65778,
-      65772,
-      65767
-    ]
+  "targets": {
+    "cycles_ega": {
+      "start": 77396,
+      "end": 77472
+    },
+    "cycles_cga": {
+      "start": 67308,
+      "end": 67384
+    },
+    "cycles_tandy": {
+      "start": 65764,
+      "end": 65840
+    }
   }
 }

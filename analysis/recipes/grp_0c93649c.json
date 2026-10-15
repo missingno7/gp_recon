@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "grp_0c93649c",
+  "source": "src/cycles/engine/grp_0c93649c.asm",
+  "source_sha256": "960b36ec1e8d7d2126828d906e952aabcb33a9f9ad1268271019650ecc42a7af",
+  "profile": "masm510",
+  "public": "_grp_0c93649c",
+  "expected_fixups": [
+    {
+      "offset": 41,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_GRP_1A9A5E95"
+    },
+    {
+      "offset": 63,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_649C",
+      "frame": "_CSEG_649C"
+    },
+    {
+      "offset": 116,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_649C",
+      "frame": "_CSEG_649C"
+    },
+    {
+      "offset": 191,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_649C",
+      "frame": "_CSEG_649C"
+    },
+    {
+      "offset": 201,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_649C",
+      "frame": "_CSEG_649C"
+    },
+    {
+      "offset": 215,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_649C",
+      "frame": "_CSEG_649C"
+    },
+    {
+      "offset": 249,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_GRP_1A9A5E95"
+    },
+    {
+      "offset": 315,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_GRP_1A9A5E95"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 20474,
+      "end": 20860
+    }
+  }
+}

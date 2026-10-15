@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "grp_4896bb94",
+  "source": "src/cycles/engine/conversion_input_module.c",
+  "source_sha256": "060ce59312eb4fbd656c88e286fdc6754baac070408cd0628e4ca9f3e5195292",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_4896bb94",
+  "expected_fixups": [
+    {
+      "offset": 31,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "GRP_77E01831",
+      "frame": "GRP_77E01831"
+    },
+    {
+      "offset": 24,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "GRP_183E807A",
+      "frame": "GRP_183E807A"
+    },
+    {
+      "offset": 16,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "FN_CYCLES_EGA_03C9C",
+      "frame": "FN_CYCLES_EGA_03C9C"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 81818,
+      "end": 81855
+    },
+    "cycles_cga": {
+      "start": 71730,
+      "end": 71767
+    },
+    "cycles_tandy": {
+      "start": 70186,
+      "end": 70223
+    }
+  }
+}

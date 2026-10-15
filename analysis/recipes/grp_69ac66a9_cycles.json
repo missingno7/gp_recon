@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "grp_69ac66a9_cycles",
+  "source": "src/engine/data/grp_69ac66a9_cycles.asm",
+  "source_sha256": "261e6d69ae947b8b0b70c257c2d7e659a2112b267c46ec3019b3787894c90909",
+  "profile": "masm510",
+  "public": "_grp_69ac66a9",
+  "expected_fixups": [
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A738",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_D2BE94AB",
+      "frame": "INIT_TABLE_TEXT"
+    },
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A738",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A73A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 52,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A73E",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 62,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_2C45569D",
+      "frame": "INIT_TABLE_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 19704,
+      "end": 19774
+    },
+    "cycles_ega": {
+      "start": 20026,
+      "end": 20096
+    },
+    "cycles_tandy": {
+      "start": 19694,
+      "end": 19764
+    }
+  }
+}

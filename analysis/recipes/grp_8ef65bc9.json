@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "grp_8ef65bc9",
+  "source": "src/cycles/math/grp_8ef65bc9.asm",
+  "source_sha256": "34b46f3ac6b4fa85ae003c6b514b92e7e3dfdc9d3d24eb3c17f7ca0c3401935f",
+  "profile": "masm510",
+  "public": "_grp_8ef65bc9",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 15154,
+      "end": 15175
+    },
+    "cycles_ega": {
+      "start": 15476,
+      "end": 15497
+    },
+    "cycles_tandy": {
+      "start": 15144,
+      "end": 15165
+    }
+  }
+}

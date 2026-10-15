@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "grp_f816e763",
+  "source": "src/cycles/physics/grp_f816e763.asm",
+  "source_sha256": "a84440d2ba5ac3ab9a4058086c9a75a7fca315f72e67eb4fb8ee2fe2575b5b76",
+  "profile": "masm510",
+  "public": "_grp_f816e763",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 1803,
+      "end": 1837
+    },
+    "cycles_ega": {
+      "start": 1807,
+      "end": 1841
+    },
+    "cycles_tandy": {
+      "start": 1807,
+      "end": 1841
+    }
+  }
+}

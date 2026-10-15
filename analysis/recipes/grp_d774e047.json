@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "grp_d774e047",
+  "source": "src/cycles/io/grp_d774e047.asm",
+  "source_sha256": "fd5d85abaf41f27d270ab18283acf00a8e527b3da3ec48e298aa909f80bf4df3",
+  "profile": "masm510",
+  "public": "_grp_d774e047",
+  "expected_fixups": [
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_ERROR_COUNT",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_BUFFER",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 30,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_BYTE",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 33,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_63468620",
+      "frame": "_GRP_63468620"
+    },
+    {
+      "offset": 45,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_ERROR_COUNT",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 56,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_BUFFER",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 64,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_BYTE",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 78,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_ERROR_COUNT",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 88,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OUTPUT_BYTES_TOTAL",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 18814,
+      "end": 18910
+    },
+    "cycles_ega": {
+      "start": 19136,
+      "end": 19232
+    },
+    "cycles_tandy": {
+      "start": 18804,
+      "end": 18900
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "grp_dae450d1",
+  "source": "src/cycles/physics/grp_dae450d1.asm",
+  "source_sha256": "7fbebf3377921ea343031669897126aec7f5d179c3d5b542374a58c267ca6bd3",
+  "profile": "masm510",
+  "public": "_grp_dae450d1",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 1837,
+      "end": 1869
+    },
+    "cycles_ega": {
+      "start": 1841,
+      "end": 1873
+    },
+    "cycles_tandy": {
+      "start": 1841,
+      "end": 1873
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "id": "grp_e2d70b8a",
+  "source": "src/cycles/engine/grp_e2d70b8a.asm",
+  "source_sha256": "506b094c7d5d5af536df9a310d3a4e14a8ad64e2b598e74c90ac102252accf4f",
+  "profile": "masm510",
+  "public": "_grp_e2d70b8a",
+  "expected_fixups": [
+    {
+      "offset": 16,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B21E",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 20,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B212",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B212",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 34,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B218",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 49,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B218",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 56,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B21E",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 63,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B218",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 80,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B218",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 93,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B218",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 98,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B20A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 119,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B22C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 123,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B228",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 127,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B21E",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 195,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_5FCB87B2",
+      "frame": "_GRP_5FCB87B2"
+    },
+    {
+      "offset": 204,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B21C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 211,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_STRLEN",
+      "frame": "_STRLEN"
+    },
+    {
+      "offset": 220,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B224",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 246,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B210",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 273,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B21E",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 279,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B214",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 283,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B21A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 303,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_FBF668D5",
+      "frame": "_CSEG_E2D"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 18010,
+      "end": 18324
+    },
+    "cycles_ega": {
+      "start": 18332,
+      "end": 18646
+    },
+    "cycles_tandy": {
+      "start": 18000,
+      "end": 18314
+    }
+  }
+}

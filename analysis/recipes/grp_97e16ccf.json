@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "grp_97e16ccf",
+  "source": "src/cycles/engine/grp_97e16ccf.asm",
+  "source_sha256": "8ef789406885664f84363080cf5c8d27c452aae94ac1a16f6a2ac903bb2daf8f",
+  "profile": "masm510",
+  "public": "_grp_97e16ccf",
+  "expected_fixups": [
+    {
+      "offset": 20,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_K_VEC08_HANDLER_OFFSET",
+      "frame": "_K_VEC08_HANDLER_OFFSET"
+    },
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OLD_VEC08_OFFSET",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OLD_VEC08_SEGMENT",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 42,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_K_VEC08_HANDLER_OFFSET",
+      "frame": "_K_VEC08_HANDLER_OFFSET"
+    },
+    {
+      "offset": 56,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OLD_VEC16_OFFSET",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 65,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OLD_VEC16_SEGMENT",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 72,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_K_VEC16_HANDLER_OFFSET",
+      "frame": "_K_VEC16_HANDLER_OFFSET"
+    },
+    {
+      "offset": 88,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_VECTOR_STATE_BUFFER",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 25126,
+      "end": 25226
+    },
+    "cycles_ega": {
+      "start": 25110,
+      "end": 25210
+    },
+    "cycles_tandy": {
+      "start": 25116,
+      "end": 25216
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "grp_ad63f6b1",
+  "source": "src/cycles/math/grp_ad63f6b1.asm",
+  "source_sha256": "68cc8e4a11baee1c49978cc0e2dcbd55a1b70c01ee1f04c6b2fa81e3d9678903",
+  "profile": "masm510",
+  "public": "_grp_ad63f6b1",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 1891,
+      "end": 1936
+    },
+    "cycles_ega": {
+      "start": 1895,
+      "end": 1940
+    },
+    "cycles_tandy": {
+      "start": 1895,
+      "end": 1940
+    }
+  }
+}

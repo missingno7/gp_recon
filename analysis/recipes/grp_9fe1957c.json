@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "grp_9fe1957c",
+  "source": "src/cycles/io/grp_9fe1957c.asm",
+  "source_sha256": "83b33156c8887dc3e0d2689c88b640a4daa2711fc1afb0b79c7bf4c1afcd6487",
+  "profile": "masm510",
+  "public": "_grp_9fe1957c",
+  "expected_fixups": [
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 8,
+      "self_relative": false,
+      "target": "_G_TABLE",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 16,
+      "self_relative": false,
+      "target": "_G_ACTIVE",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 28,
+      "self_relative": false,
+      "target": "_G_LIMIT",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 35,
+      "self_relative": false,
+      "target": "_G_BPREAD",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 43,
+      "self_relative": false,
+      "target": "_G_BPOUT",
+      "width": 2
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 8973,
+      "end": 9027
+    },
+    "cycles_ega": {
+      "start": 9295,
+      "end": 9349
+    },
+    "cycles_tandy": {
+      "start": 8963,
+      "end": 9017
+    }
+  }
+}

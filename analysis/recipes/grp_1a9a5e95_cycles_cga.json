@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "grp_1a9a5e95_cycles_cga",
+  "source": "src/engine/filesystem/grp_1a9a5e95_cycles_cga.asm",
+  "source_sha256": "5224e3b7f46cf0ebc8f4dc8f36e9b0f16649737d8b628bcb93d97f812856d7ac",
+  "profile": "masm510",
+  "public": "_grp_1a9a5e95",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 116,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5BA",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 120,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_03FC3",
+      "frame": "SEEK_FILE_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 19544,
+      "end": 19666
+    }
+  }
+}

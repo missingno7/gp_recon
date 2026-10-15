@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "grp_06026d94",
+  "source": "src/cycles/engine/grp_06026d94.asm",
+  "source_sha256": "fe45e75f38c793a1f4d8a88ab86cb7c614732f801f4faca75a1296b0f399df51",
+  "profile": "masm510",
+  "public": "_grp_06026d94",
+  "expected_fixups": [
+    {
+      "offset": 31,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_94D6A586",
+      "frame": "_GRP_94D6A586"
+    },
+    {
+      "offset": 47,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A744",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 50,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A746",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A74A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 59,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A74A",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 13856,
+      "end": 13966
+    },
+    "cycles_ega": {
+      "start": 14178,
+      "end": 14288
+    },
+    "cycles_tandy": {
+      "start": 13846,
+      "end": 13956
+    }
+  }
+}

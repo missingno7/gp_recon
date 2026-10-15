@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "id": "grp_3f988b0e",
+  "source": "src/cycles/engine/grp_3f988b0e.asm",
+  "source_sha256": "43b021d99b8215f4ba4669c04bfc8688dcf4e033e3eb2a51eebf3b9e07a23ca9",
+  "profile": "masm510",
+  "public": "_grp_3f988b0e",
+  "expected_fixups": [
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4568",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_2108",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_2162",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 21,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_2078",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 24,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_207A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_2108",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 33,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_2162",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 56,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4552",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 59,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_2078",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 64,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_598C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 73,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_2102",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 77,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_216A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 81,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4568",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 92,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_599C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 163,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_08BEA",
+      "frame": "_FN_CYCLES_CGA_08BEA"
+    },
+    {
+      "offset": 171,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_08BEA",
+      "frame": "_FN_CYCLES_CGA_08BEA"
+    },
+    {
+      "offset": 179,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_08BEA",
+      "frame": "_FN_CYCLES_CGA_08BEA"
+    },
+    {
+      "offset": 187,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_08BEA",
+      "frame": "_FN_CYCLES_CGA_08BEA"
+    },
+    {
+      "offset": 195,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_08BEA",
+      "frame": "_FN_CYCLES_CGA_08BEA"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 4211,
+      "end": 4414
+    },
+    "cycles_ega": {
+      "start": 4467,
+      "end": 4670
+    },
+    "cycles_tandy": {
+      "start": 4200,
+      "end": 4403
+    }
+  }
+}

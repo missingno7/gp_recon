@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "grp_4b75cabe",
+  "source": "src/cycles/engine/grp_4b75cabe.asm",
+  "source_sha256": "f72ded1c8fb1db0de49e867755140c959b7e1556c327f446ade8f50628ac78c4",
+  "profile": "masm510",
+  "public": "_grp_4b75cabe",
+  "expected_fixups": [
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TIME_TICKS",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 38,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TIME_SECONDS",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 49,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TIME_MINUTES",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 52,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TIME_TEXT",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 55,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TIME_MINUTES",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 58,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_4B7",
+      "frame": "_CSEG_4B7"
+    },
+    {
+      "offset": 68,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TIME_SECONDS",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 71,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_4B7",
+      "frame": "_CSEG_4B7"
+    },
+    {
+      "offset": 77,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TIME_TICKS",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 80,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_4B7",
+      "frame": "_CSEG_4B7"
+    },
+    {
+      "offset": 94,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TIME_TEXT",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 7098,
+      "end": 7196
+    },
+    "cycles_ega": {
+      "start": 7388,
+      "end": 7486
+    },
+    "cycles_tandy": {
+      "start": 7088,
+      "end": 7186
+    }
+  }
+}

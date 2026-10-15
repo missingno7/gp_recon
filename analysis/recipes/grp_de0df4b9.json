@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "grp_de0df4b9",
+  "source": "src/cycles/io/grp_de0df4b9.asm",
+  "source_sha256": "dac62e32ec085dd1f500d3e7e86824fd558b6445b2591d1a249b1bb03bc5a6be",
+  "profile": "masm510",
+  "public": "_grp_de0df4b9",
+  "expected_fixups": [
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_FILE_META",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_FILE_META",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_02B5F",
+      "frame": "_CSEG_DE0"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_FILE_META",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 16,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_FILE_META",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_02B5F",
+      "frame": "_CSEG_DE0"
+    },
+    {
+      "offset": 22,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_03D34",
+      "frame": "_CSEG_DE0"
+    },
+    {
+      "offset": 49,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OPEN_FLAGS",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 62,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_02B32",
+      "frame": "_CSEG_DE0"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 10987,
+      "end": 11058
+    },
+    "cycles_ega": {
+      "start": 11309,
+      "end": 11380
+    },
+    "cycles_tandy": {
+      "start": 10977,
+      "end": 11048
+    }
+  }
+}

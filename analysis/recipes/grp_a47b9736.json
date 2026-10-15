@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "grp_a47b9736",
+  "source": "src/cycles/io/grp_a47b9736.asm",
+  "source_sha256": "5e65466f5525a74f648a6ecb7370e31c32ea07c607eb53a9348f0246394c7ac1",
+  "profile": "masm510",
+  "public": "_grp_a47b9736",
+  "expected_fixups": [
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_DTA",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 25,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_FILENAME",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 29,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_SPLIT_PTR",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 57,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_SPLIT_PTR",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TRAILER",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_SPLIT_PTR",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 79,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_FILENAME",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 22682,
+      "end": 22772
+    },
+    "cycles_ega": {
+      "start": 22666,
+      "end": 22756
+    },
+    "cycles_tandy": {
+      "start": 22672,
+      "end": 22762
+    }
+  }
+}

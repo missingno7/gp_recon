@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "grp_7f64e2f7",
+  "source": "src/cycles/io/grp_7f64e2f7.asm",
+  "source_sha256": "bb9a99285afb957ceadf504c29726dbdc81cfd8e1a54841b69e8ad85d473d2c2",
+  "profile": "masm510",
+  "public": "_grp_7f64e2f7",
+  "expected_fixups": [
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 10,
+      "self_relative": false,
+      "target": "_G_A2F0",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 14,
+      "self_relative": false,
+      "target": "_G_A2EE",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 32,
+      "self_relative": false,
+      "target": "_G_BLOCK_NOT_FOUND",
+      "width": 2
+    },
+    {
+      "frame": "_CSEG_7F64",
+      "loc": "pointer32",
+      "offset": 36,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_0559E",
+      "width": 4
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 47,
+      "self_relative": false,
+      "target": "_G_A2F0",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 62,
+      "self_relative": false,
+      "target": "_G_A2F0",
+      "width": 2
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 28424,
+      "end": 28492
+    },
+    "cycles_ega": {
+      "start": 28408,
+      "end": 28476
+    },
+    "cycles_tandy": {
+      "start": 28414,
+      "end": 28482
+    }
+  }
+}

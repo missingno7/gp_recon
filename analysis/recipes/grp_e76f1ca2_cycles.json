@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "grp_e76f1ca2_cycles",
+  "source": "src/cycles/graphics/grp_e76f1ca2.asm",
+  "source_sha256": "95d63eed96cb13f7096f3f46b1a31d2848596980035081235b8055e269d8de23",
+  "profile": "masm510",
+  "public": "_grp_e76f1ca2",
+  "expected_fixups": [
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_DISP5550_G_4802",
+      "frame": "FILL_TEXT"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4812",
+      "frame": "FILL_TEXT"
+    },
+    {
+      "offset": 20,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4810",
+      "frame": "FILL_TEXT"
+    },
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480E",
+      "frame": "FILL_TEXT"
+    },
+    {
+      "offset": 37,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480C",
+      "frame": "FILL_TEXT"
+    },
+    {
+      "offset": 52,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480A",
+      "frame": "FILL_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 32830,
+      "end": 32905
+    },
+    "cycles_tandy": {
+      "start": 32560,
+      "end": 32635
+    }
+  }
+}

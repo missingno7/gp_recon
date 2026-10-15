@@ -1,7 +1,7 @@
 .8086
 DISP5550_TEXT SEGMENT WORD PUBLIC 'CODE'
         ASSUME CS:DISP5550_TEXT
-        EXTRN _G_4802:WORD, _G_2B84:WORD
+        EXTRN _DISP5550_G_4802:WORD, _G_2B84:WORD
         PUBLIC _grp_03119b4d
 _grp_03119b4d PROC FAR
         push bp
@@ -26,7 +26,7 @@ _grp_03119b4d PROC FAR
         mov byte ptr [bp-0Eh],al
         mov ax,word ptr [si+8]
         mov word ptr [bp-0Ah],ax
-        mov ax,word ptr cs:[_G_4802]
+        mov ax,word ptr cs:[_DISP5550_G_4802]
         mov es,ax
         mov bx,word ptr [si+0Eh]
         shl bx,1

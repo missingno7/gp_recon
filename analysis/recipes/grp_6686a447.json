@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "grp_6686a447",
+  "source": "src/cycles/io/grp_6686a447.asm",
+  "source_sha256": "cda11dd5073e9a352e900b2c3b977544d0ccd1ec1e6df242b140b3c712dfa423",
+  "profile": "masm510",
+  "public": "_grp_6686a447",
+  "expected_fixups": [
+    {
+      "offset": 3,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_91D2",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_91D4",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 40,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_K_VECTOR_OFFSET",
+      "frame": "_K_VECTOR_OFFSET"
+    },
+    {
+      "offset": 45,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_919A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 58,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_919C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 65,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_K_VECTOR_OFFSET",
+      "frame": "_K_VECTOR_OFFSET"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 23103,
+      "end": 23192
+    },
+    "cycles_ega": {
+      "start": 23087,
+      "end": 23176
+    },
+    "cycles_tandy": {
+      "start": 23093,
+      "end": 23182
+    }
+  }
+}

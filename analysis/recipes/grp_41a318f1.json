@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "grp_41a318f1",
+  "source": "src/cycles/engine/grp_41a318f1.asm",
+  "source_sha256": "7263a5e3fe8e1f33894bf37b74af595c39971efbc949c16e8b5b058cec08522b",
+  "profile": "masm510",
+  "public": "_grp_41a318f1",
+  "expected_fixups": [
+    {
+      "offset": 16,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A610",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A618",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 36,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_04FD6",
+      "frame": "_FN_CYCLES_CGA_04FD6"
+    },
+    {
+      "offset": 51,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A608",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A6A8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 75,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_9A209221",
+      "frame": "_GRP_9A209221"
+    },
+    {
+      "offset": 114,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_K_B58C",
+      "frame": "_K_B58C"
+    },
+    {
+      "offset": 121,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_K_CD32",
+      "frame": "_K_CD32"
+    },
+    {
+      "offset": 131,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_04FD6",
+      "frame": "_FN_CYCLES_CGA_04FD6"
+    },
+    {
+      "offset": 146,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_9A209221",
+      "frame": "_GRP_9A209221"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 16928,
+      "end": 17086
+    },
+    "cycles_ega": {
+      "start": 17250,
+      "end": 17408
+    },
+    "cycles_tandy": {
+      "start": 16918,
+      "end": 17076
+    }
+  }
+}

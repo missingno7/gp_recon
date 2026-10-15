@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "id": "grp_80f217a8",
+  "source": "src/cycles/engine/grp_80f217a8.asm",
+  "source_sha256": "31519a88b4009c83f4146da37e76a249432b6025de1c115c05542a99ebf5b845",
+  "profile": "masm510",
+  "public": "_grp_80f217a8",
+  "expected_fixups": [
+    {
+      "offset": 92,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_0C93649C",
+      "frame": "_GRP_0C93649C"
+    },
+    {
+      "offset": 112,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_9A209221",
+      "frame": "_GRP_9A209221"
+    },
+    {
+      "offset": 142,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_GRP_1A9A5E95"
+    },
+    {
+      "offset": 155,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_17A8",
+      "frame": "_CSEG_17A8"
+    },
+    {
+      "offset": 163,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_17A8",
+      "frame": "_CSEG_17A8"
+    },
+    {
+      "offset": 169,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_17A8",
+      "frame": "_CSEG_17A8"
+    },
+    {
+      "offset": 205,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_3DE068C9",
+      "frame": "_CSEG_17A8"
+    },
+    {
+      "offset": 240,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_GRP_1A9A5E95"
+    },
+    {
+      "offset": 284,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_17A8",
+      "frame": "_CSEG_17A8"
+    },
+    {
+      "offset": 350,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_GRP_1A9A5E95"
+    },
+    {
+      "offset": 376,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_GRP_1A9A5E95"
+    },
+    {
+      "offset": 447,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_17A8",
+      "frame": "_CSEG_17A8"
+    },
+    {
+      "offset": 455,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_17A8",
+      "frame": "_CSEG_17A8"
+    },
+    {
+      "offset": 464,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_17A8",
+      "frame": "_CSEG_17A8"
+    },
+    {
+      "offset": 476,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_A2E49123",
+      "frame": "_GRP_A2E49123"
+    },
+    {
+      "offset": 535,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_77E01831",
+      "frame": "_GRP_77E01831"
+    },
+    {
+      "offset": 542,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_183E807A",
+      "frame": "_GRP_183E807A"
+    },
+    {
+      "offset": 607,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_GRP_1A9A5E95"
+    },
+    {
+      "offset": 625,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_17A8",
+      "frame": "_CSEG_17A8"
+    },
+    {
+      "offset": 640,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_07DC1757",
+      "frame": "_GRP_07DC1757"
+    },
+    {
+      "offset": 654,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_17A8",
+      "frame": "_CSEG_17A8"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 14214,
+      "end": 14910
+    }
+  }
+}

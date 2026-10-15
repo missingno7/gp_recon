@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "grp_4d5be4d1",
+  "source": "src/cycles/video/grp_4d5be4d1.asm",
+  "source_sha256": "78332c6decbfba09f9d9b22a0a6e8cb1a95dd4f5eea4bfe28a812a5e099677b5",
+  "profile": "masm510",
+  "public": "_grp_4d5be4d1",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 21962,
+      "end": 21983
+    },
+    "cycles_ega": {
+      "start": 22284,
+      "end": 22305
+    },
+    "cycles_tandy": {
+      "start": 21952,
+      "end": 21973
+    }
+  }
+}

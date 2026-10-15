@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "id": "grp_5c8b15c8",
+  "source": "src/cycles/engine/grp_5c8b15c8.asm",
+  "source_sha256": "2d6d9a4df4b32207284696a07f48495e4b3e92cfb6e98bf9d1062dfb960667f2",
+  "profile": "masm510",
+  "public": "_grp_5c8b15c8",
+  "expected_fixups": [
+    {
+      "offset": 15,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_0763A",
+      "frame": "_FN_CYCLES_CGA_0763A"
+    },
+    {
+      "offset": 26,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_E76F1CA2",
+      "frame": "_GRP_E76F1CA2"
+    },
+    {
+      "offset": 46,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7A614CEF",
+      "frame": "_GRP_7A614CEF"
+    },
+    {
+      "offset": 56,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_9D44A3BF",
+      "frame": "_GRP_9D44A3BF"
+    },
+    {
+      "offset": 76,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7A614CEF",
+      "frame": "_GRP_7A614CEF"
+    },
+    {
+      "offset": 86,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_9D44A3BF",
+      "frame": "_GRP_9D44A3BF"
+    },
+    {
+      "offset": 106,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7A614CEF",
+      "frame": "_GRP_7A614CEF"
+    },
+    {
+      "offset": 116,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_9D44A3BF",
+      "frame": "_GRP_9D44A3BF"
+    },
+    {
+      "offset": 132,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_0763A",
+      "frame": "_FN_CYCLES_CGA_0763A"
+    },
+    {
+      "offset": 143,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_E76F1CA2",
+      "frame": "_GRP_E76F1CA2"
+    },
+    {
+      "offset": 174,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_0563E",
+      "frame": "_FN_CYCLES_CGA_0563E"
+    },
+    {
+      "offset": 196,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7DE44506",
+      "frame": "_GRP_7DE44506"
+    },
+    {
+      "offset": 204,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_10948",
+      "frame": "_FN_CYCLES_CGA_10948"
+    },
+    {
+      "offset": 235,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7A614CEF",
+      "frame": "_GRP_7A614CEF"
+    },
+    {
+      "offset": 295,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_072EE",
+      "frame": "_FN_CYCLES_CGA_072EE"
+    },
+    {
+      "offset": 315,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_0F3D9549",
+      "frame": "_GRP_0F3D9549"
+    },
+    {
+      "offset": 323,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_06412",
+      "frame": "_FN_CYCLES_CGA_06412"
+    },
+    {
+      "offset": 343,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_0563E",
+      "frame": "_FN_CYCLES_CGA_0563E"
+    },
+    {
+      "offset": 351,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_10948",
+      "frame": "_FN_CYCLES_CGA_10948"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 49340,
+      "end": 49699
+    }
+  }
+}

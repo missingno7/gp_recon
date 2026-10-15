@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "grp_07686202",
+  "source": "src/cycles/engine/upper_screen_module.c",
+  "source_sha256": "3497d449ca98109b8a257000e6dec16f48d302b12ce66569b4442fcbd47bacb5",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_07686202",
+  "expected_fixups": [
+    {
+      "offset": 99,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_fdacd3b7",
+      "frame": "_grp_fdacd3b7"
+    },
+    {
+      "offset": 89,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0457a_pointer",
+      "frame": "_g_0457a_pointer"
+    },
+    {
+      "offset": 80,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_0763a",
+      "frame": "_fn_cycles_cga_0763a"
+    },
+    {
+      "offset": 77,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_b9ea",
+      "frame": "_g_b9ea"
+    },
+    {
+      "offset": 73,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_b9ec",
+      "frame": "_g_b9ec"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_b0f6fa87",
+      "frame": "_grp_b0f6fa87"
+    },
+    {
+      "offset": 46,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_0763a",
+      "frame": "_fn_cycles_cga_0763a"
+    },
+    {
+      "offset": 43,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0457a",
+      "frame": "_g_0457a"
+    },
+    {
+      "offset": 39,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0457c",
+      "frame": "_g_0457c"
+    },
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_fd0b3279",
+      "frame": "_grp_fd0b3279"
+    },
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_9c6141b6",
+      "frame": "_grp_9c6141b6"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 65616,
+      "end": 65724
+    },
+    "cycles_cga": {
+      "start": 55530,
+      "end": 55638
+    },
+    "cycles_tandy": {
+      "start": 53984,
+      "end": 54092
+    }
+  }
+}

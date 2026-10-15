@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "grp_264a47e5",
+  "source": "src/cycles/io/grp_264a47e5.asm",
+  "source_sha256": "018392a71e5ab2e0b598cccfdeee325d580d11506ca54a2a29958cf002afa5c4",
+  "profile": "masm510",
+  "public": "_grp_264a47e5",
+  "expected_fixups": [
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 14,
+      "target": "_G_VEC09_OFF",
+      "width": 2,
+      "self_relative": false
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 27,
+      "target": "_G_VEC09_SEG",
+      "width": 2,
+      "self_relative": false
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 36,
+      "target": "_G_VEC16_OFF",
+      "width": 2,
+      "self_relative": false
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 45,
+      "target": "_G_VEC16_SEG",
+      "width": 2,
+      "self_relative": false
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 25226,
+      "end": 25293
+    },
+    "cycles_ega": {
+      "start": 25210,
+      "end": 25277
+    },
+    "cycles_tandy": {
+      "start": 25216,
+      "end": 25283
+    }
+  }
+}

@@ -2,9 +2,9 @@
 _DATA SEGMENT WORD PUBLIC 'DATA'
 _DATA ENDS
 DGROUP GROUP _DATA
-INITIALIZE_TEXT SEGMENT WORD PUBLIC 'CODE'
-        ASSUME CS:INITIALIZE_TEXT, DS:DGROUP
-        EXTRN _G_A738:WORD, _G_A738_TEXT:WORD, _G_A73A:WORD, _G_A73E:WORD
+INIT_TABLE_TEXT SEGMENT WORD PUBLIC 'CODE'
+        ASSUME CS:INIT_TABLE_TEXT, DS:DGROUP
+        EXTRN _G_A738:WORD, _G_A738:WORD, _G_A73A:WORD, _G_A73E:WORD
         EXTRN _GRP_759F46BF:NEAR, _GRP_2C45569D:NEAR
         PUBLIC _grp_69ac66a9
 _grp_69ac66a9 PROC NEAR
@@ -12,7 +12,7 @@ _grp_69ac66a9 PROC NEAR
         mov bp,sp
         push si
         push di
-        mov bx,OFFSET _G_A738_TEXT
+        mov bx,OFFSET DGROUP:_G_A738
         cmp word ptr [bx],0
         jne short already_initialized
         push ds
@@ -45,5 +45,5 @@ cleanup:
         pop bp
         ret
 _grp_69ac66a9 ENDP
-INITIALIZE_TEXT ENDS
+INIT_TABLE_TEXT ENDS
         END

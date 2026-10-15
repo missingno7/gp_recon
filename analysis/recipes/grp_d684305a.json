@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "grp_d684305a",
+  "source": "src/cycles/io/grp_d684305a.asm",
+  "source_sha256": "19dd9812f1ecd0ab94e531dc65389e700ce5d252e2ec03661bfffbb09f3b1112",
+  "profile": "masm510",
+  "public": "_grp_d684305a",
+  "expected_fixups": [
+    {
+      "frame": "_CSEG_D684",
+      "loc": "offset16",
+      "offset": 30,
+      "target": "_G_CS_CURSOR",
+      "width": 2,
+      "self_relative": false
+    },
+    {
+      "frame": "_CSEG_D684",
+      "loc": "offset16",
+      "offset": 37,
+      "target": "_G_CS_CURSOR",
+      "width": 2,
+      "self_relative": false
+    },
+    {
+      "frame": "_CSEG_D684",
+      "loc": "pointer32",
+      "offset": 45,
+      "target": "_GRP_7F64E2F7",
+      "width": 4,
+      "self_relative": false
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 28906,
+      "end": 28963
+    },
+    "cycles_ega": {
+      "start": 28890,
+      "end": 28947
+    },
+    "cycles_tandy": {
+      "start": 28896,
+      "end": 28953
+    }
+  }
+}

@@ -1,32 +1,32 @@
 {
-  "expected_fixups": [
-    {
-      "frame": "_g_00486",
-      "loc": "offset16",
-      "offset": 13,
-      "self_relative": false,
-      "target": "_g_00486",
-      "width": 2
-    }
-  ],
+  "schema": 1,
   "id": "grp_c9fcab98",
+  "source": "src/cycles/engine/event_menu_module.c",
+  "source_sha256": "e73d7723e04d617956f2f0e02bca62ad63814978b523972012abd8239657dcbc",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_c9fcab98",
-  "schema": 1,
-  "source": "src/cycles/engine/indexed_store.c",
-  "source_sha256": "5cbdfae9a65a0f477208d76825756c3953b8dc71a3a167a36e043efd97f6a9d5",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_00486",
+      "frame": "_g_00486"
+    }
+  ],
   "targets": {
-    "cycles_cga": {
-      "end": 58929,
-      "start": 58910
-    },
     "cycles_ega": {
-      "end": 69017,
-      "start": 68998
+      "start": 68998,
+      "end": 69017
+    },
+    "cycles_cga": {
+      "start": 58910,
+      "end": 58929
     },
     "cycles_tandy": {
-      "end": 57385,
-      "start": 57366
+      "start": 57366,
+      "end": 57385
     }
   }
 }

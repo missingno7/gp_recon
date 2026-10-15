@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "grp_e99c915a",
+  "source": "src/cycles/engine/grp_e99c915a.asm",
+  "source_sha256": "05ff004d5e6332f711a0e3bde5210fb434409f3ea22a64b4bfc6bb97c284393a",
+  "profile": "masm510",
+  "public": "_grp_e99c915a",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A608",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A6A8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 49,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_E99",
+      "frame": "_CSEG_E99"
+    },
+    {
+      "offset": 84,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A608",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 100,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A6A8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 107,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_3DE068C9",
+      "frame": "_CSEG_E99"
+    },
+    {
+      "offset": 134,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_07DC1757",
+      "frame": "_GRP_07DC1757"
+    },
+    {
+      "offset": 175,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CSEG_E99",
+      "frame": "_CSEG_E99"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 12256,
+      "end": 12450
+    },
+    "cycles_ega": {
+      "start": 12578,
+      "end": 12772
+    },
+    "cycles_tandy": {
+      "start": 12246,
+      "end": 12440
+    }
+  }
+}

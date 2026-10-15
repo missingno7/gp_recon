@@ -1,111 +1,104 @@
 {
   "schema": 1,
   "id": "grp_ca7d59e7",
-  "source": "src/cycles/engine/initialize_scroll_state.c",
-  "source_sha256": "7e0b6c4a04fbdbc8d267d1b510a4d1c0762bf46dfe71a9d4023ff4c06223773f",
+  "source": "src/cycles/engine/control_flow_module.c",
+  "source_sha256": "f52cc38e5355ee705a25d97917865a0a97dff55e72ecb80cb31e11771974d6e0",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_ca7d59e7",
-  "targets": {
-    "cycles_cga": {
-      "start": 74782,
-      "end": 74889
-    }
-  },
   "expected_fixups": [
     {
       "offset": 96,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_05ada",
-      "frame": "_fn_cycles_cga_05ada",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_05ada"
     },
     {
       "offset": 91,
       "loc": "base16",
       "width": 2,
+      "self_relative": false,
       "target": "_tail_resource",
-      "frame": "_tail_resource",
-      "self_relative": false
+      "frame": "_tail_resource"
     },
     {
       "offset": 88,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_tail_resource",
-      "frame": "_tail_resource",
-      "self_relative": false
+      "frame": "_tail_resource"
     },
     {
       "offset": 83,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_996c",
-      "frame": "_g_996c",
-      "self_relative": false
+      "frame": "_g_996c"
     },
     {
       "offset": 77,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_996e",
-      "frame": "_g_996e",
-      "self_relative": false
+      "frame": "_g_996e"
     },
     {
       "offset": 73,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_996a",
-      "frame": "_g_996a",
-      "self_relative": false
+      "frame": "_g_996a"
     },
     {
       "offset": 67,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_9966_long",
-      "frame": "_g_9966_long",
-      "self_relative": false
+      "frame": "_g_9966_long"
     },
     {
       "offset": 63,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_9966_long",
-      "frame": "_g_9966_long",
-      "self_relative": false
+      "frame": "_g_9966_long"
     },
     {
       "offset": 55,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_grp_7d3b9038",
-      "frame": "_grp_7d3b9038",
-      "self_relative": false
+      "frame": "_grp_7d3b9038"
     },
     {
       "offset": 11,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_9968",
-      "frame": "_g_9968",
-      "self_relative": false
+      "frame": "_g_9968"
     },
     {
       "offset": 7,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_9966",
-      "frame": "_g_9966",
-      "self_relative": false
+      "frame": "_g_9966"
     }
   ],
-  "expected_relocations": {
-    "cycles_cga": [
-      74880,
-      74873,
-      74839
-    ]
+  "targets": {
+    "cycles_cga": {
+      "start": 74782,
+      "end": 74889
+    }
   }
 }

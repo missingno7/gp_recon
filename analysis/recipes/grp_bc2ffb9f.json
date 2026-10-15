@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "grp_bc2ffb9f",
+  "source": "src/cycles/engine/grp_bc2ffb9f.asm",
+  "source_sha256": "5e20d6c006ec8a050e6b3833224d9fbb52a63e95e8714e3ca871f02cf3a53c8a",
+  "profile": "masm510",
+  "public": "_grp_bc2ffb9f",
+  "expected_fixups": [
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_45A0",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_0074D",
+      "frame": "_FN_CYCLES_CGA_0074D"
+    },
+    {
+      "offset": 67,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_0074D",
+      "frame": "_FN_CYCLES_CGA_0074D"
+    },
+    {
+      "offset": 148,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_459E",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 152,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0F3A",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 1209,
+      "end": 1412
+    }
+  }
+}

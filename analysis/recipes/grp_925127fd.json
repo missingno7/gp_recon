@@ -1,23 +1,23 @@
 {
-  "expected_fixups": [],
+  "schema": 1,
   "id": "grp_925127fd",
+  "source": "src/cycles/engine/menu_services_module.c",
+  "source_sha256": "ecef782d06cdd1298def858c0c4143e0727ea7924f6779d87bd32b0bb8fb6f1d",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_925127fd",
-  "schema": 1,
-  "source": "src/cycles/engine/xor_checksum.c",
-  "source_sha256": "5921ea7209080a1107edb38b04e105dc7074ec97d666043f22836a79934faeb9",
+  "expected_fixups": [],
   "targets": {
-    "cycles_cga": {
-      "end": 64559,
-      "start": 64516
-    },
     "cycles_ega": {
-      "end": 74647,
-      "start": 74604
+      "start": 74604,
+      "end": 74647
+    },
+    "cycles_cga": {
+      "start": 64516,
+      "end": 64559
     },
     "cycles_tandy": {
-      "end": 63015,
-      "start": 62972
+      "start": 62972,
+      "end": 63015
     }
   }
 }
