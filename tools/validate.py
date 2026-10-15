@@ -6,6 +6,7 @@ Historical compiler execution uses C:/tools/nmlgcdos/msdos.exe.
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -13,6 +14,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+LOCAL_DEPS = ROOT / "work/python"
+if LOCAL_DEPS.is_dir():
+    os.environ["PYTHONPATH"] = str(LOCAL_DEPS) + os.pathsep + os.environ.get("PYTHONPATH", "")
 
 
 def run(*args):
@@ -55,18 +59,29 @@ def main():
             print(f"+ rebuilt SQLite census: {counts}", flush=True)
         finally:
             db.close()
-        receipt = record(ledger)
-        if not receipt["accepted"]:
-            raise ValueError(f"fresh source promotion rejected: {receipt['summary']}")
-        generated = work / "initial_promotion.json"
-        generated.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n")
-        compare_json(ROOT / "analysis/matching/initial_promotion.json", generated)
-        decimal = record_decimal(ledger)
-        if not decimal["accepted"]:
-            raise ValueError(f"fresh shared formatter promotion rejected: {decimal['summary']}")
-        generated_decimal = work / "decimal_promotion.json"
-        generated_decimal.write_text(json.dumps(decimal, indent=2, sort_keys=True) + "\n")
-        compare_json(ROOT / "analysis/matching/decimal_promotion.json", generated_decimal)
+        recipes = sorted((ROOT / "analysis/recipes").glob("*.json"),
+                         key=lambda p: (p.stem != "initial", p.stem))
+        if not recipes:
+            raise ValueError("no tracked promotion recipes to replay")
+        for path in recipes:
+            recipe = atlas.load_recipe(path)
+            if recipe.get("builder") == "legacy":
+                builder = {"initial": record, "decimal": record_decimal}.get(path.stem)
+                if builder is None:
+                    raise ValueError(f"unknown legacy recipe {path.name}")
+                receipt = builder(ledger)
+            else:
+                db = atlas.connect(ledger)
+                try:
+                    receipt = atlas.promote_recipe(db, path)
+                finally:
+                    db.close()
+            if not receipt["accepted"]:
+                raise ValueError(f"fresh recipe {path.name} rejected: {receipt['summary']}")
+            if recipe.get("receipt"):
+                generated = work / Path(recipe["receipt"]).name
+                generated.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n")
+                compare_json(ROOT / recipe["receipt"], generated)
     print("PASS: verified evidence and fresh scoped source proof. Whole-game linked builds remain unreconstructed.")
 
 

@@ -52,6 +52,28 @@ Individual commands are also available:
 & $gpPython tools/matching/atlas.py import-census
 ```
 
+## Everyday work
+
+Use `tools/context.py TARGET OFFSET_OR_NAME` to inspect one preferred target's
+census boundary, marked relocation words, direct call leads, and DS references.
+`tools/context.py --list '*decimal*'` lists known names. Census boundaries and
+linear disassembly are leads, not source attribution.
+
+Use `tools/search.py CANDIDATE.c --target circuit_ega --range 0xSTART:0xEND
+--public _symbol --profile msc510-small-o_gs` to compile in a unique ignored
+`work/search/` directory and compare fresh OMF code and fixups. Repeat
+`--target` and `--range` for each independent target. `.asm` defaults to
+`masm510`; C defaults to `msc510-small-o_gs`. Named MSC 5.00/5.10 small and
+medium profiles are in [analysis/toolchain.json](analysis/toolchain.json).
+Compiler errors are saved as search results. Strict results require the
+evidence-backed per-target bindings in `analysis/bindings/`.
+
+A reviewed recipe in `analysis/recipes/` pins source SHA-256, profile, public,
+target ranges, and expected fixups. `tools/promote.py RECIPE_ID` freshly builds
+and checks it against the atlas; `tools/validate.py` replays every recipe. The
+existing two MASM recipes retain their original receipt builders. See
+[worker and receipt rules](docs/workers.md).
+
 ## Evidence and remaining work
 
 - [Executable recovery and exact patch differences](docs/exepack.md)

@@ -51,7 +51,7 @@ if token is not None:
 db.close()
 ```
 
-For a function used by several targets, register one output for every `function_target` row before calling `promote`. A cluster lease can cover a few related functions, while each function still receives an independent receipt. Fresh builds are allowed only for exact source paths and hashes listed in the reviewed recipe allow-list in `atlas.py`; other candidates remain unpromoted until a reviewed recipe supports them.
+For a function used by several targets, register one output for every `function_target` row before calling `promote`. A cluster lease can cover a few related functions, while each function still receives an independent receipt. The two initial MASM builders retain their exact source-path/hash allow-list in `atlas.py`. New C or MASM candidates use tracked `analysis/recipes/<id>.json` files and `tools/promote.py <id>`.
 
 Use function clusters when evidence links functions, but keep a separate `function_target` row for each actual target range. A shared source candidate still receives an independent oracle comparison in every applicable target. Do not report masked or semantic matching as strict byte equivalence.
 
@@ -62,3 +62,15 @@ Use function clusters when evidence links functions, but keep a separate `functi
 `gates_by_target` is retained as descriptive worker input only. Caller-provided Boolean gates do not count as independent evidence; currently only checks produced by the fresh builder are eligible to affect strict promotion. Failed promotion attempts stay in history, and a candidate is accepted only when every target mapped to its function is covered by fresh build evidence and matches.
 
 The database deliberately does not schedule agents, interpret source control, or decide which functions are equivalent. Keep workers isolated at the source-control/worktree layer and use leases only to prevent duplicated atlas ownership.
+
+## Daily candidate search and fixups
+
+Run `tools/context.py <target> <offset-or-name>` before choosing a range. `--list '*pattern*'` lists names from reviewed recipes and the reconstruction shortlist. Context marks relocation words in disassembly and shows direct transfer and absolute data-reference leads. The census boundary is heuristic; confirm function entry and return before writing a recipe.
+
+Run `tools/search.py <source.c|source.asm> --target <target> --range <start>:<end> --public <symbol> [--profile <name>]`, repeating target and range together for a shared candidate. It verifies SHA-256-pinned compiler files, runs only `C:/tools/nmlgcdos/msdos.exe`, reads 16-bit OMF records including FIXUPP threads and iterated data, and stores the scratch object and JSON report under ignored `work/search/`. The report separates non-fixup byte equality from strict linker-equivalent equality, lists each fixup kind and target, reports unbound symbols, and shows the first instruction divergences. A compiler failure is a search result, never an accepted match.
+
+Bindings are per preferred target under `analysis/bindings/<target>.json`; each symbol address must carry provenance and confidence notes. A `segment:offset` address uses hexadecimal DOS notation; a linear integer is also accepted. Strict checking computes each linked fixup word from that binding, compares it with the unmasked oracle bytes, and requires every oracle relocation word inside the range to correspond to exactly one segment-base or far-pointer fixup. Relocation rows are compared with multiplicity; a duplicate or unexplained word rejects strict acceptance. Unbound symbols leave a result explicitly non-strict.
+
+`tools/promote.py <recipe-id>` freshly rebuilds a tracked recipe into a new candidate and writes a SQLite receipt with independent target verification rows. The fresh object's fixups must equal `expected_fixups` exactly. A generated object, registered blob, report Boolean or masked comparison cannot stand in for that build. `tools/validate.py` replays all recipes in `analysis/recipes/` and compares the legacy receipts with their tracked copies; it writes only under `work/`.
+
+The legacy MASM builders also pin a transcript hash containing MASM's free-symbol-space count. The atlas invokes them with a fixed DOS process environment size, reproducing their tracked 42,994/42,972-byte counts while checking the newly assembled object and every target range. This environment input does not change the stored proof or receipts.

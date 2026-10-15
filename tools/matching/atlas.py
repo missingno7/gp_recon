@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import subprocess
 import sqlite3
 import struct
@@ -24,8 +25,8 @@ ROOT = Path(__file__).resolve().parents[2]
 SCHEMA = Path(__file__).with_name("schema.sql")
 DB_PATH = ROOT / "work" / "atlas-v2.sqlite"
 
-# Explicit source-path allow-list. New build routes require a reviewed entry here;
-# a worker cannot nominate an arbitrary command or compiler for promotion.
+# Legacy source-path allow-list for the two immutable initial MASM receipts.
+# New build routes use tracked analysis/recipes/*.json and promote_recipe().
 TRUSTED_BUILD_RECIPES: dict[str, dict[str, str]] = {
     "src/engine/graphics/ega_copy_planes.asm": {
         "source_sha256": "7b8cd63f3be4bbe4576a13a939d4764bd2aa6552acaee88d6e1125224edd9a63",
@@ -229,9 +230,16 @@ def _run_fresh_build_proof(
     proof_dir.mkdir(parents=True, exist_ok=True)
     proof_path = proof_dir / f"{uuid.uuid4().hex}.json"
     command = [sys.executable, str(script), "--check", "--output", str(proof_path)]
+    # The legacy tracked receipts include MASM's free-symbol-space line in a
+    # transcript hash. Pin the DOS process environment size so that line is
+    # reproducible despite the desktop host's changing environment variables.
+    # This is an input to a fresh build, not a rewritten proof or image byte.
+    dos_environment = {"SystemRoot": os.environ.get("SystemRoot", r"C:\Windows"),
+                       "PATH": "C:/Windows/System32", "TEMP": ".", "TMP": ".",
+                       "GP_DOS_ENV_PAD": "x" * 6288}
     try:
         result = subprocess.run(command, cwd=root, capture_output=True, text=True,
-                                timeout=120, check=False)
+                                timeout=120, check=False, env=dos_environment)
         if result.returncode != 0:
             detail = (result.stderr or result.stdout).strip()[-1200:]
             return None, f"fresh source build failed ({result.returncode}): {detail}"
@@ -452,6 +460,143 @@ def promote(
                  report["oracle_relocation_order_sha256"],
                  report["oracle_relocation_multiset_sha256"], report["oracle_relocation_set_sha256"]),
             )
+    return {"receipt_id": receipt_id, "accepted": accepted, "summary": summary, "targets": reports}
+
+
+def load_recipe(path: Path | str, *, root: Path = ROOT) -> dict[str, Any]:
+    """Load a reviewed recipe, with its source and target scope pinned."""
+    path = Path(path)
+    path = path if path.is_absolute() else root / path
+    if not path.resolve().is_relative_to((root / "analysis/recipes").resolve()) or path.suffix != ".json":
+        raise ValueError("recipe must be a JSON file under analysis/recipes")
+    recipe = json.loads(path.read_text(encoding="utf-8"))
+    if recipe.get("schema") != 1 or not recipe.get("id") or not recipe.get("source_sha256"):
+        raise ValueError("recipe has no schema, ID or source SHA-256")
+    source = (root / recipe["source"]).resolve()
+    if not source.is_relative_to(root.resolve()) or not source.is_file():
+        raise ValueError("recipe source is outside the workspace or missing")
+    if sha256_file(source) != recipe["source_sha256"]:
+        raise ValueError("recipe source SHA-256 differs")
+    if recipe.get("builder") != "legacy" and (not recipe.get("profile") or not recipe.get("public")
+                                                  or not recipe.get("targets") or "expected_fixups" not in recipe):
+        raise ValueError("C/MASM recipe lacks profile, public, target ranges or expected fixups")
+    if recipe.get("builder") == "legacy":
+        proof_name = {"initial": "proof.json", "decimal": "decimal_proof.json"}.get(path.stem)
+        if proof_name is None:
+            raise ValueError("unknown legacy recipe builder")
+        proof = json.loads((root / "analysis/compiler" / proof_name).read_text(encoding="utf-8"))
+        expected_targets = {t["id"]: {"start": t["offset"], "end": t["offset"] + t["length"]}
+                            for t in proof["targets"]}
+        if (recipe["source"] != proof["source_path"] or recipe["source_sha256"] != proof["source_sha256"]
+                or recipe.get("public") != proof["object"]["symbol"] or recipe.get("profile") != "masm510"
+                or recipe.get("targets") != expected_targets or recipe.get("expected_fixups") != []):
+            raise ValueError("legacy recipe disagrees with tracked source proof")
+    from tools.matching.pipeline import TARGETS
+    for tid, extent in recipe.get("targets", {}).items():
+        if tid not in TARGETS or not isinstance(extent, dict) or "start" not in extent or "end" not in extent:
+            raise ValueError(f"invalid recipe target {tid}")
+        start = int(extent["start"], 0) if isinstance(extent["start"], str) else extent["start"]
+        end = int(extent["end"], 0) if isinstance(extent["end"], str) else extent["end"]
+        if not isinstance(start, int) or not isinstance(end, int) or not 0 <= start < end:
+            raise ValueError(f"invalid recipe extent for {tid}")
+    return recipe
+
+
+def promote_recipe(db: sqlite3.Connection, recipe_path: Path | str, *, root: Path = ROOT) -> dict[str, Any]:
+    """Freshly compile a tracked recipe and record one strict result per target.
+
+    Legacy MASM receipts retain their existing builders and byte-for-byte
+    receipt format. General recipes use the full OMF/fixup path here.
+    """
+    from tools.matching import pipeline
+    recipe = load_recipe(recipe_path, root=root)
+    if recipe.get("builder") == "legacy":
+        raise ValueError("legacy recipes are replayed by their existing receipt builders")
+    source = root / recipe["source"]
+    obj, build = pipeline.build(source, recipe["profile"], root)
+    if obj is None:
+        raise ValueError(f"fresh compiler failed: {build}")
+    if build.get("source_sha256") != recipe["source_sha256"]:
+        raise ValueError("source changed during fresh build")
+    projection = lambda f: {k: f[k] for k in ("offset", "loc", "width", "self_relative", "target", "frame")}
+    target_rows = []
+    for tid, extent in recipe["targets"].items():
+        start = int(extent["start"], 0) if isinstance(extent["start"], str) else extent["start"]
+        end = int(extent["end"], 0) if isinstance(extent["end"], str) else extent["end"]
+        pinned = db.execute("SELECT bv.* FROM target t JOIN binary_variant bv ON bv.variant_id=t.oracle_variant_id "
+                            "WHERE t.target_id=?", (tid,)).fetchone()
+        if pinned is None:
+            raise ValueError(f"target {tid} is absent from pinned atlas")
+        if pinned["packed_path"] and sha256_file(_absolute(root, pinned["packed_path"])) != pinned["packed_sha256"]:
+            raise ValueError(f"packed source changed for {tid}")
+        image = _absolute(root, pinned["image_path"]).read_bytes()
+        if hashlib.sha256(image).hexdigest() != pinned["image_sha256"] or end > len(image):
+            raise ValueError(f"pinned image changed or range invalid for {tid}")
+        code, fixes, public = pipeline.extract(obj, recipe["public"], end - start)
+        if [projection(f) for f in fixes] != recipe["expected_fixups"]:
+            raise ValueError(f"object fixups differ from reviewed recipe for {tid}")
+        relocation_rows = db.execute("SELECT linear_offset FROM binary_relocation WHERE variant_id=? "
+                                     "ORDER BY ordinal", (pinned["variant_id"],)).fetchall()
+        ordered = [r[0] for r in relocation_rows]
+        if "expected_relocations" in recipe and [r for r in ordered if start <= r < end] != recipe["expected_relocations"].get(tid, []):
+            raise ValueError(f"oracle relocations differ from reviewed recipe for {tid}")
+        comparison = pipeline.verify(code, fixes, image[start:end], start, ordered,
+                                     pipeline.binding_file(tid, root), public)
+        target_rows.append((tid, start, end, pinned, code, comparison))
+    candidate_id = f"recipe:{recipe['id']}:{uuid.uuid4().hex}"
+    function_id = recipe["id"]
+    existing_targets = {row[0] for row in db.execute(
+        "SELECT target_id FROM function_target WHERE function_id=?", (function_id,)).fetchall()}
+    if existing_targets and existing_targets != set(recipe["targets"]):
+        raise ValueError("recipe does not cover every applicable function target")
+    receipt_id = uuid.uuid4().hex
+    accepted = all(row[5]["strict"] for row in target_rows)
+    summary = "all scoped target bytes and fixups exactly match pinned oracles" if accepted else "; ".join(
+        f"{tid}: {', '.join(result['problems'] + ['unbound ' + ','.join(result['unbound'])] if result['unbound'] else result['problems'])}"
+        for tid, _, _, _, _, result in target_rows if not result["strict"])
+    reports = []
+    with transaction(db):
+        db.execute("INSERT OR IGNORE INTO function_item(function_id,name,classification,status,notes) "
+                   "VALUES(?,?,'SHARED_SOURCE_CANDIDATE','candidate',?)",
+                   (function_id, recipe["public"].lstrip("_"), f"Tracked recipe {recipe['id']}; original source attribution unproven"))
+        for tid, start, end, pinned, code, result in target_rows:
+            old = db.execute("SELECT image_offset,byte_length FROM function_target WHERE function_id=? AND target_id=?",
+                             (function_id, tid)).fetchone()
+            if old and tuple(old) != (start, end - start):
+                raise ValueError(f"immutable function target range differs for {tid}")
+            if not old:
+                db.execute("INSERT INTO function_target(function_id,target_id,image_offset,byte_length) VALUES(?,?,?,?)",
+                           (function_id, tid, start, end - start))
+        db.execute("INSERT INTO candidate(candidate_id,function_id,source_path,source_sha256,notes) VALUES(?,?,?,?,?)",
+                   (candidate_id, function_id, recipe["source"], recipe["source_sha256"],
+                    f"fresh recipe {recipe['id']}"))
+        for tid, start, end, pinned, code, result in target_rows:
+            artifact = Path(build["scratch"]) / f"{tid}.bin"
+            artifact.write_bytes(code)
+            db.execute("INSERT INTO candidate_output(candidate_id,target_id,artifact_path,artifact_sha256) VALUES(?,?,?,?)",
+                       (candidate_id, tid, str(artifact), hashlib.sha256(code).hexdigest()))
+        db.execute("INSERT INTO promotion_receipt(receipt_id,candidate_id,accepted,summary,build_proof_json) VALUES(?,?,?,?,?)",
+                   (receipt_id, candidate_id, int(accepted), summary,
+                    _json({"recipe": recipe["id"], "recipe_sha256": sha256_file(
+                        Path(recipe_path) if Path(recipe_path).is_absolute() else root / recipe_path), "build": build})))
+        for tid, start, end, pinned, code, result in target_rows:
+            prior = db.execute("SELECT 1 FROM target_verification tv JOIN promotion_receipt pr USING(receipt_id) "
+                               "WHERE tv.function_id=? AND tv.target_id=? AND tv.exact=1 AND pr.accepted=1 LIMIT 1",
+                               (function_id, tid)).fetchone()
+            regressed = bool(prior and not result["strict"])
+            oracle_bytes = _absolute(root, pinned["image_path"]).read_bytes()[start:end]
+            db.execute("INSERT INTO target_verification(receipt_id,function_id,target_id,oracle_sha256,"
+                       "candidate_sha256,byte_length,exact,regressed,gates_json,oracle_relocation_entries,"
+                       "oracle_relocation_unique,oracle_relocation_order_sha256,oracle_relocation_multiset_sha256,"
+                       "oracle_relocation_set_sha256) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                       (receipt_id, function_id, tid, hashlib.sha256(oracle_bytes).hexdigest(),
+                        hashlib.sha256(code).hexdigest(), len(code), int(result["strict"]), int(regressed),
+                        _json(result), pinned["relocation_count"], pinned["relocation_unique_count"],
+                        pinned["relocation_order_sha256"], pinned["relocation_multiset_sha256"],
+                        pinned["relocation_set_sha256"]))
+            reports.append({"target_id": tid, "exact": result["strict"], "regressed": regressed,
+                            "byte_length": len(code), "fixups": result["fixups"],
+                            "oracle_relocations_ordered": result["oracle_relocations_ordered"]})
     return {"receipt_id": receipt_id, "accepted": accepted, "summary": summary, "targets": reports}
 
 

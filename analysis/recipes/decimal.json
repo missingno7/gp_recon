@@ -1,0 +1,33 @@
+{
+  "builder": "legacy",
+  "expected_fixups": [],
+  "id": "format_u8_decimal3",
+  "profile": "masm510",
+  "public": "_format_u8_decimal3",
+  "receipt": "analysis/matching/decimal_promotion.json",
+  "schema": 1,
+  "source": "src/engine/format/decimal_ascii4.asm",
+  "source_sha256": "1303d188499538aba8e9a3b04147cf98e1bd402e94dc6d7651f5c5a25c0b94e8",
+  "targets": {
+    "circuit_cga": {
+      "end": 21982,
+      "start": 21946
+    },
+    "circuit_ega": {
+      "end": 22312,
+      "start": 22276
+    },
+    "cycles_cga": {
+      "end": 7274,
+      "start": 7238
+    },
+    "cycles_ega": {
+      "end": 7564,
+      "start": 7528
+    },
+    "cycles_tandy": {
+      "end": 7264,
+      "start": 7228
+    }
+  }
+}

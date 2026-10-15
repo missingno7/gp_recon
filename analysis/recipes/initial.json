@@ -1,0 +1,25 @@
+{
+  "builder": "legacy",
+  "expected_fixups": [],
+  "id": "cycles_ega_copy_planes",
+  "profile": "masm510",
+  "public": "_ega_copy_planes",
+  "receipt": "analysis/matching/initial_promotion.json",
+  "schema": 1,
+  "source": "src/engine/graphics/ega_copy_planes.asm",
+  "source_sha256": "7b8cd63f3be4bbe4576a13a939d4764bd2aa6552acaee88d6e1125224edd9a63",
+  "targets": {
+    "cycles_cga": {
+      "end": 4520,
+      "start": 4414
+    },
+    "cycles_ega": {
+      "end": 4776,
+      "start": 4670
+    },
+    "cycles_tandy": {
+      "end": 4509,
+      "start": 4403
+    }
+  }
+}

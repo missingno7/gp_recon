@@ -1,0 +1,174 @@
+{
+  "profiles": {
+    "masm510": {
+      "flags": [],
+      "kind": "asm",
+      "tool": "masm510"
+    },
+    "msc500-medium-o_gs": {
+      "flags": [
+        "/c",
+        "/AM",
+        "/O",
+        "/Gs"
+      ],
+      "kind": "c",
+      "tool": "msc500"
+    },
+    "msc500-medium-od": {
+      "flags": [
+        "/c",
+        "/AM",
+        "/Od"
+      ],
+      "kind": "c",
+      "tool": "msc500"
+    },
+    "msc500-medium-ox_gs": {
+      "flags": [
+        "/c",
+        "/AM",
+        "/Ox",
+        "/Gs"
+      ],
+      "kind": "c",
+      "tool": "msc500"
+    },
+    "msc500-small-o_gs": {
+      "flags": [
+        "/c",
+        "/AS",
+        "/O",
+        "/Gs"
+      ],
+      "kind": "c",
+      "tool": "msc500"
+    },
+    "msc500-small-od": {
+      "flags": [
+        "/c",
+        "/AS",
+        "/Od"
+      ],
+      "kind": "c",
+      "tool": "msc500"
+    },
+    "msc500-small-ox_gs": {
+      "flags": [
+        "/c",
+        "/AS",
+        "/Ox",
+        "/Gs"
+      ],
+      "kind": "c",
+      "tool": "msc500"
+    },
+    "msc510-medium-o_gs": {
+      "flags": [
+        "/c",
+        "/AM",
+        "/O",
+        "/Gs"
+      ],
+      "kind": "c",
+      "tool": "msc510"
+    },
+    "msc510-medium-od": {
+      "flags": [
+        "/c",
+        "/AM",
+        "/Od"
+      ],
+      "kind": "c",
+      "tool": "msc510"
+    },
+    "msc510-medium-ox_gs": {
+      "flags": [
+        "/c",
+        "/AM",
+        "/Ox",
+        "/Gs"
+      ],
+      "kind": "c",
+      "tool": "msc510"
+    },
+    "msc510-small-o_gs": {
+      "flags": [
+        "/c",
+        "/AS",
+        "/O",
+        "/Gs"
+      ],
+      "kind": "c",
+      "tool": "msc510"
+    },
+    "msc510-small-od": {
+      "flags": [
+        "/c",
+        "/AS",
+        "/Od"
+      ],
+      "kind": "c",
+      "tool": "msc510"
+    },
+    "msc510-small-ox_gs": {
+      "flags": [
+        "/c",
+        "/AS",
+        "/Ox",
+        "/Gs"
+      ],
+      "kind": "c",
+      "tool": "msc510"
+    }
+  },
+  "runner": {
+    "path": "C:/tools/nmlgcdos/msdos.exe",
+    "sha256": "f7f6cb0a3e816c5edb13112d327c1bddbf7463fe7bf9a005ca1eb5317751bd02"
+  },
+  "schema": 1,
+  "tools": {
+    "masm510": {
+      "MASM.EXE": {
+        "path": "C:\\tools\\masm-5.10\\files\\MASM.EXE",
+        "sha256": "233120302473749eafe9a54a30f8bda0127140c44346e5bcc047d113828a741e"
+      }
+    },
+    "msc500": {
+      "C1.EXE": {
+        "path": "C:\\tools\\msc-5.00\\C1.EXE",
+        "sha256": "3ef764476cb56dd14ae3c955a0b7717976d3b40f862fdff675ec8c6adc0ed791"
+      },
+      "C2.EXE": {
+        "path": "C:\\tools\\msc-5.00\\C2.EXE",
+        "sha256": "19fbe7914ba6ebe929a0e98e012fd5e8522643e5e40b6fcd89bef0e5f650f1f1"
+      },
+      "C3.EXE": {
+        "path": "C:\\tools\\msc-5.00\\C3.EXE",
+        "sha256": "ca4d82b90423086e68eb8d3af8f1c1c1034f164d0a0b98530c3b3a0fb0501669"
+      },
+      "CL.EXE": {
+        "path": "C:\\tools\\msc-5.00\\CL.EXE",
+        "sha256": "11e3c7d53b3efc085b7ad90c2190a1ddb395c8874f57aef3a5cfc0a4a0a0f504"
+      }
+    },
+    "msc510": {
+      "C1.EXE": {
+        "path": "C:\\tools\\msc-5.10\\C1.EXE",
+        "sha256": "8d33c6d87aa74b042b7d7cb01a23241c4cc3b1b8b446b8f1548bd167e3c7bf62"
+      },
+      "C2.EXE": {
+        "path": "C:\\tools\\msc-5.10\\C2.EXE",
+        "sha256": "a513c98bc2ce11bd00901b560252b5727ab9b6bacd9319b9eaba08f9e314b99b"
+      },
+      "C3.EXE": {
+        "path": "C:\\tools\\msc-5.10\\C3.EXE",
+        "sha256": "c1269628534d5deb48171ba9e42f761dcb1c28a0087c73780db0ee2e4352e6fa"
+      },
+      "CL.EXE": {
+        "path": "C:\\tools\\msc-5.10\\CL.EXE",
+        "sha256": "cad40cef732beea3455225fbd62286c664166db7c3f87e2402e22b2e3f107771"
+      }
+    }
+  }
+}

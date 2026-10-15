@@ -1,0 +1,12 @@
+{
+  "note": "Add further symbols only with target-specific address evidence.",
+  "schema": 1,
+  "symbols": {
+    "_format_u8_decimal3": {
+      "address": 7528,
+      "confidence": "high for entry address; reconstructed descriptive name",
+      "provenance": "analysis/compiler/decimal_proof.json; direct callers documented in docs/decimal.md"
+    }
+  },
+  "target": "cycles_ega"
+}
