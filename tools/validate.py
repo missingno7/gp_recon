@@ -44,6 +44,10 @@ def main():
     run("tools/census/analyze.py", "--output", work / "census")
     for name in ("census.json", "function_candidates.json"):
         compare_json(ROOT / "analysis/census" / name, work / "census" / name)
+    run("tools/inventory.py", "--output", work / "inventory")
+    for name in ("circuit_ega.json", "circuit_cga.json", "cycles_ega.json",
+                 "cycles_cga.json", "cycles_tandy.json", "groups.json"):
+        compare_json(ROOT / "analysis/inventory" / name, work / "inventory" / name)
     # Rebuild a ledger from tracked evidence, then let promotion invoke the
     # pinned fresh builder. It runs once for the source shared by three targets.
     from tools.matching import atlas

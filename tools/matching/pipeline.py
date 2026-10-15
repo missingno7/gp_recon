@@ -49,7 +49,7 @@ def build(source: Path, profile_name: str, root: Path = ROOT) -> tuple[object, d
     if profile["kind"] == "c":
         command = [lock["runner"]["path"], "-e", "-v5.00", executable, *profile["flags"], staged.name]
     else:
-        command = [lock["runner"]["path"], executable, f"{staged.name},{obj_path.name},NUL,NUL;"]
+        command = [lock["runner"]["path"], executable, *profile["flags"], f"{staged.name},{obj_path.name},NUL,NUL;"]
     environment = os.environ.copy()
     if profile["kind"] == "c":
         tool_directory = str(Path(executable).parent)

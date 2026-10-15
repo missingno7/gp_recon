@@ -47,6 +47,7 @@ def main() -> int:
     p.add_argument("target", nargs="?", choices=pipeline.TARGETS)
     p.add_argument("identifier", nargs="?")
     p.add_argument("--list", metavar="PATTERN")
+    p.add_argument("--inventory", action="store_true", help="include the inventory row and correspondence group")
     args = p.parse_args()
     named = names()
     if args.list is not None:
@@ -103,13 +104,21 @@ def main() -> int:
                 if transfer and start <= transfer[0] < end:
                     callers.append({"from": ins.address, "to": transfer[0],
                                     "distance": transfer[1], "candidate_start": candidate["start"]})
-    print(json.dumps({"target": args.target, "image_sha256": meta["image_sha256"],
+    result = {"target": args.target, "image_sha256": meta["image_sha256"],
                       "range": [start, end], "name": row["name"] if row else None,
                       "boundary": {k: enclosing.get(k) for k in ("start", "end", "boundary_status", "confidence")}
                       if enclosing else None, "disassembly": instruction_rows,
                       "direct_callers": callers[:30], "direct_callees": calls_out,
                       "absolute_data_references": ds_refs,
-                      "scope": "Census boundaries and linear disassembly are heuristic; no shared-source attribution."}, indent=2))
+                      "scope": "Census boundaries and linear disassembly are heuristic; no shared-source attribution."}
+    if args.inventory:
+        ipath = ROOT / "analysis/inventory" / f"{args.target}.json"
+        inventory = json.loads(ipath.read_text(encoding="utf-8"))["functions"]
+        item = next((r for r in inventory if r["start"] <= offset < r["end"]), None)
+        groups = json.loads((ROOT / "analysis/inventory/groups.json").read_text(encoding="utf-8"))["groups"]
+        result["inventory"] = item
+        result["group"] = next((g for g in groups if item and item["id"] in g["members"]), None)
+    print(json.dumps(result, indent=2))
     return 0
 
 

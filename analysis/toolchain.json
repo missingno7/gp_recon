@@ -5,6 +5,13 @@
       "kind": "asm",
       "tool": "masm510"
     },
+    "masm510-mx": {
+      "flags": [
+        "/Mx"
+      ],
+      "kind": "asm",
+      "tool": "masm510"
+    },
     "msc500-medium-o_gs": {
       "flags": [
         "/c",
