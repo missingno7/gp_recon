@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "grp_e23a5ac8_cycles",
+  "source": "src/engine/scores/score_compute_rank_cycles.asm",
+  "source_sha256": "3038df5b21a003a816c7c7c3b8ecd0a8d7d8090f0653b0958b6ac7e129fb64bc",
+  "profile": "masm510",
+  "public": "_score_compute_rank",
+  "expected_fixups": [
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_SCORE_1",
+      "frame": "_G_SCORE_1"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_SCORE_2",
+      "frame": "_G_SCORE_2"
+    },
+    {
+      "offset": 20,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TABLE_1",
+      "frame": "_G_TABLE_1"
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TABLE_2",
+      "frame": "_G_TABLE_2"
+    },
+    {
+      "offset": 39,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_RANK",
+      "frame": "_G_RANK"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [],
+    "cycles_ega": [],
+    "cycles_tandy": []
+  },
+  "targets": {
+    "cycles_cga": {
+      "start": 10169,
+      "end": 10213
+    },
+    "cycles_ega": {
+      "start": 10491,
+      "end": 10535
+    },
+    "cycles_tandy": {
+      "start": 10159,
+      "end": 10203
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "grp_829a14c2",
+  "source": "src/engine/memory/grp_829a14c2.asm",
+  "source_sha256": "dba9ea4035bb6a4a5ad5a2e4c9c98fabaa8dcc2e5d1cb4a5ce6bec93e55d5028",
+  "profile": "masm510",
+  "public": "_grp_829a14c2",
+  "expected_fixups": [
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A748",
+      "frame": "EDATA"
+    },
+    {
+      "offset": 44,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_3F31FED1",
+      "frame": "_GRP_3F31FED1"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_cga": [],
+    "circuit_ega": [],
+    "cycles_cga": [],
+    "cycles_ega": [],
+    "cycles_tandy": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 55718,
+      "end": 55776
+    },
+    "circuit_ega": {
+      "start": 63520,
+      "end": 63578
+    },
+    "cycles_cga": {
+      "start": 20004,
+      "end": 20062
+    },
+    "cycles_ega": {
+      "start": 20326,
+      "end": 20384
+    },
+    "cycles_tandy": {
+      "start": 19994,
+      "end": 20052
+    }
+  }
+}

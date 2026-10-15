@@ -14,6 +14,15 @@
       "provenance": "The startup instruction at 0x122 loads the relocated paragraph 0x12d9 into DS; independent relocation words elsewhere repeat that segment value. This is independent startup evidence, not the unflip or font fixup under review.",
       "staged_by": "port-shape"
     },
+    "EDATA": {
+      "address": "0000:0000",
+      "confidence": "medium",
+      "provenance": "Offset-only OMF frame for the explicit ES-relative field in grp_829a14c2. Segment base zero is a comparison anchor only; runtime ES is not asserted to be zero.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_829a14c2"
+      ]
+    },
     "SINE_DATA": {
       "address": 116754,
       "confidence": "high",
@@ -25,6 +34,150 @@
       "confidence": "medium-high",
       "provenance": "Timer state starts at 0x1ca14; separate timer members read and write the dwords at DGROUP+0x9c84 and +2, and the group base is independently cross-checked by the message/table data.",
       "staged_by": "port-kbtimer"
+    },
+    "_GRP_3F31FED1": {
+      "address": "0000:4E54",
+      "confidence": "medium",
+      "provenance": "Inventory group grp_3f31fed1 member cycles_tandy_04E54 starts at 0x4E54 in segment base 0, independently of the near call in grp_829a14c2.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_829a14c2"
+      ]
+    },
+    "_G_07C4": {
+      "address": 3932,
+      "confidence": "high",
+      "provenance": "Operand-derived CS offset 0x07C8, repeated at 0x7A2 and 0x7B2 in cycles_tandy_00794; linked address is candidate range start 0x0794 plus the explicit CS displacement. Used by grp_4f856910.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_4f856910"
+      ]
+    },
+    "_G_07DA": {
+      "address": 3954,
+      "confidence": "high",
+      "provenance": "Operand-derived CS offset 0x07DE, repeated at 0x7A8 and 0x7B8 in cycles_tandy_00794; linked address is candidate range start 0x0794 plus the explicit CS displacement. Used by grp_4f856910.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_4f856910"
+      ]
+    },
+    "_G_A748": {
+      "address": "0000:A63E",
+      "confidence": "high",
+      "provenance": "Operand-derived ES-relative field at 0x4E2A in cycles_tandy_04E1A. The field is addressed through ES, so this binding preserves its 16-bit offset; it is not a DGROUP claim. Used by grp_829a14c2.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_829a14c2"
+      ]
+    },
+    "_G_CHAR_TABLE": {
+      "address": "0000:53E7",
+      "confidence": "high",
+      "provenance": "Operand-derived LEA offset at grp_43ff7e15 entry in cycles_tandy; CS table read uses _G_CHAR_TABLE and returned map-table offset uses _G_MAP_TABLE. The segment is an offset-only comparison anchor.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_43ff7e15"
+      ]
+    },
+    "_G_KEY_MODE": {
+      "address": "0000:A4A9",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute offset in cycles_tandy: Keyboard mode selector compared with three in keyboard_translate_keycode. Used by grp_42d76ee3.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_42d76ee3"
+      ]
+    },
+    "_G_KEY_RESULT": {
+      "address": "0000:A4A1",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute offset in cycles_tandy: Word result written by keyboard_translate_keycode. Used by grp_42d76ee3.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_42d76ee3"
+      ]
+    },
+    "_G_KEY_TABLE": {
+      "address": "0000:A4E8",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute offset in cycles_tandy: Translation table indexed by XLAT in keyboard_translate_keycode. Used by grp_42d76ee3.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_42d76ee3"
+      ]
+    },
+    "_G_LAST_KEY": {
+      "address": "0000:A4AC",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute offset in cycles_tandy: Last raw key byte recorded by keyboard_translate_keycode. Used by grp_42d76ee3.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_42d76ee3"
+      ]
+    },
+    "_G_MAP_TABLE": {
+      "address": "0000:A664",
+      "confidence": "high",
+      "provenance": "Operand-derived LEA offset at grp_43ff7e15 entry in cycles_tandy; CS table read uses _G_CHAR_TABLE and returned map-table offset uses _G_MAP_TABLE. The segment is an offset-only comparison anchor.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_43ff7e15"
+      ]
+    },
+    "_G_RANK": {
+      "address": "0000:45A2",
+      "confidence": "high",
+      "provenance": "Absolute DS/DGROUP destination operand in grp_e23a5ac8; stores the one-based score rank.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
+    },
+    "_G_SCORE_1": {
+      "address": "0000:459C",
+      "confidence": "high",
+      "provenance": "Absolute DS/DGROUP operand in grp_e23a5ac8; first 16-bit word of the current score.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
+    },
+    "_G_SCORE_2": {
+      "address": "0000:45A0",
+      "confidence": "high",
+      "provenance": "Absolute DS/DGROUP operand in grp_e23a5ac8; second 16-bit word of the current score.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
+    },
+    "_G_STRING_TABLE": {
+      "address": "0000:A6A8",
+      "confidence": "high",
+      "provenance": "Operand-derived immediate at the MOV SI instruction in grp_495a145f (cycles_tandy); table is traversed by LODSW and SCASB. Binding preserves the segment-relative offset only.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_495a145f"
+      ]
+    },
+    "_G_TABLE_1": {
+      "address": "0000:2324",
+      "confidence": "high",
+      "provenance": "SS:BP-indexed score-table displacement from grp_e23a5ac8; binding is offset-only and does not assert runtime SS base.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
+    },
+    "_G_TABLE_2": {
+      "address": "0000:2388",
+      "confidence": "high",
+      "provenance": "SS:BP-indexed tie-break score-table displacement from grp_e23a5ac8; binding is offset-only and does not assert runtime SS base.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
     },
     "_aNoRoomLeftOnTimerInterru": {
       "address": 114724,

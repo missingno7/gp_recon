@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "grp_495a145f_circuit",
+  "source": "src/engine/data/grp_495a145f_circuit.asm",
+  "source_sha256": "09bf7b4b1f39a90bb3ca0f888af62b1f3ea162dc2b25f0e5f87390bb54917834",
+  "profile": "masm510",
+  "public": "_grp_495a145f",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_STRING_TABLE",
+      "frame": "_G_STRING_TABLE"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_cga": [],
+    "circuit_ega": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 51158,
+      "end": 51201
+    },
+    "circuit_ega": {
+      "start": 58508,
+      "end": 58551
+    }
+  }
+}

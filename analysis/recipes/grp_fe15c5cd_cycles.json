@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "grp_fe15c5cd_cycles",
+  "source": "src/cycles/graphics/grp_fe15c5cd.asm",
+  "source_sha256": "82988dd35959bf2adf032b164f06e19d79652f75108c47b094ff62a17cae1cf7",
+  "profile": "masm510",
+  "public": "_grp_fe15c5cd",
+  "expected_fixups": [],
+  "expected_relocations": {
+    "cycles_ega": []
+  },
+  "targets": {
+    "cycles_ega": {
+      "start": 31172,
+      "end": 31224
+    }
+  }
+}

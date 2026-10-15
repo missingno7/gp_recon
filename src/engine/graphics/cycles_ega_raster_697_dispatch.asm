@@ -3,8 +3,8 @@
 ; This standalone module starts at its mapped routine/shared entry.
         .286
 EXTRN _ext_8CCF:NEAR
-_TEXT SEGMENT WORD PUBLIC 'CODE'
-        ASSUME CS:_TEXT
+EGARASTER_TEXT SEGMENT WORD PUBLIC 'CODE'
+        ASSUME CS:EGARASTER_TEXT
         PUBLIC _cye_697_dispatch
 _cye_697_dispatch LABEL BYTE
 _raster_697_table_a LABEL WORD
@@ -1393,5 +1393,5 @@ L_B7BA LABEL NEAR
         JG SHORT L_B76B
         ; B7D6: E9 12 FD  jmp 0xb4eb
         JMP NEAR PTR L_B4EB
-_TEXT ENDS
+EGARASTER_TEXT ENDS
         END

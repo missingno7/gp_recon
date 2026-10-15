@@ -1,11 +1,11 @@
 ; Cycles EGA shared continuation and far-entry family 8623..90C9 reconstructed from image bytes.
 ; Names are descriptive reconstructions, not recovered symbols.
-; The complete _TEXT span starts at the shared continuation and includes entry 8670.
+; The complete EGARASTER_TEXT span starts at the shared continuation and includes entry 8670.
         .286
 EXTRN _ext_CA08:NEAR
 EXTRN _ext_DBA0:NEAR
-_TEXT SEGMENT WORD PUBLIC 'CODE'
-        ASSUME CS:_TEXT
+EGARASTER_TEXT SEGMENT WORD PUBLIC 'CODE'
+        ASSUME CS:EGARASTER_TEXT
         PUBLIC _cye_shared_8623
 _cye_shared_8623 LABEL NEAR
         ; 8623: 8E 5E 08  mov ds, word ptr [bp + 8]
@@ -2322,5 +2322,5 @@ L_90AA LABEL NEAR
         JG SHORT L_9056
         ; 90C6: E9 43 FC  jmp 0x8d0c
         JMP NEAR PTR L_8D0C
-_TEXT ENDS
+EGARASTER_TEXT ENDS
         END

@@ -3,8 +3,8 @@
 ; This standalone module starts at its mapped routine/shared entry.
         .286
 EXTRN _ext_8623:NEAR
-_TEXT SEGMENT WORD PUBLIC 'CODE'
-        ASSUME CS:_TEXT
+EGARASTER_TEXT SEGMENT WORD PUBLIC 'CODE'
+        ASSUME CS:EGARASTER_TEXT
         PUBLIC _cye_697_wrapper
 _cye_697_wrapper LABEL FAR
         ; B170: 55  push bp
@@ -33,5 +33,5 @@ _cye_697_wrapper LABEL FAR
         MOV          byte ptr [bp - 65], 4
         ; B18D: E9 93 D4  jmp 0x8623
         JMP NEAR PTR _ext_8623
-_TEXT ENDS
+EGARASTER_TEXT ENDS
         END

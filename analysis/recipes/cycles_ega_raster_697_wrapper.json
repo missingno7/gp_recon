@@ -18,7 +18,7 @@
   "public": "_cye_697_wrapper",
   "schema": 1,
   "source": "src/engine/graphics/cycles_ega_raster_697_wrapper.asm",
-  "source_sha256": "88fa9a67cae0e8e6b87da29ea3e8ef18f8ece76254848c6a6e4f1d352ed2fae3",
+  "source_sha256": "a0cf866ea32cf81e091f6bc84492d67fd01b33ad97af895c40df15297f5904a1",
   "targets": {
     "cycles_ega": {
       "end": 45456,

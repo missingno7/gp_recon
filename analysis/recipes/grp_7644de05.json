@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "grp_7644de05",
+  "source": "src/engine/format/decimal_ascii2.asm",
+  "source_sha256": "109fc5046dfe1e01ed3ac8702dc8feb7d153654ae9c5a46b02f72ddee1978b86",
+  "profile": "masm510",
+  "public": "_format_u8_decimal2",
+  "expected_fixups": [],
+  "expected_relocations": {
+    "circuit_cga": [],
+    "circuit_ega": [],
+    "cycles_cga": [],
+    "cycles_ega": [],
+    "cycles_tandy": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 21904,
+      "end": 21926
+    },
+    "circuit_ega": {
+      "start": 22234,
+      "end": 22256
+    },
+    "cycles_cga": {
+      "start": 7196,
+      "end": 7218
+    },
+    "cycles_ega": {
+      "start": 7486,
+      "end": 7508
+    },
+    "cycles_tandy": {
+      "start": 7186,
+      "end": 7208
+    }
+  }
+}

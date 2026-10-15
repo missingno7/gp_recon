@@ -204,6 +204,9 @@ def verify(code: bytes, fixes: list[dict], original: bytes, start: int,
             # _TEXT): its frame is the bound physical segment base, not the
             # module's own load position.
             frame_linear, _ = address(bindings[frame])
+            if not 0 <= start - frame_linear < 0x10000:
+                problems.append(f"own segment {frame} bound at {frame_linear:#x} does not contain range start {start:#x}")
+                continue
         elif frame in (own_segment, (public or {}).get("name")):
             frame_linear = local_base
         elif frame == target or f.get("frame_kind") == "target":

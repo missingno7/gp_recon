@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "grp_42d76ee3",
+  "source": "src/engine/input/keyboard_translate_keycode.asm",
+  "source_sha256": "a1e22ccf9ed6408f9d34e3bb2d4d9bdc3654aafb8f609521f1564c53fd52e5a7",
+  "profile": "masm510",
+  "public": "_keyboard_translate_keycode",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_LAST_KEY",
+      "frame": "_G_LAST_KEY"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_KEY_MODE",
+      "frame": "_G_KEY_MODE"
+    },
+    {
+      "offset": 34,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_KEY_TABLE",
+      "frame": "_G_KEY_TABLE"
+    },
+    {
+      "offset": 39,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_KEY_RESULT",
+      "frame": "_G_KEY_RESULT"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_cga": [],
+    "circuit_ega": [],
+    "cycles_cga": [],
+    "cycles_ega": [],
+    "cycles_tandy": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 51280,
+      "end": 51326
+    },
+    "circuit_ega": {
+      "start": 58696,
+      "end": 58742
+    },
+    "cycles_cga": {
+      "start": 16342,
+      "end": 16388
+    },
+    "cycles_ega": {
+      "start": 16664,
+      "end": 16710
+    },
+    "cycles_tandy": {
+      "start": 16332,
+      "end": 16378
+    }
+  }
+}

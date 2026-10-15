@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "grp_fe15c5cd_circuit",
+  "source": "src/circuit/graphics/grp_fe15c5cd.asm",
+  "source_sha256": "362f5ce2a26f41b26e3cc471d91e7e9e6a9bd7d8d777eb625d08f5553d2d89d5",
+  "profile": "masm510",
+  "public": "_grp_fe15c5cd",
+  "expected_fixups": [],
+  "expected_relocations": {
+    "circuit_ega": []
+  },
+  "targets": {
+    "circuit_ega": {
+      "start": 37728,
+      "end": 37780
+    }
+  }
+}

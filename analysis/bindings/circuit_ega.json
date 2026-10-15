@@ -2,6 +2,15 @@
   "note": "Add further symbols only with target-specific address evidence.",
   "schema": 1,
   "symbols": {
+    "EDATA": {
+      "address": "0000:0000",
+      "confidence": "medium",
+      "provenance": "Offset-only OMF frame for the explicit ES-relative field in grp_829a14c2. Segment base zero is a comparison anchor only; runtime ES is not asserted to be zero.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_829a14c2"
+      ]
+    },
     "_EXT_9226": {
       "address": "0000:9226",
       "confidence": "high",
@@ -25,6 +34,150 @@
       "confidence": "high",
       "provenance": "Direct near CALL target 0xC67A is independently reached at callsites 0xA9D6 and 0xB408; the latter lies outside the raster entry module.",
       "staged_by": "raster-map"
+    },
+    "_GRP_3F31FED1": {
+      "address": "0000:F85A",
+      "confidence": "medium",
+      "provenance": "Inventory group grp_3f31fed1 member circuit_ega_0F85A starts at 0xF85A in segment base 0, independently of the near call in grp_829a14c2.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_829a14c2"
+      ]
+    },
+    "_G_07C4": {
+      "address": 67044,
+      "confidence": "high",
+      "provenance": "Operand-derived CS offset 0x032C, repeated at 0x102C6 and 0x102D6 in circuit_ega_102B8; linked address is candidate range start 0x102B8 plus the explicit CS displacement. Used by grp_4f856910.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_4f856910"
+      ]
+    },
+    "_G_07DA": {
+      "address": 67066,
+      "confidence": "high",
+      "provenance": "Operand-derived CS offset 0x0342, repeated at 0x102CC and 0x102DC in circuit_ega_102B8; linked address is candidate range start 0x102B8 plus the explicit CS displacement. Used by grp_4f856910.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_4f856910"
+      ]
+    },
+    "_G_A748": {
+      "address": "0000:8DCE",
+      "confidence": "high",
+      "provenance": "Operand-derived ES-relative field at 0xF830 in circuit_ega_0F820. The field is addressed through ES, so this binding preserves its 16-bit offset; it is not a DGROUP claim. Used by grp_829a14c2.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_829a14c2"
+      ]
+    },
+    "_G_CHAR_TABLE": {
+      "address": "0000:FD21",
+      "confidence": "high",
+      "provenance": "Operand-derived LEA offset at grp_43ff7e15 entry in circuit_ega; CS table read uses _G_CHAR_TABLE and returned map-table offset uses _G_MAP_TABLE. The segment is an offset-only comparison anchor.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_43ff7e15"
+      ]
+    },
+    "_G_KEY_MODE": {
+      "address": "0000:8C43",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute offset in circuit_ega: Keyboard mode selector compared with three in keyboard_translate_keycode. Used by grp_42d76ee3.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_42d76ee3"
+      ]
+    },
+    "_G_KEY_RESULT": {
+      "address": "0000:8C3B",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute offset in circuit_ega: Word result written by keyboard_translate_keycode. Used by grp_42d76ee3.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_42d76ee3"
+      ]
+    },
+    "_G_KEY_TABLE": {
+      "address": "0000:8C78",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute offset in circuit_ega: Translation table indexed by XLAT in keyboard_translate_keycode. Used by grp_42d76ee3.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_42d76ee3"
+      ]
+    },
+    "_G_LAST_KEY": {
+      "address": "0000:8C46",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute offset in circuit_ega: Last raw key byte recorded by keyboard_translate_keycode. Used by grp_42d76ee3.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_42d76ee3"
+      ]
+    },
+    "_G_MAP_TABLE": {
+      "address": "0000:8DE8",
+      "confidence": "high",
+      "provenance": "Operand-derived LEA offset at grp_43ff7e15 entry in circuit_ega; CS table read uses _G_CHAR_TABLE and returned map-table offset uses _G_MAP_TABLE. The segment is an offset-only comparison anchor.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_43ff7e15"
+      ]
+    },
+    "_G_RANK": {
+      "address": "0000:5EC4",
+      "confidence": "high",
+      "provenance": "Absolute DS/DGROUP destination operand in grp_e23a5ac8; stores the one-based score rank.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
+    },
+    "_G_SCORE_1": {
+      "address": "0000:5EBE",
+      "confidence": "high",
+      "provenance": "Absolute DS/DGROUP operand in grp_e23a5ac8; first 16-bit word of the current score.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
+    },
+    "_G_SCORE_2": {
+      "address": "0000:5EC2",
+      "confidence": "high",
+      "provenance": "Absolute DS/DGROUP operand in grp_e23a5ac8; second 16-bit word of the current score.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
+    },
+    "_G_STRING_TABLE": {
+      "address": "0000:956A",
+      "confidence": "high",
+      "provenance": "Operand-derived immediate at the MOV SI instruction in grp_495a145f (circuit_ega); table is traversed by LODSW and SCASB. Binding preserves the segment-relative offset only.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_495a145f"
+      ]
+    },
+    "_G_TABLE_1": {
+      "address": "0000:0C36",
+      "confidence": "high",
+      "provenance": "SS:BP-indexed score-table displacement from grp_e23a5ac8; binding is offset-only and does not assert runtime SS base.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
+    },
+    "_G_TABLE_2": {
+      "address": "0000:0C9A",
+      "confidence": "high",
+      "provenance": "SS:BP-indexed tie-break score-table displacement from grp_e23a5ac8; binding is offset-only and does not assert runtime SS base.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e23a5ac8"
+      ]
     },
     "_TEXT": {
       "address": "0000:0000",
