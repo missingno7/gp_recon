@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "grp_37b665e9_circuit_cga",
+  "source": "src/circuit/data/grp_37b665e9_cga.asm",
+  "source_sha256": "376e894084608ac6c958e8a7f64e0e9a935375a2771104b128fa3453d14fdf24",
+  "profile": "masm510",
+  "public": "_grp_37b665e9",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 27380,
+      "end": 27473
+    }
+  }
+}

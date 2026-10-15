@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "grp_f293cd72",
+  "source": "src/circuit/data/grp_f293cd72.c",
+  "source_sha256": "890f988917bb880c5232492b3881fa2a2082523adcf1edf994f0fb8511281e48",
+  "profile": "msc510-small-o_gs",
+  "public": "_grp_f293cd72",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_00162",
+      "frame": "_g_00162"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 8742,
+      "end": 8761
+    },
+    "circuit_cga": {
+      "start": 8738,
+      "end": 8757
+    }
+  }
+}

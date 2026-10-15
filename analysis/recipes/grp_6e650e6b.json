@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "grp_6e650e6b",
+  "source": "src/circuit/video/grp_6e650e6b.asm",
+  "source_sha256": "0cedf0f4ee8d9d6de6358f70f55c9e77d6e5eaffae6799e5fa4ec83fe4b29fc0",
+  "profile": "masm510",
+  "public": "_grp_6e650e6b",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 26632,
+      "end": 26653
+    },
+    "circuit_cga": {
+      "start": 27144,
+      "end": 27165
+    }
+  }
+}

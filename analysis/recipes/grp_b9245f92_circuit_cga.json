@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "grp_b9245f92_circuit_cga",
+  "source": "src/circuit/state/grp_b9245f92_cga.asm",
+  "source_sha256": "f0308f21a4ff83a10fc19a4bda7bd0689c0abc706a06ef5bc1d305ce97e60e27",
+  "profile": "masm510",
+  "public": "_grp_b9245f92",
+  "expected_fixups": [
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_B6CBA47C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 44,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 59,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_B6CBA47C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 84,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_0376AEFE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 154,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_2DE0858F",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 212,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_2DE0858F",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 221,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0BDF4",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 234,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_0376AEFE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 247,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 264,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_1A9A5E95",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 281,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_58B528F2",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 290,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0BDF4",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 13434,
+      "end": 13766
+    }
+  }
+}

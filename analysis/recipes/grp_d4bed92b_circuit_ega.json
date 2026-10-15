@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "grp_d4bed92b_circuit_ega",
+  "source": "src/circuit/video/grp_d4bed92b_ega.asm",
+  "source_sha256": "f6349e0aea27a990c7fdf89e08a6ee89e6ca67643f1285133a402681ac9ccab1",
+  "profile": "masm510",
+  "public": "_grp_d4bed92b",
+  "expected_fixups": [
+    {
+      "offset": 61,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_08CF6",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 67,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0BB7A",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 18203,
+      "end": 18276
+    }
+  }
+}

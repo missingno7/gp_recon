@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "grp_2bae8498_circuit_cga",
+  "source": "src/circuit/graphics/grp_2bae8498_cga.asm",
+  "source_sha256": "b62eaf9ca256cfc5b6f93d0c5ae5f8243c161a5df8b00a340d5eff291aa69ffb",
+  "profile": "masm510",
+  "public": "_grp_2bae8498",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 24708,
+      "end": 24800
+    }
+  }
+}

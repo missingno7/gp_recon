@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "ascii_upper",
+  "source": "src/circuit/text/ascii_upper.c",
+  "source_sha256": "0fdd31e07a8358b1e51f652b2f755b063fefdda45460cf2dccb7ed4b03146495",
+  "profile": "msc510-small-o_gs",
+  "public": "_ascii_upper",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 26814,
+      "end": 26839
+    },
+    "circuit_cga": {
+      "start": 47068,
+      "end": 47093
+    }
+  }
+}

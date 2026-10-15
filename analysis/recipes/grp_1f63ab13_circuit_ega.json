@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "grp_1f63ab13_circuit_ega",
+  "source": "src/circuit/video/grp_1f63ab13_ega.asm",
+  "source_sha256": "c04b84fceae797562afa65ad5426fb6f0e48d5b5686eb0989e4709363638f266",
+  "profile": "masm510",
+  "public": "_grp_1f63ab13",
+  "expected_fixups": [
+    {
+      "offset": 48,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0A672",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 19512,
+      "end": 19566
+    }
+  }
+}

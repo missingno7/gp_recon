@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "grp_fadcab13_circuit_ega",
+  "source": "src/circuit/startup/grp_fadcab13_ega.c",
+  "source_sha256": "86431aff6f50adbb17a29ce528136e123de80e16fdb053ab44ff4a022d728c57",
+  "profile": "msc510-small-o_gs",
+  "public": "_grp_fadcab13",
+  "expected_fixups": [
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_078ea",
+      "frame": "_fn_circuit_ega_078ea"
+    },
+    {
+      "offset": 60,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08c1d",
+      "frame": "_fn_circuit_ega_08c1d"
+    },
+    {
+      "offset": 51,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_078db",
+      "frame": "_fn_circuit_ega_078db"
+    },
+    {
+      "offset": 45,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_622c4ed2",
+      "frame": "_grp_622c4ed2"
+    },
+    {
+      "offset": 31,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08c84",
+      "frame": "_fn_circuit_ega_08c84"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_09394",
+      "frame": "_fn_circuit_ega_09394"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08cd8",
+      "frame": "_fn_circuit_ega_08cd8"
+    },
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_09b12",
+      "frame": "_g_09b12"
+    },
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_09b14",
+      "frame": "_g_09b14"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 8762,
+      "end": 8831
+    }
+  }
+}

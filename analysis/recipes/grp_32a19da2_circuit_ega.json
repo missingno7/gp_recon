@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "grp_32a19da2_circuit_ega",
+  "source": "src/circuit/graphics/grp_32a19da2_ega.asm",
+  "source_sha256": "56b25775cb08f49e181b38619904149255c92503f30de3f792c9eafbfe01058d",
+  "profile": "masm510",
+  "public": "_grp_32a19da2",
+  "expected_fixups": [
+    {
+      "offset": 16,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0B1B6",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 56,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_06738",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 87,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_06785",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 26330,
+      "end": 26424
+    }
+  }
+}

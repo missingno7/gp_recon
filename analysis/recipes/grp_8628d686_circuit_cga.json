@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "grp_8628d686_circuit_cga",
+  "source": "src/circuit/graphics/grp_8628d686_cga.asm",
+  "source_sha256": "06aff04b38f4567b0f785000a9987ffa419fefe697a1f3b88459315354267c38",
+  "profile": "masm510",
+  "public": "_grp_8628d686",
+  "expected_fixups": [
+    {
+      "offset": 121,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_27E0AFFB",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 17052,
+      "end": 17177
+    }
+  }
+}

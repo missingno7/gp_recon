@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "grp_93d4ba6d_circuit_ega",
+  "source": "src/circuit/graphics/grp_93d4ba6d_ega.asm",
+  "source_sha256": "abbda139724650a8b626c028c52a099021910dfe4872be84365f86be155f0479",
+  "profile": "masm510",
+  "public": "_grp_93d4ba6d",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_04764",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 36,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_04553",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 72,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0471B",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 83,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0463D",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 104,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_046CD",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 127,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_04401",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 149,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0423B",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 163,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_04292",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 166,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_04553",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 180,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 16772,
+      "end": 16955
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "grp_e61cb645_circuit_ega",
+  "source": "src/circuit/files/grp_e61cb645_ega.asm",
+  "source_sha256": "f96aabf0bc2134c4e0e8daa64b1283e76eb02873d8df272141edd2611e0bafc9",
+  "profile": "masm510",
+  "public": "_grp_e61cb645",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 27362,
+      "end": 27451
+    }
+  }
+}

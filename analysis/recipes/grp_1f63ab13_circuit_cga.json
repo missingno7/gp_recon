@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "grp_1f63ab13_circuit_cga",
+  "source": "src/circuit/video/grp_1f63ab13_cga.asm",
+  "source_sha256": "f9e411dfa3e972f89000b7130ed18a5cd6e3d322318cda818ad94552ded74592",
+  "profile": "masm510",
+  "public": "_grp_1f63ab13",
+  "expected_fixups": [
+    {
+      "offset": 48,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_097CC",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 19224,
+      "end": 19278
+    }
+  }
+}

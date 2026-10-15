@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "id": "grp_e507b43b_circuit_cga",
+  "source": "src/circuit/text/grp_e507b43b_cga.asm",
+  "source_sha256": "fb69cdf72b1c4260c2410450f03176e4b5eaf177c996cd3d7336d3fcc3464888",
+  "profile": "masm510",
+  "public": "_grp_e507b43b",
+  "expected_fixups": [
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0AB24",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0B418",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 37,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_E76F1CA2",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 55,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_F3A4E254",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 63,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_9D44A3BF",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 92,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_F3A4E254",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 100,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_B465AB5E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 114,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0B418",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 142,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0AABD",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 162,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_7DE44506",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 168,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_08396",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 195,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_F3A4E254",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 224,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0B696",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 230,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0AA92",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 239,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 284,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0B696",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 357,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0B696",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 397,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0AA92",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 408,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_C5EFAE67",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 413,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_64BAADA8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 420,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_09B70",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 426,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0834C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 437,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 461,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0599C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 464,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_05989",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 476,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_1490DEE1",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 488,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0AABD",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 494,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_08396",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 15044,
+      "end": 15544
+    }
+  }
+}

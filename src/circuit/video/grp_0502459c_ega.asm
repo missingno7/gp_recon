@@ -1,0 +1,121 @@
+_TEXT SEGMENT WORD PUBLIC 'CODE'
+        ASSUME CS:_TEXT
+        EXTRN _FN_CIRCUIT_EGA_03302:NEAR
+        PUBLIC _grp_0502459c
+_grp_0502459c PROC NEAR
+        push bp
+        mov bp, sp
+        sub sp, 6
+        push si
+        cmp word ptr ds:[96deh], 0
+        jl short initial_loop
+        jg short set_flag
+        cmp word ptr ds:[96dch], 0BB8h
+        jbe short initial_loop
+set_flag:
+        mov word ptr ds:[801ah], 1
+initial_loop:
+        mov word ptr [bp-4], 0
+init_loop:
+        mov si, word ptr [bp-4]
+        shl si, 1
+        mov ax, word ptr [si+742ch]
+        sub ax, 48h
+        shr ax, 1
+        add ax, 9
+        mov word ptr [si+0a1ah], ax
+        inc word ptr [bp-4]
+        cmp word ptr [bp-4], 14h
+        jle short init_loop
+        mov word ptr [bp-4], 6Fh
+        mov word ptr [bp-6], 27h
+        jmp short outer_test1
+        nop
+body1:
+        mov bx, word ptr [bp-6]
+        shl bx, 1
+        mov word ptr [bx-6426h], 0
+cmp_prev1:
+        cmp word ptr [bp-2], -1
+        jne short assign1
+        mov si, word ptr [bp-6]
+        shl si, 1
+        mov ax, word ptr [si-63cch]
+        mov word ptr [si-63ceh], ax
+        jmp short decrement1
+assign1:
+        mov bx, word ptr [bp-6]
+        shl bx, 1
+        mov ax, word ptr [bp-2]
+        mov word ptr [bx-63ceh], ax
+decrement1:
+        dec word ptr [bp-4]
+        dec word ptr [bp-6]
+outer_test1:
+        cmp word ptr [bp-4], 48h
+        jl short phase2
+        mov ax, 28h
+        push ax
+        push word ptr [bp-4]
+        mov ax, 742ch
+        push ax
+        call _FN_CIRCUIT_EGA_03302
+        add sp, 6
+        mov word ptr [bp-2], ax
+        or ax, ax
+        jle short body1
+        mov bx, word ptr [bp-6]
+        shl bx, 1
+        mov word ptr [bx-6426h], 0FFFFh
+        jmp short cmp_prev1
+        nop
+phase2:
+        mov word ptr [bp-4], 0Bh
+        mov word ptr [bp-6], 0
+        jmp short outer_test2
+body2:
+        mov bx, word ptr [bp-6]
+        shl bx, 1
+        mov word ptr [bx-637ah], 0
+cmp_prev2:
+        cmp word ptr [bp-2], -1
+        jne short assign2
+        mov si, word ptr [bp-6]
+        shl si, 1
+        mov ax, word ptr [si-633ch]
+        mov word ptr [si-633ah], ax
+        jmp short increment2
+assign2:
+        mov bx, word ptr [bp-6]
+        shl bx, 1
+        mov ax, word ptr [bp-2]
+        mov word ptr [bx-633ah], ax
+increment2:
+        inc word ptr [bp-4]
+        inc word ptr [bp-6]
+outer_test2:
+        cmp word ptr [bp-4], 16h
+        jg short done
+        mov ax, 14h
+        push ax
+        push word ptr [bp-4]
+        mov ax, 0a1ah
+        push ax
+        call _FN_CIRCUIT_EGA_03302
+        add sp, 6
+        mov word ptr [bp-2], ax
+        or ax, ax
+        jle short body2
+        mov bx, word ptr [bp-6]
+        shl bx, 1
+        mov word ptr [bx-637ah], 0FFFFh
+        jmp short cmp_prev2
+        nop
+done:
+        pop si
+        mov sp, bp
+        pop bp
+        ret
+_grp_0502459c ENDP
+_TEXT ENDS
+END

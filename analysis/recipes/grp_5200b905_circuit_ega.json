@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "grp_5200b905_circuit_ega",
+  "source": "src/circuit/state/grp_5200b905_ega.asm",
+  "source_sha256": "5568d8e80e9732cd8e43713db85e04d118e47889189944e6f5a06e5b7e247c2e",
+  "profile": "masm510",
+  "public": "_grp_5200b905",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 25232,
+      "end": 25367
+    }
+  }
+}

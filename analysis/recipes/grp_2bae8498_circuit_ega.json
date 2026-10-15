@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "grp_2bae8498_circuit_ega",
+  "source": "src/circuit/graphics/grp_2bae8498_ega.asm",
+  "source_sha256": "51ce6b6114d0e7479cc9b28f9191316f11bf163033788acbe5c0e11524f59e95",
+  "profile": "masm510",
+  "public": "_grp_2bae8498",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 25054,
+      "end": 25146
+    }
+  }
+}

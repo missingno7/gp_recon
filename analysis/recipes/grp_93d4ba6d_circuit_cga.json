@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "grp_93d4ba6d_circuit_cga",
+  "source": "src/circuit/graphics/grp_93d4ba6d_cga.asm",
+  "source_sha256": "ab21b5d257a04c893b155d21c46c502dac614f87a349c206c55e2eb0464cd4dd",
+  "profile": "masm510",
+  "public": "_grp_93d4ba6d",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0476E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 36,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0455D",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 72,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_04725",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 83,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_04647",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 104,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_046D7",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 127,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0440B",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 149,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_04245",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 163,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0429C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 166,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0455D",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 180,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 16782,
+      "end": 16965
+    }
+  }
+}

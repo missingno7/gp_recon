@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "grp_43f58d0a_circuit_ega",
+  "source": "src/circuit/state/grp_43f58d0a_ega.asm",
+  "source_sha256": "31719054310946f686e35cef386471b3c04827cc865d8fafedaf741bb8906201",
+  "profile": "masm510",
+  "public": "_grp_43f58d0a",
+  "expected_fixups": [
+    {
+      "offset": 41,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_05A15",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 634,
+      "end": 789
+    }
+  }
+}
