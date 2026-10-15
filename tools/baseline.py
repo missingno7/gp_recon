@@ -158,7 +158,9 @@ def main():
     # reviewed edit. Routine baseline generation must never rewrite its pins.
     if args.check or (args.analysis / "manifest.json").exists():
         import tempfile
-        with tempfile.TemporaryDirectory() as tmp:
+        scratch = ROOT / "work"
+        scratch.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(prefix="baseline-check-", dir=scratch) as tmp:
             fresh = build(args.assets, args.output, Path(tmp))
         locked = json.loads((args.analysis / "manifest.json").read_text())
         if fresh != locked:

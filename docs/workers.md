@@ -1,0 +1,64 @@
+# Worker coordination and strict promotions
+
+`tools/matching/atlas.py` keeps immutable binary evidence apart from active reconstruction state. The default database is `work/atlas-v2.sqlite` (ignored/generated); `tools/matching/schema.sql` defines its tables. Manifest import reads each `work/oracles/<variant>/metadata.json` relocation list as an ordered stream. It validates the manifest's `relocations_sha256` against the raw little-endian unsigned 32-bit stream, checks duplicate counts, and validates the legacy sorted-entry digest. It stores every linear offset with its ordinal, including duplicates, and records separate SHA-256 digests for ordered entries, the duplicate-preserving multiset, and the distinct set. The receipt carries the pinned oracle's three relocation digests and both entry/distinct counts, so a set comparison cannot hide a duplicate or order change. In the current manifest, `cycles_ega_gp1` has 1,202 relocation entries but 1,201 distinct locations; all 1,202 rows remain in `binary_relocation`.
+
+```powershell
+python tools/matching/atlas.py init
+python tools/matching/atlas.py import-manifest
+python tools/matching/atlas.py import-census
+python tools/matching/atlas.py export --output analysis/atlas-export.json
+python tools/matching/promote_initial.py --record
+python tools/matching/promote_decimal.py --record
+```
+
+The exporter emits deterministic JSON in stable table/key order. It omits worker leases, whose expiry is runtime state. The SQLite file remains the writable authority; keep generated exports disposable and reviewable.
+
+The census importer is idempotent for unchanged inputs. It records heuristic function candidates, pairwise byte-region matches, known/reported regions, and pair-level exploratory coverage in separate tables. Candidate rows retain their boundary status and confidence as source evidence; they do not create verified `function_item` or `function_target` rows. `SHARED_EXACT` rows and `RELOCATION_MASKED` rows remain distinct in `region_match`. Revised analysis artifacts append snapshots keyed by their source SHA-256, preserving earlier evidence. Manifest import verifies the actual supplied executable and image hashes; promotion rechecks the executable hash for every applicable target.
+
+The explicit `promote_initial.py --record` command seeds the first source candidate and writes the tracked [initial promotion receipt](../analysis/matching/initial_promotion.json). It records `ega_copy_planes` as `VIDEO_SPECIFIC` across Cycles EGA, CGA, and Tandy. All three 106-byte ranges are freshly assembled and byte-exact; the source boundary remains provisional because direct or relocated incoming-reference evidence has not yet been established. Those are separate claims in the receipt and atlas evidence.
+
+The explicit `promote_decimal.py --record` command writes the tracked [decimal promotion receipt](../analysis/matching/decimal_promotion.json). `format_u8_decimal3` has a 36-byte, near-return boundary with direct callers in Circuit EGA/CGA and Cycles EGA/CGA/Tandy. The fresh MASM output is byte-exact at all five ranges. Its behavior uses AL for three decimal digits and writes a NUL at BX+3; it discards AH. The equivalence group is `SHARED_EXACT` across games.
+
+Useful read-only queries include:
+
+```sql
+SELECT boundary_status, boundary_confidence, count(*)
+FROM function_candidate GROUP BY boundary_status, boundary_confidence;
+
+SELECT match_type, count(*)
+FROM region_match GROUP BY match_type;
+```
+
+## Claim and work
+
+Workers claim a bounded scope such as `cluster:ega-blitters` using `claim(db, scope, worker, ttl_seconds)`. The claim is a short transaction using `BEGIN IMMEDIATE`; one live lease can hold a scope, expired leases can be reclaimed, and each claim has a random fencing token. Renew and release operations require that token and reject expired ownership. A worker should register source and output files through `record_candidate` and `record_output`, which calculate their hashes, then release its lease. Keep individual compiler runs in `compiler_experiment` with compiler/version, flags, input/output digests and result.
+
+The Python API is intentionally small:
+
+```python
+from tools.matching import atlas
+
+atlas.initialize()
+db = atlas.connect()
+token = atlas.claim(db, "cluster:ega-blitters", "worker-07", ttl_seconds=1800)
+if token is not None:
+    # Work in an isolated checkout, then register one candidate per function.
+    atlas.record_candidate(db, candidate_id="ega-blit-c1", function_id="blit_042",
+                           source_path="src/engine/ega_blit.c", worker="worker-07")
+    atlas.record_output(db, "ega-blit-c1", "circuit_ega", "work/candidates/blit042-circuit.bin")
+    receipt = atlas.promote(db, "ega-blit-c1")
+    atlas.release_lease(db, token)
+db.close()
+```
+
+For a function used by several targets, register one output for every `function_target` row before calling `promote`. A cluster lease can cover a few related functions, while each function still receives an independent receipt. Fresh builds are allowed only for exact source paths and hashes listed in the reviewed recipe allow-list in `atlas.py`; other candidates remain unpromoted until a reviewed recipe supports them.
+
+Use function clusters when evidence links functions, but keep a separate `function_target` row for each actual target range. A shared source candidate still receives an independent oracle comparison in every applicable target. Do not report masked or semantic matching as strict byte equivalence.
+
+## Promotion
+
+`promote(db, candidate_id, root=...)` invokes the trusted fresh MASM recipe selected by the candidate's exact source path and hash. It re-reads the registered source and output files, checks their recorded hashes, verifies the fresh object digest and extracted function-byte digest, then reads each pinned oracle load image and compares those freshly built function bytes and registered outputs with the target's exact function range. Each target must also have a matching fresh-build proof row for its pinned image digest, offset, and length. The receipt stores the builder proof and per-target results. It records that the OMF object is fixup-free and checks that no oracle relocation entry intersects the promoted function range. An oracle-extracted blob, caller-supplied proof, or Boolean `exact` result cannot promote source. Missing builder coverage, changed evidence, mismatch, relocation intersection, or regression leaves a rejected receipt. This verifies code bytes and their load-image ranges; it does not claim linked-image or runtime validation.
+
+`gates_by_target` is retained as descriptive worker input only. Caller-provided Boolean gates do not count as independent evidence; currently only checks produced by the fresh builder are eligible to affect strict promotion. Failed promotion attempts stay in history, and a candidate is accepted only when every target mapped to its function is covered by fresh build evidence and matches.
+
+The database deliberately does not schedule agents, interpret source control, or decide which functions are equivalent. Keep workers isolated at the source-control/worktree layer and use leases only to prevent duplicated atlas ownership.

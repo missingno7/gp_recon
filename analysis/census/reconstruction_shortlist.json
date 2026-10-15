@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "status": "evidence-backed reconstruction leads; verify before promoting to source-level equivalence",
+  "clusters": [
+    {
+      "id": "decimal_ascii4_leaf",
+      "classification": "LIKELY_SHARED_ENGINE_LEAF",
+      "targets": [
+        {"target": "circuit_ega", "start": "0x5704", "end_exclusive": "0x5728"},
+        {"target": "circuit_cga", "start": "0x55BA", "end_exclusive": "0x55DE"},
+        {"target": "cycles_ega", "start": "0x1D68", "end_exclusive": "0x1D8C"},
+        {"target": "cycles_cga", "start": "0x1C46", "end_exclusive": "0x1C6A"},
+        {"target": "cycles_tandy", "start": "0x1C3C", "end_exclusive": "0x1C60"}
+      ],
+      "size": 36,
+      "common_bytes_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "semantic_summary": "Converts AL (unsigned 8-bit) to three zero-padded ASCII decimal digits at DS:[BX..BX+2] and writes NUL at DS:[BX+3]. AH is cleared before division, so the high byte of AX is ignored; values above 255 therefore format their low byte. Near RET.",
+      "confidence": "high for byte identity and leaf boundary; medium-high for semantics",
+      "boundary_evidence": "Linear disassembly consumes exactly 36 bytes through RET. Ghidra identifies a distinct 36-byte function at each address. Raw near-call displacements resolve to the candidate start: Circuit EGA 0x5ABD, Circuit CGA 0x5973, Cycles EGA 0x1E0E and 0x1E57, Cycles CGA 0x1CEC and 0x1D35, Cycles Tandy 0x1CE2 and 0x1D2B. Each target image has the same exact 36-byte sequence.",
+      "runtime_attribution": "unlikely CRT: short application-formatting routine with direct game callsites; not independently proven",
+      "next_action": "The maintained MASM reconstruction matches all five pinned image ranges exactly. Continue caller-level analysis before attributing the routine to an original shared source file or compiler/assembler provenance."
+    },
+    {
+      "id": "ega_unrolled_raster_kernel_697",
+      "classification": "SHARED_EXACT_NON_RUNTIME_REGION",
+      "targets": [
+        {"target": "circuit_ega", "start": "0xD347", "end_exclusive": "0xD600"},
+        {"target": "cycles_ega", "start": "0xB225", "end_exclusive": "0xB4DE"}
+      ],
+      "size": 697,
+      "common_bytes_sha256": "ead77adc082043140bb26e7dc0d2a00d0b2062766d2a3799a58eceaab7515484",
+      "semantic_summary": "Unrolled EGA sprite/plane raster kernel; bit-position variants read source data and XOR it into ES:DI, adjacent continuation programs the sequencer and graphics controller.",
+      "confidence": "high for exact bytes and graphics semantics; low for standalone boundaries",
+      "boundary_evidence": "292 instructions decode in each slice. The last conditional branch targets inside the slice; Circuit continues with ADD DI,0x28 and returns near at 0xD61C, while Cycles continues using CS:[0x4E9E] and returns far at 0xB4FC. No raw near-call reference targets the slice start.",
+      "runtime_attribution": "non-runtime graphics code with high confidence",
+      "next_action": "Map each enclosing function and its callers, arguments, and stride state before attempting a shared-source reconstruction. Do not treat the 697-byte window as a callable routine."
+    },
+    {
+      "id": "ega_unrolled_raster_kernel_654",
+      "classification": "SHARED_EXACT_NON_RUNTIME_REGION",
+      "targets": [
+        {"target": "circuit_ega", "start": "0xAAB8", "end_exclusive": "0xAD46"},
+        {"target": "cycles_ega", "start": "0x8A4C", "end_exclusive": "0x8CDA"}
+      ],
+      "size": 654,
+      "common_bytes_sha256": "2a4a769e004aa13e955d8efe035547d1af2a29db564082bb410482753c57423e",
+      "semantic_summary": "Exact repeated EGA raster path with source-byte tests and ES:DI pixel/plane updates; same distinctive stack-local layout as the 697-byte kernel.",
+      "confidence": "high for exact bytes; medium for raster interpretation; low for standalone boundaries",
+      "boundary_evidence": "Both slices linearly decode from MOV SI,[BP-0x3A] and follow the same bit-position branch pattern. Candidate matching is byte-exact, but the start/end are match-window limits and have not been proven to bound a function.",
+      "runtime_attribution": "non-runtime graphics code, likely",
+      "next_action": "Trace incoming branches and adjacent function exits; compare surrounding callers and local-variable setup to determine whether this is a sibling raster specialization or an internal block."
+    }
+  ]
+}

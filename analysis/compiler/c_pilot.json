@@ -1,0 +1,145 @@
+{
+  "attribution": "unresolved: this compiler probe does not identify either game's compiler",
+  "compiler": {
+    "banner": "Microsoft (R) C Optimizing Compiler Version 5.10",
+    "msdos_player_path": "C:\\tools\\nmlgcdos\\msdos.exe",
+    "msdos_player_sha256": "f7f6cb0a3e816c5edb13112d327c1bddbf7463fe7bf9a005ca1eb5317751bd02",
+    "name": "Microsoft (R) C Optimizing Compiler Version 5.10",
+    "pass_sha256": {
+      "C1.EXE": "8d33c6d87aa74b042b7d7cb01a23241c4cc3b1b8b446b8f1548bd167e3c7bf62",
+      "C2.EXE": "a513c98bc2ce11bd00901b560252b5727ab9b6bacd9319b9eaba08f9e314b99b",
+      "C3.EXE": "c1269628534d5deb48171ba9e42f761dcb1c28a0087c73780db0ee2e4352e6fa",
+      "CL.EXE": "cad40cef732beea3455225fbd62286c664166db7c3f87e2402e22b2e3f107771"
+    },
+    "path": "C:\\tools\\msc-5.10\\CL.EXE"
+  },
+  "profiles": [
+    {
+      "assembly": {
+        "expected_return_opcode": "c3",
+        "instruction_count": 23,
+        "listing": "_clamp8\tPROC NEAR\n\tpush\tbp\n\tmov\tbp,sp\n\tmov\tax,0\n\tcall\t__chkstk\n\tpush\tdi\n\tpush\tsi\n;\tvalue = 4\n; Line 7\n\tcmp\tWORD PTR [bp+4],0\t;value\n\tjl\t$JCC15\n\tjmp\t$I103\n$JCC15:\n; Line 8\n\tmov\tax,0\n\tjmp\t$EX102\n; Line 9\n$I103:\n\tcmp\tWORD PTR [bp+4],255\t;value\n\tjg\t$JCC31\n\tjmp\t$I104\n$JCC31:\n; Line 10\n\tmov\tax,255\n\tjmp\t$EX102\n; Line 11\n$I104:\n\tmov\tax,WORD PTR [bp+4]\t;value\n\tjmp\t$EX102\n; Line 12\n$EX102:\n\tpop\tsi\n\tpop\tdi\n\tmov\tsp,bp\n\tpop\tbp\n\tret\t\n\n_clamp8\tENDP",
+        "path": "work/compiler/cpilot/msc510_od_as/PROBE.ASM",
+        "procedure_distance": "NEAR",
+        "return_instruction_count": 1,
+        "sha256": "1e18dce775bdf8b7c998f067cec616c8906828b31daee27dbbe3109a2d7b628e"
+      },
+      "command": [
+        "C:\\tools\\nmlgcdos\\msdos.exe",
+        "C:\\tools\\msc-5.10\\CL.EXE",
+        "/c",
+        "/Fa",
+        "/Od",
+        "/AS",
+        "PROBE.C"
+      ],
+      "flags": [
+        "/c",
+        "/Fa",
+        "/Od",
+        "/AS"
+      ],
+      "id": "msc510_od_as",
+      "omf": {
+        "code_hex": "558becb80000e800005756837e04007c03e90600b80000e91600817e04ff007f03e90600b8ff00e906008b4604e900005e5f8be55dc3",
+        "code_sha256": "d9bee17116d48d47998199c4cc682712a5e579e34cf43d6f235004dbb5ecc648",
+        "code_size": 54,
+        "fixup_record_count": 2,
+        "offset": 0,
+        "path": "work/compiler/cpilot/msc510_od_as/PROBE.OBJ",
+        "return_opcode": "c3",
+        "return_opcode_count": 1,
+        "segment": "_TEXT",
+        "sha256": "4e10146cbffd58f8f7ebcfe05691d503ce2a83c152fbfa77e30a8fa18386b689",
+        "symbol": "_clamp8"
+      }
+    },
+    {
+      "assembly": {
+        "expected_return_opcode": "c3",
+        "instruction_count": 17,
+        "listing": "_clamp8\tPROC NEAR\n\tpush\tbp\n\tmov\tbp,sp\n;\tvalue = 4\n; Line 7\n\tcmp\tWORD PTR [bp+4],0\t;value\n\tjge\t$I140\n; Line 8\n\tsub\tax,ax\n\tpop\tbp\n\tret\t\n\tnop\t\n$I140:\n\tcmp\tWORD PTR [bp+4],255\t;value\n\tjle\t$I141\n; Line 10\n\tmov\tax,255\n\tpop\tbp\n\tret\t\n$I141:\n\tmov\tax,WORD PTR [bp+4]\t;value\n\tpop\tbp\n\tret\t\n\tnop\t\n\n_clamp8\tENDP",
+        "path": "work/compiler/cpilot/msc510_ox_gs_as/PROBE.ASM",
+        "procedure_distance": "NEAR",
+        "return_instruction_count": 3,
+        "sha256": "72c895525b6fd4d1225f63a7adc2b405cb71b6f5b2dbb30b399c6d17951317ce"
+      },
+      "command": [
+        "C:\\tools\\nmlgcdos\\msdos.exe",
+        "C:\\tools\\msc-5.10\\CL.EXE",
+        "/c",
+        "/Fa",
+        "/Ox",
+        "/Gs",
+        "/AS",
+        "PROBE.C"
+      ],
+      "flags": [
+        "/c",
+        "/Fa",
+        "/Ox",
+        "/Gs",
+        "/AS"
+      ],
+      "id": "msc510_ox_gs_as",
+      "omf": {
+        "code_hex": "558bec837e04007d052bc05dc390817e04ff007e05b8ff005dc38b46045dc390",
+        "code_sha256": "7a301c8d272e4c8efad7e4c823d44b35e7f11484b19f5f13e471edf3ad1ba3c1",
+        "code_size": 32,
+        "fixup_record_count": 1,
+        "offset": 0,
+        "path": "work/compiler/cpilot/msc510_ox_gs_as/PROBE.OBJ",
+        "return_opcode": "c3",
+        "return_opcode_count": 3,
+        "segment": "_TEXT",
+        "sha256": "e343f6fbad8d5db78aac929febfc0c39d41516af6e31f2d25441d3a8a929a9fd",
+        "symbol": "_clamp8"
+      }
+    },
+    {
+      "assembly": {
+        "expected_return_opcode": "cb",
+        "instruction_count": 17,
+        "listing": "_clamp8\tPROC FAR\n\tpush\tbp\n\tmov\tbp,sp\n;\tvalue = 6\n; Line 7\n\tcmp\tWORD PTR [bp+6],0\t;value\n\tjge\t$I140\n; Line 8\n\tsub\tax,ax\n\tpop\tbp\n\tret\t\n\tnop\t\n$I140:\n\tcmp\tWORD PTR [bp+6],255\t;value\n\tjle\t$I141\n; Line 10\n\tmov\tax,255\n\tpop\tbp\n\tret\t\n$I141:\n\tmov\tax,WORD PTR [bp+6]\t;value\n\tpop\tbp\n\tret\t\n\tnop\t\n\n_clamp8\tENDP",
+        "path": "work/compiler/cpilot/msc510_ox_gs_am/PROBE.ASM",
+        "procedure_distance": "FAR",
+        "return_instruction_count": 3,
+        "sha256": "8c17518bb8b9d25e3509813d44200021d701a50b94d559daf3465a91a1a17de7"
+      },
+      "command": [
+        "C:\\tools\\nmlgcdos\\msdos.exe",
+        "C:\\tools\\msc-5.10\\CL.EXE",
+        "/c",
+        "/Fa",
+        "/Ox",
+        "/Gs",
+        "/AM",
+        "PROBE.C"
+      ],
+      "flags": [
+        "/c",
+        "/Fa",
+        "/Ox",
+        "/Gs",
+        "/AM"
+      ],
+      "id": "msc510_ox_gs_am",
+      "omf": {
+        "code_hex": "558bec837e06007d052bc05dcb90817e06ff007e05b8ff005dcb8b46065dcb90",
+        "code_sha256": "8a1220d9ead0a66cc194bfc8311d41aec356266803e8d2a2f3963c07f2e6a14e",
+        "code_size": 32,
+        "fixup_record_count": 1,
+        "offset": 0,
+        "path": "work/compiler/cpilot/msc510_ox_gs_am/PROBE.OBJ",
+        "return_opcode": "cb",
+        "return_opcode_count": 3,
+        "segment": "PROBE_TEXT",
+        "sha256": "8bbadd502ab13ef48c99b2ce2b55310dea91c4ddc3d8e3a14b56694ca335538c",
+        "symbol": "_clamp8"
+      }
+    }
+  ],
+  "schema": "gp-recon-c-compiler-pilot-v1",
+  "source_path": "tools/compiler/signature_probe.c",
+  "source_sha256": "8da4bb3d201f62577276e2050eba9d2d3487472d4bb0ecba0356ba18c1d83ef7"
+}

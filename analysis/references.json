@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "unexepack": {
+    "repository": "https://github.com/w4kfu/unEXEPACK",
+    "observed_head": "db26f9e2d23af37e6508436b62cb98cbbb86a275",
+    "source_path": "unpack.c",
+    "downloaded_source_sha256": "fb092548a90501e3d330b7b3db0b527396ef488cd3f88376811fa09f1dba615d",
+    "role": "format reference; original runtime stub provides independent executable verification",
+    "third_party_source_retained": "ignored work/references/unpack.c only"
+  },
+  "cyclesmod": {
+    "repository": "https://github.com/albertus82/cyclesmod",
+    "revision": "e544c88e5247efb1d5f61cf19bfa038e63b192fb",
+    "role": "vehicle layout hypotheses; whole-array identities checked independently",
+    "file_hashes": "analysis/structures.json"
+  },
+  "marnetto": {
+    "url": "https://marnetto.net/projects/grand-prix-circuit",
+    "role": "primary author research lead for PES, tracks and vehicles; architectural claims require binary verification",
+    "access_date": "2026-10-15"
+  }
+}

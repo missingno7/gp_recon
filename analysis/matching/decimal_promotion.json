@@ -1,0 +1,200 @@
+{
+  "accepted": true,
+  "boundary_note": "The independent 36-byte Ghidra extent ends at a near RET, and direct near-call references are present in every covered image; semantics are AL-to-three-decimal-digits with NUL at BX+3.",
+  "boundary_status": "confirmed_direct_callers",
+  "build_proof": {
+    "assembler": {
+      "banner": "Microsoft (R) Macro Assembler Version 5.10",
+      "command": [
+        "C:\\tools\\nmlgcdos\\msdos.exe",
+        "C:\\tools\\masm-5.10\\files\\MASM.EXE",
+        "DEC4.ASM,DEC4.OBJ,NUL,NUL;"
+      ],
+      "name": "Microsoft Macro Assembler 5.10",
+      "path": "C:\\tools\\masm-5.10\\files\\MASM.EXE",
+      "player_path": "C:\\tools\\nmlgcdos\\msdos.exe",
+      "player_sha256": "f7f6cb0a3e816c5edb13112d327c1bddbf7463fe7bf9a005ca1eb5317751bd02",
+      "sha256": "233120302473749eafe9a54a30f8bda0127140c44346e5bcc047d113828a741e",
+      "transcript_sha256": "88265e55f08c60f1117aeee09cd710125e4061f07e9a55c73e6db9d0c3a0e6df"
+    },
+    "object": {
+      "format": "OMF",
+      "function_bytes_hex": "c6470300b10a32e4f6f180c43088670232e4f6f180c43088670132e4f6f180c4308827c3",
+      "function_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "length": 36,
+      "offset": 0,
+      "path": "work/compiler/DEC4.OBJ",
+      "segment": "_TEXT",
+      "sha256": "9d5b830416c675fa73f78faa4064aa7d0dee826729536c6ccef7331ea3b902b9",
+      "symbol": "_format_u8_decimal3"
+    },
+    "schema": "gp-recon-compiler-proof-v1",
+    "source_path": "src/engine/format/decimal_ascii4.asm",
+    "source_sha256": "1303d188499538aba8e9a3b04147cf98e1bd402e94dc6d7651f5c5a25c0b94e8",
+    "targets": [
+      {
+        "exact": true,
+        "id": "circuit_ega",
+        "image_path": "work/oracles/circuit_ega/image.bin",
+        "image_sha256": "005c4472392a758c4ab5cba37ec8c72d5f5a2e13f9e8052e2d576a10073ffb1c",
+        "length": 36,
+        "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+        "offset": 22276
+      },
+      {
+        "exact": true,
+        "id": "circuit_cga",
+        "image_path": "work/oracles/circuit_cga/image.bin",
+        "image_sha256": "d02979b806bf105cae671237466e580e14c53fa1225edcfe9a0b8b59dc0c6ee7",
+        "length": 36,
+        "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+        "offset": 21946
+      },
+      {
+        "exact": true,
+        "id": "cycles_ega",
+        "image_path": "work/oracles/cycles_ega/image.bin",
+        "image_sha256": "66e5652998d3977015162e436c05ee4e2afde0a932bbb856a753d95425afd783",
+        "length": 36,
+        "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+        "offset": 7528
+      },
+      {
+        "exact": true,
+        "id": "cycles_cga",
+        "image_path": "work/oracles/cycles_cga/image.bin",
+        "image_sha256": "6990e7e327166057a25dd06c64e69f8c8457bea07c381eb06f211e668408e6c1",
+        "length": 36,
+        "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+        "offset": 7238
+      },
+      {
+        "exact": true,
+        "id": "cycles_tandy",
+        "image_path": "work/oracles/cycles_tandy/image.bin",
+        "image_sha256": "1ccfb484ac00c8660645798de1233e97b993d49b7fd5fb8eec0763514bb521ec",
+        "length": 36,
+        "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+        "offset": 7228
+      }
+    ]
+  },
+  "candidate_id": "initial:format_u8_decimal3",
+  "classification": "SHARED_EXACT",
+  "equivalence_group": "eq_format_u8_decimal3",
+  "equivalence_relation": "SHARED_EXACT",
+  "function_id": "format_u8_decimal3",
+  "function_length": 36,
+  "function_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+  "schema_version": 1,
+  "source_path": "src/engine/format/decimal_ascii4.asm",
+  "source_sha256": "1303d188499538aba8e9a3b04147cf98e1bd402e94dc6d7651f5c5a25c0b94e8",
+  "summary": "all scoped target bytes exactly match pinned oracles",
+  "targets": [
+    {
+      "byte_length": 36,
+      "candidate_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "exact": true,
+      "function_id": "format_u8_decimal3",
+      "gates": {
+        "fresh_object_fixup_free": true,
+        "fresh_object_format_omf": true,
+        "oracle_range_relocation_free": true,
+        "oracle_range_relocation_intersections": 0
+      },
+      "oracle_range_relocation_intersections": 0,
+      "oracle_relocation_entries": 36,
+      "oracle_relocation_multiset_sha256": "b0f5cc61ef6024993894dda011b75122d514bca34918df946efd6adbe3ff4fea",
+      "oracle_relocation_order_sha256": "30ac2f0cd52231f829e66ac90455bf103d34cd716b974a51aa45f97e0f585ac4",
+      "oracle_relocation_set_sha256": "b0f5cc61ef6024993894dda011b75122d514bca34918df946efd6adbe3ff4fea",
+      "oracle_relocation_unique": 36,
+      "oracle_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "regressed": false,
+      "target_id": "circuit_cga"
+    },
+    {
+      "byte_length": 36,
+      "candidate_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "exact": true,
+      "function_id": "format_u8_decimal3",
+      "gates": {
+        "fresh_object_fixup_free": true,
+        "fresh_object_format_omf": true,
+        "oracle_range_relocation_free": true,
+        "oracle_range_relocation_intersections": 0
+      },
+      "oracle_range_relocation_intersections": 0,
+      "oracle_relocation_entries": 35,
+      "oracle_relocation_multiset_sha256": "a3240a966850eab2b6e6ceb0af6d6bb8ac42c67ff280e897bc07231b5d1fc0d7",
+      "oracle_relocation_order_sha256": "36309d69385ccc60f8f29056be5dad595d0d44d33c01f45b740ee0b6319c01e9",
+      "oracle_relocation_set_sha256": "a3240a966850eab2b6e6ceb0af6d6bb8ac42c67ff280e897bc07231b5d1fc0d7",
+      "oracle_relocation_unique": 35,
+      "oracle_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "regressed": false,
+      "target_id": "circuit_ega"
+    },
+    {
+      "byte_length": 36,
+      "candidate_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "exact": true,
+      "function_id": "format_u8_decimal3",
+      "gates": {
+        "fresh_object_fixup_free": true,
+        "fresh_object_format_omf": true,
+        "oracle_range_relocation_free": true,
+        "oracle_range_relocation_intersections": 0
+      },
+      "oracle_range_relocation_intersections": 0,
+      "oracle_relocation_entries": 1221,
+      "oracle_relocation_multiset_sha256": "0df3780746f4f7d123b8e19596133cf9be4fced6eb9fa30c62fe1d4852480eb6",
+      "oracle_relocation_order_sha256": "0e71173c55d68d27b58f37e47350dd6b247cae00a1f1cf6988972cd50c9021ed",
+      "oracle_relocation_set_sha256": "0df3780746f4f7d123b8e19596133cf9be4fced6eb9fa30c62fe1d4852480eb6",
+      "oracle_relocation_unique": 1221,
+      "oracle_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "regressed": false,
+      "target_id": "cycles_cga"
+    },
+    {
+      "byte_length": 36,
+      "candidate_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "exact": true,
+      "function_id": "format_u8_decimal3",
+      "gates": {
+        "fresh_object_fixup_free": true,
+        "fresh_object_format_omf": true,
+        "oracle_range_relocation_free": true,
+        "oracle_range_relocation_intersections": 0
+      },
+      "oracle_range_relocation_intersections": 0,
+      "oracle_relocation_entries": 1202,
+      "oracle_relocation_multiset_sha256": "4c40bfbfa703e1786484747f10bd26aaef574d76dedade743141aa0192ff50a5",
+      "oracle_relocation_order_sha256": "07d6c9f1120e6476fb71e6db0b4bba0f5f7aa140418156416760ae31d4d59e77",
+      "oracle_relocation_set_sha256": "4c40bfbfa703e1786484747f10bd26aaef574d76dedade743141aa0192ff50a5",
+      "oracle_relocation_unique": 1202,
+      "oracle_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "regressed": false,
+      "target_id": "cycles_ega"
+    },
+    {
+      "byte_length": 36,
+      "candidate_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "exact": true,
+      "function_id": "format_u8_decimal3",
+      "gates": {
+        "fresh_object_fixup_free": true,
+        "fresh_object_format_omf": true,
+        "oracle_range_relocation_free": true,
+        "oracle_range_relocation_intersections": 0
+      },
+      "oracle_range_relocation_intersections": 0,
+      "oracle_relocation_entries": 1220,
+      "oracle_relocation_multiset_sha256": "6eae61adf627f60dca872865495cfcafaccf4f34a28a19a4520d9da2cdfec826",
+      "oracle_relocation_order_sha256": "307ea57db29fb330381c4090d7d11685bf14e045fbc2407d7a834cbafa7bbfa7",
+      "oracle_relocation_set_sha256": "6eae61adf627f60dca872865495cfcafaccf4f34a28a19a4520d9da2cdfec826",
+      "oracle_relocation_unique": 1220,
+      "oracle_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "regressed": false,
+      "target_id": "cycles_tandy"
+    }
+  ]
+}

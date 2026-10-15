@@ -1,0 +1,140 @@
+{
+  "accepted": true,
+  "boundary_note": "Public OMF symbol and 106-byte far-return extent are reproduced, but direct and relocated incoming-reference evidence is not yet established; source-boundary confidence remains provisional.",
+  "boundary_status": "provisional",
+  "build_proof": {
+    "assembler": {
+      "banner": "Microsoft (R) Macro Assembler Version 5.10",
+      "command": [
+        "C:\\tools\\nmlgcdos\\msdos.exe",
+        "C:\\tools\\masm-5.10\\files\\MASM.EXE",
+        "EGACOPY.ASM,EGACOPY.OBJ,NUL,NUL;"
+      ],
+      "name": "Microsoft Macro Assembler 5.10",
+      "path": "C:\\tools\\masm-5.10\\files\\MASM.EXE",
+      "player_path": "C:\\tools\\nmlgcdos\\msdos.exe",
+      "player_sha256": "f7f6cb0a3e816c5edb13112d327c1bddbf7463fe7bf9a005ca1eb5317751bd02",
+      "sha256": "233120302473749eafe9a54a30f8bda0127140c44346e5bcc047d113828a741e",
+      "transcript_sha256": "46b16f4b410f15b599ae77251e280a6263a4836cf4b695863d5f0fccba9d17a2"
+    },
+    "object": {
+      "format": "OMF",
+      "function_bytes_hex": "558becbace03b005eebacf03b000eebace03b008eebacf03b0ffee061e56578b46088ed88b460c8ec08b76068b7e0a8b5e100bdb7e2eba1400fcbac403b002ee42b001eeb91400f3a5bac403b002ee42b002ee8b7e0a8b760603760eb91400f3a54b7fd65f5e1f075dcb",
+      "function_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+      "length": 106,
+      "offset": 0,
+      "path": "work/compiler/EGACOPY.OBJ",
+      "segment": "_TEXT",
+      "sha256": "54c4b11a2f317ec04dedc57f0f25a9e84c92d1889efc8fe4cfea06a95bb392d3",
+      "symbol": "_ega_copy_planes"
+    },
+    "schema": "gp-recon-compiler-proof-v1",
+    "source_path": "src/engine/graphics/ega_copy_planes.asm",
+    "source_sha256": "7b8cd63f3be4bbe4576a13a939d4764bd2aa6552acaee88d6e1125224edd9a63",
+    "targets": [
+      {
+        "exact": true,
+        "id": "cycles_ega",
+        "image_path": "work/oracles/cycles_ega/image.bin",
+        "image_sha256": "66e5652998d3977015162e436c05ee4e2afde0a932bbb856a753d95425afd783",
+        "length": 106,
+        "match_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+        "offset": 4670
+      },
+      {
+        "exact": true,
+        "id": "cycles_cga",
+        "image_path": "work/oracles/cycles_cga/image.bin",
+        "image_sha256": "6990e7e327166057a25dd06c64e69f8c8457bea07c381eb06f211e668408e6c1",
+        "length": 106,
+        "match_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+        "offset": 4414
+      },
+      {
+        "exact": true,
+        "id": "cycles_tandy",
+        "image_path": "work/oracles/cycles_tandy/image.bin",
+        "image_sha256": "1ccfb484ac00c8660645798de1233e97b993d49b7fd5fb8eec0763514bb521ec",
+        "length": 106,
+        "match_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+        "offset": 4403
+      }
+    ]
+  },
+  "candidate_id": "initial:cycles_ega_copy_planes",
+  "classification": "VIDEO_SPECIFIC",
+  "equivalence_group": "eq_cycles_ega_copy_planes",
+  "equivalence_relation": "SHARED_EXACT",
+  "function_id": "cycles_ega_copy_planes",
+  "function_length": 106,
+  "function_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+  "schema_version": 1,
+  "source_path": "src/engine/graphics/ega_copy_planes.asm",
+  "source_sha256": "7b8cd63f3be4bbe4576a13a939d4764bd2aa6552acaee88d6e1125224edd9a63",
+  "summary": "all scoped target bytes exactly match pinned oracles",
+  "targets": [
+    {
+      "byte_length": 106,
+      "candidate_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+      "exact": true,
+      "function_id": "cycles_ega_copy_planes",
+      "gates": {
+        "fresh_object_fixup_free": true,
+        "fresh_object_format_omf": true,
+        "oracle_range_relocation_free": true,
+        "oracle_range_relocation_intersections": 0
+      },
+      "oracle_range_relocation_intersections": 0,
+      "oracle_relocation_entries": 1221,
+      "oracle_relocation_multiset_sha256": "0df3780746f4f7d123b8e19596133cf9be4fced6eb9fa30c62fe1d4852480eb6",
+      "oracle_relocation_order_sha256": "0e71173c55d68d27b58f37e47350dd6b247cae00a1f1cf6988972cd50c9021ed",
+      "oracle_relocation_set_sha256": "0df3780746f4f7d123b8e19596133cf9be4fced6eb9fa30c62fe1d4852480eb6",
+      "oracle_relocation_unique": 1221,
+      "oracle_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+      "regressed": false,
+      "target_id": "cycles_cga"
+    },
+    {
+      "byte_length": 106,
+      "candidate_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+      "exact": true,
+      "function_id": "cycles_ega_copy_planes",
+      "gates": {
+        "fresh_object_fixup_free": true,
+        "fresh_object_format_omf": true,
+        "oracle_range_relocation_free": true,
+        "oracle_range_relocation_intersections": 0
+      },
+      "oracle_range_relocation_intersections": 0,
+      "oracle_relocation_entries": 1202,
+      "oracle_relocation_multiset_sha256": "4c40bfbfa703e1786484747f10bd26aaef574d76dedade743141aa0192ff50a5",
+      "oracle_relocation_order_sha256": "07d6c9f1120e6476fb71e6db0b4bba0f5f7aa140418156416760ae31d4d59e77",
+      "oracle_relocation_set_sha256": "4c40bfbfa703e1786484747f10bd26aaef574d76dedade743141aa0192ff50a5",
+      "oracle_relocation_unique": 1202,
+      "oracle_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+      "regressed": false,
+      "target_id": "cycles_ega"
+    },
+    {
+      "byte_length": 106,
+      "candidate_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+      "exact": true,
+      "function_id": "cycles_ega_copy_planes",
+      "gates": {
+        "fresh_object_fixup_free": true,
+        "fresh_object_format_omf": true,
+        "oracle_range_relocation_free": true,
+        "oracle_range_relocation_intersections": 0
+      },
+      "oracle_range_relocation_intersections": 0,
+      "oracle_relocation_entries": 1220,
+      "oracle_relocation_multiset_sha256": "6eae61adf627f60dca872865495cfcafaccf4f34a28a19a4520d9da2cdfec826",
+      "oracle_relocation_order_sha256": "307ea57db29fb330381c4090d7d11685bf14e045fbc2407d7a834cbafa7bbfa7",
+      "oracle_relocation_set_sha256": "6eae61adf627f60dca872865495cfcafaccf4f34a28a19a4520d9da2cdfec826",
+      "oracle_relocation_unique": 1220,
+      "oracle_sha256": "22aa941800cde73646e607a32f35f78e929614dd64052f6afb7842b79a359aff",
+      "regressed": false,
+      "target_id": "cycles_tandy"
+    }
+  ]
+}

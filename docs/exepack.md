@@ -57,7 +57,7 @@ can differ; locations, multiplicity and ordering are separate observations.
 
 `GP1.EXE` and `GPEGA.EX_` have identical unpacked images, but GP1 removes linear
 relocation locations 59967, 59984 and 60100 and introduces locations 36927 and
-37008, one of which occurs twice. Its 1202 entries contain only 1201 distinct
+37008, with 37008 occurring twice. Its 1202 entries contain only 1201 distinct
 locations. The running stub confirms the duplicate addition. A relocation set
 or load-image hash alone would miss this behavioral difference.
 

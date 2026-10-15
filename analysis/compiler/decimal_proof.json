@@ -1,0 +1,77 @@
+{
+  "assembler": {
+    "banner": "Microsoft (R) Macro Assembler Version 5.10",
+    "command": [
+      "C:\\tools\\nmlgcdos\\msdos.exe",
+      "C:\\tools\\masm-5.10\\files\\MASM.EXE",
+      "DEC4.ASM,DEC4.OBJ,NUL,NUL;"
+    ],
+    "name": "Microsoft Macro Assembler 5.10",
+    "path": "C:\\tools\\masm-5.10\\files\\MASM.EXE",
+    "player_path": "C:\\tools\\nmlgcdos\\msdos.exe",
+    "player_sha256": "f7f6cb0a3e816c5edb13112d327c1bddbf7463fe7bf9a005ca1eb5317751bd02",
+    "sha256": "233120302473749eafe9a54a30f8bda0127140c44346e5bcc047d113828a741e",
+    "transcript_sha256": "88265e55f08c60f1117aeee09cd710125e4061f07e9a55c73e6db9d0c3a0e6df"
+  },
+  "object": {
+    "format": "OMF",
+    "function_bytes_hex": "c6470300b10a32e4f6f180c43088670232e4f6f180c43088670132e4f6f180c4308827c3",
+    "function_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+    "length": 36,
+    "offset": 0,
+    "path": "work/compiler/DEC4.OBJ",
+    "segment": "_TEXT",
+    "sha256": "9d5b830416c675fa73f78faa4064aa7d0dee826729536c6ccef7331ea3b902b9",
+    "symbol": "_format_u8_decimal3"
+  },
+  "schema": "gp-recon-compiler-proof-v1",
+  "source_path": "src/engine/format/decimal_ascii4.asm",
+  "source_sha256": "1303d188499538aba8e9a3b04147cf98e1bd402e94dc6d7651f5c5a25c0b94e8",
+  "targets": [
+    {
+      "exact": true,
+      "id": "circuit_ega",
+      "image_path": "work/oracles/circuit_ega/image.bin",
+      "image_sha256": "005c4472392a758c4ab5cba37ec8c72d5f5a2e13f9e8052e2d576a10073ffb1c",
+      "length": 36,
+      "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "offset": 22276
+    },
+    {
+      "exact": true,
+      "id": "circuit_cga",
+      "image_path": "work/oracles/circuit_cga/image.bin",
+      "image_sha256": "d02979b806bf105cae671237466e580e14c53fa1225edcfe9a0b8b59dc0c6ee7",
+      "length": 36,
+      "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "offset": 21946
+    },
+    {
+      "exact": true,
+      "id": "cycles_ega",
+      "image_path": "work/oracles/cycles_ega/image.bin",
+      "image_sha256": "66e5652998d3977015162e436c05ee4e2afde0a932bbb856a753d95425afd783",
+      "length": 36,
+      "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "offset": 7528
+    },
+    {
+      "exact": true,
+      "id": "cycles_cga",
+      "image_path": "work/oracles/cycles_cga/image.bin",
+      "image_sha256": "6990e7e327166057a25dd06c64e69f8c8457bea07c381eb06f211e668408e6c1",
+      "length": 36,
+      "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "offset": 7238
+    },
+    {
+      "exact": true,
+      "id": "cycles_tandy",
+      "image_path": "work/oracles/cycles_tandy/image.bin",
+      "image_sha256": "1ccfb484ac00c8660645798de1233e97b993d49b7fd5fb8eec0763514bb521ec",
+      "length": 36,
+      "match_sha256": "f0ff22ad4482e1515056175f4764a3696c2a6ae630538c54a99bd27558acf072",
+      "offset": 7228
+    }
+  ]
+}

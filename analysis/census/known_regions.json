@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "regions": [
+    {
+      "label": "reported_ega_graphics_region_697_bytes",
+      "a": {"target": "circuit_ega", "start": "0xD347", "reported_size": 697},
+      "b": {"target": "cycles_ega", "start": "0xB225", "reported_size": 697},
+      "reported_semantics": "EGA graphics operations",
+      "interpreted_semantics": "unrolled EGA sprite/plane raster kernel; repeated bit-position variants consume source bytes and XOR them into ES:DI, with sequencer/graphics-controller programming in the immediately adjacent continuation",
+      "boundary_status": "verified_internal_slice_only",
+      "function_count": null,
+      "match_status": "SHARED_EXACT_REGION",
+      "evidence": {
+        "common_bytes_sha256": "ead77adc082043140bb26e7dc0d2a00d0b2062766d2a3799a58eceaab7515484",
+        "circuit_decoded_instructions": 292,
+        "cycles_decoded_instructions": 292,
+        "circuit_slice_end_exclusive": "0xD600",
+        "cycles_slice_end_exclusive": "0xB4DE",
+        "circuit_first_matching_window_instruction": "mov si, [bp-0x3a]",
+        "terminal_bytes": "3b 5e c4 72 a4",
+        "circuit_after_window": "add di, 0x28",
+        "cycles_after_window": "add di, word ptr cs:[0x4e9e]",
+        "circuit_enclosing_return": "near RET at 0xD61C",
+        "cycles_enclosing_return": "far RETF at 0xB4FC",
+        "raw_near_call_references_to_window_start": 0
+      },
+      "notes": "The 697 bytes are a byte-exact internal slice, not a proven callable function. The slice begins after a RET/RETF in the previous path, has no raw near-call reference to its first byte, and its final conditional branch targets a label within the span. The enclosing bodies continue past the match and later return using different near/far conventions. Do not use this span as a standalone C routine pilot."
+    }
+  ]
+}

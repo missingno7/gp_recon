@@ -3,6 +3,6 @@
 *.json text eol=lf
 *.sql text eol=lf
 *.md text eol=lf
-*.c text eol=crlf
-*.asm text eol=crlf
+*.c text eol=lf
+*.asm text eol=lf
 
