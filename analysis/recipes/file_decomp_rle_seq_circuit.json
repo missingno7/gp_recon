@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "file_decomp_rle_seq_circuit",
   "source": "src/engine/fileio/file_decomp_rle_seq_circuit.asm",
-  "source_sha256": "ba19df8f3a7b1c8efe56aa1312b84929f449608a866d8430cd3da6fe6f486289",
+  "source_sha256": "a39ea541161eb4fcdeedc360d461fba2cd6331c1b8f44bb0c171378cc6fcaf68",
   "profile": "masm510-mx",
   "public": "_file_decomp_rle_seq",
   "expected_fixups": [

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "mmgr_copy_paras_circuit",
   "source": "src/engine/fileio/paragraph_copy_circuit.asm",
-  "source_sha256": "a489214f40fa79ab718d2d5127c35c697e9fac692a22d7bf5f00e9fc8beaabde",
+  "source_sha256": "e9efeba1ea7fb3ea7bf0507d1eea7729c591780df596fda7a272c227f86aae09",
   "profile": "masm510-mx",
   "public": "_mmgr_copy_paras",
   "expected_fixups": [],

@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "file_decomp_nofatal",
   "source": "src/engine/fileio/resource_file_io_decompression.asm",
-  "source_sha256": "d7d1d8c67f751bfc19338ac522a5a1e1d758bdc74f2649c6629095fa2db1f2f9",
+  "source_sha256": "109590c269b41f7c59a8d03be0619165ab38a5df45dd11dcc92e3bd0bdc9cbae",
   "profile": "masm510-mx",
   "public": "_file_decomp_nofatal",
   "expected_fixups": [],

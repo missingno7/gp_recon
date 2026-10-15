@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "file_paras_group",
   "source": "src/engine/fileio/file_paras_group.asm",
-  "source_sha256": "65b7badd1bd2c9f1ab0ce009806f854abffa09fd6bb3733569757edd7c75b998",
+  "source_sha256": "79d806020f7f52486db8798b588f2779dd2753073f6980e8345371c40462f17c",
   "profile": "masm510-mx",
   "public": "_file_paras",
   "expected_fixups": [

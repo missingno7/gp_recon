@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "file_decomp_paras_nofatal",
   "source": "src/engine/fileio/file_decomp_paras.asm",
-  "source_sha256": "9ba2349841d7c6dbe0082652cd20358251a2730ede532abc6f4b17c198d7a0f4",
+  "source_sha256": "44397c4e188ab6111c188929a5e00ed0b0b4432fdc469d638f2fa4678656213b",
   "profile": "masm510-mx",
   "public": "_file_decomp_paras_nofatal",
   "expected_fixups": [],

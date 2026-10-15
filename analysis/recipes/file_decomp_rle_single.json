@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "file_decomp_rle_single",
   "source": "src/engine/fileio/file_decomp_rle.asm",
-  "source_sha256": "c6b781acb619ba453c243afff749b9d9bb78862bef6f90f15b6c6f18dc97cbdf",
+  "source_sha256": "e3c2d19261b4d22053a49edc72f2444c7a664406abbd4ce526f08115c6d5f7c8",
   "profile": "masm510-mx",
   "public": "_file_decomp_rle_single",
   "expected_fixups": [
