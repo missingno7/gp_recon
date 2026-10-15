@@ -1,0 +1,24 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_TEXT",
+      "loc": "base16",
+      "offset": 46,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    }
+  ],
+  "id": "cycles_tandy_kb_parse_key",
+  "profile": "masm510-mx",
+  "public": "_kb_parse_key",
+  "schema": 1,
+  "source": "src/engine/input/kb_parse_key_cycles_tandy.asm",
+  "source_sha256": "2c99f16960fc637db4968ec89eb0b9f9e609e42060902c009d473961dfaf14d9",
+  "targets": {
+    "cycles_tandy": {
+      "end": 24303,
+      "start": 24210
+    }
+  }
+}

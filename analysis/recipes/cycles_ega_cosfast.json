@@ -1,0 +1,15 @@
+{
+  "expected_fixups": [],
+  "id": "cycles_ega_cosfast",
+  "profile": "masm510-mx",
+  "public": "_cosfast",
+  "schema": 1,
+  "source": "src/engine/math/sincos_cycles_ega.asm",
+  "source_sha256": "d3809e59b0fa0e87e77bf8cacc96f391858e14f800ed533f5b1c9fb5b65e4c65",
+  "targets": {
+    "cycles_ega": {
+      "end": 29038,
+      "start": 29026
+    }
+  }
+}

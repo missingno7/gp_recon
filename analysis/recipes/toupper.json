@@ -1,0 +1,23 @@
+{
+  "expected_fixups": [],
+  "id": "toupper",
+  "profile": "msc510-medium-o_gs",
+  "public": "_toupper",
+  "schema": 1,
+  "source": "src/runtime/toupper.c",
+  "source_sha256": "eae142746ab58bd5c328d7f3d77a1675313b7a3cac6f8255ed0867cd9d35ef97",
+  "targets": {
+    "cycles_cga": {
+      "end": 72888,
+      "start": 72864
+    },
+    "cycles_ega": {
+      "end": 87056,
+      "start": 87032
+    },
+    "cycles_tandy": {
+      "end": 71344,
+      "start": 71320
+    }
+  }
+}

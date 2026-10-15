@@ -1,0 +1,32 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 7,
+      "self_relative": false,
+      "target": "_timerintr",
+      "width": 2
+    }
+  ],
+  "id": "timer_remove_callback",
+  "profile": "masm510-mx",
+  "public": "_timer_remove_callback",
+  "schema": 1,
+  "source": "src/engine/timer/timer_remove_callback.asm",
+  "source_sha256": "a3db80c62b2c4336fe9772bd69c1d7a29e1fc3628fe4385952466621af1e98b6",
+  "targets": {
+    "cycles_cga": {
+      "end": 23373,
+      "start": 23310
+    },
+    "cycles_ega": {
+      "end": 23357,
+      "start": 23294
+    },
+    "cycles_tandy": {
+      "end": 23363,
+      "start": 23300
+    }
+  }
+}

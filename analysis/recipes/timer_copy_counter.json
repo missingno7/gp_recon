@@ -1,0 +1,48 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_timer_get_counter",
+      "loc": "pointer32",
+      "offset": 4,
+      "self_relative": false,
+      "target": "_timer_get_counter",
+      "width": 4
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 15,
+      "self_relative": false,
+      "target": "TIMER_DATA",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 19,
+      "self_relative": false,
+      "target": "TIMER_DATA",
+      "width": 2
+    }
+  ],
+  "id": "timer_copy_counter",
+  "profile": "masm510-mx",
+  "public": "_timer_copy_counter",
+  "schema": 1,
+  "source": "src/engine/timer/timer_counter_deadline_helpers.asm",
+  "source_sha256": "3a8ece58d08a6d0e88cc520c855e3142ad7fac5ae6d975e3402df75621c06af2",
+  "targets": {
+    "cycles_cga": {
+      "end": 29445,
+      "start": 29422
+    },
+    "cycles_ega": {
+      "end": 29429,
+      "start": 29406
+    },
+    "cycles_tandy": {
+      "end": 29435,
+      "start": 29412
+    }
+  }
+}

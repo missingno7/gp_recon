@@ -1,0 +1,40 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_timer_get_counter",
+      "loc": "pointer32",
+      "offset": 7,
+      "self_relative": false,
+      "target": "_timer_get_counter",
+      "width": 4
+    },
+    {
+      "frame": "_timer_get_counter",
+      "loc": "pointer32",
+      "offset": 24,
+      "self_relative": false,
+      "target": "_timer_get_counter",
+      "width": 4
+    }
+  ],
+  "id": "timer_get_counter_unk",
+  "profile": "masm510-mx",
+  "public": "_timer_get_counter_unk",
+  "schema": 1,
+  "source": "src/engine/timer/timer_counter_deadline_helpers.asm",
+  "source_sha256": "3a8ece58d08a6d0e88cc520c855e3142ad7fac5ae6d975e3402df75621c06af2",
+  "targets": {
+    "cycles_cga": {
+      "end": 29536,
+      "start": 29491
+    },
+    "cycles_ega": {
+      "end": 29520,
+      "start": 29475
+    },
+    "cycles_tandy": {
+      "end": 29526,
+      "start": 29481
+    }
+  }
+}

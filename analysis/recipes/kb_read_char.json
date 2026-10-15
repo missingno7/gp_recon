@@ -1,0 +1,23 @@
+{
+  "expected_fixups": [],
+  "id": "kb_read_char",
+  "profile": "masm510-mx",
+  "public": "_kb_read_char",
+  "schema": 1,
+  "source": "src/engine/input/kb_read_char.asm",
+  "source_sha256": "d946e360466572dd11e8767f4a1d4154bdbcd24a75936902419f033ae10f4b0c",
+  "targets": {
+    "cycles_cga": {
+      "end": 25567,
+      "start": 25547
+    },
+    "cycles_ega": {
+      "end": 25551,
+      "start": 25531
+    },
+    "cycles_tandy": {
+      "end": 25557,
+      "start": 25537
+    }
+  }
+}

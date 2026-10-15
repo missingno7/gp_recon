@@ -1,0 +1,31 @@
+{
+  "expected_fixups": [],
+  "id": "sub_2CE77",
+  "profile": "masm510-mx",
+  "public": "_sub_2CE77",
+  "schema": 1,
+  "source": "src/runtime/sub_2CE77.asm",
+  "source_sha256": "3ae735f2fe2a135ae3aa3d4dc1c4d1476d98f2f0a478b252bb726c45e7d6e73c",
+  "targets": {
+    "circuit_cga": {
+      "end": 48567,
+      "start": 48548
+    },
+    "circuit_ega": {
+      "end": 57913,
+      "start": 57894
+    },
+    "cycles_cga": {
+      "end": 11122,
+      "start": 11103
+    },
+    "cycles_ega": {
+      "end": 11444,
+      "start": 11425
+    },
+    "cycles_tandy": {
+      "end": 11112,
+      "start": 11093
+    }
+  }
+}

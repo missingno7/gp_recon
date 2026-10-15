@@ -1,0 +1,23 @@
+{
+  "expected_fixups": [],
+  "id": "multiply_and_scale",
+  "profile": "masm510-mx",
+  "public": "_multiply_and_scale",
+  "schema": 1,
+  "source": "src/engine/math/multiply_and_scale.asm",
+  "source_sha256": "e58758ba297d4bc1c702c38eacf3a74cd5ef083471088bf3ca98710c4b31c60b",
+  "targets": {
+    "cycles_cga": {
+      "end": 44930,
+      "start": 44904
+    },
+    "cycles_ega": {
+      "end": 49590,
+      "start": 49564
+    },
+    "cycles_tandy": {
+      "end": 43526,
+      "start": 43500
+    }
+  }
+}

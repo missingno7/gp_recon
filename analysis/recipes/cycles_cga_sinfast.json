@@ -1,0 +1,88 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "S012_TEXT",
+      "loc": "offset16",
+      "offset": 18,
+      "self_relative": false,
+      "target": "S012_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "S012_TEXT",
+      "loc": "offset16",
+      "offset": 20,
+      "self_relative": false,
+      "target": "S012_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "S012_TEXT",
+      "loc": "offset16",
+      "offset": 22,
+      "self_relative": false,
+      "target": "S012_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "S012_TEXT",
+      "loc": "offset16",
+      "offset": 24,
+      "self_relative": false,
+      "target": "S012_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "S012_TEXT",
+      "loc": "offset16",
+      "offset": 26,
+      "self_relative": false,
+      "target": "S012_TEXT",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 34,
+      "self_relative": false,
+      "target": "SINE_DATA",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 47,
+      "self_relative": false,
+      "target": "SINE_DATA",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 57,
+      "self_relative": false,
+      "target": "SINE_DATA",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 72,
+      "self_relative": false,
+      "target": "SINE_DATA",
+      "width": 2
+    }
+  ],
+  "id": "cycles_cga_sinfast",
+  "profile": "masm510-mx",
+  "public": "_sinfast",
+  "schema": 1,
+  "source": "src/engine/math/sincos_cycles_cga.asm",
+  "source_sha256": "cc2b2e9e2b443c5f00b4ba8e64d96831b4eabd0426bc5f929e6f4cb1de6464fd",
+  "targets": {
+    "cycles_cga": {
+      "end": 29042,
+      "start": 28964
+    }
+  }
+}

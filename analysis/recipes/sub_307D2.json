@@ -1,0 +1,32 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "DSEG",
+      "loc": "offset16",
+      "offset": 11,
+      "self_relative": false,
+      "target": "_byte_3FB38",
+      "width": 2
+    }
+  ],
+  "id": "sub_307D2",
+  "profile": "masm510-mx",
+  "public": "_sub_307D2",
+  "schema": 1,
+  "source": "src/engine/input/sub_307D2.asm",
+  "source_sha256": "227de64bce51f24ad799e512177e1e56d71813e93aae0f8c69e306932a5bd552",
+  "targets": {
+    "cycles_cga": {
+      "end": 25087,
+      "start": 25070
+    },
+    "cycles_ega": {
+      "end": 25071,
+      "start": 25054
+    },
+    "cycles_tandy": {
+      "end": 25077,
+      "start": 25060
+    }
+  }
+}

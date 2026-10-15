@@ -14,6 +14,24 @@
       "provenance": "The startup instruction at 0x122 loads the relocated paragraph 0x1599 into DS; independent relocation words elsewhere repeat that segment value. This is independent startup evidence, not the unflip or font fixup under review.",
       "staged_by": "port-shape"
     },
+    "SINE_DATA": {
+      "address": 129338,
+      "confidence": "high",
+      "provenance": "Exact sine table starts at 0x1f93a; the sinfast memory operands use DS offset 0x9faa, yielding this segment address from DGROUP.",
+      "staged_by": "port-kbtimer"
+    },
+    "TIMER_DATA": {
+      "address": 127526,
+      "confidence": "medium-high",
+      "provenance": "Timer state starts at 0x1f226; separate timer members read and write the dwords at DGROUP+0x9896 and +2, and the group base is independently cross-checked by the message/table data.",
+      "staged_by": "port-kbtimer"
+    },
+    "_aNoRoomLeftOnTimerInterru": {
+      "address": 125496,
+      "confidence": "high",
+      "provenance": "Exact NUL-terminated timer error message is matched at 0x1ea38; the no-free-slot branch passes this message.",
+      "staged_by": "port-kbtimer"
+    },
     "_aSFileError": {
       "address": "1599:95A4",
       "confidence": "medium",
@@ -25,6 +43,12 @@
       "confidence": "high",
       "provenance": "Unique \"%s FILE ERROR\" bytes (without CR); independent references in file_paras_group and file_decomp_paras agree on this DGROUP-relative offset.",
       "staged_by": "port-fileio"
+    },
+    "_byte_3FB38": {
+      "address": 126194,
+      "confidence": "high",
+      "provenance": "Unique 16-byte lookup table at 0x1ecf2 matches across all Cycles builds; sub_307D2 masks its argument to 0..15 before indexing it (DS offset 0x9362).",
+      "staged_by": "port-kbtimer"
     },
     "_fatal_error": {
       "address": "056A:0040",
@@ -60,6 +84,30 @@
       "confidence": "medium",
       "provenance": "Census has a reachable-call-target start at 0x7b52; the entry begins with a BP frame and accesses sprite1 fields. Independent caller candidates include 0x96a, 0xa1f, 0xaff, 0xc27, and 0x13dd0; the four calls in sprite_1_unk4 are excluded from that independent set.",
       "staged_by": "port-shape"
+    },
+    "_timer_callback_counter": {
+      "address": "1599:8F9E",
+      "confidence": "high",
+      "provenance": "Five independent timer members call the exact 10-byte counter reader; interrupt and reader code both access DGROUP+0x8f9e. Binding keeps the independently established DGROUP segment 0x1599 and offset 0x8F9E, so self-framed OMF offset fixups resolve without circular evidence.",
+      "staged_by": "port-kbtimer"
+    },
+    "_timer_get_counter": {
+      "address": "056A:1BF6",
+      "confidence": "high",
+      "provenance": "The staged candidate freshly assembles the exact 10-byte counter reader and RETF boundary; multiple independent timer members call this entry.",
+      "staged_by": "port-kbtimer"
+    },
+    "_timerintr": {
+      "address": 125282,
+      "confidence": "high",
+      "provenance": "Registration and removal independently use the same five-entry callback table at DGROUP+0x8fd2; the 20-byte table is zero-initialized at this image location.",
+      "staged_by": "port-kbtimer"
+    },
+    "kb_parse_key": {
+      "address": "056A:07EC",
+      "confidence": "high",
+      "provenance": "The target-specific staged candidate freshly assembles the exact 93-byte range through RETF, including its own MZ segment fixup; kb_get_char resolves to the same segment:offset.",
+      "staged_by": "port-kbtimer"
     }
   },
   "target": "cycles_ega"

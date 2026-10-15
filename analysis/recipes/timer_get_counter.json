@@ -1,0 +1,40 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 2,
+      "self_relative": false,
+      "target": "_timer_callback_counter",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 6,
+      "self_relative": false,
+      "target": "_timer_callback_counter",
+      "width": 2
+    }
+  ],
+  "id": "timer_get_counter",
+  "profile": "masm510-mx",
+  "public": "_timer_get_counter",
+  "schema": 1,
+  "source": "src/engine/timer/timer_get_counter.asm",
+  "source_sha256": "764f411a50489fc1a0b434fcf29f0c4049a9f16271111b49f663046c421412de",
+  "targets": {
+    "cycles_cga": {
+      "end": 29360,
+      "start": 29350
+    },
+    "cycles_ega": {
+      "end": 29344,
+      "start": 29334
+    },
+    "cycles_tandy": {
+      "end": 29350,
+      "start": 29340
+    }
+  }
+}

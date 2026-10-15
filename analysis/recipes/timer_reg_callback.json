@@ -1,0 +1,48 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 7,
+      "self_relative": false,
+      "target": "_timerintr",
+      "width": 2
+    },
+    {
+      "frame": "DGROUP",
+      "loc": "offset16",
+      "offset": 21,
+      "self_relative": false,
+      "target": "_aNoRoomLeftOnTimerInterru",
+      "width": 2
+    },
+    {
+      "frame": "_fatal_error",
+      "loc": "pointer32",
+      "offset": 25,
+      "self_relative": false,
+      "target": "_fatal_error",
+      "width": 4
+    }
+  ],
+  "id": "timer_reg_callback",
+  "profile": "masm510-mx",
+  "public": "_timer_reg_callback",
+  "schema": 1,
+  "source": "src/engine/timer/timer_reg_callback.asm",
+  "source_sha256": "1fecd591506b2877cee7505d5ced169d24656efcada31029d67ce1500124e017",
+  "targets": {
+    "cycles_cga": {
+      "end": 23310,
+      "start": 23258
+    },
+    "cycles_ega": {
+      "end": 23294,
+      "start": 23242
+    },
+    "cycles_tandy": {
+      "end": 23300,
+      "start": 23248
+    }
+  }
+}

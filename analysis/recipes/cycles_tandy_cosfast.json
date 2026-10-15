@@ -1,0 +1,15 @@
+{
+  "expected_fixups": [],
+  "id": "cycles_tandy_cosfast",
+  "profile": "masm510-mx",
+  "public": "_cosfast",
+  "schema": 1,
+  "source": "src/engine/math/sincos_cycles_tandy.asm",
+  "source_sha256": "f2bbb32729c4290fec14e74d98cceab8a28fbb684d3dd9434bc8895d5c25f1bd",
+  "targets": {
+    "cycles_tandy": {
+      "end": 29044,
+      "start": 29032
+    }
+  }
+}

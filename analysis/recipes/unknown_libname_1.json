@@ -1,0 +1,23 @@
+{
+  "expected_fixups": [],
+  "id": "unknown_libname_1",
+  "profile": "masm510-mx",
+  "public": "_unknown_libname_1",
+  "schema": 1,
+  "source": "src/engine/misc/unknown_libname_1.asm",
+  "source_sha256": "f7aea1dc9c90478b075e7e45a8b1cee96e38822d20370bf0d4a2c66dc3cf0123",
+  "targets": {
+    "cycles_cga": {
+      "end": 19704,
+      "start": 19686
+    },
+    "cycles_ega": {
+      "end": 20026,
+      "start": 20008
+    },
+    "cycles_tandy": {
+      "end": 19694,
+      "start": 19676
+    }
+  }
+}

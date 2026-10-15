@@ -1,0 +1,24 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_TEXT",
+      "loc": "base16",
+      "offset": 46,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    }
+  ],
+  "id": "cycles_cga_kb_parse_key",
+  "profile": "masm510-mx",
+  "public": "_kb_parse_key",
+  "schema": 1,
+  "source": "src/engine/input/kb_parse_key_cycles_cga.asm",
+  "source_sha256": "f668d4276c93eb010c12319ee98d00a8babd7111f3fef00de2c3780b7ab87081",
+  "targets": {
+    "cycles_cga": {
+      "end": 24313,
+      "start": 24220
+    }
+  }
+}

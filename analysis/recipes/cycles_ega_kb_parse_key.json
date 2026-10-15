@@ -1,0 +1,24 @@
+{
+  "expected_fixups": [
+    {
+      "frame": "_TEXT",
+      "loc": "base16",
+      "offset": 46,
+      "self_relative": false,
+      "target": "_TEXT",
+      "width": 2
+    }
+  ],
+  "id": "cycles_ega_kb_parse_key",
+  "profile": "masm510-mx",
+  "public": "_kb_parse_key",
+  "schema": 1,
+  "source": "src/engine/input/kb_parse_key_cycles_ega.asm",
+  "source_sha256": "9b78de720d0304626370c0d3f639b1e1ce98f7c5021291221e2529ea8146721b",
+  "targets": {
+    "cycles_ega": {
+      "end": 24297,
+      "start": 24204
+    }
+  }
+}
