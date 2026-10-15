@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "grp_7de44506_circuit_cga",
+  "source": "src/engine/graphics/grp_7de44506_circuit_cga.asm",
+  "source_sha256": "7e0c08f88ed13dfaf17b970f2469d434a16cc77fdd04bac8872679c4bc12f2e6",
+  "profile": "masm510",
+  "public": "_grp_7de44506",
+  "expected_fixups": [
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A83C",
+      "frame": "CIRCUIT_VIDEO_TEXT"
+    },
+    {
+      "offset": 51,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A844",
+      "frame": "CIRCUIT_VIDEO_TEXT"
+    },
+    {
+      "offset": 85,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7286",
+      "frame": "CIRCUIT_VIDEO_TEXT"
+    },
+    {
+      "offset": 134,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7292",
+      "frame": "CIRCUIT_VIDEO_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_cga": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 29334,
+      "end": 29515
+    }
+  },
+  "canonical_recheck_report": "attempts/grp_7de44506/canonical-circuit_cga.json"
+}

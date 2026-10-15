@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "id": "grp_e8a09c59_circuit",
+  "source": "src/engine/memory/grp_e8a09c59_circuit.asm",
+  "source_sha256": "33886310cc54faa1cb499d11a09dbfb30372dbf7616cbcba1b396c9ca11663f6",
+  "profile": "masm510",
+  "public": "_grp_e8a09c59",
+  "expected_fixups": [
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F66",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F68",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F62",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 29,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2EE",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F64",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F64",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 60,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F4",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F62",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F4",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 74,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F2",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 78,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2EE",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 82,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F0",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 89,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F4",
+      "frame": "DGROUP"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_cga": [],
+    "circuit_ega": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 37256,
+      "end": 37360
+    },
+    "circuit_ega": {
+      "start": 33000,
+      "end": 33104
+    }
+  }
+}

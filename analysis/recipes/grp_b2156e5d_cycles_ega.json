@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "grp_b2156e5d_cycles_ega",
+  "source": "src/cycles/graphics/grp_b2156e5d_cycles_ega.asm",
+  "source_sha256": "bb48a36b9d8852c03e520ea7861ba6a3e7ec7bf6a03c294c86e18db964a3240e",
+  "profile": "masm510",
+  "public": "_grp_b2156e5d",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_881C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 53,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 61,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 65,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 121,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 138,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 144,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_881C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 197,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_00794",
+      "frame": "CYCLES_EGA_INIT_TEXT"
+    },
+    {
+      "offset": 218,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_00794",
+      "frame": "CYCLES_EGA_INIT_TEXT"
+    },
+    {
+      "offset": 244,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_00794",
+      "frame": "CYCLES_EGA_INIT_TEXT"
+    },
+    {
+      "offset": 247,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "CYCLES_EGA_INIT_TEXT",
+      "frame": "CYCLES_EGA_INIT_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": []
+  },
+  "targets": {
+    "cycles_ega": {
+      "start": 8211,
+      "end": 8460
+    }
+  },
+  "canonical_recheck_report": "attempts/grp_b2156e5d/canonical-cycles_ega.json"
+}

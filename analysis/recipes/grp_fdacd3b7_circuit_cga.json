@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "grp_fdacd3b7_circuit_cga",
+  "source": "src/engine/video/grp_fdacd3b7_circuit_cga.asm",
+  "source_sha256": "f2494b5b2b0d11ee7c1d8bec63ae353a2c638e0b524739c27c2d973147e048f1",
+  "profile": "masm510",
+  "public": "_grp_fdacd3b7",
+  "expected_fixups": [
+    {
+      "offset": 41,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A84A",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    },
+    {
+      "offset": 50,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A84C",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    },
+    {
+      "offset": 69,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A84A",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    },
+    {
+      "offset": 91,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A84C",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    },
+    {
+      "offset": 136,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A846",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    },
+    {
+      "offset": 145,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A848",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    },
+    {
+      "offset": 165,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A846",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    },
+    {
+      "offset": 187,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A848",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    },
+    {
+      "offset": 220,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A83C",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    },
+    {
+      "offset": 230,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A844",
+      "frame": "CIRCUIT_MAIN_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_cga": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 38926,
+      "end": 39171
+    }
+  },
+  "canonical_recheck_report": "attempts/grp_fdacd3b7/canonical-circuit_cga.json"
+}

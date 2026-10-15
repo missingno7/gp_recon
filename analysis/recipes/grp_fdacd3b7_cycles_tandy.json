@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "grp_fdacd3b7_cycles_tandy",
+  "source": "src/engine/video/grp_fdacd3b7_cycles_tandy.asm",
+  "source_sha256": "ee7d1c76706bd0949492924b47ec8310f8dd201d8fb887827073519769e39e2e",
+  "profile": "masm510",
+  "public": "_grp_fdacd3b7",
+  "expected_fixups": [
+    {
+      "offset": 41,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_4398",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 50,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_439A",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 69,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_4398",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 91,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_439A",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 134,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_4394",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 143,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_4396",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 163,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_4394",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 185,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_4396",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 218,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_438A",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 228,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TANDY_CS_4392",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 271,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "CYCLES_TANDY_CLIP_TEXT",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    },
+    {
+      "offset": 356,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "CYCLES_TANDY_CLIP_TEXT",
+      "frame": "CYCLES_TANDY_CLIP_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_tandy": []
+  },
+  "targets": {
+    "cycles_tandy": {
+      "start": 35516,
+      "end": 35874
+    }
+  },
+  "canonical_recheck_report": "attempts/grp_fdacd3b7/canonical-cycles_tandy.json"
+}

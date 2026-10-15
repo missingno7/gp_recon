@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "grp_7706cee5_cycles_ega",
+  "source": "src/cycles/graphics/grp_7706cee5_cycles_ega.asm",
+  "source_sha256": "8c31d67884301db7b780fcb66edbed9aca9b26fb19e12d7b1037d40c038ed745",
+  "profile": "masm510",
+  "public": "_grp_7706cee5",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_881C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 53,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 61,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 65,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 121,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 139,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_0EF6",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 145,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_881C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 198,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_00794",
+      "frame": "CYCLES_EGA_BASEINIT_TEXT"
+    },
+    {
+      "offset": 219,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_00794",
+      "frame": "CYCLES_EGA_BASEINIT_TEXT"
+    },
+    {
+      "offset": 245,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_00794",
+      "frame": "CYCLES_EGA_BASEINIT_TEXT"
+    },
+    {
+      "offset": 248,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "CYCLES_EGA_BASEINIT_TEXT",
+      "frame": "CYCLES_EGA_BASEINIT_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": []
+  },
+  "targets": {
+    "cycles_ega": {
+      "start": 1416,
+      "end": 1666
+    }
+  },
+  "canonical_recheck_report": "attempts/grp_7706cee5/canonical-cycles_ega.json"
+}

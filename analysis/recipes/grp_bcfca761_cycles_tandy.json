@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "grp_bcfca761_cycles_tandy",
+  "source": "src/engine/memory/grp_bcfca761_cycles_tandy.asm",
+  "source_sha256": "f27320dae07bf48a4e2cf4c44bf6922e366b704c2a326082abb66fe2379eb305",
+  "profile": "masm510",
+  "public": "_grp_bcfca761",
+  "expected_fixups": [
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A540",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A53A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B1",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 49,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A53A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A540",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 58,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A540",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 64,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_TANDY_29F1",
+      "frame": "MEMSIZE_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_tandy": []
+  },
+  "targets": {
+    "cycles_tandy": {
+      "start": 21250,
+      "end": 21316
+    }
+  }
+}

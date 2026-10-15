@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "grp_1499ba74",
+  "source": "src/engine/graphics/grp_1499ba74.asm",
+  "source_sha256": "2584efb0d2d1a2c5f2225cc49a8e8d44c9439f9476e37d4ef0abbbd5e3f119c4",
+  "profile": "masm510",
+  "public": "_grp_1499ba74",
+  "expected_fixups": [
+    {
+      "offset": 22,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7360",
+      "frame": "EGA_FILL_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": [],
+    "cycles_ega": []
+  },
+  "targets": {
+    "circuit_ega": {
+      "start": 37414,
+      "end": 37516
+    },
+    "cycles_ega": {
+      "start": 51720,
+      "end": 51822
+    }
+  }
+}

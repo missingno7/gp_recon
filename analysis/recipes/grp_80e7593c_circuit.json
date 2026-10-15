@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "grp_80e7593c_circuit",
+  "source": "src/engine/graphics/grp_80e7593c_circuit.asm",
+  "source_sha256": "e46e9cb22e5ed0a5304d72075bc8798e241024939ba78e9f5e110e8dd11d1753",
+  "profile": "masm510",
+  "public": "_grp_80e7593c",
+  "expected_fixups": [
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4824",
+      "frame": "VIDEO_COPY_TEXT"
+    },
+    {
+      "offset": 40,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480A",
+      "frame": "VIDEO_COPY_TEXT"
+    },
+    {
+      "offset": 48,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4802",
+      "frame": "VIDEO_COPY_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_cga": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 42890,
+      "end": 43010
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "id": "grp_e8a09c59_cycles",
+  "source": "src/engine/memory/grp_e8a09c59_cycles.asm",
+  "source_sha256": "e629617573ff32d7da7e6655d1ffa197fa30850887856feadd2e08f6f2d9ffad",
+  "profile": "masm510",
+  "public": "_grp_e8a09c59",
+  "expected_fixups": [
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F66",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F68",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F62",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 29,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2EE",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F64",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F64",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 60,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F4",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F62",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F4",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 74,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F2",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 78,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2EE",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 82,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F0",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 89,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F4",
+      "frame": "DGROUP"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [],
+    "cycles_ega": [],
+    "cycles_tandy": []
+  },
+  "targets": {
+    "cycles_cga": {
+      "start": 27030,
+      "end": 27134
+    },
+    "cycles_ega": {
+      "start": 27014,
+      "end": 27118
+    },
+    "cycles_tandy": {
+      "start": 27020,
+      "end": 27124
+    }
+  }
+}

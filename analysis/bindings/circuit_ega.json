@@ -2,6 +2,49 @@
   "note": "Add further symbols only with target-specific address evidence.",
   "schema": 1,
   "symbols": {
+    "ALLOC_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_94d6a586; circuit_ega_0f89c segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_94d6a586"
+      ]
+    },
+    "BLIT_CIRCUIT_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for circuit_ega_09956, from analysis/inventory/circuit_ega.json code_segment_bases base 0x0.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_58166242"
+      ]
+    },
+    "CGA_MODE_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_15791916; circuit_ega_06e32 segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_15791916"
+      ]
+    },
+    "CIRCUIT_MAIN_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_4b39b4e7; inventory row circuit_ega_02bea records base 0x0.",
+      "staged_by": "decomp-shared",
+      "uses": []
+    },
+    "CLIP3_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_9c73fa69; circuit_ega_098ec segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_9c73fa69"
+      ]
+    },
     "DGROUP": {
       "address": "108F:0000",
       "confidence": "medium",
@@ -18,6 +61,96 @@
       "staged_by": "decomp-shared",
       "uses": [
         "grp_829a14c2"
+      ]
+    },
+    "EGA_FILL_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_1499ba74; circuit_ega_09226 segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_1499ba74"
+      ]
+    },
+    "FILEOPEN_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical main code segment from analysis/inventory/circuit_ega.json code_segment_bases (base 0x0); contains circuit_ega_0f328.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_0376aefe"
+      ]
+    },
+    "INIT_TABLE_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_69ac66a9; circuit_ega_0f6f4 segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_69ac66a9"
+      ]
+    },
+    "MEMSIZE_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own code segment for grp_bcfca761; circuit_ega_0e4e0 segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_bcfca761"
+      ]
+    },
+    "MEM_INIT_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_e8a09c59; circuit_ega_080e8 segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e8a09c59"
+      ]
+    },
+    "PARSE_SIGNED_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_dd5f7887; circuit_ega_0f1e4 segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_dd5f7887"
+      ]
+    },
+    "PIXEL_FILL_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_d6da2a1e; circuit_ega_0c67a segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_d6da2a1e"
+      ]
+    },
+    "RASTER_TEXT": {
+      "address": "0FFC:0000",
+      "confidence": "high",
+      "provenance": "Own OMF segment for grp_4f856910, bound to physical code segment base 0xffc0 from analysis/inventory/circuit_ega.json code_segment_bases; member circuit_ega_102b8 has this segment_base.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_4f856910"
+      ]
+    },
+    "RESIZE_TABLE_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own code segment for grp_1a4c7479; circuit_ega_0f90a segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_1a4c7479"
+      ]
+    },
+    "SEEK_FILE_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_1a9a5e95; circuit_ega_0f2ae segment_base 0x0 from analysis/inventory/circuit_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_1a9a5e95"
       ]
     },
     "_CS_G_0C7BC": {
@@ -683,6 +816,15 @@
         "grp_aace91da"
       ]
     },
+    "_FN_CIRCUIT_EGA_0E535": {
+      "address": "0000:E535",
+      "confidence": "low",
+      "provenance": "Ungrouped tail-jump destination circuit_ega_0e535 starts at 0xe535 in analysis/inventory/circuit_ega.json, bound independently of grp_1a9a5e95.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_1a9a5e95"
+      ]
+    },
     "_FN_CIRCUIT_EGA_0F28E": {
       "address": "0000:f28e",
       "confidence": "medium",
@@ -708,6 +850,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_0ab05b10"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_E0BA": {
+      "address": "0000:E0BA",
+      "confidence": "low",
+      "provenance": "Ungrouped near-jump destination circuit_ega_0e0ba starts at 0xe0ba in analysis/inventory/circuit_ega.json; bound independently of this caller.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_bcfca761"
       ]
     },
     "_GRP_0376AEFE": {
@@ -746,6 +897,15 @@
         "grp_b9d4e504"
       ]
     },
+    "_GRP_1A4C7479": {
+      "address": "0000:F90A",
+      "confidence": "high",
+      "provenance": "Direct callee group grp_1a4c7479 start 0xf90a, inventory member circuit_ega_0f90a in analysis/inventory/circuit_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_94d6a586"
+      ]
+    },
     "_GRP_1A9A5E95": {
       "address": "0000:f2ae",
       "confidence": "medium",
@@ -781,6 +941,15 @@
       "used_by": [
         "grp_192ea5fd",
         "grp_8628d686"
+      ]
+    },
+    "_GRP_2C45569D": {
+      "address": "0000:F73D",
+      "confidence": "low",
+      "provenance": "Function start 0xf73d is independently inventoried as circuit_ega_0f73d in analysis/inventory/circuit_ega.json and group grp_2c45569d.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_69ac66a9"
       ]
     },
     "_GRP_2DE0858F": {
@@ -855,6 +1024,15 @@
         "grp_b9d4e504"
       ]
     },
+    "_GRP_58166242": {
+      "address": "0000:9956",
+      "confidence": "high",
+      "provenance": "Branch destination independently inventoried as circuit_ega_09956 at 0x9956 in circuit_ega and mapped to grp_58166242.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_9c73fa69"
+      ]
+    },
     "_GRP_58B528F2": {
       "address": "0000:f4cc",
       "confidence": "medium",
@@ -907,6 +1085,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_9e3efdaa"
+      ]
+    },
+    "_GRP_759F46BF": {
+      "address": "0000:F87C",
+      "confidence": "medium",
+      "provenance": "Function start 0xf87c is independently inventoried as circuit_ega_0f87c in analysis/inventory/circuit_ega.json and group grp_759f46bf.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_69ac66a9"
       ]
     },
     "_GRP_7B77C400": {
@@ -2222,9 +2409,9 @@
       ]
     },
     "_G_07C4": {
-      "address": 67044,
+      "address": "0FFC:032C",
       "confidence": "high",
-      "provenance": "Operand-derived CS offset 0x032C, repeated at 0x102C6 and 0x102D6 in circuit_ega_102B8; linked address is candidate range start 0x102B8 plus the explicit CS displacement. Used by grp_4f856910.",
+      "provenance": "Operand-derived CS offset 0x032c in circuit_ega_102b8; bound within RASTER_TEXT at inventory code segment base 0xffc0. Used by grp_4f856910.",
       "staged_by": "decomp-shared",
       "uses": [
         "grp_4f856910"
@@ -2249,9 +2436,9 @@
       ]
     },
     "_G_07DA": {
-      "address": 67066,
+      "address": "0FFC:0342",
       "confidence": "high",
-      "provenance": "Operand-derived CS offset 0x0342, repeated at 0x102CC and 0x102DC in circuit_ega_102B8; linked address is candidate range start 0x102B8 plus the explicit CS displacement. Used by grp_4f856910.",
+      "provenance": "Operand-derived CS offset 0x0342 in circuit_ega_102b8; bound within RASTER_TEXT at inventory code segment base 0xffc0. Used by grp_4f856910.",
       "staged_by": "decomp-shared",
       "uses": [
         "grp_4f856910"
@@ -2392,6 +2579,277 @@
         "grp_622c4ed2"
       ]
     },
+    "_G_4E8C": {
+      "address": "0000:C7BC",
+      "confidence": "high",
+      "provenance": "Operand-derived CS reference at offset 0xc7bc in circuit_ega_09956; symbol identity uses the cycles_ega member offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_58166242"
+      ]
+    },
+    "_G_4E94": {
+      "address": "0000:C7C4",
+      "confidence": "high",
+      "provenance": "Operand-derived CS reference at offset 0xc7c4 in circuit_ega_09956; symbol identity uses the cycles_ega member offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_58166242"
+      ]
+    },
+    "_G_4E96": {
+      "address": "0000:C7C6",
+      "confidence": "high",
+      "provenance": "Operand-derived CS-relative field 0xc7c6 in circuit_ega_098ec; shared symbol naming uses Cycles EGA lowest member offsets.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_9c73fa69"
+      ]
+    },
+    "_G_4E98": {
+      "address": "0000:C7C8",
+      "confidence": "high",
+      "provenance": "Operand-derived CS-relative field 0xc7c8 in circuit_ega_098ec; shared symbol naming uses Cycles EGA lowest member offsets.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_9c73fa69"
+      ]
+    },
+    "_G_4E9A": {
+      "address": "0000:C7CA",
+      "confidence": "high",
+      "provenance": "Operand-derived CS-relative field 0xc7ca in circuit_ega_098ec; shared symbol naming uses Cycles EGA lowest member offsets.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_9c73fa69"
+      ]
+    },
+    "_G_4E9C": {
+      "address": "0000:C7CC",
+      "confidence": "high",
+      "provenance": "Operand-derived CS-relative field 0xc7cc in circuit_ega_098ec; shared symbol naming uses Cycles EGA lowest member offsets.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_9c73fa69"
+      ]
+    },
+    "_G_4E9E": {
+      "address": "0000:C7CE",
+      "confidence": "high",
+      "provenance": "Operand-derived CS reference at offset 0xc7ce in circuit_ega_09956; symbol identity uses the cycles_ega member offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_58166242"
+      ]
+    },
+    "_G_7360": {
+      "address": "0000:921E",
+      "confidence": "high",
+      "provenance": "CS-relative table operand in circuit_ega_09226; physical code segment from analysis/inventory/circuit_ega.json. Symbol offset uses lowest Cycles member offset 0x7360.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_1499ba74"
+      ]
+    },
+    "_G_9180": {
+      "address": "108F:7FC6",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x7fc6 in circuit_ega_06e32; shared symbol follows cycles_cga.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_15791916"
+      ]
+    },
+    "_G_9182": {
+      "address": "108F:7FC8",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x7fc8 in circuit_ega_06e32; shared symbol follows cycles_cga.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_15791916"
+      ]
+    },
+    "_G_989E": {
+      "address": "108F:8B5C",
+      "confidence": "high",
+      "provenance": "Operand-derived DS table reference at offset 0x8b5c in circuit_ega_09956; symbol identity uses the cycles_ega member offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_58166242"
+      ]
+    },
+    "_G_98A6": {
+      "address": "108F:8B64",
+      "confidence": "high",
+      "provenance": "Operand-derived DS table reference at offset 0x8b64 in circuit_ega_09956; symbol identity uses the cycles_ega member offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_58166242"
+      ]
+    },
+    "_G_9F62": {
+      "address": "108F:86DE",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x86de in circuit_ega_080e8; symbol naming uses cycles_cga offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e8a09c59"
+      ]
+    },
+    "_G_9F64": {
+      "address": "108F:86E0",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x86e0 in circuit_ega_080e8; symbol naming uses cycles_cga offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e8a09c59"
+      ]
+    },
+    "_G_9F66": {
+      "address": "108F:86E2",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x86e2 in circuit_ega_080e8; symbol naming uses cycles_cga offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e8a09c59"
+      ]
+    },
+    "_G_9F68": {
+      "address": "108F:86E4",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x86e4 in circuit_ega_080e8; symbol naming uses cycles_cga offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e8a09c59"
+      ]
+    },
+    "_G_A2EE": {
+      "address": "108F:8902",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x8902 in circuit_ega_080e8; symbol naming uses cycles_cga offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e8a09c59"
+      ]
+    },
+    "_G_A2F0": {
+      "address": "108F:8904",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x8904 in circuit_ega_080e8; symbol naming uses cycles_cga offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e8a09c59"
+      ]
+    },
+    "_G_A2F2": {
+      "address": "108F:8906",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x8906 in circuit_ega_080e8; symbol naming uses cycles_cga offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e8a09c59"
+      ]
+    },
+    "_G_A2F4": {
+      "address": "108F:8908",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x8908 in circuit_ega_080e8; symbol naming uses cycles_cga offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_e8a09c59"
+      ]
+    },
+    "_G_A53A": {
+      "address": "108F:8BCA",
+      "confidence": "high",
+      "provenance": "Operand-derived default-DS offset 0x8bca from circuit_ega_0f90a and its control/data references; shared naming offset follows cycles_cga.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_1a4c7479"
+      ]
+    },
+    "_G_A540": {
+      "address": "108F:8BD0",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x8bd0 in circuit_ega_0f89c; symbol naming follows cycles_cga.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_94d6a586"
+      ]
+    },
+    "_G_A590": {
+      "address": "108F:8C20",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP offset 0x8c20 in circuit_ega_0f89c; symbol naming follows cycles_cga.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_94d6a586"
+      ]
+    },
+    "_G_A5B1": {
+      "address": "108F:8C41",
+      "confidence": "high",
+      "provenance": "Operand-derived default-DS offset 0x8c41 from circuit_ega_0f90a and its control/data references; shared naming offset follows cycles_cga.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_1a4c7479"
+      ]
+    },
+    "_G_A5B8": {
+      "address": "108F:8C48",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS/DGROUP offset 0x8c48 in circuit_ega_0f2ae; used by grp_1a9a5e95. Also used by grp_0376aefe at operand offset 0x8c48 in circuit_ega_0f328.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_0376aefe",
+        "grp_1a9a5e95"
+      ]
+    },
+    "_G_A737": {
+      "address": "108F:8DBD",
+      "confidence": "high",
+      "provenance": "Operand-derived default-DS byte reference at 0x8dbd in circuit_ega_0f328; bound in DGROUP from analysis/inventory/circuit_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_0376aefe"
+      ]
+    },
+    "_G_A738": {
+      "address": "108F:8DBE",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP offset 0x8dbe in circuit_ega_0f6f4; used by grp_69ac66a9.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_69ac66a9"
+      ]
+    },
+    "_G_A738_TEXT": {
+      "address": "0000:8DBE",
+      "confidence": "high",
+      "provenance": "OMF OFFSET operand has INIT_TABLE_TEXT frame; address uses the operand-derived offset 0x8dbe from circuit_ega_0f6f4 in physical code frame of grp_69ac66a9.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_69ac66a9"
+      ]
+    },
+    "_G_A73A": {
+      "address": "108F:8DC0",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP offset 0x8dc0 in circuit_ega_0f6f4; used by grp_69ac66a9.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_69ac66a9"
+      ]
+    },
+    "_G_A73E": {
+      "address": "108F:8DC4",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP offset 0x8dc4 in circuit_ega_0f6f4; used by grp_69ac66a9.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_69ac66a9"
+      ]
+    },
     "_G_A748": {
       "address": "0000:8DCE",
       "confidence": "high",
@@ -2399,6 +2857,42 @@
       "staged_by": "decomp-shared",
       "uses": [
         "grp_829a14c2"
+      ]
+    },
+    "_G_B218": {
+      "address": "108F:967E",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS/DGROUP offset 0x967e in circuit_ega_0f1e4; used by grp_dd5f7887.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_dd5f7887"
+      ]
+    },
+    "_G_B21C": {
+      "address": "108F:9674",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS/DGROUP offset 0x9674 in circuit_ega_0f1e4; used by grp_dd5f7887.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_dd5f7887"
+      ]
+    },
+    "_G_B22E": {
+      "address": "108F:967C",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS/DGROUP offset 0x967c in circuit_ega_0f1e4; used by grp_dd5f7887.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_dd5f7887"
+      ]
+    },
+    "_G_C672": {
+      "address": "0000:C672",
+      "confidence": "high",
+      "provenance": "CS-relative pattern table operand 0xc672 in circuit_ega_0c67a; bound in its own physical code segment.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_d6da2a1e"
       ]
     },
     "_G_CHAR_TABLE": {
@@ -2914,6 +3408,15 @@
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_0ea4a entry",
       "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0f4bb": {
+      "address": "0000:F4BB",
+      "confidence": "high",
+      "provenance": "Inventory start circuit_ega_0f4bb at 0xf4bb in analysis/inventory/circuit_ega.json; binding derived from its segment_base 0x0, independently of grp_0376aefe calls.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_0376aefe"
+      ]
     },
     "_fn_circuit_ega_0f68e": {
       "address": "0000:F68E",
@@ -3852,6 +4355,15 @@
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_0f89c; member of correspondence group grp_94d6",
       "staged_by": "decomp-circuit-b"
+    },
+    "_grp_9c73fa69": {
+      "address": "0000:98EC",
+      "confidence": "high",
+      "provenance": "Inventory group grp_9c73fa69 member circuit_ega_098ec start 0x98ec in analysis/inventory/circuit_ega.json; address uses its inventory segment base 0x0.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_58166242"
+      ]
     },
     "_grp_9e3efdaa": {
       "address": "0000:333a",

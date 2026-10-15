@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "grp_bcfca761_cycles_cga",
+  "source": "src/engine/memory/grp_bcfca761_cycles_cga.asm",
+  "source_sha256": "7cd1070cd62714ccdd5340290d153cd3b812d9e9b24f0b83e5254b262a7f8f7a",
+  "profile": "masm510",
+  "public": "_grp_bcfca761",
+  "expected_fixups": [
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A540",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A53A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B1",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 49,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A53A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A540",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 58,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A540",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 64,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_29FB",
+      "frame": "MEMSIZE_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": []
+  },
+  "targets": {
+    "cycles_cga": {
+      "start": 21260,
+      "end": 21326
+    }
+  }
+}

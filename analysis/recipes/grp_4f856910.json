@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "grp_4f856910",
+  "source": "src/engine/graphics/grp_4f856910.asm",
+  "source_sha256": "e5175ec45c98c466c25aa686b1486ea2c915e8d5fa5e7803f2806a113e365da3",
+  "profile": "masm510",
+  "public": "_grp_4f856910",
+  "expected_fixups": [
+    {
+      "offset": 17,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_07C4",
+      "frame": "RASTER_TEXT"
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_07DA",
+      "frame": "RASTER_TEXT"
+    },
+    {
+      "offset": 33,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_07C4",
+      "frame": "RASTER_TEXT"
+    },
+    {
+      "offset": 39,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_07DA",
+      "frame": "RASTER_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_cga": [],
+    "circuit_ega": [],
+    "cycles_cga": [],
+    "cycles_ega": [],
+    "cycles_tandy": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 56886,
+      "end": 56974
+    },
+    "circuit_ega": {
+      "start": 66232,
+      "end": 66320
+    },
+    "cycles_cga": {
+      "start": 1936,
+      "end": 2024
+    },
+    "cycles_ega": {
+      "start": 1940,
+      "end": 2028
+    },
+    "cycles_tandy": {
+      "start": 1940,
+      "end": 2028
+    }
+  }
+}

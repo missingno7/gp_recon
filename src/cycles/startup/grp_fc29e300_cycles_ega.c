@@ -1,0 +1,50 @@
+typedef void far *farptr;
+extern void far grp_324ee638(void);
+extern void far grp_68180ad1(void);
+extern void far grp_8a299fba(void);
+extern void far grp_d684305a(farptr);
+extern farptr far fn_cycles_ega_151e8(unsigned int);
+extern int far grp_b9f628fc(unsigned int,unsigned int,unsigned int);
+extern farptr far grp_4ff9c48b(unsigned int);
+extern farptr far grp_7a614cef(farptr,unsigned int);
+extern void far grp_9ea5b57e(void);
+extern void far grp_68166563(void);
+extern int far fn_cycles_ega_00010(void);
+extern void far grp_7f64e2f7(farptr);
+extern void far grp_52208650(farptr);
+extern farptr far fn_cycles_ega_0a76c(unsigned int,unsigned int,unsigned int);
+extern unsigned int G_254;
+extern volatile unsigned int G_486,G_70E,G_45A6;
+extern volatile farptr G_457C,G_B6D2,G_B364,G_B6AE,G_CC0C,G_CC00,G_B324,G_B680,G_B686;
+#pragma code_seg("FCINIT_TEXT")
+int far grp_fc29e300(void)
+{
+ volatile int key;
+ char buffer[14];
+ grp_324ee638();
+ grp_68180ad1();
+ grp_8a299fba();
+ grp_d684305a(G_457C);
+ G_B6D2=fn_cycles_ega_151e8(0x046e);
+ grp_b9f628fc((unsigned int)buffer,0x07ed,(unsigned int)(G_254+1));
+ G_B364=fn_cycles_ega_151e8((unsigned int)buffer);
+ G_B6AE=grp_4ff9c48b(0x07f7);
+ G_CC0C=grp_7a614cef(G_B6AE,0x07fd);
+ G_CC00=grp_7a614cef(G_B6AE,0x0802);
+ G_B324=fn_cycles_ega_151e8(0x0807);
+ G_B680=fn_cycles_ega_151e8(0x080f);
+ G_B686=fn_cycles_ega_151e8(0x0817);
+ grp_9ea5b57e();
+ grp_68166563();
+ key=fn_cycles_ega_00010();
+ if(G_70E==0) G_70E=10;
+ grp_7f64e2f7(G_B686);
+ grp_52208650(G_B680);
+ grp_52208650(G_B324);
+ grp_52208650(G_B6AE);
+ grp_52208650(G_B364);
+ grp_52208650(G_B6D2);
+ G_457C=fn_cycles_ega_0a76c(0x0140,0x00c8,0x000f);
+ if(key==0x001b || key==-1) {G_486=-1; G_45A6=9;} else G_486=0;
+ return key;
+}

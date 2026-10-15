@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "grp_0376aefe_cycles_tandy",
+  "source": "src/engine/io/grp_0376aefe_cycles_tandy.asm",
+  "source_sha256": "d2b08d966f98958c5f6308799be34c9e522e37b22696d767098a290584452417",
+  "profile": "masm510",
+  "public": "_grp_0376aefe",
+  "expected_fixups": [
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A737",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_TANDY_03FB9",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 117,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 139,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 163,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 171,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 237,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_TANDY_033A9",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 268,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_TANDY_03FB9",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 369,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 381,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 391,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B8",
+      "frame": "DGROUP"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_tandy": []
+  },
+  "targets": {
+    "cycles_tandy": {
+      "start": 12822,
+      "end": 13225
+    }
+  }
+}

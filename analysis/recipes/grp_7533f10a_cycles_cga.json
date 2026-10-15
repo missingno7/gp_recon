@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "grp_7533f10a_cycles_cga",
+  "source": "src/engine/graphics/grp_7533f10a_cycles_cga.asm",
+  "source_sha256": "cdde1c0e34a49941b0386d4751b033e0aa2d91184124ce7a5bb21805ea58937b",
+  "profile": "masm510",
+  "public": "_grp_7533f10a",
+  "expected_fixups": [
+    {
+      "offset": 53,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "DGROUP",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 58,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7D50CA88",
+      "frame": "RESOURCE_TEXT"
+    },
+    {
+      "offset": 148,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_5A6E",
+      "frame": "RESOURCE_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [
+      45049,
+      45056
+    ]
+  },
+  "targets": {
+    "cycles_cga": {
+      "start": 44996,
+      "end": 45146
+    }
+  },
+  "canonical_recheck_report": "attempts/grp_7533f10a/canonical-cycles_cga.json"
+}

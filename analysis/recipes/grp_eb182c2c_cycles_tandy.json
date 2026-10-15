@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "grp_eb182c2c_cycles_tandy",
+  "source": "src/cycles/graphics/grp_eb182c2c_cycles_tandy.asm",
+  "source_sha256": "7ff55b2511e5293a5e2d53c65ba5a778929a7cc777245cc49090ae30aaf7a4f5",
+  "profile": "masm510",
+  "public": "_grp_eb182c2c",
+  "expected_fixups": [
+    {
+      "offset": 83,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7D50CA88",
+      "frame": "CYCLES_TANDY_COPY_TEXT"
+    },
+    {
+      "offset": 198,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7D50CA88",
+      "frame": "CYCLES_TANDY_COPY_TEXT"
+    },
+    {
+      "offset": 363,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "CYCLES_TANDY_COPY_TEXT",
+      "frame": "CYCLES_TANDY_COPY_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_tandy": [
+      44023,
+      44138
+    ]
+  },
+  "targets": {
+    "cycles_tandy": {
+      "start": 43938,
+      "end": 44303
+    }
+  },
+  "canonical_recheck_report": "attempts/grp_eb182c2c/canonical-cycles_tandy.json"
+}

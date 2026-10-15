@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "grp_fdacd3b7_cycles_cga",
+  "source": "src/engine/video/grp_fdacd3b7_cycles_cga.asm",
+  "source_sha256": "6fd00dccfa0ed3104b5d8f7b4852c2bc2e6da3d60af34821c22596a348493255",
+  "profile": "masm510",
+  "public": "_grp_fdacd3b7",
+  "expected_fixups": [
+    {
+      "offset": 41,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4810",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    },
+    {
+      "offset": 50,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4812",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    },
+    {
+      "offset": 69,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4810",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    },
+    {
+      "offset": 91,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4812",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    },
+    {
+      "offset": 136,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480C",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    },
+    {
+      "offset": 145,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480E",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    },
+    {
+      "offset": 165,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480C",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    },
+    {
+      "offset": 187,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480E",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    },
+    {
+      "offset": 220,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4802",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    },
+    {
+      "offset": 230,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480A",
+      "frame": "CYCLES_CGA_CLIP_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": []
+  },
+  "targets": {
+    "cycles_cga": {
+      "start": 35884,
+      "end": 36129
+    }
+  },
+  "canonical_recheck_report": "attempts/grp_fdacd3b7/canonical-cycles_cga.json"
+}

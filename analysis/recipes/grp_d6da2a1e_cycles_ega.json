@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "grp_d6da2a1e_cycles_ega",
+  "source": "src/engine/graphics/grp_d6da2a1e_cycles_ega.asm",
+  "source_sha256": "8aab50da88b62f4ec902722bbf705129ea378a7a25f1ca8faa081a3ee5e5c5d4",
+  "profile": "masm510",
+  "public": "_grp_d6da2a1e",
+  "expected_fixups": [
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_84F8",
+      "frame": "PIXEL_FILL_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": []
+  },
+  "targets": {
+    "cycles_ega": {
+      "start": 56224,
+      "end": 56333
+    }
+  }
+}

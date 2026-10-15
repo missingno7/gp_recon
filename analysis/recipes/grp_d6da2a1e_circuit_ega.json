@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "id": "grp_d6da2a1e_circuit_ega",
+  "source": "src/engine/graphics/grp_d6da2a1e_circuit_ega.asm",
+  "source_sha256": "9375a8d3d952a74d8ff569130ef10e0fb4649dafb1823f12f324cde8161eff5d",
+  "profile": "masm510",
+  "public": "_grp_d6da2a1e",
+  "expected_fixups": [
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_C672",
+      "frame": "PIXEL_FILL_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": []
+  },
+  "targets": {
+    "circuit_ega": {
+      "start": 50810,
+      "end": 50915
+    }
+  }
+}

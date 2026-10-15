@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "grp_52d27303",
+  "source": "src/cycles/graphics/grp_52d27303.asm",
+  "source_sha256": "af167225010cdaa77ee1402f21c7377d85687429bbd823c5f2d36f44fd7484ea",
+  "profile": "masm510",
+  "public": "_grp_52d27303",
+  "expected_fixups": [],
+  "expected_relocations": {
+    "cycles_cga": [],
+    "cycles_tandy": []
+  },
+  "targets": {
+    "cycles_cga": {
+      "start": 43694,
+      "end": 43729
+    },
+    "cycles_tandy": {
+      "start": 42400,
+      "end": 42435
+    }
+  }
+}

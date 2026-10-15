@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "grp_bcfca761_cycles_ega",
+  "source": "src/engine/memory/grp_bcfca761_cycles_ega.asm",
+  "source_sha256": "4640026bfd41511ca9e4c10d73593b4b7e941f45de26af9febd216e92469b60b",
+  "profile": "masm510",
+  "public": "_grp_bcfca761",
+  "expected_fixups": [
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A540",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A53A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B1",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 49,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A53A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A540",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 58,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A540",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 64,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_2B3D",
+      "frame": "MEMSIZE_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": []
+  },
+  "targets": {
+    "cycles_ega": {
+      "start": 21582,
+      "end": 21648
+    }
+  }
+}

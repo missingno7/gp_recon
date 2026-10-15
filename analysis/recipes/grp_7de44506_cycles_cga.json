@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "grp_7de44506_cycles_cga",
+  "source": "src/engine/graphics/grp_7de44506_cycles_cga.asm",
+  "source_sha256": "abd6a77ba8e0b708067078cd3597c10e3937c107312e767f80e4c813b296f2b0",
+  "profile": "masm510",
+  "public": "_grp_7de44506",
+  "expected_fixups": [
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4802",
+      "frame": "CYCLES_VIDEO_TEXT"
+    },
+    {
+      "offset": 51,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480A",
+      "frame": "CYCLES_VIDEO_TEXT"
+    },
+    {
+      "offset": 85,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_30C4",
+      "frame": "CYCLES_VIDEO_TEXT"
+    },
+    {
+      "offset": 134,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_30D0",
+      "frame": "CYCLES_VIDEO_TEXT"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": []
+  },
+  "targets": {
+    "cycles_cga": {
+      "start": 34340,
+      "end": 34521
+    }
+  },
+  "canonical_recheck_report": "attempts/grp_7de44506/canonical-cycles_cga.json"
+}

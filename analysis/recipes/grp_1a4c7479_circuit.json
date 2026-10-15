@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "grp_1a4c7479_circuit",
+  "source": "src/engine/memory/grp_1a4c7479_circuit.asm",
+  "source_sha256": "bd0005bacdf373e62ae4b236d61938c496f5b63599faff25ef3025f1e70e8338",
+  "profile": "masm510",
+  "public": "_grp_1a4c7479",
+  "expected_fixups": [
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A590",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 38,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A53A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 60,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B1",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 78,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A53A",
+      "frame": "DGROUP"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_cga": [],
+    "circuit_ega": []
+  },
+  "targets": {
+    "circuit_cga": {
+      "start": 56048,
+      "end": 56134
+    },
+    "circuit_ega": {
+      "start": 63754,
+      "end": 63840
+    }
+  }
+}

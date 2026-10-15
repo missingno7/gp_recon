@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "grp_0376aefe_cycles_ega",
+  "source": "src/engine/io/grp_0376aefe_cycles_ega.asm",
+  "source_sha256": "1d82cf74eb493b68aa6732e3bb402b74d8c740f5a8c75b1d86d1aa5d13d9fd4e",
+  "profile": "masm510",
+  "public": "_grp_0376aefe",
+  "expected_fixups": [
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A737",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_04105",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 117,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 139,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 163,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 171,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 237,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_034F5",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 268,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_EGA_04105",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 369,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B8",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 381,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "FILEOPEN_TEXT",
+      "frame": "FILEOPEN_TEXT"
+    },
+    {
+      "offset": 391,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A5B8",
+      "frame": "DGROUP"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_ega": []
+  },
+  "targets": {
+    "cycles_ega": {
+      "start": 13154,
+      "end": 13557
+    }
+  }
+}

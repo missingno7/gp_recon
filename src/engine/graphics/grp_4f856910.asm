@@ -1,6 +1,6 @@
 .8086
-_TEXT SEGMENT WORD PUBLIC 'CODE'
-        ASSUME  CS:_TEXT
+RASTER_TEXT SEGMENT WORD PUBLIC 'CODE'
+        ASSUME  CS:RASTER_TEXT
         EXTRN   _g_07c4:BYTE, _g_07da:BYTE
         PUBLIC  _grp_4f856910
 _grp_4f856910 PROC NEAR
@@ -55,6 +55,6 @@ line_done:
         pop     bp
         ret
 _grp_4f856910 ENDP
-_TEXT ENDS
+RASTER_TEXT ENDS
         END
 
