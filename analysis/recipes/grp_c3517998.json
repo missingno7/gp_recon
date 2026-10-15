@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "grp_c3517998",
+  "source": "src/cycles/engine/run_overlay_passes.c",
+  "source_sha256": "a4eb1897881b311204a52c43c63ac6730641e5ba2319d01a9a6f4f4ab66ee195",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_c3517998",
+  "targets": {
+    "cycles_cga": {
+      "start": 67070,
+      "end": 67184
+    },
+    "cycles_ega": {
+      "start": 77158,
+      "end": 77272
+    },
+    "cycles_tandy": {
+      "start": 65526,
+      "end": 65640
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 94,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_05667",
+      "frame": "_fn_cycles_cga_05667",
+      "self_relative": false
+    },
+    {
+      "offset": 80,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_08fc2",
+      "frame": "_fn_cycles_cga_08fc2",
+      "self_relative": false
+    },
+    {
+      "offset": 63,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_09f14",
+      "frame": "_fn_cycles_cga_09f14",
+      "self_relative": false
+    },
+    {
+      "offset": 49,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_05667",
+      "frame": "_fn_cycles_cga_05667",
+      "self_relative": false
+    },
+    {
+      "offset": 35,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_08fc2",
+      "frame": "_fn_cycles_cga_08fc2",
+      "self_relative": false
+    },
+    {
+      "offset": 18,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_09f14",
+      "frame": "_fn_cycles_cga_09f14",
+      "self_relative": false
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [
+      67166,
+      67152,
+      67135,
+      67121,
+      67107,
+      67090
+    ],
+    "cycles_ega": [
+      77254,
+      77240,
+      77223,
+      77209,
+      77195,
+      77178
+    ],
+    "cycles_tandy": [
+      65622,
+      65608,
+      65591,
+      65577,
+      65563,
+      65546
+    ]
+  }
+}

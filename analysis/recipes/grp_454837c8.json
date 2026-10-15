@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "grp_454837c8",
+  "source": "src/cycles/engine/draw_box.c",
+  "source_sha256": "9de4b43b7d6998090d749471e3d444698d15466608437c18462055817d08fa4b",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_454837c8",
+  "targets": {
+    "cycles_cga": {
+      "start": 50552,
+      "end": 50621
+    },
+    "cycles_ega": {
+      "start": 60638,
+      "end": 60707
+    },
+    "cycles_tandy": {
+      "start": 49006,
+      "end": 49075
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 60,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_086da",
+      "frame": "_fn_cycles_cga_086da",
+      "self_relative": false
+    },
+    {
+      "offset": 39,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_09f14",
+      "frame": "_fn_cycles_cga_09f14",
+      "self_relative": false
+    },
+    {
+      "offset": 25,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_086da",
+      "frame": "_fn_cycles_cga_086da",
+      "self_relative": false
+    },
+    {
+      "offset": 8,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_09f14",
+      "frame": "_fn_cycles_cga_09f14",
+      "self_relative": false
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [
+      50614,
+      50593,
+      50579,
+      50562
+    ],
+    "cycles_ega": [
+      60700,
+      60679,
+      60665,
+      60648
+    ],
+    "cycles_tandy": [
+      49068,
+      49047,
+      49033,
+      49016
+    ]
+  }
+}

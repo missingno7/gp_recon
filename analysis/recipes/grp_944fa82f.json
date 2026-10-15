@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "grp_944fa82f",
+  "source": "src/cycles/engine/setup_scene.c",
+  "source_sha256": "5083516ce8fc24a317b783402754fc7326b5c5cce1c1f53402133f5f367698f7",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_944fa82f",
+  "targets": {
+    "cycles_cga": {
+      "start": 58930,
+      "end": 59013
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 78,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_06412",
+      "frame": "_fn_cycles_cga_06412",
+      "self_relative": false
+    },
+    {
+      "offset": 70,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_072ee",
+      "frame": "_fn_cycles_cga_072ee",
+      "self_relative": false
+    },
+    {
+      "offset": 59,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_06403",
+      "frame": "_fn_cycles_cga_06403",
+      "self_relative": false
+    },
+    {
+      "offset": 51,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_grp_fecf1db3",
+      "frame": "_grp_fecf1db3",
+      "self_relative": false
+    },
+    {
+      "offset": 35,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_09f14",
+      "frame": "_fn_cycles_cga_09f14",
+      "self_relative": false
+    },
+    {
+      "offset": 20,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_grp_e76f1ca2",
+      "frame": "_grp_e76f1ca2",
+      "self_relative": false
+    },
+    {
+      "offset": 9,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_0763a",
+      "frame": "_fn_cycles_cga_0763a",
+      "self_relative": false
+    },
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_b9ea",
+      "frame": "_g_b9ea",
+      "self_relative": false
+    },
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_b9ec",
+      "frame": "_g_b9ec",
+      "self_relative": false
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [
+      59010,
+      59002,
+      58991,
+      58983,
+      58967,
+      58952,
+      58941
+    ]
+  }
+}

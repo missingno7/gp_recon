@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "grp_efef7148",
+  "source": "src/cycles/engine/load_bitmap.c",
+  "source_sha256": "fec8ccb673c2008142a665f6b988f698dc55c68c38f91e8df2492ee3e4761463",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_efef7148",
+  "targets": {
+    "cycles_cga": {
+      "start": 51090,
+      "end": 51166
+    },
+    "cycles_ega": {
+      "start": 61176,
+      "end": 61252
+    },
+    "cycles_tandy": {
+      "start": 49544,
+      "end": 49620
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 68,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_10948",
+      "frame": "_fn_cycles_cga_10948",
+      "self_relative": false
+    },
+    {
+      "offset": 60,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_0563e",
+      "frame": "_fn_cycles_cga_0563e",
+      "self_relative": false
+    },
+    {
+      "offset": 46,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_grp_9d44a3bf",
+      "frame": "_grp_9d44a3bf",
+      "self_relative": false
+    },
+    {
+      "offset": 30,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_grp_7a614cef",
+      "frame": "_grp_7a614cef",
+      "self_relative": false
+    },
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_00136",
+      "frame": "_g_00136",
+      "self_relative": false
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_00138",
+      "frame": "_g_00138",
+      "self_relative": false
+    },
+    {
+      "offset": 10,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_grp_e76f1ca2",
+      "frame": "_grp_e76f1ca2",
+      "self_relative": false
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [
+      51138,
+      51122,
+      51102,
+      51160,
+      51152
+    ],
+    "cycles_ega": [
+      61224,
+      61208,
+      61188,
+      61246,
+      61238
+    ],
+    "cycles_tandy": [
+      49592,
+      49576,
+      49556,
+      49614,
+      49606
+    ]
+  }
+}

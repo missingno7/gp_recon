@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "grp_0ea93981",
+  "source": "src/cycles/engine/compute_screen_offset.c",
+  "source_sha256": "e1715dd892d10271c656be6761b67f869d4b421b852452de3030986155d54ee8",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_0ea93981",
+  "targets": {
+    "cycles_cga": {
+      "start": 68700,
+      "end": 68797
+    },
+    "cycles_ega": {
+      "start": 78788,
+      "end": 78885
+    },
+    "cycles_tandy": {
+      "start": 67156,
+      "end": 67253
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 89,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_0ef4",
+      "frame": "_g_0ef4",
+      "self_relative": false
+    },
+    {
+      "offset": 79,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_0ef4",
+      "frame": "_g_0ef4",
+      "self_relative": false
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_b7c6",
+      "frame": "_g_b7c6",
+      "self_relative": false
+    },
+    {
+      "offset": 57,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_03b32",
+      "frame": "_fn_cycles_cga_03b32",
+      "self_relative": false
+    },
+    {
+      "offset": 42,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_215a",
+      "frame": "_g_215a",
+      "self_relative": false
+    },
+    {
+      "offset": 25,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_45a0",
+      "frame": "_g_45a0",
+      "self_relative": false
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_2166",
+      "frame": "_g_2166",
+      "self_relative": false
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [
+      68759
+    ],
+    "cycles_ega": [
+      78847
+    ],
+    "cycles_tandy": [
+      67215
+    ]
+  }
+}

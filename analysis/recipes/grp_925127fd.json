@@ -1,0 +1,23 @@
+{
+  "expected_fixups": [],
+  "id": "grp_925127fd",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_925127fd",
+  "schema": 1,
+  "source": "src/cycles/engine/xor_checksum.c",
+  "source_sha256": "5921ea7209080a1107edb38b04e105dc7074ec97d666043f22836a79934faeb9",
+  "targets": {
+    "cycles_cga": {
+      "end": 64559,
+      "start": 64516
+    },
+    "cycles_ega": {
+      "end": 74647,
+      "start": 74604
+    },
+    "cycles_tandy": {
+      "end": 63015,
+      "start": 62972
+    }
+  }
+}

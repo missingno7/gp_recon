@@ -1,0 +1,23 @@
+{
+  "expected_fixups": [],
+  "id": "grp_3da26d9f",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_3da26d9f",
+  "schema": 1,
+  "source": "src/cycles/engine/far_copy.c",
+  "source_sha256": "b77d4a4bba7ca3a0729d2d762099e62e2aaf6aef8b5c8bbdc7aee9c3df2b911d",
+  "targets": {
+    "cycles_cga": {
+      "end": 54734,
+      "start": 54698
+    },
+    "cycles_ega": {
+      "end": 64820,
+      "start": 64784
+    },
+    "cycles_tandy": {
+      "end": 53188,
+      "start": 53152
+    }
+  }
+}

@@ -2579,7 +2579,7 @@
       ]
     },
     "_fn_circuit_ega_01026f": {
-      "address": "0000:1026F",
+      "address": "0FFC:02AF",
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_1026f; ungrouped shared row-scaling helper called by both scan initializers",
       "staged_by": "decomp-circuit-b",
@@ -3725,7 +3725,7 @@
       "staged_by": "decomp-circuit-b"
     },
     "_grp_1a02eb1b": {
-      "address": "0000:1014B",
+      "address": "0FFC:018B",
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_1014b; correspondence group grp_1a02eb1b",
       "staged_by": "decomp-circuit-b"
@@ -3905,7 +3905,7 @@
       ]
     },
     "_grp_bbb9e788": {
-      "address": "0000:10031",
+      "address": "0FFC:0071",
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_10031; correspondence group grp_bbb9e788",
       "staged_by": "decomp-circuit-b"
@@ -3943,7 +3943,7 @@
       "staged_by": "decomp-circuit-b"
     },
     "_grp_dcbf0860": {
-      "address": "0000:10399",
+      "address": "0FFC:03D9",
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_10399; correspondence group grp_dcbf0860",
       "staged_by": "decomp-circuit-b"

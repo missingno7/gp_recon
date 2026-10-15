@@ -168,6 +168,8 @@ def address(binding) -> tuple[int, int | None]:
     if isinstance(binding, str) and ":" in binding:
         seg, off = binding.split(":", 1)
         segment, offset = int(seg, 16), int(off, 16)
+        if segment > 0xFFFF or offset > 0xFFFF:
+            raise ValueError(f"segment:offset binding out of 16-bit range: {binding}")
         return segment * 16 + offset, segment
     return int(binding, 0), None
 

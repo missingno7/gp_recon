@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "grp_15d06500",
+  "source": "src/cycles/engine/store_vertex.c",
+  "source_sha256": "2a9ba58d01e9c17fa18424fd2c2a7b44ace4f3b61d39aa11213e9ac6ecd2da4a",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_15d06500",
+  "targets": {
+    "cycles_cga": {
+      "start": 74890,
+      "end": 74946
+    },
+    "cycles_ega": {
+      "start": 84954,
+      "end": 85010
+    },
+    "cycles_tandy": {
+      "start": 73346,
+      "end": 73402
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 36,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_09966",
+      "frame": "_g_09966",
+      "self_relative": false
+    },
+    {
+      "offset": 24,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_0996c",
+      "frame": "_g_0996c",
+      "self_relative": false
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_0996c",
+      "frame": "_g_0996c",
+      "self_relative": false
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_0996a",
+      "frame": "_g_0996a",
+      "self_relative": false
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_0996e",
+      "frame": "_g_0996e",
+      "self_relative": false
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [],
+    "cycles_ega": [],
+    "cycles_tandy": []
+  }
+}

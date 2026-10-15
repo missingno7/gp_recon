@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "id": "grp_324ee638",
+  "source": "src/cycles/engine/initialize_overlay_buffers.c",
+  "source_sha256": "88fe1ddaeb393491cabe04c307a3cff9db8401c32584ee79024f1d19975ca4e7",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_324ee638",
+  "targets": {
+    "cycles_cga": {
+      "start": 54316,
+      "end": 54480
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 156,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_003a0",
+      "frame": "_g_003a0"
+    },
+    {
+      "offset": 147,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0024e",
+      "frame": "_g_0024e"
+    },
+    {
+      "offset": 141,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_c8e4",
+      "frame": "_g_c8e4"
+    },
+    {
+      "offset": 127,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_b9ee",
+      "frame": "_g_b9ee"
+    },
+    {
+      "offset": 109,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_0fc5c",
+      "frame": "_fn_cycles_cga_0fc5c"
+    },
+    {
+      "offset": 101,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_2e800973",
+      "frame": "_grp_2e800973"
+    },
+    {
+      "offset": 90,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_e747cf63",
+      "frame": "_grp_e747cf63"
+    },
+    {
+      "offset": 79,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0024e",
+      "frame": "_g_0024e"
+    },
+    {
+      "offset": 67,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_e747cf63",
+      "frame": "_grp_e747cf63"
+    },
+    {
+      "offset": 44,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_0559e",
+      "frame": "_fn_cycles_cga_0559e"
+    },
+    {
+      "offset": 25,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_69b75d8c",
+      "frame": "_grp_69b75d8c"
+    },
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_003a0",
+      "frame": "_g_003a0"
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [
+      54427,
+      54419,
+      54408,
+      54385,
+      54362,
+      54343
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "grp_bb99f4e6",
+  "source": "src/cycles/engine/dispatch_entries.c",
+  "source_sha256": "221f056438f77fb4933751510cc30e79109c2618049a5d19d0bfb5106bdc7059",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_bb99f4e6",
+  "targets": {
+    "cycles_cga": {
+      "start": 69138,
+      "end": 69205
+    },
+    "cycles_ega": {
+      "start": 79226,
+      "end": 79293
+    },
+    "cycles_tandy": {
+      "start": 67594,
+      "end": 67661
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 51,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_grp_27ed9f4f",
+      "frame": "_grp_27ed9f4f",
+      "self_relative": false
+    },
+    {
+      "offset": 34,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_fn_cycles_cga_12596",
+      "frame": "_fn_cycles_cga_12596",
+      "self_relative": false
+    },
+    {
+      "offset": 24,
+      "loc": "pointer32",
+      "width": 4,
+      "target": "_grp_7d50ca88",
+      "frame": "_grp_7d50ca88",
+      "self_relative": false
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [
+      69191,
+      69174,
+      69164
+    ],
+    "cycles_ega": [
+      79279,
+      79262,
+      79252
+    ],
+    "cycles_tandy": [
+      67647,
+      67630,
+      67620
+    ]
+  }
+}

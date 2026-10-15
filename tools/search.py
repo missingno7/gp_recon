@@ -36,6 +36,34 @@ def instruction_diff(code: bytes, oracle: bytes, start: int, fixes: list[dict]) 
     return out
 
 
+def canonical_source(candidate: Path) -> str:
+    """Repository path the source will occupy: the part after a worker's stage/ directory."""
+    parts = candidate.resolve().parts
+    if "stage" in parts:
+        return Path(*parts[len(parts) - parts[::-1].index("stage"):]).as_posix()
+    return candidate.resolve().relative_to(ROOT).as_posix()
+
+
+def write_recipe(args, profile: str, fixes: list[dict], report: dict) -> None:
+    lf = args.candidate.read_bytes().replace(bytes([13, 10]), bytes([10]))
+    keys = ("offset", "loc", "width", "self_relative", "target", "frame")
+    recipe = {
+        "schema": 1,
+        "id": args.id or args.write_recipe.stem,
+        "source": canonical_source(args.candidate),
+        "source_sha256": pipeline.digest(lf),
+        "profile": profile,
+        "public": args.public,
+        "expected_fixups": [{k: f[k] for k in keys} for f in fixes],
+        "targets": {t["target"]: {"start": int(t["range"].split(":")[0], 16),
+                                  "end": int(t["range"].split(":")[1], 16)}
+                    for t in report["targets"]},
+    }
+    args.write_recipe.parent.mkdir(parents=True, exist_ok=True)
+    args.write_recipe.write_bytes(json.dumps(recipe, indent=2).encode("utf-8") + bytes([10]))
+    print(f"search: wrote {args.write_recipe}", file=sys.stderr)
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("candidate", type=Path)
@@ -45,6 +73,9 @@ def main() -> int:
     p.add_argument("--profile")
     p.add_argument("--bindings", type=Path,
                    help="scratch JSON {target: {symbol: address}} merged over the tracked bindings")
+    p.add_argument("--write-recipe", type=Path, metavar="JSON",
+                   help="when every target is strict, write a reviewable recipe here")
+    p.add_argument("--id", help="recipe id for --write-recipe (default: file stem)")
     args = p.parse_args()
     if len(args.target) != len(args.ranges):
         p.error("each --target needs a corresponding --range")
@@ -73,6 +104,11 @@ def main() -> int:
         scratch = Path(build["scratch"])
         (scratch / "report.json").write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         print(json.dumps(report, indent=2, sort_keys=True))
+        if args.write_recipe:
+            if obj is None or not all(t["strict"] for t in report["targets"]):
+                print("search: not every target is strict; no recipe written", file=sys.stderr)
+                return 1
+            write_recipe(args, profile, fixes, report)
         return 0 if obj is not None else 1
     except Exception as exc:
         print(f"search: {exc}", file=sys.stderr)

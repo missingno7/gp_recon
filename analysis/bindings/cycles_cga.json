@@ -23,6 +23,24 @@
         "grp_829a14c2"
       ]
     },
+    "FN_CYCLES_EGA_03C9C": {
+      "address": "0000:3B5A",
+      "confidence": "medium",
+      "provenance": "Function address from analysis/inventory/cycles_cga.json exact row at 0x3b5a; direct far-call operand in grp_4896bb94 member confirms this entry. Used by that member as FN_CYCLES_EGA_03C9C.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "GRP_183E807A": {
+      "address": "0000:3C2C",
+      "confidence": "medium",
+      "provenance": "Function address from analysis/inventory/cycles_cga.json exact row at 0x3c2c; direct far-call operand in grp_4896bb94 member confirms this entry. Used by that member as GRP_183E807A.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "GRP_77E01831": {
+      "address": "0000:3B90",
+      "confidence": "medium",
+      "provenance": "Function address from analysis/inventory/cycles_cga.json exact row at 0x3b90; direct far-call operand in grp_4896bb94 member confirms this entry. Used by that member as GRP_77E01831.",
+      "staged_by": "decomp-cycles-b"
+    },
     "SINE_DATA": {
       "address": 118342,
       "confidence": "high",
@@ -34,6 +52,24 @@
       "confidence": "medium-high",
       "provenance": "Timer state starts at 0x1d048; separate timer members read and write the dwords at DGROUP+0x9c98 and +2, and the group base is independently cross-checked by the message/table data.",
       "staged_by": "port-kbtimer"
+    },
+    "_CS_SAVED_SP": {
+      "address": "11AB:000E",
+      "confidence": "medium",
+      "provenance": "CS absolute save slot operand in hand-written grp_31639679 member: CS:[000E]. Segment base inferred from that member segment; offset is explicit operand.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_CS_SAVED_SS": {
+      "address": "11AB:000C",
+      "confidence": "medium",
+      "provenance": "CS absolute save slot operand in hand-written grp_31639679 member: CS:[000C]. Segment base inferred from that member segment; offset is explicit operand.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_FN_CYCLES_CGA_03A98": {
+      "address": "0000:3A98",
+      "confidence": "high",
+      "provenance": "Inventory start 0x3a98; direct far call in grp_58b11c1a.",
+      "staged_by": "decomp-cycles-b"
     },
     "_GRP_3F31FED1": {
       "address": "0000:4E5E",
@@ -61,6 +97,18 @@
       "uses": [
         "grp_4f856910"
       ]
+    },
+    "_G_08E62": {
+      "address": "133B:8E62",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS store and OFFSET load in grp_31639679 member; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_G_08E64": {
+      "address": "133B:8E64",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS store and OFFSET load in grp_31639679 member; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
     },
     "_G_A748": {
       "address": "0000:A748",
@@ -179,6 +227,12 @@
         "grp_e23a5ac8"
       ]
     },
+    "__aFlmul": {
+      "address": "0000:3C2C",
+      "confidence": "medium",
+      "provenance": "Exact inventory start 0x3c2c in cycles_cga, classified MSC runtime; direct multiply-helper call in grp_68180ad1 supports the standard symbol __aFlmul.",
+      "staged_by": "decomp-cycles-b"
+    },
     "_aNoRoomLeftOnTimerInterru": {
       "address": 116312,
       "confidence": "high",
@@ -203,6 +257,18 @@
       "provenance": "Unique 16-byte lookup table at 0x1c912 matches across all Cycles builds; sub_307D2 masks its argument to 0..15 before indexing it (DS offset 0x9562).",
       "staged_by": "port-kbtimer"
     },
+    "_cs_saved_sp": {
+      "address": "11AB:000E",
+      "confidence": "medium",
+      "provenance": "CS absolute save slot operand in hand-written grp_31639679 member: CS:[000E]. Segment base inferred from that member segment; offset is explicit operand.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_cs_saved_ss": {
+      "address": "11AB:000C",
+      "confidence": "medium",
+      "provenance": "CS absolute save slot operand in hand-written grp_31639679 member: CS:[000C]. Segment base inferred from that member segment; offset is explicit operand.",
+      "staged_by": "decomp-cycles-b"
+    },
     "_fatal_error": {
       "address": "0555:004E",
       "confidence": "medium",
@@ -215,6 +281,258 @@
       "provenance": "Own public start 0x718f and 95-byte fresh strict assembly; independently confirmed segment:offset in xref, cycles_cga.",
       "staged_by": "port-shape"
     },
+    "_fn_cycles_cga_03200": {
+      "address": "0000:3200",
+      "confidence": "low",
+      "provenance": "Exact function start row 0x3200 in analysis/inventory/cycles_cga.json; direct call target in grp_9ec2321f. For ungrouped symbols the shared-source cross-target correspondence is a low-confidence call-position hypothesis.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_036e6": {
+      "address": "0000:36E6",
+      "confidence": "high",
+      "provenance": "Inventory start 0x36e6, far call in grp_2c7f7a4d.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_03a98": {
+      "address": "0000:3A98",
+      "confidence": "high",
+      "provenance": "Inventory start 0x3a98; direct far call in grp_58b11c1a.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_03b32": {
+      "address": "0000:3B32",
+      "confidence": "high",
+      "provenance": "Inventory start 0x3b32, direct far call target in grp_0ea93981.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_03b82": {
+      "address": "0000:3B82",
+      "confidence": "low",
+      "provenance": "Exact function start row 0x3b82 in analysis/inventory/cycles_cga.json; direct call target in grp_9ec2321f. For ungrouped symbols the shared-source cross-target correspondence is a low-confidence call-position hypothesis.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0559e": {
+      "address": "0555:004E",
+      "confidence": "medium",
+      "provenance": "Function start row 0x559e in analysis/inventory/cycles_cga.json; direct far-call operand 0555:004e in grp_324ee638. Used by grp_324ee638.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0563e": {
+      "address": "0555:00EE",
+      "confidence": "low",
+      "provenance": "Exact far-call operand and inventory function entry in cycles_cga for grp_efef7148; ungrouped correspondences are by same call ordinal in the byte-similar three-target member.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_05667": {
+      "address": "0555:0117",
+      "confidence": "low",
+      "provenance": "Function start row 0x5667 in cycles_cga inventory; direct far call position in grp_c3517998. These are ungrouped cross-target aliases, so confidence is low.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_059e2": {
+      "address": "0555:0492",
+      "confidence": "low",
+      "provenance": "Inventory start 0x59e2, called by grp_4b63e505.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_05ada": {
+      "address": "0555:058A",
+      "confidence": "high",
+      "provenance": "Inventory start 0x5ada, called by grp_ca7d59e7.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_05ef9": {
+      "address": "0555:09A9",
+      "confidence": "low",
+      "provenance": "Inventory start 0x5ef9, called by grp_dd11c81f.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_05ef9_long": {
+      "address": "0555:09A9",
+      "confidence": "high",
+      "provenance": "Same inventory start as fn_cycles_cga_05ef9, used for its alternate long-pointer call signature in grp_dd11c81f.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_063c6": {
+      "address": "0555:0E76",
+      "confidence": "high",
+      "provenance": "Operand-derived far data reference or exact far call target in grp_d33a06a1; callees cross-checked against inventory starts.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_063f8": {
+      "address": "0555:0EA8",
+      "confidence": "low",
+      "provenance": "Function start row 0x63f8 in cycles_cga inventory; direct call operand in grp_faa59520. Target-specific code is ungrouped in this member; symbol is a low-confidence call-position alias.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_06403": {
+      "address": "0555:0EB3",
+      "confidence": "low",
+      "provenance": "Inventory start 0x6403, corroborated by ordinal 5 far call at grp_944fa82f.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_06412": {
+      "address": "0555:0EC2",
+      "confidence": "low",
+      "provenance": "Inventory start 0x6412, corroborated by ordinal 7 far call at grp_944fa82f.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_068d1": {
+      "address": "0555:1381",
+      "confidence": "low",
+      "provenance": "Inventory start 0x68d1, ordinal far-call target of grp_9c6141b6.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_072ee": {
+      "address": "0555:1D9E",
+      "confidence": "low",
+      "provenance": "Inventory start 0x72ee, corroborated by ordinal 6 far call at grp_944fa82f.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0763a": {
+      "address": "0555:20EA",
+      "confidence": "low",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json at 0x763a; direct call operand in grp_07686202. For _fn_cycles_cga_0763a this cross-target source alias follows the corresponding call position; confidence reduced for ungrouped members.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_07ff5": {
+      "address": "0555:2AA5",
+      "confidence": "low",
+      "provenance": "Function start row 0x7ff5 in cycles_cga inventory; direct far-call operand in grp_d964a340. Ungrouped cross-target alias follows this consistent call position.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_08624": {
+      "address": "0555:30D4",
+      "confidence": "high",
+      "provenance": "Operand-derived far data reference or exact far call target in grp_d33a06a1; callees cross-checked against inventory starts.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_086da": {
+      "address": "0555:318A",
+      "confidence": "low",
+      "provenance": "Exact function start row 0x86da in analysis/inventory/cycles_cga.json; direct call operand in grp_8c455c08.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_08e7e": {
+      "address": "0555:392E",
+      "confidence": "low",
+      "provenance": "Inventory start 0x8e7e, ordinal far-call target of grp_9c6141b6.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_08fc2": {
+      "address": "0555:3A72",
+      "confidence": "low",
+      "provenance": "Function start row 0x8fc2 in cycles_cga inventory; direct far call position in grp_c3517998. These are ungrouped cross-target aliases, so confidence is low.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_09f14": {
+      "address": "0555:49C4",
+      "confidence": "low",
+      "provenance": "Function start row 0x9f14 in cycles_cga inventory; direct call operand in grp_faa59520. Target-specific code is ungrouped in this member; symbol is a low-confidence call-position alias.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0aaf0": {
+      "address": "0555:55A0",
+      "confidence": "low",
+      "provenance": "Inventory start 0xaaf0, ordinal far-call target of grp_9c6141b6.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0c276": {
+      "address": "C020:0256",
+      "confidence": "high",
+      "provenance": "Operand-derived far data reference or exact far call target in grp_d33a06a1; callees cross-checked against inventory starts.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0c2b2": {
+      "address": "0BFC:02F2",
+      "confidence": "low",
+      "provenance": "Exact function start row 0xc2b2 in analysis/inventory/cycles_cga.json; direct call operand in grp_3f2832f6. Ungrouped functions use a low-confidence cross-target call-position alias.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0c2ce": {
+      "address": "0BFC:030E",
+      "confidence": "low",
+      "provenance": "Direct far-call operand in grp_bc055bb1 member; matching call position across members is low-confidence because the helper has no correspondence-group row.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0d42c": {
+      "address": "0C7D:0C5C",
+      "confidence": "low",
+      "provenance": "Inventory start 0xd42c, called by grp_4b63e505.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0dd7a": {
+      "address": "0C7D:15AA",
+      "confidence": "low",
+      "provenance": "Inventory start 0xdd7a, called by grp_4b63e505.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0dedc": {
+      "address": "0DE1:00CC",
+      "confidence": "low",
+      "provenance": "Inventory start 0xdedc, called by grp_4b63e505.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0dfc6": {
+      "address": "0DE1:01B6",
+      "confidence": "low",
+      "provenance": "Inventory start 0xdfc6, called by grp_4b63e505.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0e47e": {
+      "address": "0DE1:066E",
+      "confidence": "low",
+      "provenance": "Function start row 0xe47e in cycles_cga inventory; direct call operand in grp_faa59520. Target-specific code is ungrouped in this member; symbol is a low-confidence call-position alias.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0fc5c": {
+      "address": "0F81:034C",
+      "confidence": "medium",
+      "provenance": "Function start row 0xfc5c in analysis/inventory/cycles_cga.json; direct far-call operand 0f81:034c in grp_324ee638. Used by grp_324ee638.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_0fd74": {
+      "address": "0F81:0564",
+      "confidence": "low",
+      "provenance": "Inventory start 0xfd74, called by grp_dd11c81f.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_10024": {
+      "address": "0F81:0814",
+      "confidence": "medium",
+      "provenance": "Exact ungrouped inventory row at 0x10024 and matching far-call operand in grp_1c2275e7 cycles_cga member; shared source uses the call-position alias.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_1007e": {
+      "address": "0F81:086E",
+      "confidence": "medium",
+      "provenance": "Exact ungrouped inventory row at 0x1007e and matching far-call operand in grp_1c2275e7 cycles_cga member; shared source uses the call-position alias.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_10948": {
+      "address": "105F:0358",
+      "confidence": "low",
+      "provenance": "Exact far-call operand and inventory function entry in cycles_cga for grp_efef7148; ungrouped correspondences are by same call ordinal in the byte-similar three-target member.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_11e52": {
+      "address": "11E5:0002",
+      "confidence": "high",
+      "provenance": "Inventory start 0x11e52, called by grp_dd11c81f.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_12316": {
+      "address": "1231:0006",
+      "confidence": "low",
+      "provenance": "Direct far-call operand in grp_bc055bb1 member; matching call position across members is low-confidence because the helper has no correspondence-group row.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_cga_12596": {
+      "address": "1259:0006",
+      "confidence": "low",
+      "provenance": "Exact inventory entry cycles_cga at 0x12596, reached as the same ordinal far-call from strict-corresponding grp_bb99f4e6 members; per-target callee correspondence is a low-confidence call-position hypothesis.",
+      "staged_by": "decomp-cycles-b"
+    },
     "_fontdefseg": {
       "address": "133B:9CA0",
       "confidence": "medium",
@@ -225,6 +543,756 @@
       "address": 7238,
       "confidence": "high for entry address; reconstructed descriptive name",
       "provenance": "analysis/compiler/decimal_proof.json; direct callers documented in docs/decimal.md"
+    },
+    "_g_00098": {
+      "address": "133B:0098",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_faa59520; exact target offset and DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00132": {
+      "address": "133B:0132",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS word at 0x0132 in grp_bc055bb1; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00134": {
+      "address": "133B:0134",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS word at 0x0134 in grp_bc055bb1; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00136": {
+      "address": "133B:0136",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS word 0x0136 in grp_efef7148; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00138": {
+      "address": "133B:0138",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS word 0x0138 in grp_efef7148; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0024e": {
+      "address": "133B:024E",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS offset 0x024e in grp_324ee638; DGROUP base from inventory/cycles_cga.json. Used by grp_324ee638.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00254": {
+      "address": "133B:0254",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS reference in grp_f53aee67: global 0x0254 or combined BX/SI table base resolving to 0xb9fc; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_003a0": {
+      "address": "133B:03A0",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS offset 0x03a0 in grp_324ee638; DGROUP base from inventory/cycles_cga.json. Used by grp_324ee638.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00438": {
+      "address": "133B:0438",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference 0x0438 in grp_68180ad1; DGROUP segment from target inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00486": {
+      "address": "133B:0486",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS reference 0x0486 (target offset adjusted per corresponding member where noted) in grp_409e3ded; DGROUP from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_006f6": {
+      "address": "133B:06F6",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS reference 0x06f6 (target offset adjusted per corresponding member where noted) in grp_409e3ded; DGROUP from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0070c": {
+      "address": "133B:070C",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP reference in grp_4b63e505.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00716": {
+      "address": "133B:0716",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_faa59520; exact target offset and DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00718": {
+      "address": "133B:0718",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_faa59520; exact target offset and DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00728": {
+      "address": "133B:0728",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS reference 0x0728 (target offset adjusted per corresponding member where noted) in grp_409e3ded; DGROUP from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_008c6": {
+      "address": "133B:08C6",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS displacement 0x08c6 in grp_9ec2321f (cycles_cga range). Segment comes from analysis/inventory/cycles_cga.json dgroup_base.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0098": {
+      "address": "133B:0098",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP reference in grp_4b63e505.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_00dbc": {
+      "address": "133B:0DBC",
+      "confidence": "high",
+      "provenance": "Operand-derived indexed DS base displacement 0x0dbc in grp_8c455c08; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_02466": {
+      "address": "133B:2466",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS reference 0x2466 (target offset adjusted per corresponding member where noted) in grp_409e3ded; DGROUP from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0247a": {
+      "address": "133B:247A",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS reference 0x247a (target offset adjusted per corresponding member where noted) in grp_409e3ded; DGROUP from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_028e0": {
+      "address": "133B:28E0",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_faa59520; exact target offset and DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0438": {
+      "address": "133B:0438",
+      "confidence": "high",
+      "provenance": "Operand-derived DS reference in grp_2c7f7a4d.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_04558": {
+      "address": "133B:4558",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS displacement in grp_8c455c08; target-specific member offset and DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0457a": {
+      "address": "133B:457A",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_07686202; exact member offset. DGROUP segment from the target inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0457a_pointer": {
+      "address": "133B:457A",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_07686202; exact member offset. DGROUP segment from the target inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0457c": {
+      "address": "133B:457C",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_07686202; exact member offset. DGROUP segment from the target inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_045ae": {
+      "address": "133B:45AE",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_faa59520; exact target offset and DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0484": {
+      "address": "133B:0484",
+      "confidence": "high",
+      "provenance": "Operand-derived DS reference in grp_2c7f7a4d.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0486": {
+      "address": "133B:0486",
+      "confidence": "high",
+      "provenance": "Operand-derived DS reference in grp_2c7f7a4d.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_070a": {
+      "address": "133B:070A",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP reference in grp_d14e143c.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e62": {
+      "address": "133B:8E62",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS store and OFFSET load in grp_31639679 member; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e64": {
+      "address": "133B:8E64",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS store and OFFSET load in grp_31639679 member; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e66": {
+      "address": "133B:8E66",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS word at 0x8e66 in grp_181f4d04 member; DGROUP base from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e68": {
+      "address": "133B:8E68",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS word at 0x8e68 in grp_181f4d04 member; DGROUP base from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e6a": {
+      "address": "133B:8E6A",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS word at 0x8e6a in grp_181f4d04 member; DGROUP base from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e6c": {
+      "address": "133B:8E6C",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS word at 0x8e6c in grp_181f4d04 member; DGROUP base from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e70": {
+      "address": "133B:8E70",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS word displacement 0x8e70 in grp_fb4d04d5; DGROUP segment 133B from analysis/inventory/cycles_cga.json dgroup_base.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e72": {
+      "address": "133B:8E72",
+      "confidence": "medium",
+      "provenance": "Operand-derived global/reference offset 0x8e72 in grp_51debc93; DGROUP segment 133B is from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e74": {
+      "address": "133B:8E74",
+      "confidence": "medium",
+      "provenance": "Operand-derived status word at DS offset 0x8e74 written to 1 in grp_8b72637a; DGROUP segment 133B from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e76": {
+      "address": "133B:8E76",
+      "confidence": "medium",
+      "provenance": "Operand-derived zeroed global displacement 0x8e76 in grp_cf3195ac; DGROUP segment 133B from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_08e78": {
+      "address": "133B:8E78",
+      "confidence": "medium",
+      "provenance": "Operand-derived global/reference offset 0x8e78 in grp_51debc93; DGROUP segment 133B is from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_09966": {
+      "address": "133B:9966",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS global offset 0x9966 in grp_15d06500. The far-table pointer is loaded with LES; counters/status are read or written directly. DGROUP segment 133B is from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0996a": {
+      "address": "133B:996A",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS global offset 0x996a in grp_15d06500. The far-table pointer is loaded with LES; counters/status are read or written directly. DGROUP segment 133B is from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0996c": {
+      "address": "133B:996C",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS global offset 0x996c in grp_15d06500. The far-table pointer is loaded with LES; counters/status are read or written directly. DGROUP segment 133B is from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0996e": {
+      "address": "133B:996E",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS global offset 0x996e in grp_15d06500. The far-table pointer is loaded with LES; counters/status are read or written directly. DGROUP segment 133B is from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0a7a6": {
+      "address": "133B:A7A6",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS word displacement 0xa7a6, loaded into ES in grp_fecf1db3 before reading ES:[0x4818]; DGROUP segment 133B from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0a966": {
+      "address": "133B:A966",
+      "confidence": "medium",
+      "provenance": "Operand-derived table base immediate 0xa966 loaded into SI and indexed in grp_fb4d04d5; DGROUP segment 133B from analysis/inventory/cycles_cga.json dgroup_base.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0b7ac": {
+      "address": "133B:B7AC",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS array base from grp_9ea5b57e displacement and BX index; first contiguous 8-byte zeroed region; the second starts at +8. DGROUP segment 133B from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0b9ea": {
+      "address": "133B:B9EA",
+      "confidence": "medium",
+      "provenance": "Operand-derived absolute DS reference 0xb9ea (target offset adjusted per corresponding member where noted) in grp_409e3ded; DGROUP from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0c8e2": {
+      "address": "133B:C8E2",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS location 0xc8e2 in grp_f3f7c466 (array base derived from the BX displacement and 0x46*i index); DGROUP segment 133B from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0cd14": {
+      "address": "133B:CD14",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS array base from grp_9ea5b57e displacement and BX index; first contiguous 4-byte zeroed region; the second starts at +4. DGROUP segment 133B from analysis/inventory/cycles_cga.json.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_0ef4": {
+      "address": "133B:0EF4",
+      "confidence": "high",
+      "provenance": "Operand-derived DS address accessed by grp_0ea93981.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_215a": {
+      "address": "133B:215A",
+      "confidence": "high",
+      "provenance": "Operand-derived DS address accessed by grp_0ea93981.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_2166": {
+      "address": "133B:2166",
+      "confidence": "high",
+      "provenance": "Operand-derived DS address accessed by grp_0ea93981.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_45a0": {
+      "address": "133B:45A0",
+      "confidence": "high",
+      "provenance": "Operand-derived DS address accessed by grp_0ea93981.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_45ae": {
+      "address": "133B:45AE",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP reference in grp_d14e143c.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_9966": {
+      "address": "133B:9966",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_ca7d59e7; corresponding cycles member offset recorded for this target, with DGROUP segment from analysis/inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_9966_long": {
+      "address": "133B:9966",
+      "confidence": "medium",
+      "provenance": "Alias of consecutive low/high words addressed by operand-derived _g_9966/_g_9968; grp_ca7d59e7 stores the helper DX:AX return as a dword at the same address.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_9968": {
+      "address": "133B:9968",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_ca7d59e7; corresponding cycles member offset recorded for this target, with DGROUP segment from analysis/inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_996a": {
+      "address": "133B:996A",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_ca7d59e7; corresponding cycles member offset recorded for this target, with DGROUP segment from analysis/inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_996c": {
+      "address": "133B:996C",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_ca7d59e7; corresponding cycles member offset recorded for this target, with DGROUP segment from analysis/inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_996e": {
+      "address": "133B:996E",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_ca7d59e7; corresponding cycles member offset recorded for this target, with DGROUP segment from analysis/inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_argument_words": {
+      "address": "133B:457A",
+      "confidence": "high",
+      "provenance": "Operand-derived far data reference or exact far call target in grp_d33a06a1; callees cross-checked against inventory starts.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_b57a": {
+      "address": "133B:B57A",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_faa59520; exact target offset and DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_b57c": {
+      "address": "133B:B57C",
+      "confidence": "high",
+      "provenance": "Operand-derived DS global or negative-displacement array base referenced in grp_9c6141b6.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_b7c6": {
+      "address": "133B:B7C6",
+      "confidence": "high",
+      "provenance": "Operand-derived DS address accessed by grp_0ea93981.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_b7de": {
+      "address": "133B:B7DE",
+      "confidence": "high",
+      "provenance": "Operand-derived DS global or negative-displacement array base referenced in grp_9c6141b6.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_b9ea": {
+      "address": "133B:B9EA",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_07686202; exact member offset. DGROUP segment from the target inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_b9ec": {
+      "address": "133B:B9EC",
+      "confidence": "high",
+      "provenance": "Operand-derived absolute DS reference in grp_07686202; exact member offset. DGROUP segment from the target inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_b9ee": {
+      "address": "133B:B9EE",
+      "confidence": "medium",
+      "provenance": "Operand-derived DGROUP base 0xb9ee used to form buffer pointer in grp_324ee638; DGROUP base from inventory/cycles_cga.json. Used by grp_324ee638.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_b9fc": {
+      "address": "133B:B9FC",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS reference in grp_f53aee67: global 0xb9fc or combined BX/SI table base resolving to 0xb9fc; DGROUP segment from inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_c86e": {
+      "address": "133B:C86E",
+      "confidence": "high",
+      "provenance": "Operand-derived DS global or negative-displacement array base referenced in grp_9c6141b6.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_c894": {
+      "address": "133B:C894",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP reference in grp_4b63e505.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_c8e2": {
+      "address": "133B:C8E2",
+      "confidence": "medium",
+      "provenance": "Operand-derived table base: BX=70*index and indexed read uses DS:[BX-0x371e]; resolves to offset 0xc8e2 in grp_464c8224. DGROUP segment from analysis/inventory.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_c8e4": {
+      "address": "133B:C8E4",
+      "confidence": "medium",
+      "provenance": "Operand-derived DS table base: displacement -0x371c in grp_324ee638 wraps to 0xc8e4; DGROUP base from inventory/cycles_cga.json. Used by grp_324ee638.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_context_pointer": {
+      "address": "133B:457A",
+      "confidence": "high",
+      "provenance": "Operand-derived DS global or negative-displacement array base referenced in grp_9c6141b6.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_cycle_count": {
+      "address": "133B:8E7A",
+      "confidence": "high",
+      "provenance": "Operand-derived DS offset 0x8e7a referenced by grp_c5bcbe1c.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_cycle_limit": {
+      "address": "133B:8E70",
+      "confidence": "high",
+      "provenance": "Operand-derived DS offset 0x8e70 referenced by grp_c5bcbe1c.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_cycle_service": {
+      "address": "133B:8E6A",
+      "confidence": "high",
+      "provenance": "Operand-derived DS offset 0x8e6a referenced by grp_c5bcbe1c.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_g_entry_buffer": {
+      "address": "133B:A966",
+      "confidence": "high",
+      "provenance": "Operand-derived DS offset 0xa966 referenced by grp_c5bcbe1c.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_0376aefe": {
+      "address": "0000:3220",
+      "confidence": "medium",
+      "provenance": "Exact function start row 0x3220 in analysis/inventory/cycles_cga.json; direct call target in grp_9ec2321f. For ungrouped symbols the shared-source cross-target correspondence is a low-confidence call-position hypothesis.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_07dc1757": {
+      "address": "0000:33C4",
+      "confidence": "medium",
+      "provenance": "Exact function start row 0x33c4 in analysis/inventory/cycles_cga.json; direct call target in grp_9ec2321f. For ungrouped symbols the shared-source cross-target correspondence is a low-confidence call-position hypothesis.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_09c6b296": {
+      "address": "0000:34A2",
+      "confidence": "medium",
+      "provenance": "Exact function start row 0x34a2 in analysis/inventory/cycles_cga.json; direct call target in grp_9ec2321f. For ungrouped symbols the shared-source cross-target correspondence is a low-confidence call-position hypothesis.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_1e9784b3": {
+      "address": "0000:3718",
+      "confidence": "medium",
+      "provenance": "Exact function start row 0x3718 in analysis/inventory/cycles_cga.json; direct call target in grp_9ec2321f. For ungrouped symbols the shared-source cross-target correspondence is a low-confidence call-position hypothesis.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_27ed9f4f": {
+      "address": "0555:1C2E",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json exact row at 0x0717e; direct transfer in grp_bb99f4e6; binding uses that row segment base 0x05550.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_2e1eafe3": {
+      "address": "0DE1:03C0",
+      "confidence": "medium",
+      "provenance": "Function start row 0xe1d0 in cycles_cga inventory; direct call operand in grp_faa59520.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_2e800973": {
+      "address": "0000:2B72",
+      "confidence": "medium",
+      "provenance": "Function start row 0x2b72 in analysis/inventory/cycles_cga.json and direct lcall operand in grp_324ee638. Used by grp_324ee638.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_31639679": {
+      "address": "11AB:0010",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json exact row at 0x11ac0; direct transfer in grp_181f4d04; binding uses that row segment base 0x11ab0.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_32a3cf0e": {
+      "address": "0DE1:144E",
+      "confidence": "medium",
+      "provenance": "Function start inventory row 0x0f25e in cycles_cga, group grp_32a3cf0e; direct transfer operand in grp_409e3ded confirms target.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_3be77d36": {
+      "address": "0555:1AE6",
+      "confidence": "medium",
+      "provenance": "Exact function start row 0x7036 in analysis/inventory/cycles_cga.json; direct call operand in grp_3f2832f6. Ungrouped functions use a low-confidence cross-target call-position alias.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_409e3ded": {
+      "address": "0DE1:10EE",
+      "confidence": "high",
+      "provenance": "Inventory start 0xeefe; direct control-flow call in grp_d14e143c.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_454837c8": {
+      "address": "0000:C578",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json exact row at 0xc578; far-returning callee is reached by the direct near call in grp_444f8b5b.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_4b39b4e7": {
+      "address": "0DE1:1382",
+      "confidence": "medium",
+      "provenance": "Function start inventory row 0x0f192 in cycles_cga, group grp_4b39b4e7; direct transfer operand in grp_409e3ded confirms target.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_58b11c1a": {
+      "address": "11B0:0114",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json exact row at 0x11c14; direct transfer in grp_181f4d04; binding uses that row segment base 0x11b00.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_5ca87e84": {
+      "address": "0000:3744",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json exact row at 0x3744; direct far call in grp_740dd4f2 resolves to this standard string-length helper.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_680becd9": {
+      "address": "0000:D97A",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json exact row at 0xd97a; direct near relative call in grp_2d48f42d member resolves to this entry, which has far-return boundary evidence.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_69b75d8c": {
+      "address": "0000:2C3A",
+      "confidence": "medium",
+      "provenance": "Function start row 0x2c3a in analysis/inventory/cycles_cga.json and direct lcall operand in grp_324ee638. Used by grp_324ee638.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_6a02d808": {
+      "address": "0000:35E1",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json exact row at 0x035e1; direct transfer in grp_181f4d04; binding uses that row segment base 0x00000.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_7a614cef": {
+      "address": "0555:1381",
+      "confidence": "medium",
+      "provenance": "Exact far-call operand and inventory function entry in cycles_cga for grp_efef7148; ungrouped correspondences are by same call ordinal in the byte-similar three-target member.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_7d3b9038": {
+      "address": "0555:15CB",
+      "confidence": "high",
+      "provenance": "Inventory start 0x6b1b, called by grp_ca7d59e7.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_7d50ca88": {
+      "address": "0555:1C3F",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json exact row at 0x0718f; direct transfer in grp_bb99f4e6; binding uses that row segment base 0x05550.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_80f217a8": {
+      "address": "0000:3786",
+      "confidence": "medium",
+      "provenance": "Exact inventory start 0x3786 in cycles_cga; direct far call in grp_68180ad1.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_885c7918": {
+      "address": "0000:EB6C",
+      "confidence": "medium",
+      "provenance": "Exact function start row 0xeb6c in analysis/inventory/cycles_cga.json; direct call target in grp_9ec2321f. For ungrouped symbols the shared-source cross-target correspondence is a low-confidence call-position hypothesis.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_944fa82f": {
+      "address": "0DE1:0822",
+      "confidence": "medium",
+      "provenance": "Function start row 0xe632 in cycles_cga inventory; direct call operand in grp_faa59520.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_9c6141b6": {
+      "address": "0C7D:10BE",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json at 0xd88e; direct call operand in grp_07686202. For _fn_cycles_cga_0763a this cross-target source alias follows the corresponding call position; confidence reduced for ungrouped members.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_9c73fa69": {
+      "address": "0555:2DD2",
+      "confidence": "low",
+      "provenance": "Inventory start 0x8322, call order in grp_9a69383f; second-call correspondence uses same operand/call ordinal across target members.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_9d44a3bf": {
+      "address": "0555:392E",
+      "confidence": "medium",
+      "provenance": "Exact far-call operand and inventory function entry in cycles_cga for grp_efef7148; ungrouped correspondences are by same call ordinal in the byte-similar three-target member.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_b0f6fa87": {
+      "address": "0C7D:1262",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json at 0xda32; direct call operand in grp_07686202. For _fn_cycles_cga_0763a this cross-target source alias follows the corresponding call position; confidence reduced for ungrouped members.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_b141533d": {
+      "address": "11D7:000C",
+      "confidence": "high",
+      "provenance": "Inventory start 0x11d7c, call order in grp_9a69383f; second-call correspondence uses same operand/call ordinal across target members.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_b9f628fc": {
+      "address": "0000:3A3E",
+      "confidence": "medium",
+      "provenance": "Function start inventory row 0x03a3e in cycles_cga, group grp_b9f628fc; direct transfer operand in grp_409e3ded confirms target.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_c3517998": {
+      "address": "105F:000E",
+      "confidence": "medium",
+      "provenance": "Function start inventory row 0x105fe in cycles_cga, group grp_c3517998; direct transfer operand in grp_409e3ded confirms target.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_cddc44db": {
+      "address": "0000:36A6",
+      "confidence": "medium",
+      "provenance": "Function start inventory row 0x036a6 in cycles_cga, group grp_cddc44db; direct transfer operand in grp_409e3ded confirms target.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_d14e143c": {
+      "address": "0DE1:0160",
+      "confidence": "high",
+      "provenance": "Inventory start 0xdf70, called by grp_4b63e505.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_d33a06a1": {
+      "address": "0BFC:0264",
+      "confidence": "medium",
+      "provenance": "Exact function start row 0xc224 in analysis/inventory/cycles_cga.json; direct call operand in grp_3f2832f6. Ungrouped functions use a low-confidence cross-target call-position alias.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_d964a340": {
+      "address": "0BFC:0330",
+      "confidence": "medium",
+      "provenance": "Function start inventory row at 0x0c2f0, group d964a340, called from grp_bc055bb1 member.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_e747cf63": {
+      "address": "0000:2C66",
+      "confidence": "medium",
+      "provenance": "Function start row 0x2c66 in analysis/inventory/cycles_cga.json and direct lcall operand in grp_324ee638. Used by grp_324ee638.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_e76f1ca2": {
+      "address": "0555:2AEE",
+      "confidence": "medium",
+      "provenance": "Function start row 0x803e in cycles_cga inventory; direct call operand in grp_faa59520.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_e962a626": {
+      "address": "0000:D956",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json exact row at 0xd956; direct near relative call in grp_2d48f42d member resolves to this entry, which has far-return boundary evidence.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_ee68b6d0": {
+      "address": "0555:1E10",
+      "confidence": "medium",
+      "provenance": "Exact function start row 0x7360 in analysis/inventory/cycles_cga.json; direct call operand in grp_8c455c08.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_fd0b3279": {
+      "address": "0C7D:13D6",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json at 0xdba6; direct call operand in grp_07686202. For _fn_cycles_cga_0763a this cross-target source alias follows the corresponding call position; confidence reduced for ungrouped members.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_fdacd3b7": {
+      "address": "0555:36DC",
+      "confidence": "medium",
+      "provenance": "Function start from analysis/inventory/cycles_cga.json at 0x8c2c; direct call operand in grp_07686202. For _fn_cycles_cga_0763a this cross-target source alias follows the corresponding call position; confidence reduced for ungrouped members.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_grp_fecf1db3": {
+      "address": "11CB:0008",
+      "confidence": "medium",
+      "provenance": "Function start row 0x11cb8 in cycles_cga inventory; direct call operand in grp_faa59520.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_intro_text_one": {
+      "address": "0555:33F8",
+      "confidence": "medium",
+      "provenance": "Operand-derived far text address in grp_1c2275e7: immediate offset and relocated code/data segment word. Text contents are not independently named.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_intro_text_three": {
+      "address": "0555:089E",
+      "confidence": "medium",
+      "provenance": "Operand-derived far text address in grp_1c2275e7: immediate offset and relocated code/data segment word. Text contents are not independently named.",
+      "staged_by": "decomp-cycles-b"
+    },
+    "_intro_text_two": {
+      "address": "0555:3564",
+      "confidence": "medium",
+      "provenance": "Operand-derived far text address in grp_1c2275e7: immediate offset and relocated code/data segment word. Text contents are not independently named.",
+      "staged_by": "decomp-cycles-b"
     },
     "_sprite1": {
       "address": "0555:4800",
@@ -237,6 +1305,12 @@
       "confidence": "medium",
       "provenance": "Census has a reachable-call-target start at 0x8322; the entry begins with a BP frame and accesses sprite1 fields. Independent caller candidates include 0x966, 0xa1b, 0xafb, 0xc23, 0x1005, and 0x11668; the four calls in sprite_1_unk4 are excluded from that independent set.",
       "staged_by": "port-shape"
+    },
+    "_tail_resource": {
+      "address": "1241:007A",
+      "confidence": "medium",
+      "provenance": "Operand-derived far pointer passed by grp_ca7d59e7; points immediately after its terminal RETF in each image.",
+      "staged_by": "decomp-cycles-b"
     },
     "_timer_callback_counter": {
       "address": "133B:919E",

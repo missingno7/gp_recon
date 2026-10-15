@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "grp_f53aee67",
+  "source": "src/cycles/engine/find_ordered_entry.c",
+  "source_sha256": "ecb6e3fb880573c6f7779c713a03de1ac742892bbf1846fede6b1338d64897b4",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_f53aee67",
+  "targets": {
+    "cycles_cga": {
+      "start": 64560,
+      "end": 64646
+    },
+    "cycles_ega": {
+      "start": 74648,
+      "end": 74734
+    },
+    "cycles_tandy": {
+      "start": 63016,
+      "end": 63102
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 65,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_b9fc",
+      "frame": "_g_b9fc",
+      "self_relative": false
+    },
+    {
+      "offset": 57,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_b9fc",
+      "frame": "_g_b9fc",
+      "self_relative": false
+    },
+    {
+      "offset": 45,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_00254",
+      "frame": "_g_00254",
+      "self_relative": false
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "target": "_g_00438",
+      "frame": "_g_00438",
+      "self_relative": false
+    }
+  ],
+  "expected_relocations": {
+    "cycles_cga": [],
+    "cycles_ega": [],
+    "cycles_tandy": []
+  }
+}
