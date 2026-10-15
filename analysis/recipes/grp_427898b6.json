@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "grp_427898b6",
+  "source": "src/circuit/fileio/read_far_buffer.asm",
+  "source_sha256": "3b48928cc7dbb8bfb2e04a1cbfabc9eec19d9a47eb9e3adcb50b574fa619d8aa",
+  "profile": "masm510",
+  "public": "_grp_427898b6",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 31032,
+      "end": 31111
+    },
+    "circuit_cga": {
+      "start": 34802,
+      "end": 34881
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "grp_5cbcc9b3",
+  "source": "src/circuit/engine/range_table_wrappers.c",
+  "source_sha256": "2e0b155f7c12c511a8bb7cf6c37d886e4d02ad4d26c9c11ef66dc8a50ee1ac7d",
+  "profile": "msc510-small-o_gs",
+  "public": "_grp_5cbcc9b3",
+  "targets": {
+    "circuit_ega": {
+      "start": 32420,
+      "end": 32484
+    },
+    "circuit_cga": {
+      "start": 36676,
+      "end": 36740
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 24,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_07d96",
+      "frame": "_fn_circuit_ega_07d96"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": [],
+    "circuit_cga": []
+  }
+}

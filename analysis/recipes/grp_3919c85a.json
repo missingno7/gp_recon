@@ -1,0 +1,19 @@
+{
+  "expected_fixups": [],
+  "id": "grp_3919c85a",
+  "profile": "masm510",
+  "public": "_grp_3919c85a",
+  "schema": 1,
+  "source": "src/circuit/fileio/path_component.asm",
+  "source_sha256": "b6b291a416c8541c0e69fbbb2e7fcf832f851689593506b8304b500414dfcb58",
+  "targets": {
+    "circuit_cga": {
+      "end": 37640,
+      "start": 37609
+    },
+    "circuit_ega": {
+      "end": 33384,
+      "start": 33353
+    }
+  }
+}

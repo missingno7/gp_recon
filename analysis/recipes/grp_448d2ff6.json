@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "grp_448d2ff6",
+  "source": "src/circuit/input/interrupt_vector_setup.asm",
+  "source_sha256": "13521e4690191b234cdccf98ce2a19aba91ed8b9d2cc20df724be0020f399970",
+  "profile": "masm510",
+  "public": "_grp_448d2ff6",
+  "targets": {
+    "circuit_ega": {
+      "start": 30476,
+      "end": 30575
+    },
+    "circuit_cga": {
+      "start": 33208,
+      "end": 33307
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 20,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_HOOK_INT09",
+      "frame": "_HOOK_INT09"
+    },
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OLD_INT09_OFF",
+      "frame": "_G_OLD_INT09_OFF"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OLD_INT09_SEG",
+      "frame": "_G_OLD_INT09_SEG"
+    },
+    {
+      "offset": 42,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_HOOK_INT09",
+      "frame": "_HOOK_INT09"
+    },
+    {
+      "offset": 56,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OLD_INT16_OFF",
+      "frame": "_G_OLD_INT16_OFF"
+    },
+    {
+      "offset": 65,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_OLD_INT16_SEG",
+      "frame": "_G_OLD_INT16_SEG"
+    },
+    {
+      "offset": 72,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_HOOK_INT16",
+      "frame": "_HOOK_INT16"
+    },
+    {
+      "offset": 88,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_IRQ_BUFFER",
+      "frame": "_G_IRQ_BUFFER"
+    }
+  ]
+}

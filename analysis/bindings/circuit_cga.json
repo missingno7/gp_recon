@@ -2,6 +2,15 @@
   "note": "Add further symbols only with target-specific address evidence.",
   "schema": 1,
   "symbols": {
+    "DGROUP": {
+      "address": "0e46:0000",
+      "confidence": "medium",
+      "provenance": "segment-derived: DGROUP segment component established by the operand-derived MSC data bindings; circuit_cga inventory dgroup_base is 0xe460",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "runtime_grp_9fab0c54"
+      ]
+    },
     "EDATA": {
       "address": "0000:0000",
       "confidence": "medium",
@@ -160,10 +169,984 @@
       "confidence": "high",
       "provenance": "Small-model single code segment: analysis/inventory code_segment_bases (relocated far transfers into segment 0) and compiler-id small-model evidence; _TEXT is shared by all small-model code modules, so its frame is the physical segment base."
     },
+    "__OSMAJOR": {
+      "address": "0e46:8c1b",
+      "confidence": "high",
+      "provenance": "operand-derived: byte operand circuit_cga:0xc5e9 in runtime_grp_9fab0c54",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "runtime_grp_9fab0c54"
+      ]
+    },
+    "__PGMPTR": {
+      "address": "0e46:8c3c",
+      "confidence": "high",
+      "provenance": "operand-derived: far pointer operands circuit_cga:0xc5f8, 0xc60b, 0xc6c0 in runtime_grp_9fab0c54",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "runtime_grp_9fab0c54"
+      ]
+    },
+    "__PSP": {
+      "address": "0e46:8c19",
+      "confidence": "high",
+      "provenance": "operand-derived: word operands circuit_cga:0xc5ef, 0xc61e, 0xc6cd in runtime_grp_9fab0c54",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "runtime_grp_9fab0c54"
+      ]
+    },
+    "___ARGC": {
+      "address": "0e46:8c36",
+      "confidence": "high",
+      "provenance": "operand-derived: word store circuit_cga:0xc69e in runtime_grp_9fab0c54",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "runtime_grp_9fab0c54"
+      ]
+    },
+    "___ARGV": {
+      "address": "0e46:8c38",
+      "confidence": "high",
+      "provenance": "operand-derived: word store circuit_cga:0xc6b0 in runtime_grp_9fab0c54",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "runtime_grp_9fab0c54"
+      ]
+    },
+    "_fn_circuit_ega_01026f": {
+      "address": "0000:0DDED",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0dded; ungrouped shared row-scaling helper called by both scan initializers",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_fn_circuit_ega_06a0e": {
+      "address": "0000:B7F6",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0b7f6 entry; paired call target",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_06a7a": {
+      "address": "0000:B862",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0b862 entry; paired call target",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0743d": {
+      "address": "0000:7C1D",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_07c1d entry; paired ungrouped helper",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_07d96": {
+      "address": "0000:8E36",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_08e36; corresponding call target used by grp_5cbcc9b3 and grp_638b16a8",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0ddd8": {
+      "address": "0000:B7B6",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0b7b6; diagnostic handler called by grp_f3a4e254",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_f3a4e254"
+      ]
+    },
+    "_fn_circuit_ega_0e0ab": {
+      "address": "0000:BC29",
+      "confidence": "low",
+      "provenance": "operand-derived interrupt handler offset installed by grp_03f22b25; handler entry circuit_cga_0bc29 confirmed by context",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_fn_circuit_ega_0e0ba": {
+      "address": "0000:BC38",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0bc38; ungrouped shared DOS error exit target called by grp_2de0858f",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2de0858f"
+      ]
+    },
+    "_fn_circuit_ega_0e1ea": {
+      "address": "0000:BD68",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0bd68 paired call target",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0e217": {
+      "address": "0000:BD95",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0bd95; _FN_CIRCUIT_EGA_0E217 is called by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_fn_circuit_ega_0e25a": {
+      "address": "0000:C5BA",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0c5ba; _FN_CIRCUIT_EGA_0E25A is called by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_fn_circuit_ega_0e276": {
+      "address": "0000:C5C0",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0c5c0 paired call target",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0e535": {
+      "address": "0000:C83D",
+      "confidence": "medium",
+      "provenance": "inventory entry used as external callee by grp_58b528f2",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0ea4a": {
+      "address": "0000:CC7C",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0cc7c entry",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0f68e": {
+      "address": "0000:C1F4",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0c1f4; ungrouped shared buffered write continuation target called by grp_2de0858f",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2de0858f"
+      ]
+    },
+    "_fn_circuit_ega_0f69c": {
+      "address": "0000:C202",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0c202; ungrouped shared nontranslated write continuation target called by grp_2de0858f",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2de0858f"
+      ]
+    },
+    "_fn_circuit_ega_0f6d0": {
+      "address": "0000:D4C0",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0d4c0; ungrouped shared stack-space helper target called by grp_2de0858f",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2de0858f"
+      ]
+    },
     "_format_u8_decimal3": {
       "address": 21946,
       "confidence": "high for entry address; reconstructed descriptive name",
       "provenance": "analysis/compiler/decimal_proof.json; direct callers documented in docs/decimal.md"
+    },
+    "_g_1f5c": {
+      "address": "0E46:1F58",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_g_4fe": {
+      "address": "0E46:04FE",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_g_5e3e": {
+      "address": "0E46:5E3A",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_g_66a": {
+      "address": "0E46:066A",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_g_66c": {
+      "address": "0E46:066C",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_g_66e": {
+      "address": "0E46:066E",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_g_670": {
+      "address": "0E46:0670",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_g_7188": {
+      "address": "0E46:7160",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_g_7326": {
+      "address": "0E46:7C4C",
+      "confidence": "medium",
+      "provenance": "operand-derived catalog address used by grp_36bf69de at 0x83e5",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_7339": {
+      "address": "0E46:7C5F",
+      "confidence": "medium",
+      "provenance": "operand-derived catalog address used by grp_36bf69de at 0x83f3",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_7350": {
+      "address": "0E46:7C76",
+      "confidence": "medium",
+      "provenance": "operand-derived catalog address used by grp_36bf69de at 0x841d",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_738b": {
+      "address": "0E46:7CB1",
+      "confidence": "medium",
+      "provenance": "operand-derived catalog address used by grp_36bf69de at 0x840f",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_73c8": {
+      "address": "0E46:7CEE",
+      "confidence": "medium",
+      "provenance": "operand-derived catalog address used by grp_36bf69de at 0x8401",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_73d6": {
+      "address": "0E46:7CFC",
+      "confidence": "medium",
+      "provenance": "operand-derived catalog address used by grp_36bf69de at 0x842b",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_7548": {
+      "address": "0E46:7520",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_g_7fe0": {
+      "address": "0E46:7892",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 7892 used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_7fe2": {
+      "address": "0E46:7894",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 7894 used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_7fec": {
+      "address": "0E46:789E",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 789E used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_7fee": {
+      "address": "0E46:78A0",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 78A0 used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_7ff0": {
+      "address": "0E46:78A2",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 78A2 used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_7ff2": {
+      "address": "0E46:78A4",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 78A4 used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_7ff4": {
+      "address": "0E46:78A6",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 78A6 used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_7ff6": {
+      "address": "0E46:78A8",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 78A8 used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_802e": {
+      "address": "0E46:78E0",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 78E0 used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_8030": {
+      "address": "0E46:78E2",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS address 78E2 used by grp_8fa8dedb",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_g_8626": {
+      "address": "0E46:7F06",
+      "confidence": "medium",
+      "provenance": "operand-derived: immediate segment and diagnostic-string offset loaded by grp_f3a4e254",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_f3a4e254"
+      ]
+    },
+    "_g_8c22": {
+      "address": "0E46:8BFA",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8c2f": {
+      "address": "0E46:8C07",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8c31": {
+      "address": "0E46:8C09",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8c41": {
+      "address": "0E46:8C19",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8c43": {
+      "address": "0E46:8C1B",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8c48": {
+      "address": "0E46:8C20",
+      "confidence": "medium",
+      "provenance": "operand-derived address/field used by grp_58b528f2",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2de0858f",
+        "grp_58b528f2"
+      ]
+    },
+    "_g_8c4a": {
+      "address": "0E46:8C22",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8c96": {
+      "address": "0E46:8C6E",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute data operand at circuit_cga:0xbdbd in grp_e5a16c1f",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_8e06": {
+      "address": "0E46:8DDE",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8e08": {
+      "address": "0E46:8DE0",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8e0a": {
+      "address": "0E46:8DE2",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8e0e": {
+      "address": "0E46:8DE6",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_8e12": {
+      "address": "0E46:8DEA",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_g_exit_data": {
+      "address": "0E46:8DEC",
+      "confidence": "medium",
+      "provenance": "operand-derived: MOV SI/DI, immediate data address in grp_80e23552 at circuit_cga:0xbd26, 0xbd29, 0xbd2f and 0xbd32",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_flags": {
+      "address": "0E46:8C22",
+      "confidence": "medium",
+      "provenance": "operand-derived: TEST [BX+disp16] in grp_80e23552 at circuit_cga:0xbd50",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_irq_buffer": {
+      "address": "0E46:7CB0",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute buffer address in grp_448d2ff6 at 0x820f",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_old_int09_off": {
+      "address": "0E46:7CA4",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute data destination in grp_448d2ff6 at 0x81d0",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_old_int09_seg": {
+      "address": "0E46:7CA6",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute data destination in grp_448d2ff6 at 0x81d9",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_old_int16_off": {
+      "address": "0E46:7CA8",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute data destination in grp_448d2ff6 at 0x81e9",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_old_int16_seg": {
+      "address": "0E46:7CAA",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute data destination in grp_448d2ff6 at 0x81f2",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_scan_table": {
+      "address": "0E46:735C",
+      "confidence": "medium",
+      "provenance": "operand-derived: MOV DI immediate used to clear the scan-table area in grp_bbb9e788 and grp_dcbf0860",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_g_switch_jt": {
+      "address": "0000:D526",
+      "confidence": "low",
+      "provenance": "operand-derived CS jump-table base from [BX-0x2ada] at circuit_cga:0xd56f in grp_da1e7b44",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_da1e7b44"
+      ]
+    },
+    "_grp_03f22b25": {
+      "address": "0000:BC48",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0bc48; correspondence group grp_03f22b25",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_1a02eb1b": {
+      "address": "0000:DCC9",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0dcc9; correspondence group grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_2d0b1a97": {
+      "address": "0000:CBEE",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0cbee; member of grp_2d0b1a97",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_2de0858f": {
+      "address": "0000:C10E",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0c10e; correspondence group grp_2de0858f",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_43ff7e15": {
+      "address": "0000:D7CB",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0d7cb, correspondence group grp_43ff7e15",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_da1e7b44"
+      ]
+    },
+    "_grp_495a145f": {
+      "address": "0000:C7D6",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0c7d6; member of correspondence group grp_495a145f",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_4e684612": {
+      "address": "0000:CB40",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0cb40; member of grp_4e684612",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_5306dd97": {
+      "address": "0000:8850",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_08850; correspondence group grp_5306dd97",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_58b528f2": {
+      "address": "0000:C032",
+      "confidence": "medium",
+      "provenance": "inventory member start for correspondence group grp_58b528f2",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_61d67937": {
+      "address": "0000:C1B4",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0c1b4; group grp_61d67937 target called by grp_2de0858f",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2de0858f"
+      ]
+    },
+    "_grp_80e23552": {
+      "address": "0000:BD23",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0bd23, correspondence group grp_80e23552",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_da1e7b44"
+      ]
+    },
+    "_grp_94d6": {
+      "address": "0000:DA82",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0da82; member of correspondence group grp_94d6",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_b1f1df1b": {
+      "address": "0000:9411",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_09411; correspondence group grp_b1f1df1b",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_b6cba47c": {
+      "address": "0000:C500",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0c500; member grp_b6cba47c, corrected end 0xc532",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_c5efae67"
+      ]
+    },
+    "_grp_bbb9e788": {
+      "address": "0000:DBAF",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0dbaf; correspondence group grp_bbb9e788",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_c5efae67": {
+      "address": "0000:C45C",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0c45c; correspondence group grp_c5efae67",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_dcbf0860": {
+      "address": "0000:DF17",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0df17; correspondence group grp_dcbf0860",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_dd394b9f": {
+      "address": "0000:BDA4",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_0bda4; _GRP_DD394B9F is called by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_grp_f3a4e254": {
+      "address": "0000:8E41",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_08e41; correspondence group grp_f3a4e254",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_f93ec5a2": {
+      "address": "0000:9308",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_09308; correspondence group grp_f93ec5a2",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_hook_int09": {
+      "address": "0000:8254",
+      "confidence": "low",
+      "provenance": "operand-derived IVT handler offset stored by grp_448d2ff6 at circuit_cga:0x81dd; direct target code entry verified by context",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_hook_int16": {
+      "address": "0000:8304",
+      "confidence": "low",
+      "provenance": "operand-derived IVT handler offset stored by grp_448d2ff6 at circuit_cga:0x81fb; direct target code entry verified by context",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_hook_timer": {
+      "address": "0000:792E",
+      "confidence": "low",
+      "provenance": "operand-derived interrupt-vector handler offset compared and installed by grp_8fa8dedb; code-entry locator from absolute instruction operand",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_8fa8dedb"
+      ]
+    },
+    "_o_bp_718c": {
+      "address": "0E46:7164",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 718C in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_71e0": {
+      "address": "0E46:71B8",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 71E0 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_71e2": {
+      "address": "0E46:71BA",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 71E2 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_7234": {
+      "address": "0E46:720C",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 7234 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_7236": {
+      "address": "0E46:720E",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 7236 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_7288": {
+      "address": "0E46:7260",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 7288 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_728a": {
+      "address": "0E46:7262",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 728A in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_72dc": {
+      "address": "0E46:72B4",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 72DC in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_72de": {
+      "address": "0E46:72B6",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 72DE in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_7330": {
+      "address": "0E46:7308",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 7330 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_7332": {
+      "address": "0E46:730A",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 7332 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_7384": {
+      "address": "0E46:735C",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 7384 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_7386": {
+      "address": "0E46:735E",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement 7386 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_bp_742c": {
+      "address": "0E46:7404",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_o_bp_747e": {
+      "address": "0E46:7456",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_o_bp_74d2": {
+      "address": "0E46:74AA",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_o_bp_a1a": {
+      "address": "0E46:0A16",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_o_bp_a98": {
+      "address": "0E46:0A94",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_o_bp_aa4": {
+      "address": "0E46:04AA",
+      "confidence": "medium",
+      "provenance": "operand-derived: memory operand or BP-relative field displacement used by grp_1a02eb1b",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_1a02eb1b"
+      ]
+    },
+    "_o_bx_file_flags": {
+      "address": "0E46:8C22",
+      "confidence": "medium",
+      "provenance": "operand-derived: BX-relative file flags displacement encoded as [BX-0x73B6] (EGA) / [BX-0x73DE] (CGA) in grp_2de0858f",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2de0858f"
+      ]
+    },
+    "_o_bx_flags": {
+      "address": "0E46:8C22",
+      "confidence": "medium",
+      "provenance": "operand-derived address/field used by grp_58b528f2",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_58b528f2"
+      ]
+    },
+    "_o_bx_mode_flags": {
+      "address": "0E46:8C22",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute address/displacement or far-pointer operand used by grp_03f22b25",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_03f22b25"
+      ]
+    },
+    "_o_di_a4e": {
+      "address": "0E46:0A4A",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement A4E in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_si_a74": {
+      "address": "0E46:0A70",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement A74 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_si_a98": {
+      "address": "0E46:0A94",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement A98 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
+    },
+    "_o_si_ae0": {
+      "address": "0E46:0ADC",
+      "confidence": "medium",
+      "provenance": "operand-derived: BP/SI/DI displacement AE0 in grp_bbb9e788 or grp_dcbf0860 (target-specific static scan-table layout)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_bbb9e788",
+        "grp_dcbf0860"
+      ]
     },
     "_sprite1_unknown2": {
       "address": "0000:6FFA",

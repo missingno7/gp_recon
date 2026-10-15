@@ -162,6 +162,16 @@ def address(binding) -> tuple[int, int | None]:
 def verify(code: bytes, fixes: list[dict], original: bytes, start: int,
            relocations: list[int], bindings: dict, public: dict | None = None) -> dict:
     """Compare every fixed byte and prove the complete ordered relocation slice."""
+    # MS LINK matches public names case-insensitively unless /NOI is given, and
+    # MASM without /Mx uppercases externals. Fall back to a unique
+    # case-insensitive binding; ambiguous names stay unbound.
+    folded: dict[str, list[str]] = {}
+    for name in bindings:
+        folded.setdefault(name.upper(), []).append(name)
+    bindings = dict(bindings)
+    for upper, names in folded.items():
+        if len(names) == 1 and upper not in bindings:
+            bindings[upper] = bindings[names[0]]
     problems = []
     unbound = []
     slots = set()

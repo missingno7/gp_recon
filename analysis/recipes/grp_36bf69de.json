@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "grp_36bf69de",
+  "source": "src/circuit/diagnostics/catalog_init.c",
+  "source_sha256": "6e4dd7013a7dce408e2836ab6f694718760f880efadb04660113099cd91ff9e5",
+  "profile": "msc510-small-o_gs",
+  "public": "_grp_36bf69de",
+  "targets": {
+    "circuit_ega": {
+      "start": 41046,
+      "end": 41131
+    },
+    "circuit_cga": {
+      "start": 33764,
+      "end": 33849
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 79,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0743d",
+      "frame": "_fn_circuit_ega_0743d"
+    },
+    {
+      "offset": 71,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_73d6",
+      "frame": "_g_73d6"
+    },
+    {
+      "offset": 65,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0743d",
+      "frame": "_fn_circuit_ega_0743d"
+    },
+    {
+      "offset": 57,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_7350",
+      "frame": "_g_7350"
+    },
+    {
+      "offset": 51,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0743d",
+      "frame": "_fn_circuit_ega_0743d"
+    },
+    {
+      "offset": 43,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_738b",
+      "frame": "_g_738b"
+    },
+    {
+      "offset": 37,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0743d",
+      "frame": "_fn_circuit_ega_0743d"
+    },
+    {
+      "offset": 29,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_73c8",
+      "frame": "_g_73c8"
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0743d",
+      "frame": "_fn_circuit_ega_0743d"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_7339",
+      "frame": "_g_7339"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0743d",
+      "frame": "_fn_circuit_ega_0743d"
+    },
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_7326",
+      "frame": "_g_7326"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": [],
+    "circuit_cga": []
+  }
+}

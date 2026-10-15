@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "grp_8fa8dedb",
+  "source": "src/circuit/system/timer_interrupt_setup.asm",
+  "source_sha256": "4ce787e9e89fa18fd1b4d54e2949320e3e2df0149f9dd8374318cd797a34eeea",
+  "profile": "masm510",
+  "public": "_grp_8fa8dedb",
+  "targets": {
+    "circuit_ega": {
+      "start": 28526,
+      "end": 28670
+    },
+    "circuit_cga": {
+      "start": 30732,
+      "end": 30876
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 12,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7FF0",
+      "frame": "_G_7FF0"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7FF2",
+      "frame": "_G_7FF2"
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_802E",
+      "frame": "_G_802E"
+    },
+    {
+      "offset": 29,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8030",
+      "frame": "_G_8030"
+    },
+    {
+      "offset": 36,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7FEE",
+      "frame": "_G_7FEE"
+    },
+    {
+      "offset": 42,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7FEC",
+      "frame": "_G_7FEC"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7FF4",
+      "frame": "_G_7FF4"
+    },
+    {
+      "offset": 75,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7FF6",
+      "frame": "_G_7FF6"
+    },
+    {
+      "offset": 95,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_HOOK_TIMER",
+      "frame": "_HOOK_TIMER"
+    },
+    {
+      "offset": 100,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7FE0",
+      "frame": "_G_7FE0"
+    },
+    {
+      "offset": 113,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7FE2",
+      "frame": "_G_7FE2"
+    },
+    {
+      "offset": 120,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_HOOK_TIMER",
+      "frame": "_HOOK_TIMER"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": [],
+    "circuit_cga": []
+  }
+}

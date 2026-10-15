@@ -1,0 +1,15 @@
+{
+  "expected_fixups": [],
+  "id": "grp_e26c8dbc",
+  "profile": "masm510",
+  "public": "_grp_e26c8dbc",
+  "schema": 1,
+  "source": "src/circuit/loader/template_copy_ega.asm",
+  "source_sha256": "bd52d28dad231551fce56c4df2b9e69df24ad98f018e8f41a0d63e7ec27d0c4c",
+  "targets": {
+    "circuit_ega": {
+      "end": 56870,
+      "start": 56830
+    }
+  }
+}

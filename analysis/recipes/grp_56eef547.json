@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "grp_56eef547",
+  "source": "src/circuit/math/counter_dispatch.asm",
+  "source_sha256": "6b47c93700bd16177c1dbebf3eca713fe4ee9d30da39c22c7043b09064fc7ab4",
+  "profile": "masm510",
+  "public": "_grp_56eef547",
+  "targets": {
+    "circuit_ega": {
+      "start": 31694,
+      "end": 31763
+    },
+    "circuit_cga": {
+      "start": 35464,
+      "end": 35533
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_B1F1DF1B",
+      "frame": "_GRP_B1F1DF1B"
+    },
+    {
+      "offset": 22,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_06A7A",
+      "frame": "_FN_CIRCUIT_EGA_06A7A"
+    },
+    {
+      "offset": 34,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_06A0E",
+      "frame": "_FN_CIRCUIT_EGA_06A0E"
+    },
+    {
+      "offset": 48,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_F93EC5A2",
+      "frame": "_GRP_F93EC5A2"
+    },
+    {
+      "offset": 60,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_5306DD97",
+      "frame": "_GRP_5306DD97"
+    }
+  ]
+}
