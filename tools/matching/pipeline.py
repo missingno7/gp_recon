@@ -199,7 +199,12 @@ def verify(code: bytes, fixes: list[dict], original: bytes, start: int,
             unbound.append(target)
             continue
         frame = f.get("frame")
-        if frame in (own_segment, (public or {}).get("name")):
+        if frame == own_segment and frame in bindings:
+            # The module's segment is shared with other modules (e.g. small-model
+            # _TEXT): its frame is the bound physical segment base, not the
+            # module's own load position.
+            frame_linear, _ = address(bindings[frame])
+        elif frame in (own_segment, (public or {}).get("name")):
             frame_linear = local_base
         elif frame == target or f.get("frame_kind") == "target":
             if target_segment is None:

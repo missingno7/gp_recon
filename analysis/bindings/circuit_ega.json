@@ -2,6 +2,11 @@
   "note": "Add further symbols only with target-specific address evidence.",
   "schema": 1,
   "symbols": {
+    "_TEXT": {
+      "address": "0000:0000",
+      "confidence": "high",
+      "provenance": "Small-model single code segment: analysis/inventory code_segment_bases (relocated far transfers into segment 0) and compiler-id small-model evidence; _TEXT is shared by all small-model code modules, so its frame is the physical segment base."
+    },
     "_format_u8_decimal3": {
       "address": 22276,
       "confidence": "high for entry address; reconstructed descriptive name",
