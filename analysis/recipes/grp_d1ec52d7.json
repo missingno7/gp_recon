@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "grp_d1ec52d7",
   "source": "src/circuit/ui/graphics_state_setup.c",
-  "source_sha256": "067b050ffab1ea8b86b6d57acef87998e2fca81093568a056953e81e864caadf",
+  "source_sha256": "6c91a257d1fb491b35c9a1973d86127d234b6683765068c9b9ec6f49c7e8bb69",
   "profile": "msc510-small-o_gs",
   "public": "_grp_d1ec52d7",
   "targets": {
@@ -115,6 +115,14 @@
       "self_relative": true,
       "target": "_fn_circuit_ega_078b9",
       "frame": "_fn_circuit_ega_078b9"
+    },
+    {
+      "offset": 228,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_keyboard_poll",
+      "frame": "_keyboard_poll"
     },
     {
       "offset": 222,

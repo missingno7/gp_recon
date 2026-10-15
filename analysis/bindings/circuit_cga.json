@@ -2535,6 +2535,25 @@
         "runtime_grp_9fab0c54"
       ]
     },
+    "_catalog_error_text": {
+      "address": "0000:7F91",
+      "confidence": "medium",
+      "provenance": "operand-derived message pointer passed by grp_04ea201c at circuit_cga:0x96fa",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_04ea201c",
+        "grp_3f05a1a6"
+      ]
+    },
+    "_cs_resource_cursor": {
+      "address": "0000:AC46",
+      "confidence": "medium",
+      "provenance": "operand-derived CS absolute references at circuit_cga:0xa81d and 0xa824 in grp_3f4e2cf3",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_3f4e2cf3"
+      ]
+    },
     "_fn_circuit_cga_020bc": {
       "address": "0000:20bc",
       "confidence": "medium",
@@ -2661,6 +2680,24 @@
       "confidence": "medium",
       "provenance": "inventory function circuit_cga_07c1d entry; paired ungrouped helper",
       "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_07536": {
+      "address": "0000:7FE2",
+      "confidence": "medium",
+      "provenance": "inventory ungrouped function start; called by grp_73e02359 in circuit_cga",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_fn_circuit_ega_07af4": {
+      "address": "0000:89AE",
+      "confidence": "medium",
+      "provenance": "inventory ungrouped function circuit_cga_089ae start; callee of grp_5306dd97",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_5306dd97"
+      ]
     },
     "_fn_circuit_ega_07d96": {
       "address": "0000:8E36",
@@ -3102,6 +3139,24 @@
         "grp_8fa8dedb"
       ]
     },
+    "_g_8017": {
+      "address": "0E46:78C9",
+      "confidence": "medium",
+      "provenance": "operand-derived DS data offset referenced by grp_17077521 (circuit_cga offset 0x78c9)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_17077521"
+      ]
+    },
+    "_g_8018": {
+      "address": "0E46:78CA",
+      "confidence": "medium",
+      "provenance": "operand-derived DS data offset referenced by grp_17077521 (circuit_cga offset 0x78ca)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_17077521"
+      ]
+    },
     "_g_802e": {
       "address": "0E46:78E0",
       "confidence": "medium",
@@ -3120,6 +3175,96 @@
         "grp_8fa8dedb"
       ]
     },
+    "_g_83f2": {
+      "address": "0E46:7CCC",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7ccc)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_g_840f": {
+      "address": "0E46:7CE9",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7ce9)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_g_841d": {
+      "address": "0E46:7CF7",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7cf7)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_g_841e": {
+      "address": "0E46:7CF8",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7cf8)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_g_841f": {
+      "address": "0E46:7CF9",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7cf9)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_g_8421": {
+      "address": "0E46:7CFB",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7cfb)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_g_8423": {
+      "address": "0E46:7CFD",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7cfd)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_g_8425": {
+      "address": "0E46:7CFF",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7cff)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_g_8426": {
+      "address": "0E46:7D00",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7d00)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
+    "_g_8427": {
+      "address": "0E46:7D01",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte read by grp_73e02359 (circuit_cga offset 0x7d01)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_73e02359"
+      ]
+    },
     "_g_8626": {
       "address": "0E46:7F06",
       "confidence": "medium",
@@ -3127,6 +3272,90 @@
       "staged_by": "decomp-circuit-b",
       "uses": [
         "grp_f3a4e254"
+      ]
+    },
+    "_g_8902": {
+      "address": "0E46:8662",
+      "confidence": "medium",
+      "provenance": "operand-derived DS boundary at circuit_cga:0x96e7",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_04ea201c",
+        "grp_3f05a1a6"
+      ]
+    },
+    "_g_8904": {
+      "address": "0E46:8664",
+      "confidence": "medium",
+      "provenance": "operand-derived DS pointer at circuit_cga:0x96e3/0x9706/0x9715",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_04ea201c",
+        "grp_3f05a1a6"
+      ]
+    },
+    "_g_8906": {
+      "address": "0E46:8666",
+      "confidence": "medium",
+      "provenance": "operand-derived DS record-list pointer at grp_2a1dacea offsets +36/+45 and grp_3f05a1a6 operand 0x8906",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2a1dacea",
+        "grp_3f05a1a6"
+      ]
+    },
+    "_g_890a": {
+      "address": "0E46:7FC6",
+      "confidence": "medium",
+      "provenance": "operand-derived DS data offset referenced by grp_17077521 (circuit_cga offset 0x7fc6)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_17077521"
+      ]
+    },
+    "_g_8925": {
+      "address": "0E46:7FE1",
+      "confidence": "medium",
+      "provenance": "operand-derived DS data offset referenced by grp_17077521 (circuit_cga offset 0x7fe1)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_17077521"
+      ]
+    },
+    "_g_8927": {
+      "address": "0E46:7FE3",
+      "confidence": "medium",
+      "provenance": "operand-derived DS data offset referenced by grp_17077521 (circuit_cga offset 0x7fe3)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_17077521"
+      ]
+    },
+    "_g_8929": {
+      "address": "0E46:7FE5",
+      "confidence": "medium",
+      "provenance": "operand-derived DS data offset referenced by grp_17077521 (circuit_cga offset 0x7fe5)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_17077521"
+      ]
+    },
+    "_g_892b": {
+      "address": "0E46:7FE7",
+      "confidence": "medium",
+      "provenance": "operand-derived DS data offset referenced by grp_17077521 (circuit_cga offset 0x7fe7)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_17077521"
+      ]
+    },
+    "_g_892d": {
+      "address": "0E46:7FE9",
+      "confidence": "medium",
+      "provenance": "operand-derived DS data offset referenced by grp_17077521 (circuit_cga offset 0x7fe9)",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_17077521"
       ]
     },
     "_g_8c22": {
@@ -3305,11 +3534,29 @@
         "grp_da1e7b44"
       ]
     },
+    "_g_tail": {
+      "address": "0E46:8668",
+      "confidence": "medium",
+      "provenance": "operand-derived DS list tail read by grp_2a1dacea at circuit_cga:0x93a9",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2a1dacea"
+      ]
+    },
     "_grp_03f22b25": {
       "address": "0000:BC48",
       "confidence": "medium",
       "provenance": "inventory function circuit_cga_0bc48; correspondence group grp_03f22b25",
       "staged_by": "decomp-circuit-b"
+    },
+    "_grp_04ea201c": {
+      "address": "0000:96DB",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_096db start; direct callee of grp_3f4e2cf3",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_3f4e2cf3"
+      ]
     },
     "_grp_0502459c": {
       "address": "0000:31e6",
@@ -3346,6 +3593,15 @@
       "confidence": "medium",
       "provenance": "inventory function circuit_cga_0c10e; correspondence group grp_2de0858f",
       "staged_by": "decomp-circuit-b"
+    },
+    "_grp_427898b6": {
+      "address": "0000:87F2",
+      "confidence": "medium",
+      "provenance": "inventory group grp_427898b6 member circuit_cga_087f2; callee of grp_5306dd97",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_5306dd97"
+      ]
     },
     "_grp_43ff7e15": {
       "address": "0000:D7CB",
@@ -3521,6 +3777,17 @@
         "grp_d687851f"
       ]
     },
+    "_grp_c9818520": {
+      "address": "0000:9296",
+      "confidence": "medium",
+      "provenance": "inventory group grp_c9818520 member circuit_cga_09296; callee of grp_5306dd97",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_2a1dacea",
+        "grp_5306dd97",
+        "grp_3f05a1a6"
+      ]
+    },
     "_grp_dcbf0860": {
       "address": "0000:DF17",
       "confidence": "medium",
@@ -3552,6 +3819,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_d687851f"
+      ]
+    },
+    "_grp_ea09637f": {
+      "address": "0000:88E8",
+      "confidence": "medium",
+      "provenance": "inventory group grp_ea09637f member circuit_cga_088e8; callee of grp_5306dd97",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_5306dd97"
       ]
     },
     "_grp_f3a4e254": {
@@ -3594,6 +3870,16 @@
       "staged_by": "decomp-circuit-b",
       "uses": [
         "grp_8fa8dedb"
+      ]
+    },
+    "_keyboard_poll": {
+      "address": "0000:8351",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_cga_08351 start; body performs BIOS INT 16h keyboard status/read at target offset 0x8351",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_0b895b36",
+        "grp_d1ec52d7"
       ]
     },
     "_o_bp_718c": {
@@ -3852,6 +4138,15 @@
       "confidence": "medium",
       "provenance": "Census records a low-confidence reachable-call-target start at 0x6ffa with a BP-frame prologue; it is called by an independent routine at 0x26c4, in addition to four calls in sprite_1_unk4. Those callsites pass the same five rectangle arguments.",
       "staged_by": "port-shape"
+    },
+    "_template_copy_source": {
+      "address": "0000:A83A",
+      "confidence": "medium",
+      "provenance": "operand-derived CS template address in grp_e26c8dbc LEA at circuit_cga:0xb8d0; paired template body in target image",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "grp_e26c8dbc"
+      ]
     }
   },
   "target": "circuit_cga"

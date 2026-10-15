@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "grp_f3a4e254",
+  "source": "src/circuit/fileio/path_table_search.asm",
+  "source_sha256": "71fe91be28d0e2f6a699055fc15ac8ad98ef9ed7474d2aa092d17338a63c79bc",
+  "profile": "masm510",
+  "public": "_grp_f3a4e254",
+  "targets": {
+    "circuit_ega": {
+      "start": 32161,
+      "end": 32355
+    },
+    "circuit_cga": {
+      "start": 36417,
+      "end": 36611
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 17,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8626",
+      "frame": "_G_8626"
+    },
+    {
+      "offset": 87,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8626",
+      "frame": "_G_8626"
+    },
+    {
+      "offset": 95,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8626",
+      "frame": "_G_8626"
+    },
+    {
+      "offset": 99,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0DDD8",
+      "frame": "_FN_CIRCUIT_EGA_0DDD8"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": [
+      32178,
+      32248
+    ],
+    "circuit_cga": [
+      36434,
+      36504
+    ]
+  }
+}

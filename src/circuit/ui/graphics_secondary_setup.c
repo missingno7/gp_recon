@@ -21,6 +21,7 @@ extern void fn_circuit_ega_068d8(U16,U16);
 extern void fn_circuit_ega_0b184(char far *,U16,U16);
 extern U16 fn_circuit_ega_078ca(void);
 extern void fn_circuit_ega_078b9(U16);
+extern U16 keyboard_poll(void);
 extern U16 fn_circuit_ega_078d2(void);
 extern void fn_circuit_ega_08cbf(char *);
 extern void fn_circuit_ega_0de26(char *);
@@ -42,7 +43,7 @@ void grp_0b895b36(U16 p1)
     fn_circuit_ega_08cd8(g_c7d4);
     fn_circuit_ega_0b184(local.picture2->pixels, 0, 0x58);
     local.state = fn_circuit_ega_078ca();
-    fn_circuit_ega_078b9(0x78a5);
+    fn_circuit_ega_078b9((U16)keyboard_poll);
     while (fn_circuit_ega_078d2() == 0) { }
     fn_circuit_ega_078b9(local.state);
     fn_circuit_ega_0b184(local.picture1->pixels, 0, 0x58);

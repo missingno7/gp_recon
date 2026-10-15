@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "id": "grp_6b57b529",
+  "source": "src/circuit/ui/graphics_setup.c",
+  "source_sha256": "37af04a5fabd5137f6366f8937e1ed2042448be8b14bd738b24762e185c733d4",
+  "profile": "msc510-small-o_gs",
+  "public": "_grp_6b57b529",
+  "targets": {
+    "circuit_ega": {
+      "start": 41488,
+      "end": 41763
+    }
+  },
+  "expected_fixups": [
+    {
+      "offset": 269,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08b26",
+      "frame": "_fn_circuit_ega_08b26"
+    },
+    {
+      "offset": 257,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08b26",
+      "frame": "_fn_circuit_ega_08b26"
+    },
+    {
+      "offset": 245,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0de26",
+      "frame": "_fn_circuit_ega_0de26"
+    },
+    {
+      "offset": 235,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08cbf",
+      "frame": "_fn_circuit_ega_08cbf"
+    },
+    {
+      "offset": 225,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0b184",
+      "frame": "_fn_circuit_ega_0b184"
+    },
+    {
+      "offset": 202,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_06897",
+      "frame": "_fn_circuit_ega_06897"
+    },
+    {
+      "offset": 190,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0b184",
+      "frame": "_fn_circuit_ega_0b184"
+    },
+    {
+      "offset": 167,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08cd8",
+      "frame": "_fn_circuit_ega_08cd8"
+    },
+    {
+      "offset": 162,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_c7d4",
+      "frame": "_g_c7d4"
+    },
+    {
+      "offset": 159,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_c7d4",
+      "frame": "_g_c7d4"
+    },
+    {
+      "offset": 153,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_068d8",
+      "frame": "_fn_circuit_ega_068d8"
+    },
+    {
+      "offset": 140,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08c84",
+      "frame": "_fn_circuit_ega_08c84"
+    },
+    {
+      "offset": 127,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_09394",
+      "frame": "_fn_circuit_ega_09394"
+    },
+    {
+      "offset": 118,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08cd8",
+      "frame": "_fn_circuit_ega_08cd8"
+    },
+    {
+      "offset": 106,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0c5be",
+      "frame": "_fn_circuit_ega_0c5be"
+    },
+    {
+      "offset": 81,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08cd8",
+      "frame": "_fn_circuit_ega_08cd8"
+    },
+    {
+      "offset": 69,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08ca6",
+      "frame": "_fn_circuit_ega_08ca6"
+    },
+    {
+      "offset": 59,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0ddfe",
+      "frame": "_fn_circuit_ega_0ddfe"
+    },
+    {
+      "offset": 43,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0c97e",
+      "frame": "_fn_circuit_ega_0c97e"
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0c97e",
+      "frame": "_fn_circuit_ega_0c97e"
+    }
+  ],
+  "expected_relocations": {
+    "circuit_ega": [
+      41650
+    ]
+  }
+}
