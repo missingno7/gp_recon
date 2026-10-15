@@ -1,0 +1,3097 @@
+{
+  "comparisons": [
+    {
+      "image": {
+        "changes": [
+          {
+            "after": 137,
+            "before": 163,
+            "offset": 82288
+          },
+          {
+            "after": 71,
+            "before": 84,
+            "offset": 82289
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 82290
+          },
+          {
+            "after": 5,
+            "before": 13,
+            "offset": 82292
+          },
+          {
+            "after": 154,
+            "before": 12,
+            "offset": 82293
+          },
+          {
+            "after": 62,
+            "before": 43,
+            "offset": 82298
+          },
+          {
+            "after": 163,
+            "before": 192,
+            "offset": 82299
+          },
+          {
+            "after": 84,
+            "before": 94,
+            "offset": 82300
+          },
+          {
+            "after": 142,
+            "before": 139,
+            "offset": 82301
+          },
+          {
+            "after": 144,
+            "before": 229,
+            "offset": 82302
+          },
+          {
+            "after": 144,
+            "before": 93,
+            "offset": 82303
+          },
+          {
+            "after": 144,
+            "before": 203,
+            "offset": 82304
+          }
+        ],
+        "different_bytes": 12,
+        "left_length": 131392,
+        "left_tail_hex": "",
+        "right_length": 131392,
+        "right_tail_hex": ""
+      },
+      "left": "cycles_ega",
+      "mz_header_changes": {
+        "cblp": {
+          "after": 48,
+          "before": 33
+        },
+        "cp": {
+          "after": 267,
+          "before": 211
+        },
+        "cparhdr": {
+          "after": 303,
+          "before": 32
+        },
+        "crlc": {
+          "after": 1202,
+          "before": 0
+        },
+        "cs": {
+          "after": 0,
+          "before": 6519
+        },
+        "ip": {
+          "after": 10892,
+          "before": 18
+        },
+        "lfarlc": {
+          "after": 28,
+          "before": 30
+        },
+        "sp": {
+          "after": 2048,
+          "before": 128
+        },
+        "ss": {
+          "after": 8828,
+          "before": 8384
+        }
+      },
+      "raw": {
+        "different_bytes_in_overlap": 104729,
+        "left_length": 107553,
+        "right_length": 136240
+      },
+      "relocation_added": [],
+      "relocation_order_equal": true,
+      "relocation_removed": [],
+      "relocation_set_equal": true,
+      "right": "cycles_ega_old"
+    },
+    {
+      "image": {
+        "changes": [
+          {
+            "after": 137,
+            "before": 163,
+            "offset": 82288
+          },
+          {
+            "after": 71,
+            "before": 84,
+            "offset": 82289
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 82290
+          },
+          {
+            "after": 5,
+            "before": 13,
+            "offset": 82292
+          },
+          {
+            "after": 154,
+            "before": 12,
+            "offset": 82293
+          },
+          {
+            "after": 62,
+            "before": 43,
+            "offset": 82298
+          },
+          {
+            "after": 163,
+            "before": 192,
+            "offset": 82299
+          },
+          {
+            "after": 84,
+            "before": 94,
+            "offset": 82300
+          },
+          {
+            "after": 142,
+            "before": 139,
+            "offset": 82301
+          },
+          {
+            "after": 144,
+            "before": 229,
+            "offset": 82302
+          },
+          {
+            "after": 144,
+            "before": 93,
+            "offset": 82303
+          },
+          {
+            "after": 144,
+            "before": 203,
+            "offset": 82304
+          },
+          {
+            "after": 32,
+            "before": 114,
+            "offset": 131267
+          },
+          {
+            "after": 61,
+            "before": 117,
+            "offset": 131268
+          },
+          {
+            "after": 61,
+            "before": 110,
+            "offset": 131269
+          },
+          {
+            "after": 61,
+            "before": 45,
+            "offset": 131270
+          },
+          {
+            "after": 61,
+            "before": 116,
+            "offset": 131271
+          },
+          {
+            "after": 61,
+            "before": 105,
+            "offset": 131272
+          },
+          {
+            "after": 61,
+            "before": 109,
+            "offset": 131273
+          },
+          {
+            "after": 61,
+            "before": 101,
+            "offset": 131274
+          },
+          {
+            "after": 61,
+            "before": 32,
+            "offset": 131275
+          },
+          {
+            "after": 61,
+            "before": 101,
+            "offset": 131276
+          },
+          {
+            "after": 61,
+            "before": 114,
+            "offset": 131277
+          },
+          {
+            "after": 61,
+            "before": 114,
+            "offset": 131278
+          },
+          {
+            "after": 61,
+            "before": 111,
+            "offset": 131279
+          },
+          {
+            "after": 61,
+            "before": 114,
+            "offset": 131280
+          },
+          {
+            "after": 71,
+            "before": 82,
+            "offset": 131324
+          },
+          {
+            "after": 111,
+            "before": 54,
+            "offset": 131325
+          },
+          {
+            "after": 111,
+            "before": 48,
+            "offset": 131326
+          },
+          {
+            "after": 100,
+            "before": 48,
+            "offset": 131327
+          },
+          {
+            "after": 32,
+            "before": 49,
+            "offset": 131328
+          },
+          {
+            "after": 66,
+            "before": 13,
+            "offset": 131329
+          },
+          {
+            "after": 121,
+            "before": 10,
+            "offset": 131330
+          },
+          {
+            "after": 101,
+            "before": 45,
+            "offset": 131331
+          },
+          {
+            "after": 33,
+            "before": 110,
+            "offset": 131333
+          },
+          {
+            "after": 32,
+            "before": 117,
+            "offset": 131334
+          },
+          {
+            "after": 61,
+            "before": 108,
+            "offset": 131335
+          },
+          {
+            "after": 61,
+            "before": 108,
+            "offset": 131336
+          },
+          {
+            "after": 61,
+            "before": 32,
+            "offset": 131337
+          },
+          {
+            "after": 61,
+            "before": 112,
+            "offset": 131338
+          },
+          {
+            "after": 61,
+            "before": 111,
+            "offset": 131339
+          },
+          {
+            "after": 61,
+            "before": 105,
+            "offset": 131340
+          },
+          {
+            "after": 61,
+            "before": 110,
+            "offset": 131341
+          },
+          {
+            "after": 61,
+            "before": 116,
+            "offset": 131342
+          },
+          {
+            "after": 61,
+            "before": 101,
+            "offset": 131343
+          },
+          {
+            "after": 61,
+            "before": 114,
+            "offset": 131344
+          },
+          {
+            "after": 61,
+            "before": 32,
+            "offset": 131345
+          },
+          {
+            "after": 61,
+            "before": 97,
+            "offset": 131346
+          },
+          {
+            "after": 61,
+            "before": 115,
+            "offset": 131347
+          },
+          {
+            "after": 32,
+            "before": 115,
+            "offset": 131348
+          },
+          {
+            "after": 32,
+            "before": 105,
+            "offset": 131349
+          },
+          {
+            "after": 32,
+            "before": 103,
+            "offset": 131350
+          },
+          {
+            "after": 32,
+            "before": 110,
+            "offset": 131351
+          },
+          {
+            "after": 32,
+            "before": 109,
+            "offset": 131352
+          },
+          {
+            "after": 32,
+            "before": 101,
+            "offset": 131353
+          },
+          {
+            "after": 32,
+            "before": 110,
+            "offset": 131354
+          },
+          {
+            "after": 32,
+            "before": 116,
+            "offset": 131355
+          }
+        ],
+        "different_bytes": 57,
+        "left_length": 131392,
+        "left_tail_hex": "",
+        "right_length": 131392,
+        "right_tail_hex": ""
+      },
+      "left": "cycles_ega",
+      "mz_header_changes": {
+        "cblp": {
+          "after": 320,
+          "before": 33
+        },
+        "cp": {
+          "after": 267,
+          "before": 211
+        },
+        "cparhdr": {
+          "after": 320,
+          "before": 32
+        },
+        "crlc": {
+          "after": 1202,
+          "before": 0
+        },
+        "cs": {
+          "after": 0,
+          "before": 6519
+        },
+        "ip": {
+          "after": 10892,
+          "before": 18
+        },
+        "lfarlc": {
+          "after": 28,
+          "before": 30
+        },
+        "maxalloc": {
+          "after": 2499,
+          "before": 2266
+        },
+        "minalloc": {
+          "after": 2499,
+          "before": 2266
+        },
+        "sp": {
+          "after": 2048,
+          "before": 128
+        },
+        "ss": {
+          "after": 8828,
+          "before": 8384
+        }
+      },
+      "raw": {
+        "different_bytes_in_overlap": 104772,
+        "left_length": 107553,
+        "right_length": 136512
+      },
+      "relocation_added": [],
+      "relocation_order_equal": false,
+      "relocation_removed": [],
+      "relocation_set_equal": true,
+      "right": "cycles_ega_exe"
+    },
+    {
+      "image": {
+        "changes": [
+          {
+            "after": 57,
+            "before": 163,
+            "offset": 82288
+          },
+          {
+            "after": 70,
+            "before": 84,
+            "offset": 82289
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 82290
+          },
+          {
+            "after": 116,
+            "before": 235,
+            "offset": 82291
+          },
+          {
+            "after": 154,
+            "before": 12,
+            "offset": 82293
+          }
+        ],
+        "different_bytes": 5,
+        "left_length": 131392,
+        "left_tail_hex": "",
+        "right_length": 131392,
+        "right_tail_hex": ""
+      },
+      "left": "cycles_ega",
+      "mz_header_changes": {},
+      "raw": {
+        "changes": [
+          {
+            "after": 57,
+            "before": 163,
+            "offset": 80469
+          },
+          {
+            "after": 70,
+            "before": 84,
+            "offset": 80470
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 80471
+          },
+          {
+            "after": 116,
+            "before": 235,
+            "offset": 80472
+          },
+          {
+            "after": 154,
+            "before": 12,
+            "offset": 80474
+          },
+          {
+            "after": 144,
+            "before": 234,
+            "offset": 105362
+          },
+          {
+            "after": 144,
+            "before": 80,
+            "offset": 105363
+          },
+          {
+            "after": 144,
+            "before": 234,
+            "offset": 105364
+          },
+          {
+            "after": 144,
+            "before": 196,
+            "offset": 105365
+          },
+          {
+            "after": 144,
+            "before": 234,
+            "offset": 105366
+          }
+        ],
+        "different_bytes_in_overlap": 10,
+        "left_length": 107553,
+        "right_length": 107553
+      },
+      "relocation_added": [
+        36927,
+        37008
+      ],
+      "relocation_order_equal": false,
+      "relocation_removed": [
+        59967,
+        59984,
+        60100
+      ],
+      "relocation_set_equal": false,
+      "right": "cycles_ega_gp1"
+    },
+    {
+      "image": {
+        "changes": [
+          {
+            "after": 57,
+            "before": 163,
+            "offset": 82288
+          },
+          {
+            "after": 70,
+            "before": 84,
+            "offset": 82289
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 82290
+          },
+          {
+            "after": 116,
+            "before": 235,
+            "offset": 82291
+          },
+          {
+            "after": 154,
+            "before": 12,
+            "offset": 82293
+          }
+        ],
+        "different_bytes": 5,
+        "left_length": 131392,
+        "left_tail_hex": "",
+        "right_length": 131392,
+        "right_tail_hex": ""
+      },
+      "left": "cycles_ega",
+      "mz_header_changes": {},
+      "raw": {
+        "changes": [
+          {
+            "after": 57,
+            "before": 163,
+            "offset": 80469
+          },
+          {
+            "after": 70,
+            "before": 84,
+            "offset": 80470
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 80471
+          },
+          {
+            "after": 116,
+            "before": 235,
+            "offset": 80472
+          },
+          {
+            "after": 154,
+            "before": 12,
+            "offset": 80474
+          }
+        ],
+        "different_bytes_in_overlap": 5,
+        "left_length": 107553,
+        "right_length": 107553
+      },
+      "relocation_added": [],
+      "relocation_order_equal": true,
+      "relocation_removed": [],
+      "relocation_set_equal": true,
+      "right": "cycles_ega_ex_"
+    },
+    {
+      "image": {
+        "changes": [
+          {
+            "after": 137,
+            "before": 163,
+            "offset": 72200
+          },
+          {
+            "after": 71,
+            "before": 70,
+            "offset": 72201
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 72202
+          },
+          {
+            "after": 5,
+            "before": 12,
+            "offset": 72204
+          },
+          {
+            "after": 62,
+            "before": 43,
+            "offset": 72210
+          },
+          {
+            "after": 163,
+            "before": 192,
+            "offset": 72211
+          },
+          {
+            "after": 70,
+            "before": 94,
+            "offset": 72212
+          },
+          {
+            "after": 142,
+            "before": 139,
+            "offset": 72213
+          },
+          {
+            "after": 144,
+            "before": 229,
+            "offset": 72214
+          },
+          {
+            "after": 144,
+            "before": 93,
+            "offset": 72215
+          },
+          {
+            "after": 144,
+            "before": 203,
+            "offset": 72216
+          }
+        ],
+        "different_bytes": 11,
+        "left_length": 121968,
+        "left_tail_hex": "",
+        "right_length": 121968,
+        "right_tail_hex": ""
+      },
+      "left": "cycles_cga",
+      "mz_header_changes": {},
+      "raw": {
+        "changes": [
+          {
+            "after": 137,
+            "before": 163,
+            "offset": 70338
+          },
+          {
+            "after": 71,
+            "before": 70,
+            "offset": 70339
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 70340
+          },
+          {
+            "after": 5,
+            "before": 12,
+            "offset": 70342
+          },
+          {
+            "after": 62,
+            "before": 43,
+            "offset": 70348
+          },
+          {
+            "after": 163,
+            "before": 192,
+            "offset": 70349
+          },
+          {
+            "after": 70,
+            "before": 94,
+            "offset": 70350
+          },
+          {
+            "after": 142,
+            "before": 139,
+            "offset": 70351
+          },
+          {
+            "after": 144,
+            "before": 229,
+            "offset": 70352
+          },
+          {
+            "after": 144,
+            "before": 93,
+            "offset": 70353
+          },
+          {
+            "after": 144,
+            "before": 203,
+            "offset": 70354
+          }
+        ],
+        "different_bytes_in_overlap": 11,
+        "left_length": 97895,
+        "right_length": 97895
+      },
+      "relocation_added": [],
+      "relocation_order_equal": true,
+      "relocation_removed": [],
+      "relocation_set_equal": true,
+      "right": "cycles_cga_exe"
+    },
+    {
+      "image": {
+        "changes": [
+          {
+            "after": 57,
+            "before": 163,
+            "offset": 72200
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 72202
+          },
+          {
+            "after": 116,
+            "before": 235,
+            "offset": 72203
+          },
+          {
+            "after": 13,
+            "before": 12,
+            "offset": 72204
+          }
+        ],
+        "different_bytes": 4,
+        "left_length": 121968,
+        "left_tail_hex": "",
+        "right_length": 121968,
+        "right_tail_hex": ""
+      },
+      "left": "cycles_cga",
+      "mz_header_changes": {},
+      "raw": {
+        "changes": [
+          {
+            "after": 57,
+            "before": 163,
+            "offset": 70338
+          },
+          {
+            "after": 214,
+            "before": 142,
+            "offset": 70340
+          },
+          {
+            "after": 116,
+            "before": 235,
+            "offset": 70341
+          },
+          {
+            "after": 13,
+            "before": 12,
+            "offset": 70342
+          }
+        ],
+        "different_bytes_in_overlap": 4,
+        "left_length": 97895,
+        "right_length": 97895
+      },
+      "relocation_added": [],
+      "relocation_order_equal": true,
+      "relocation_removed": [],
+      "relocation_set_equal": true,
+      "right": "cycles_cga_ex_"
+    },
+    {
+      "image": {
+        "changes": [
+          {
+            "after": 137,
+            "before": 57,
+            "offset": 70656
+          },
+          {
+            "after": 71,
+            "before": 70,
+            "offset": 70657
+          },
+          {
+            "after": 235,
+            "before": 116,
+            "offset": 70659
+          },
+          {
+            "after": 5,
+            "before": 13,
+            "offset": 70660
+          },
+          {
+            "after": 62,
+            "before": 43,
+            "offset": 70666
+          },
+          {
+            "after": 163,
+            "before": 192,
+            "offset": 70667
+          },
+          {
+            "after": 70,
+            "before": 94,
+            "offset": 70668
+          },
+          {
+            "after": 142,
+            "before": 139,
+            "offset": 70669
+          },
+          {
+            "after": 144,
+            "before": 229,
+            "offset": 70670
+          },
+          {
+            "after": 144,
+            "before": 93,
+            "offset": 70671
+          },
+          {
+            "after": 144,
+            "before": 203,
+            "offset": 70672
+          }
+        ],
+        "different_bytes": 11,
+        "left_length": 120128,
+        "left_tail_hex": "",
+        "right_length": 120128,
+        "right_tail_hex": ""
+      },
+      "left": "cycles_tandy",
+      "mz_header_changes": {
+        "cblp": {
+          "after": 112,
+          "before": 5
+        },
+        "cp": {
+          "after": 245,
+          "before": 189
+        },
+        "cparhdr": {
+          "after": 307,
+          "before": 32
+        },
+        "crlc": {
+          "after": 1220,
+          "before": 0
+        },
+        "cs": {
+          "after": 0,
+          "before": 5811
+        },
+        "ip": {
+          "after": 10560,
+          "before": 18
+        },
+        "lfarlc": {
+          "after": 28,
+          "before": 30
+        },
+        "minalloc": {
+          "after": 745,
+          "before": 2269
+        },
+        "sp": {
+          "after": 2048,
+          "before": 128
+        },
+        "ss": {
+          "after": 8125,
+          "before": 7682
+        }
+      },
+      "raw": {
+        "different_bytes_in_overlap": 93541,
+        "left_length": 96261,
+        "right_length": 125040
+      },
+      "relocation_added": [],
+      "relocation_order_equal": true,
+      "relocation_removed": [],
+      "relocation_set_equal": true,
+      "right": "cycles_tandy_exe"
+    }
+  ],
+  "duplicate_content": [
+    {
+      "paths": [
+        "Circuit/START.SND",
+        "Cycles/START.SND"
+      ],
+      "sha256": "1d6428c7b411926ba349122dde6eae13ef796c5eb999d97b745337e443fc979c"
+    }
+  ],
+  "files": [
+    {
+      "format": "non_MZ",
+      "path": "Circuit/ACCOLADE.PCS",
+      "sha256": "f3187f36731ca906cd4d7018e99ae3a5cc0ab8de71a598f31347a97488b7834d",
+      "size": 1710
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/ACCOLADE.PES",
+      "sha256": "7c3017cb8f95ba552f2e137134bbec466b0bb97ab225b5adf26d6059d0d9fa35",
+      "size": 2824
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/BRAZILIA.PCS",
+      "sha256": "d07e36417e78db168642c369a4b7d50bc10ec83cec81a14f0f354341689d9527",
+      "size": 3073
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/BRAZILIA.PES",
+      "sha256": "5df52dac42e8277017f0cea4f35087186e08ad19a8aa353fb0f35078ab83a55f",
+      "size": 4940
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/BRITISH.PCS",
+      "sha256": "2acca6327505d33569ba386b94b6d71eb8dfd51c19321cafe23363a3171a85a2",
+      "size": 3355
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/BRITISH.PES",
+      "sha256": "ab938ed8e0a9e3d97bba17f6b1d6dd9fd39707f907e99263880075841e92a034",
+      "size": 4918
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CANADIAN.PCS",
+      "sha256": "955fedf5a011c1488017227e50b737bd5470548a4abadfdd42a861fa03a97639",
+      "size": 2823
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CANADIAN.PES",
+      "sha256": "0e5c737adac2517373b2664692f0f44abc78649b7221219f8e4f56c9b170b596",
+      "size": 5331
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CAR1.PCS",
+      "sha256": "1755840d3e0c6425d7b7bbf44c896f6db401df44e39c43af6c8406628e7582da",
+      "size": 6113
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CAR1.PES",
+      "sha256": "2269913340f605b59680ac91b4f804601838e39caacc3569b12ff1ef6695e387",
+      "size": 8635
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CAR2.PCS",
+      "sha256": "3c33da6da380bd96df6f3cd98ee08e2ff01d59e146a040fc612eb5d5a81ee848",
+      "size": 6030
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CAR2.PES",
+      "sha256": "1d8f8fede683e3237538ec66610e69f562c2cdb954cb803ecb64c6995945a9b1",
+      "size": 9025
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CAR3.PCS",
+      "sha256": "e0ab83054fb931285a4885f1d742adf64845ee2df93b5dd31bf6798a2ad7d783",
+      "size": 6091
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CAR3.PES",
+      "sha256": "aef68593a69f2d554cf617f9023d30cdbeec9abad2129951b7d2d566632ffb3d",
+      "size": 9287
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CARSEL.PCS",
+      "sha256": "5a94be4d662f8982bf1441c7c5e3e458a9859af6f47090ffd3de14c1deb83810",
+      "size": 17860
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/CARSEL.PES",
+      "sha256": "4dcd5e672f21d9e3211e7596c56e75983b06678e2b98f43175f7d3008d994bf1",
+      "size": 30910
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/DETROIT.PCS",
+      "sha256": "c99ac44c40a0f951229fd02c5f68f665cae5ec59b8a5818106e38c1db1250769",
+      "size": 4117
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/DETROIT.PES",
+      "sha256": "9a364f028d09694fd9e7d4ca7bfa83a4d1e885bc643b50a3ecb729e28cca08bd",
+      "size": 8264
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/DSITITLE.PCS",
+      "sha256": "78ea5c72d4e8e7352161e7c8e010607f4f8264655e143d3fa4a06ecee5266222",
+      "size": 883
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/DSITITLE.PES",
+      "sha256": "163e0b65c63800169e616f9f0744f2ac0d7672113085ddf256d4b97ad5dd73c0",
+      "size": 969
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/ENDGAME.PCS",
+      "sha256": "9af42d8484962fa8a61439e19d7cb387200205d5d9f17b1ea6994207b8c0d1b3",
+      "size": 10411
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/ENDGAME.PES",
+      "sha256": "a4531a2d4c7b615386e3309cd99c0c730faed51a1e0e7bf025868b26303de4d6",
+      "size": 15089
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/F1SELEC3.PCS",
+      "sha256": "f0e2fc89c9bd0927b93fc21b78eb0512cf4564f2d8d1a7f635ffddf22c2066a8",
+      "size": 4569
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/F1SELEC3.PES",
+      "sha256": "46f116f9ea46f72a5bb2682dcdb0313069c1326ec4440574c69c7c43a0b76cee",
+      "size": 7728
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/F1SELECT.PCS",
+      "sha256": "b426ce0e3836d68c370f3839388216a580147ecd7328d5706ef5b18ea3f6c081",
+      "size": 4457
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/F1SELECT.PES",
+      "sha256": "a7966ea3589fb1a60542d7d0d7409135251b8c32a758aabf3f73a0bfcb2aabec",
+      "size": 7031
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/F1TITLE.PCS",
+      "sha256": "1f621cb96f4eb33e97d6d059384ba279ac4da23e9f316353ea1b2d05004464f5",
+      "size": 7158
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/F1TITLE.PES",
+      "sha256": "eda4ae022aac263647a3cfe99e9816c4fd13ef503493d11ec8e582648abe36aa",
+      "size": 13999
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/GERMAN.PCS",
+      "sha256": "f7bdde865884527d020eb23ff847fdaf4f5badee1e51f6c06e9e920f18168f9a",
+      "size": 3932
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/GERMAN.PES",
+      "sha256": "27547defc082bd664e12bb396cc85e3d7c0cd6b5a9e4c5a3619a46f9d041b87b",
+      "size": 5681
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 0
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "0ca2a25d03338d72a2ef73e2f068abbe58e40771698e95530ead6fba39c4c393",
+      "image_size": 594,
+      "mz_header": {
+        "cblp": 82,
+        "cp": 3,
+        "cparhdr": 32,
+        "crlc": 3,
+        "cs": 0,
+        "csum": 18681,
+        "ip": 0,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 65535,
+        "minalloc": 0,
+        "ovno": 0,
+        "sp": 2,
+        "ss": 36
+      },
+      "overlay_size": 0,
+      "path": "Circuit/GP.EXE",
+      "relocation_count": 3,
+      "relocations_sha256": "fc9e75f58eeb60901c6592c55eafe73464f2d9978760fd2b5b37d9da1f606c52",
+      "sha256": "4f030d5b064fbf000ecd82a88ad4b3aa72a5c1af8554e08f77da468967fcdef8",
+      "size": 1106,
+      "stack": {
+        "sp": 2,
+        "ss": 36
+      }
+    },
+    {
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 48020
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "d02979b806bf105cae671237466e580e14c53fa1225edcfe9a0b8b59dc0c6ee7",
+      "image_size": 96944,
+      "mz_header": {
+        "cblp": 181,
+        "cp": 153,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 4818,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 1449,
+        "minalloc": 1449,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 6085
+      },
+      "overlay_size": 0,
+      "path": "Circuit/GPCGA.EXE",
+      "relocation_count": 36,
+      "relocations_sha256": "c78da85189c6a34f087842e0ab2205d70c184e66002c195452c45371cfe74753",
+      "sha256": "41479dd02a508d929c8383e45f6a77f34d59aef2d6a328cef2ad19c9a7cc1f22",
+      "size": 78005,
+      "stack": {
+        "sp": 2048,
+        "ss": 6164
+      }
+    },
+    {
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 57366
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "005c4472392a758c4ab5cba37ec8c72d5f5a2e13f9e8052e2d576a10073ffb1c",
+      "image_size": 106336,
+      "mz_header": {
+        "cblp": 371,
+        "cp": 171,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5406,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 1449,
+        "minalloc": 1449,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 6672
+      },
+      "overlay_size": 0,
+      "path": "Circuit/GPEGA.EXE",
+      "relocation_count": 35,
+      "relocations_sha256": "a82e6c3e5d8c87c5ce921532d88494f61b01f74b88f3dec7bfd1a6f10d472a2b",
+      "sha256": "d6aecb73066e90506292bbd4e2c9b9c0c02253246cd12185e38204b07333d990",
+      "size": 87411,
+      "stack": {
+        "sp": 2048,
+        "ss": 6752
+      }
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/HISCORE.PCS",
+      "sha256": "b248e955c0aa1f1ae0f8a52d6a26cbcf0e4ebb8957ae51868ede7ff2e3cee920",
+      "size": 4651
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/HISCORE.PES",
+      "sha256": "7507e599f7aa53991365358026cdff4be29e61ada613af51220d0cc3e9cbf4e1",
+      "size": 3472
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/ITALIAN.PCS",
+      "sha256": "5aa0156143a53f8c2934c0eabdf75601840dcc6234b7c017e8d4b7fe5219c3e4",
+      "size": 3404
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/ITALIAN.PES",
+      "sha256": "139cac7b71e33bc1a019b71ad0156a549297a99c29e73fef89c10c66428d39e1",
+      "size": 5525
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/JAPANESE.PCS",
+      "sha256": "f2c412ca0928fc81d4b1b077f2cd55beef6c35df0b346d28fd4fbdc314169f33",
+      "size": 3892
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/JAPANESE.PES",
+      "sha256": "4877d8cdfe005f848fc7a5e0f92157e2eeaeed88c034b537a2ef470112ffc71d",
+      "size": 6622
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/M25.TRP",
+      "sha256": "11074c644a735828d57292f7b2f040e3f05bd47f5dff21d11bc3f1b689e59c8e",
+      "size": 18
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/MONACO.PCS",
+      "sha256": "a8e389744f52c795fb8e78c67c0877b74be50a1a50d6811d2db7aba380ffc181",
+      "size": 4427
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/MONACO.PES",
+      "sha256": "079de7e42ccb8b30c70741634b8bea180672294a207a22845341771604b08d02",
+      "size": 7983
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/MUSIC.BIN",
+      "sha256": "f1c69f765b42cb085750918d7c391c7005dc13ced5ba99288b726dd2fcfbfc27",
+      "size": 382
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/PITSTUFF.PCS",
+      "sha256": "d6d4aaf1fb94d42f050fa28875f0b2fce5a80f0b1429aa049580a26eadbed3bc",
+      "size": 16081
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/PITSTUFF.PES",
+      "sha256": "b5da9da77c826c656f7c6f43391028cc68f6ac7a689ee4e73716f7bf242ba38e",
+      "size": 27758
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/SCORES",
+      "sha256": "dde6d33f120c39c940a87b0189086e1431c5324924d78d47701138d8eeedca07",
+      "size": 2448
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/START.SND",
+      "sha256": "1d6428c7b411926ba349122dde6eae13ef796c5eb999d97b745337e443fc979c",
+      "size": 183
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/STATUS.PCS",
+      "sha256": "275d4262f4e5d74106f41341e52692d88d8f5587e3a034d635f60e28ea2460a0",
+      "size": 6641
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/STATUS.PES",
+      "sha256": "1a75ed58020cf7ed0ed2dc2d16d5860b2f393decb0b3e0c38351501b7936cc36",
+      "size": 5386
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/VOICES.BIN",
+      "sha256": "ca10e106ca92182b9ce1c97adad5ca1af17348cf99b477f6f73a1d98025e48c0",
+      "size": 288
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/XTRACKA.PCS",
+      "sha256": "50bdee692c6cda4a28615f8a0bc05261aec9600968397f610a4499179054a1b3",
+      "size": 10457
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/XTRACKA.PES",
+      "sha256": "020ec0babea2bf3dc36727b36a55f198c2657c3c1775bd629728dabafcec5141",
+      "size": 11974
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/XTRACKB.PCS",
+      "sha256": "ba505dbc5d5c6fed6789e440b40e22ab49b2c47aaa73950cf92f3818818125f7",
+      "size": 23771
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/XTRACKB.PES",
+      "sha256": "f429c055e617c8268570288e9b47416a01caa33e8aa4c28cee4300c8a47a8cd4",
+      "size": 21466
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/XTRACKC.PCS",
+      "sha256": "b86cbfc6e3d6a39fbedbe040ee7e31e169d5fc0739be8138871c991e95a6b6f4",
+      "size": 26402
+    },
+    {
+      "format": "non_MZ",
+      "path": "Circuit/XTRACKC.PES",
+      "sha256": "ee20a445233c7db44dd6e32d24dccfc44bc68b0032ae67ca436a58f3684536be",
+      "size": 19306
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/ACCOLADE.PES",
+      "sha256": "a41e7a216327437abc140c94bc296631ae182ff8d0a86ef4578bc5d66b71970c",
+      "size": 1806
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 0
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "674ef5b2d8432275e12ea951af63dbafb373868f014bea8519b1c6e493904b42",
+      "image_size": 7372,
+      "mz_header": {
+        "cblp": 204,
+        "cp": 16,
+        "cparhdr": 32,
+        "crlc": 43,
+        "cs": 0,
+        "csum": 42627,
+        "ip": 0,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 65535,
+        "minalloc": 0,
+        "ovno": 0,
+        "sp": 0,
+        "ss": 0
+      },
+      "overlay_size": 0,
+      "path": "Cycles/ADLIB.DRV",
+      "relocation_count": 43,
+      "relocations_sha256": "515d2f693ef048849e9944f6a4d39fff47b73498e07d67908603c78aa5cde6d9",
+      "sha256": "7d22cc0f889928b536cd2375f8884464e2aec92db8c3b53e6825a42c74cd0cb1",
+      "size": 7884,
+      "stack": {
+        "sp": 0,
+        "ss": 0
+      }
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/ADLIB.VCE",
+      "sha256": "efbec331e2f2aeed8b2bef0ed1667dc532d93ae6ef01cd32c7adff17dda0ccf5",
+      "size": 1264
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/BIKE1.PES",
+      "sha256": "3e4b3adbdb927e4604dbc3c65c50d9b5d06738bf1683b05a9235be6a617ae2fc",
+      "size": 26753
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/BIKES.INF",
+      "sha256": "758e368b29d6bb0a21f8cb3deb36e240a053e531b8300d736740f129f350b3a4",
+      "size": 444
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/BIKESTAT.PES",
+      "sha256": "ef4a4e371736b2e367bdb84b9be4db3cbc3cea16bb3e76eb33d224a175be993c",
+      "size": 10092
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/BKSELECT.PES",
+      "sha256": "389f21e9dfaca14b0fa4381da99411e4a0411383408f4121ccf5e06e5f03898f",
+      "size": 17466
+    },
+    {
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "66e5652998d3977015162e436c05ee4e2afde0a932bbb856a753d95425afd783",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 33,
+        "cp": 211,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 6519,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2266,
+        "minalloc": 2266,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 8384
+      },
+      "overlay_size": 0,
+      "path": "Cycles/CPC2001.DAT",
+      "relocation_count": 1202,
+      "relocations_sha256": "b6b63e077969532f112270eb3fcceaa66b51c890da674811f89dedc36897ccb9",
+      "sha256": "55957c1b364edb45c4e23e381aaa9c1f4eee6ac0a3cdcaf3b9ffa53e6f6b82b6",
+      "size": 107553,
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      }
+    },
+    {
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10570
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "6990e7e327166057a25dd06c64e69f8c8457bea07c381eb06f211e668408e6c1",
+      "image_size": 121968,
+      "mz_header": {
+        "cblp": 103,
+        "cp": 192,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5913,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2281,
+        "minalloc": 2281,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 7797
+      },
+      "overlay_size": 0,
+      "path": "Cycles/CPC2001C.DAT",
+      "relocation_count": 1221,
+      "relocations_sha256": "c349e2f716cc48bbe734ad8c5d8f8f185452011e5a01a0664f2e8ccbf85aa31c",
+      "sha256": "211c467bb04f459500a53ccd212ecdf83282d955309debdf1a426b279ad0ff6d",
+      "size": 97895,
+      "stack": {
+        "sp": 2048,
+        "ss": 8239
+      }
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/DSITITLE.PES",
+      "sha256": "1e94dd45789fd05c6c5ec97adf893061b459c3a15baee0034562192e2b136fb6",
+      "size": 1018
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/ENDGAME.PES",
+      "sha256": "9bdb96451c7567c8c6e7b6b85381c24f71dc7da57f1b7374d652aed5fcdb7c50",
+      "size": 27472
+    },
+    {
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "aa35827c43ff97ce2bae1d9b8c976b5c9305c3d3809165c3a497964e0faa94de",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 33,
+        "cp": 211,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 6519,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2266,
+        "minalloc": 2266,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 8384
+      },
+      "overlay_size": 0,
+      "path": "Cycles/GP1.EXE",
+      "relocation_count": 1202,
+      "relocations_sha256": "79de11b1cbba265e8df1f27bf1f6ebb29011f35c3242581fa75eff8e0e9bbb49",
+      "sha256": "0f844e3d3d25add213f0b2a6d0504b24267775704902544ae7db84876f6f4ab6",
+      "size": 107553,
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      }
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/GPBSONGS",
+      "sha256": "08b66d5384b872e2516b90275c848da78ceb679cadb62ea67fafd32461fbd04d",
+      "size": 2842
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/GPC.BAT",
+      "sha256": "ab7e67da4efafc22e4f4af5a528d72c960c3d3878fd85e5d8e5f9cf3a85d7cab",
+      "size": 18
+    },
+    {
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10570
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "e2b16c723dd1b4178cbb32fc694198ec710e631c015625186406498cf4129f56",
+      "image_size": 121968,
+      "mz_header": {
+        "cblp": 103,
+        "cp": 192,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5913,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2281,
+        "minalloc": 2281,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 7797
+      },
+      "overlay_size": 0,
+      "path": "Cycles/GPCGA.EX_",
+      "relocation_count": 1221,
+      "relocations_sha256": "c349e2f716cc48bbe734ad8c5d8f8f185452011e5a01a0664f2e8ccbf85aa31c",
+      "sha256": "d89d7b428d93b1429c285ce9f6cf5ba97d0438ab5bb1759af28c0cf8ebc40263",
+      "size": 97895,
+      "stack": {
+        "sp": 2048,
+        "ss": 8239
+      }
+    },
+    {
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10570
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "0928c94ad8c30919e09e71413a8bb0f490f9a8718732b9cf40ac80ef92a28591",
+      "image_size": 121968,
+      "mz_header": {
+        "cblp": 103,
+        "cp": 192,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5913,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2281,
+        "minalloc": 2281,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 7797
+      },
+      "overlay_size": 0,
+      "path": "Cycles/GPCGA.EXE",
+      "relocation_count": 1221,
+      "relocations_sha256": "c349e2f716cc48bbe734ad8c5d8f8f185452011e5a01a0664f2e8ccbf85aa31c",
+      "sha256": "6454ccfb00e78c64dc2081151d75cf3696204abdea0df83b59d6d356d022016f",
+      "size": 97895,
+      "stack": {
+        "sp": 2048,
+        "ss": 8239
+      }
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 16
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "c966bc9c9e3f33007f4fe3b669fe3493f95b8bbb858c5d8166cf943ffd3c99c1",
+      "image_size": 928,
+      "mz_header": {
+        "cblp": 416,
+        "cp": 3,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 0,
+        "csum": 38390,
+        "ip": 16,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 65535,
+        "minalloc": 0,
+        "ovno": 0,
+        "sp": 32,
+        "ss": 56
+      },
+      "overlay_size": 0,
+      "path": "Cycles/GPCONFIG.EXE",
+      "relocation_count": 0,
+      "relocations_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "093c7d0d59a408389e6bcd337f6731aaee477946cc883de11ac81b586ae4ae2c",
+      "size": 1440,
+      "stack": {
+        "sp": 32,
+        "ss": 56
+      }
+    },
+    {
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "aa35827c43ff97ce2bae1d9b8c976b5c9305c3d3809165c3a497964e0faa94de",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 33,
+        "cp": 211,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 6519,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2266,
+        "minalloc": 2266,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 8384
+      },
+      "overlay_size": 0,
+      "path": "Cycles/GPEGA.EX_",
+      "relocation_count": 1202,
+      "relocations_sha256": "b6b63e077969532f112270eb3fcceaa66b51c890da674811f89dedc36897ccb9",
+      "sha256": "1947ee7ad119581928c7a83709828cc15af4818c08f040892c2595c2f69a7e25",
+      "size": 107553,
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      }
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "bdb1168dbe1607fca27443ce7290d8af21cfdfe3b8987c8ca0bf05dbd296d4f7",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 320,
+        "cp": 267,
+        "cparhdr": 320,
+        "crlc": 1202,
+        "cs": 0,
+        "csum": 0,
+        "ip": 10892,
+        "lfarlc": 28,
+        "magic": 23117,
+        "maxalloc": 2499,
+        "minalloc": 2499,
+        "ovno": 0,
+        "sp": 2048,
+        "ss": 8828
+      },
+      "overlay_size": 0,
+      "path": "Cycles/GPEGA.EXE",
+      "relocation_count": 1202,
+      "relocations_sha256": "329c70dea43ff04a016e59ab92a0e09dd272933bfe0fbe2bd14b6ec52f9874f8",
+      "sha256": "5e16a3abd0269fbebaf8e160f13989d9bb16baf52fb5575e417f38cc6e3d2bdf",
+      "size": 136512,
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      }
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "49ffaa14065e266fd4b27d201144fd3777a92462b5384bb1d9b241d716a94e26",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 48,
+        "cp": 267,
+        "cparhdr": 303,
+        "crlc": 1202,
+        "cs": 0,
+        "csum": 0,
+        "ip": 10892,
+        "lfarlc": 28,
+        "magic": 23117,
+        "maxalloc": 2266,
+        "minalloc": 2266,
+        "ovno": 0,
+        "sp": 2048,
+        "ss": 8828
+      },
+      "overlay_size": 0,
+      "path": "Cycles/GPEGA.OLD",
+      "relocation_count": 1202,
+      "relocations_sha256": "b6b63e077969532f112270eb3fcceaa66b51c890da674811f89dedc36897ccb9",
+      "sha256": "517d89f860872b6f4caef70ae5c5e47c83240cb1a6355d87d9fb8c4dfd0cd205",
+      "size": 136240,
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      }
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/GPSELEC3.PES",
+      "sha256": "b867c1b7cb79a5a9d8e7cfa60993826e375c6774895f8b5934490629ce3bac20",
+      "size": 2052
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/GPSELECT.PES",
+      "sha256": "ed3d77eb9efcdfe7f2434839fb704e56f39f5cbaf8e8ba15e8af5ea5957a9db6",
+      "size": 7743
+    },
+    {
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10560
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "1ccfb484ac00c8660645798de1233e97b993d49b7fd5fb8eec0763514bb521ec",
+      "image_size": 120128,
+      "mz_header": {
+        "cblp": 5,
+        "cp": 189,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5811,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2269,
+        "minalloc": 2269,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 7682
+      },
+      "overlay_size": 0,
+      "path": "Cycles/GPTDY.EX_",
+      "relocation_count": 1220,
+      "relocations_sha256": "4255f9c8ab3bdc1e163522106ddb27f877aca516a54fa2522e87896547e5871e",
+      "sha256": "f647bcb410b9e2c34858c7ec65a38d254f16fbafcaf8b309b823e934ab446020",
+      "size": 96261,
+      "stack": {
+        "sp": 2048,
+        "ss": 8125
+      }
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 10560
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "9a85434024efff26fcab14686d8ca691eac6b8b3906759e296ee28b2fbb4765e",
+      "image_size": 120128,
+      "mz_header": {
+        "cblp": 112,
+        "cp": 245,
+        "cparhdr": 307,
+        "crlc": 1220,
+        "cs": 0,
+        "csum": 0,
+        "ip": 10560,
+        "lfarlc": 28,
+        "magic": 23117,
+        "maxalloc": 2269,
+        "minalloc": 745,
+        "ovno": 0,
+        "sp": 2048,
+        "ss": 8125
+      },
+      "overlay_size": 0,
+      "path": "Cycles/GPTDY.EXE",
+      "relocation_count": 1220,
+      "relocations_sha256": "4255f9c8ab3bdc1e163522106ddb27f877aca516a54fa2522e87896547e5871e",
+      "sha256": "c4cb49fc912d84f5ee38342cac34e20eae1a0b69ad107aeafb14ff651b0428b1",
+      "size": 125040,
+      "stack": {
+        "sp": 2048,
+        "ss": 8125
+      }
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/GRANDFNT.FNT",
+      "sha256": "ef76ac544311e06f56a8741b3b242f1ac632b5d18ed277f34db8379343fa38af",
+      "size": 1302
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/INFO.PES",
+      "sha256": "614b243116c00cdf020c37129d7643944045a84c981540618101cde9ace49a34",
+      "size": 21504
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 0
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "b55414a01d94b2797e177b1079fbd5f871e20ed4607e7d32c64fb00359636afa",
+      "image_size": 6716,
+      "mz_header": {
+        "cblp": 60,
+        "cp": 15,
+        "cparhdr": 32,
+        "crlc": 43,
+        "cs": 0,
+        "csum": 14251,
+        "ip": 0,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 65535,
+        "minalloc": 0,
+        "ovno": 0,
+        "sp": 0,
+        "ss": 0
+      },
+      "overlay_size": 0,
+      "path": "Cycles/PC.DRV",
+      "relocation_count": 43,
+      "relocations_sha256": "00eb05a3c7fa571cb75f7608662c430199fa69c7f8ff3039c788b7c511a9b929",
+      "sha256": "9dfa48dc4cecd2d6965fc9a46d988da843ee1c50190903ff79f311cbafdef084",
+      "size": 7228,
+      "stack": {
+        "sp": 0,
+        "ss": 0
+      }
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/PC.VCE",
+      "sha256": "8a02b946d7b871600d6e6f28d2a4ed8fa3210645ab426e355471c0701ba35d76",
+      "size": 574
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/SCORES.INF",
+      "sha256": "6f967cbaa3d055469a8bc49f066087147148e72469c78c6cbb7626235d06a779",
+      "size": 3241
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/START.SND",
+      "sha256": "1d6428c7b411926ba349122dde6eae13ef796c5eb999d97b745337e443fc979c",
+      "size": 183
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/STATUS.PES",
+      "sha256": "a36a2fa987f3b502e2868b5656bd63fcf6d46eb3e5e2539d4af87501b2331d7e",
+      "size": 4096
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 0
+      },
+      "format": "DOS_MZ",
+      "image_sha256": "349bce9d1e9fb579ca14ce7ab6e24c9666edc598abdb8a62764c6a3597983149",
+      "image_size": 8956,
+      "mz_header": {
+        "cblp": 252,
+        "cp": 19,
+        "cparhdr": 32,
+        "crlc": 46,
+        "cs": 0,
+        "csum": 9437,
+        "ip": 0,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 65535,
+        "minalloc": 0,
+        "ovno": 0,
+        "sp": 0,
+        "ss": 0
+      },
+      "overlay_size": 0,
+      "path": "Cycles/TDY.DRV",
+      "relocation_count": 46,
+      "relocations_sha256": "868efeee9c3b9beb8abd99f04743ba19d8beb05ac3bba251622b6b61018d3196",
+      "sha256": "c356affb1ca34a06ecd95522952b9ce3ccfc79dffda20e4b46a38f4821f1b4a5",
+      "size": 9468,
+      "stack": {
+        "sp": 0,
+        "ss": 0
+      }
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TDY.VCE",
+      "sha256": "f0ffd5f6071f71d98e3aa509707d65e6055438133318277852c67dd223b5d029",
+      "size": 706
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/The Cycles -  International Grand Prix Racing (1989).ba1",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TITLE.PES",
+      "sha256": "5c36653818f10a6f158472d77c48badc6753b0f5389ba0c7c5225e06ee68b02d",
+      "size": 13340
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK01.PES",
+      "sha256": "beae1c8c9cb5b3b3765811d3eea89644159b0a12774ea4aa362657f8d793c4b2",
+      "size": 10313
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK02.PES",
+      "sha256": "f161b2ec654459730424e596f5dea2b16d03050de61b503be319fc206211f651",
+      "size": 7760
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK03.PES",
+      "sha256": "1806c555b4e28711c5d6c211cb3709d2a52f9bee224c4f040fb87c02a9e6b11c",
+      "size": 7858
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK04.PES",
+      "sha256": "77d4fb4e54efc448d031b642502aec91741c4f31d727f587caf37c5419dce696",
+      "size": 8035
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK05.PES",
+      "sha256": "a416798a6699285fdfedd6cad130f29901310a922033970901058b94ee9eab7f",
+      "size": 8673
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK06.PES",
+      "sha256": "452972ee945d1126c1fd744fd443883aa2a175359e106e80f98650653ebb77e6",
+      "size": 7843
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK07.PES",
+      "sha256": "570c54f94afceffe31450f7ddc11c59505bad394439bdfb636fbab71d93e80ef",
+      "size": 8322
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK08.PES",
+      "sha256": "3b9c1d4499faf29399547d062428e9bd0f9835f84b79a44df546d7070a405ff7",
+      "size": 8786
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK09.PES",
+      "sha256": "2d287e349311a236dc1248157da52b74745e124534a96620127a2a3347c4e9cc",
+      "size": 8596
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK1.PCK",
+      "sha256": "d3f84f0571575fe6fcd58cd7b389460c5ac29719b1fb681a34c762f79229c679",
+      "size": 505
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK10.PCK",
+      "sha256": "c3af4f86af8f00d001462a801098af944113423d2b61dd7629ac09518d925002",
+      "size": 508
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK10.PES",
+      "sha256": "f3f0b11ab9ae11430dfaf00f5b29b2ef13f42d48224dbdfdb026d43d0b99412e",
+      "size": 7841
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK11.PCK",
+      "sha256": "db2bafbd707781d90e591b4e4948ea087952378ca54e60b19b9c7b2a77a4b1c6",
+      "size": 385
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK11.PES",
+      "sha256": "826161a32ae6647bef4f5dcf8e49b5b65a19de8e42286756946c1001678624a5",
+      "size": 7348
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK12.PCK",
+      "sha256": "8f260613af96d609d2c96a95ae2bda94f5957f2a092f92057395952af9d3c442",
+      "size": 386
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK12.PES",
+      "sha256": "01bd59c64db5965727fea26f359a3149ab08f1f779da0087a714738196d564c0",
+      "size": 9303
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK13.PCK",
+      "sha256": "4e19d17a54ff6b94c739df13054411610a7fd9825442d8877477b5e3ed979b1d",
+      "size": 346
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK13.PES",
+      "sha256": "a2d2ce0351ebb3fc4267c84db4c26c6aa64493d31f386cb431e61ad65a5fb9ed",
+      "size": 9540
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK14.PCK",
+      "sha256": "eb2fe6156ba16f24775dafce915d70c9b5ec0755e27098dd774128dd5f442e4a",
+      "size": 433
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK14.PES",
+      "sha256": "c0807c7fbc4d1cc9b50b72fc7bbe38014e2c6a43890783829f1f98f6c5732574",
+      "size": 8438
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK15.PCK",
+      "sha256": "e3dd327c2ecef0cc632a7051d8d277b7040f7089755a4e748800f1f318f9c808",
+      "size": 297
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK15.PES",
+      "sha256": "f84b7a09408c9fcf8e23768fecde1030e5910a1e921b4d32a3d03558835d8703",
+      "size": 10855
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK2.PCK",
+      "sha256": "a30ca04417218ba5a5edbfc6013905f4401cf6b400c5101ffef48e4e0d572e11",
+      "size": 415
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK3.PCK",
+      "sha256": "42119fa0ea07a98e52aadb2911b36183bc8e99ddd101578980c537a630dd147e",
+      "size": 387
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK4.PCK",
+      "sha256": "79ba4e30fa0a2d92dcf3403e391814c7a1ce545ec8b1839aa01afcfa0b37b054",
+      "size": 459
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK5.PCK",
+      "sha256": "66bef58acead46732089d9aaecdf6e038478bd3f9e85f643436b0e119c132cbf",
+      "size": 334
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK6.PCK",
+      "sha256": "4515b0e2f40e35e3213d4096bad5afbefc6cdb88c757f4109b0038ab44c24626",
+      "size": 486
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK7.PCK",
+      "sha256": "3dd66ecfb770e2ce0b1ef061524d87996788b91fc1001d0e52b2eea3821084c6",
+      "size": 278
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK8.PCK",
+      "sha256": "cd71af2caae544eb8b75a5af923020886217eb79f96f3d5b7829d1497752f641",
+      "size": 335
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACK9.PCK",
+      "sha256": "74425e6d59be3b2eeaa07a534ec6444c4153e105018e256cc6fc6ce5e5f3dcce",
+      "size": 572
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRACKS.INF",
+      "sha256": "8fea7f22ce250ddd2527b127b7435c011bff07a40dcd414d4eb8bc6233c31414",
+      "size": 1052
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRAFICA.PES",
+      "sha256": "82247e019269e2961c791a33add7b88e86efc9201d61effd21735bedd89a11f8",
+      "size": 15540
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/TRAFICM.PES",
+      "sha256": "b22f46df9d8c619342e88fc2a0b7e97e44f150c90fe8877230e719ef65a98a4d",
+      "size": 23042
+    },
+    {
+      "format": "non_MZ",
+      "path": "Cycles/XTRACKA.PES",
+      "sha256": "d1086d314ca6f36ab577dd1b7576916022fc3b760026230165954bd51d17cb29",
+      "size": 10645
+    }
+  ],
+  "provenance_note": "Supplied extracted directories only; original archive containers absent. Archive membership assertions beyond filenames are unverified.",
+  "schema_version": 1,
+  "targets": [
+    {
+      "canonical_variant": "circuit_ega",
+      "id": "circuit_ega"
+    },
+    {
+      "canonical_variant": "circuit_cga",
+      "id": "circuit_cga"
+    },
+    {
+      "canonical_variant": "cycles_ega",
+      "id": "cycles_ega"
+    },
+    {
+      "canonical_variant": "cycles_cga",
+      "id": "cycles_cga"
+    },
+    {
+      "canonical_variant": "cycles_tandy",
+      "id": "cycles_tandy"
+    }
+  ],
+  "variants": [
+    {
+      "analytical_mz_sha256": "f6eae64d1a9b3c6efed86391f159a96ca4b611fe9eba74adf240c5e655815ed5",
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 57366
+      },
+      "exepack": {
+        "commands": 972,
+        "dest_len": 6646,
+        "exepack_size": 403,
+        "header_size": 18,
+        "literal_prefix": 0,
+        "mem_start": 0,
+        "offset": 86496,
+        "real_cs": 0,
+        "real_ip": 57366,
+        "real_sp": 2048,
+        "real_ss": 6752,
+        "relocation_bank_counts": [
+          30,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relocation_table_offset": 301,
+        "signature": 16978,
+        "skip_len": 1
+      },
+      "format": "DOS_MZ",
+      "id": "circuit_ega",
+      "image_sha256": "005c4472392a758c4ab5cba37ec8c72d5f5a2e13f9e8052e2d576a10073ffb1c",
+      "image_size": 106336,
+      "mz_header": {
+        "cblp": 371,
+        "cp": 171,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5406,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 1449,
+        "minalloc": 1449,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 6672
+      },
+      "oracle_status": "preferred_supplied",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Circuit/GPEGA.EXE",
+      "relocation_count": 35,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "26eb8f270ea57af4eef3ba42af2575e3007ccae13f9baed3375f4a433f411a27",
+      "relocations_sha256": "a82e6c3e5d8c87c5ce921532d88494f61b01f74b88f3dec7bfd1a6f10d472a2b",
+      "size": 87411,
+      "source_sha256": "d6aecb73066e90506292bbd4e2c9b9c0c02253246cd12185e38204b07333d990",
+      "stack": {
+        "sp": 2048,
+        "ss": 6752
+      },
+      "target": "circuit_ega"
+    },
+    {
+      "analytical_mz_sha256": "23d1a56ad64772ed780385cbbd79d6c405c44b01605e3d395c73f19c96864ab4",
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 48020
+      },
+      "exepack": {
+        "commands": 969,
+        "dest_len": 6059,
+        "exepack_size": 405,
+        "header_size": 18,
+        "literal_prefix": 0,
+        "mem_start": 0,
+        "offset": 77088,
+        "real_cs": 0,
+        "real_ip": 48020,
+        "real_sp": 2048,
+        "real_ss": 6164,
+        "relocation_bank_counts": [
+          31,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relocation_table_offset": 301,
+        "signature": 16978,
+        "skip_len": 1
+      },
+      "format": "DOS_MZ",
+      "id": "circuit_cga",
+      "image_sha256": "d02979b806bf105cae671237466e580e14c53fa1225edcfe9a0b8b59dc0c6ee7",
+      "image_size": 96944,
+      "mz_header": {
+        "cblp": 181,
+        "cp": 153,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 4818,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 1449,
+        "minalloc": 1449,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 6085
+      },
+      "oracle_status": "preferred_supplied",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Circuit/GPCGA.EXE",
+      "relocation_count": 36,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "9a00dd4fe2a6487a57295783989d269a9d5fec09049514434aff071ee30214d4",
+      "relocations_sha256": "c78da85189c6a34f087842e0ab2205d70c184e66002c195452c45371cfe74753",
+      "size": 78005,
+      "source_sha256": "41479dd02a508d929c8383e45f6a77f34d59aef2d6a328cef2ad19c9a7cc1f22",
+      "stack": {
+        "sp": 2048,
+        "ss": 6164
+      },
+      "target": "circuit_cga"
+    },
+    {
+      "analytical_mz_sha256": "4400c3a668e7ff5f3ffd97f28f0d6c88b4ed6f6264d128a4b688886e2dfd9f95",
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "exepack": {
+        "commands": 313,
+        "dest_len": 8212,
+        "exepack_size": 2737,
+        "header_size": 18,
+        "literal_prefix": 0,
+        "mem_start": 0,
+        "offset": 104304,
+        "real_cs": 0,
+        "real_ip": 10892,
+        "real_sp": 2048,
+        "real_ss": 8828,
+        "relocation_bank_counts": [
+          617,
+          582,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relocation_table_offset": 301,
+        "signature": 16978,
+        "skip_len": 1
+      },
+      "format": "DOS_MZ",
+      "id": "cycles_ega",
+      "image_sha256": "66e5652998d3977015162e436c05ee4e2afde0a932bbb856a753d95425afd783",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 33,
+        "cp": 211,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 6519,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2266,
+        "minalloc": 2266,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 8384
+      },
+      "oracle_status": "preferred_hash_pinned",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/CPC2001.DAT",
+      "relocation_count": 1202,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "329c70dea43ff04a016e59ab92a0e09dd272933bfe0fbe2bd14b6ec52f9874f8",
+      "relocations_sha256": "b6b63e077969532f112270eb3fcceaa66b51c890da674811f89dedc36897ccb9",
+      "size": 107553,
+      "source_sha256": "55957c1b364edb45c4e23e381aaa9c1f4eee6ac0a3cdcaf3b9ffa53e6f6b82b6",
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      },
+      "target": "cycles_ega"
+    },
+    {
+      "analytical_mz_sha256": "4a3f873a2ec4a442476adda6e4ee739ec060f8b1727cb2215ee973c09d0dc4f1",
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10570
+      },
+      "exepack": {
+        "commands": 308,
+        "dest_len": 7623,
+        "exepack_size": 2775,
+        "header_size": 18,
+        "literal_prefix": 0,
+        "mem_start": 0,
+        "offset": 94608,
+        "real_cs": 0,
+        "real_ip": 10570,
+        "real_sp": 2048,
+        "real_ss": 8239,
+        "relocation_bank_counts": [
+          943,
+          278,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relocation_table_offset": 301,
+        "signature": 16978,
+        "skip_len": 1
+      },
+      "format": "DOS_MZ",
+      "id": "cycles_cga",
+      "image_sha256": "6990e7e327166057a25dd06c64e69f8c8457bea07c381eb06f211e668408e6c1",
+      "image_size": 121968,
+      "mz_header": {
+        "cblp": 103,
+        "cp": 192,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5913,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2281,
+        "minalloc": 2281,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 7797
+      },
+      "oracle_status": "preferred_hash_pinned",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/CPC2001C.DAT",
+      "relocation_count": 1221,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "cfc4ceaf3733c58ff9829dd9b5cf13254955cb85e9164ecd58b093e79a7bf465",
+      "relocations_sha256": "c349e2f716cc48bbe734ad8c5d8f8f185452011e5a01a0664f2e8ccbf85aa31c",
+      "size": 97895,
+      "source_sha256": "211c467bb04f459500a53ccd212ecdf83282d955309debdf1a426b279ad0ff6d",
+      "stack": {
+        "sp": 2048,
+        "ss": 8239
+      },
+      "target": "cycles_cga"
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "exepack": null,
+      "format": "DOS_MZ",
+      "id": "cycles_ega_old",
+      "image_sha256": "49ffaa14065e266fd4b27d201144fd3777a92462b5384bb1d9b241d716a94e26",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 48,
+        "cp": 267,
+        "cparhdr": 303,
+        "crlc": 1202,
+        "cs": 0,
+        "csum": 0,
+        "ip": 10892,
+        "lfarlc": 28,
+        "magic": 23117,
+        "maxalloc": 2266,
+        "minalloc": 2266,
+        "ovno": 0,
+        "sp": 2048,
+        "ss": 8828
+      },
+      "oracle_status": "patched_evidence",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/GPEGA.OLD",
+      "relocation_count": 1202,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "329c70dea43ff04a016e59ab92a0e09dd272933bfe0fbe2bd14b6ec52f9874f8",
+      "relocations_sha256": "b6b63e077969532f112270eb3fcceaa66b51c890da674811f89dedc36897ccb9",
+      "size": 136240,
+      "source_sha256": "517d89f860872b6f4caef70ae5c5e47c83240cb1a6355d87d9fb8c4dfd0cd205",
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      },
+      "target": "cycles_ega"
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "exepack": null,
+      "format": "DOS_MZ",
+      "id": "cycles_ega_exe",
+      "image_sha256": "bdb1168dbe1607fca27443ce7290d8af21cfdfe3b8987c8ca0bf05dbd296d4f7",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 320,
+        "cp": 267,
+        "cparhdr": 320,
+        "crlc": 1202,
+        "cs": 0,
+        "csum": 0,
+        "ip": 10892,
+        "lfarlc": 28,
+        "magic": 23117,
+        "maxalloc": 2499,
+        "minalloc": 2499,
+        "ovno": 0,
+        "sp": 2048,
+        "ss": 8828
+      },
+      "oracle_status": "patched_evidence",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/GPEGA.EXE",
+      "relocation_count": 1202,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "329c70dea43ff04a016e59ab92a0e09dd272933bfe0fbe2bd14b6ec52f9874f8",
+      "relocations_sha256": "329c70dea43ff04a016e59ab92a0e09dd272933bfe0fbe2bd14b6ec52f9874f8",
+      "size": 136512,
+      "source_sha256": "5e16a3abd0269fbebaf8e160f13989d9bb16baf52fb5575e417f38cc6e3d2bdf",
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      },
+      "target": "cycles_ega"
+    },
+    {
+      "analytical_mz_sha256": "e8c4954a282dc4a9d063af200ca0f2aed3feaaf0fe4eff90ef653e3c4a3e3b8b",
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "exepack": {
+        "commands": 313,
+        "dest_len": 8212,
+        "exepack_size": 2737,
+        "header_size": 18,
+        "literal_prefix": 0,
+        "mem_start": 0,
+        "offset": 104304,
+        "real_cs": 0,
+        "real_ip": 10892,
+        "real_sp": 2048,
+        "real_ss": 8828,
+        "relocation_bank_counts": [
+          617,
+          582,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relocation_table_offset": 301,
+        "signature": 16978,
+        "skip_len": 1
+      },
+      "format": "DOS_MZ",
+      "id": "cycles_ega_gp1",
+      "image_sha256": "aa35827c43ff97ce2bae1d9b8c976b5c9305c3d3809165c3a497964e0faa94de",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 33,
+        "cp": 211,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 6519,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2266,
+        "minalloc": 2266,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 8384
+      },
+      "oracle_status": "patched_evidence",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/GP1.EXE",
+      "relocation_count": 1202,
+      "relocation_duplicate_count": 1,
+      "relocations_set_sha256": "5b5fe815d02548d6faaeb2930e2956dd9c2f23f763636cb5d07dcbae4eba9a4f",
+      "relocations_sha256": "79de11b1cbba265e8df1f27bf1f6ebb29011f35c3242581fa75eff8e0e9bbb49",
+      "size": 107553,
+      "source_sha256": "0f844e3d3d25add213f0b2a6d0504b24267775704902544ae7db84876f6f4ab6",
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      },
+      "target": "cycles_ega"
+    },
+    {
+      "analytical_mz_sha256": "8c3d90a77eb5b6fa51a4f71bfee118c755b2c084650e26cfa5cc23c9d8e1cb95",
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10892
+      },
+      "exepack": {
+        "commands": 313,
+        "dest_len": 8212,
+        "exepack_size": 2737,
+        "header_size": 18,
+        "literal_prefix": 0,
+        "mem_start": 0,
+        "offset": 104304,
+        "real_cs": 0,
+        "real_ip": 10892,
+        "real_sp": 2048,
+        "real_ss": 8828,
+        "relocation_bank_counts": [
+          617,
+          582,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relocation_table_offset": 301,
+        "signature": 16978,
+        "skip_len": 1
+      },
+      "format": "DOS_MZ",
+      "id": "cycles_ega_ex_",
+      "image_sha256": "aa35827c43ff97ce2bae1d9b8c976b5c9305c3d3809165c3a497964e0faa94de",
+      "image_size": 131392,
+      "mz_header": {
+        "cblp": 33,
+        "cp": 211,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 6519,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2266,
+        "minalloc": 2266,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 8384
+      },
+      "oracle_status": "patched_evidence",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/GPEGA.EX_",
+      "relocation_count": 1202,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "329c70dea43ff04a016e59ab92a0e09dd272933bfe0fbe2bd14b6ec52f9874f8",
+      "relocations_sha256": "b6b63e077969532f112270eb3fcceaa66b51c890da674811f89dedc36897ccb9",
+      "size": 107553,
+      "source_sha256": "1947ee7ad119581928c7a83709828cc15af4818c08f040892c2595c2f69a7e25",
+      "stack": {
+        "sp": 2048,
+        "ss": 8828
+      },
+      "target": "cycles_ega"
+    },
+    {
+      "analytical_mz_sha256": "5ab84375f0123bfeee2a8625cfd74faaa620eb0114242fa0c16a09461e143eaa",
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10570
+      },
+      "exepack": {
+        "commands": 308,
+        "dest_len": 7623,
+        "exepack_size": 2775,
+        "header_size": 18,
+        "literal_prefix": 0,
+        "mem_start": 0,
+        "offset": 94608,
+        "real_cs": 0,
+        "real_ip": 10570,
+        "real_sp": 2048,
+        "real_ss": 8239,
+        "relocation_bank_counts": [
+          943,
+          278,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relocation_table_offset": 301,
+        "signature": 16978,
+        "skip_len": 1
+      },
+      "format": "DOS_MZ",
+      "id": "cycles_cga_exe",
+      "image_sha256": "0928c94ad8c30919e09e71413a8bb0f490f9a8718732b9cf40ac80ef92a28591",
+      "image_size": 121968,
+      "mz_header": {
+        "cblp": 103,
+        "cp": 192,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5913,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2281,
+        "minalloc": 2281,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 7797
+      },
+      "oracle_status": "patched_evidence",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/GPCGA.EXE",
+      "relocation_count": 1221,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "cfc4ceaf3733c58ff9829dd9b5cf13254955cb85e9164ecd58b093e79a7bf465",
+      "relocations_sha256": "c349e2f716cc48bbe734ad8c5d8f8f185452011e5a01a0664f2e8ccbf85aa31c",
+      "size": 97895,
+      "source_sha256": "6454ccfb00e78c64dc2081151d75cf3696204abdea0df83b59d6d356d022016f",
+      "stack": {
+        "sp": 2048,
+        "ss": 8239
+      },
+      "target": "cycles_cga"
+    },
+    {
+      "analytical_mz_sha256": "2bc24aefabe8a72a641e220f23f0887dbec34844fd82697b741932f9dd127975",
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10570
+      },
+      "exepack": {
+        "commands": 308,
+        "dest_len": 7623,
+        "exepack_size": 2775,
+        "header_size": 18,
+        "literal_prefix": 0,
+        "mem_start": 0,
+        "offset": 94608,
+        "real_cs": 0,
+        "real_ip": 10570,
+        "real_sp": 2048,
+        "real_ss": 8239,
+        "relocation_bank_counts": [
+          943,
+          278,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relocation_table_offset": 301,
+        "signature": 16978,
+        "skip_len": 1
+      },
+      "format": "DOS_MZ",
+      "id": "cycles_cga_ex_",
+      "image_sha256": "e2b16c723dd1b4178cbb32fc694198ec710e631c015625186406498cf4129f56",
+      "image_size": 121968,
+      "mz_header": {
+        "cblp": 103,
+        "cp": 192,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5913,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2281,
+        "minalloc": 2281,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 7797
+      },
+      "oracle_status": "patched_evidence",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/GPCGA.EX_",
+      "relocation_count": 1221,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "cfc4ceaf3733c58ff9829dd9b5cf13254955cb85e9164ecd58b093e79a7bf465",
+      "relocations_sha256": "c349e2f716cc48bbe734ad8c5d8f8f185452011e5a01a0664f2e8ccbf85aa31c",
+      "size": 97895,
+      "source_sha256": "d89d7b428d93b1429c285ce9f6cf5ba97d0438ab5bb1759af28c0cf8ebc40263",
+      "stack": {
+        "sp": 2048,
+        "ss": 8239
+      },
+      "target": "cycles_cga"
+    },
+    {
+      "analytical_mz_sha256": "4adfbded678bd930a8c8f315b4a50a5aafc7aed18517a1e40ff896a2a96c58bb",
+      "compression": "EXEPACK",
+      "entry": {
+        "cs": 0,
+        "ip": 10560
+      },
+      "exepack": {
+        "commands": 309,
+        "dest_len": 7508,
+        "exepack_size": 2773,
+        "header_size": 18,
+        "literal_prefix": 0,
+        "mem_start": 0,
+        "offset": 92976,
+        "real_cs": 0,
+        "real_ip": 10560,
+        "real_sp": 2048,
+        "real_ss": 8125,
+        "relocation_bank_counts": [
+          942,
+          278,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "relocation_table_offset": 301,
+        "signature": 16978,
+        "skip_len": 1
+      },
+      "format": "DOS_MZ",
+      "id": "cycles_tandy",
+      "image_sha256": "1ccfb484ac00c8660645798de1233e97b993d49b7fd5fb8eec0763514bb521ec",
+      "image_size": 120128,
+      "mz_header": {
+        "cblp": 5,
+        "cp": 189,
+        "cparhdr": 32,
+        "crlc": 0,
+        "cs": 5811,
+        "csum": 0,
+        "ip": 18,
+        "lfarlc": 30,
+        "magic": 23117,
+        "maxalloc": 2269,
+        "minalloc": 2269,
+        "ovno": 0,
+        "sp": 128,
+        "ss": 7682
+      },
+      "oracle_status": "provisional_packed_supplied",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/GPTDY.EX_",
+      "relocation_count": 1220,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "b6e701a86873bde9b54506a3ec25502139d0ca13e4d181e15c863e5000b48a8e",
+      "relocations_sha256": "4255f9c8ab3bdc1e163522106ddb27f877aca516a54fa2522e87896547e5871e",
+      "size": 96261,
+      "source_sha256": "f647bcb410b9e2c34858c7ec65a38d254f16fbafcaf8b309b823e934ab446020",
+      "stack": {
+        "sp": 2048,
+        "ss": 8125
+      },
+      "target": "cycles_tandy"
+    },
+    {
+      "compression": "none",
+      "entry": {
+        "cs": 0,
+        "ip": 10560
+      },
+      "exepack": null,
+      "format": "DOS_MZ",
+      "id": "cycles_tandy_exe",
+      "image_sha256": "9a85434024efff26fcab14686d8ca691eac6b8b3906759e296ee28b2fbb4765e",
+      "image_size": 120128,
+      "mz_header": {
+        "cblp": 112,
+        "cp": 245,
+        "cparhdr": 307,
+        "crlc": 1220,
+        "cs": 0,
+        "csum": 0,
+        "ip": 10560,
+        "lfarlc": 28,
+        "magic": 23117,
+        "maxalloc": 2269,
+        "minalloc": 745,
+        "ovno": 0,
+        "sp": 2048,
+        "ss": 8125
+      },
+      "oracle_status": "patched_evidence",
+      "overlay_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "overlay_size": 0,
+      "path": "assets/Cycles/GPTDY.EXE",
+      "relocation_count": 1220,
+      "relocation_duplicate_count": 0,
+      "relocations_set_sha256": "b6e701a86873bde9b54506a3ec25502139d0ca13e4d181e15c863e5000b48a8e",
+      "relocations_sha256": "4255f9c8ab3bdc1e163522106ddb27f877aca516a54fa2522e87896547e5871e",
+      "size": 125040,
+      "source_sha256": "c4cb49fc912d84f5ee38342cac34e20eae1a0b69ad107aeafb14ff651b0428b1",
+      "stack": {
+        "sp": 2048,
+        "ss": 8125
+      },
+      "target": "cycles_tandy"
+    }
+  ]
+}

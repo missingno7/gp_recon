@@ -1,0 +1,77 @@
+{
+  "arrays": [
+    {
+      "id": "vehicle_array_cars",
+      "observations": [
+        {
+          "array_bytes_equal_reference": true,
+          "image_offsets": [
+            98018
+          ],
+          "target": "circuit_ega"
+        },
+        {
+          "array_bytes_equal_reference": true,
+          "image_offsets": [
+            88618
+          ],
+          "target": "circuit_cga"
+        }
+      ],
+      "record_count": 3,
+      "record_size": 148,
+      "reference_array_sha256": "c52ee38fdc67b4559ebca70aacf1da60fb8401cf38be006a1e21194ca9f44046",
+      "total_size": 444
+    },
+    {
+      "id": "vehicle_array_bikes",
+      "observations": [
+        {
+          "array_bytes_equal_reference": true,
+          "executable_loading_usage": "untraced",
+          "path": "assets/Cycles/BIKES.INF",
+          "sha256": "758e368b29d6bb0a21f8cb3deb36e240a053e531b8300d736740f129f350b3a4"
+        }
+      ],
+      "record_count": 3,
+      "record_size": 148,
+      "reference_array_sha256": "758e368b29d6bb0a21f8cb3deb36e240a053e531b8300d736740f129f350b3a4",
+      "total_size": 444
+    }
+  ],
+  "fields": [
+    {
+      "offset": 0,
+      "proposed_type": "11 little-endian uint16 settings",
+      "size": 22,
+      "status": "reference_hypothesis"
+    },
+    {
+      "offset": 22,
+      "proposed_type": "10 little-endian uint16 gear ratios",
+      "size": 20,
+      "status": "reference_hypothesis"
+    },
+    {
+      "offset": 42,
+      "proposed_type": "106 uint8 torque values",
+      "size": 106,
+      "status": "reference_hypothesis"
+    }
+  ],
+  "layout_status": "reference layout; byte identity independently verified; runtime field semantics unverified",
+  "reference": {
+    "commit": "e544c88e5247efb1d5f61cf19bfa038e63b192fb",
+    "source_sha256": {
+      "src/main/java/io/github/albertus82/cyclesmod/common/data/DefaultBikes.java": "94398eabd5c9d38cbbe1cd9502b4be4a20fe3edacbe80cb41bbb8065b9e913cf",
+      "src/main/java/io/github/albertus82/cyclesmod/common/data/DefaultCars.java": "86a905db96ac382cfdac501c5df373074bf4df7b2a658b7b4de5dd51c55ae0f7",
+      "src/main/java/io/github/albertus82/cyclesmod/common/model/Gearbox.java": "c5749bec20d9bd5990228f34b3115dc595bba9779fd91bbb572de5bf86ee3ff4",
+      "src/main/java/io/github/albertus82/cyclesmod/common/model/Settings.java": "459f8169e7d65d5bb1b2bfcdeca946405c95654a396bca246882c4d35be07c17",
+      "src/main/java/io/github/albertus82/cyclesmod/common/model/Torque.java": "b1e9665fea28c02d85dfce88ada33c8e27eb4339c7cbc63295a718fbcac2134d",
+      "src/main/java/io/github/albertus82/cyclesmod/common/model/Vehicle.java": "d6b0169639369c6ebee7803ccbea4427bd633ec54a6794323b7e2e95586173c7",
+      "src/main/java/io/github/albertus82/cyclesmod/common/model/VehiclesInf.java": "8794d33794233506ec4d5f3ba6588b75feeea761570522293e05a1d906e07283"
+    },
+    "url": "https://github.com/albertus82/cyclesmod"
+  },
+  "schema_version": 1
+}

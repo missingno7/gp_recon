@@ -1,0 +1,10 @@
+/assets/
+/work/
+__pycache__/
+*.pyc
+*.obj
+*.exe
+*.bin
+*.sqlite*
+*.com
+
