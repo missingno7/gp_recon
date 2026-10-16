@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0de6b",
+  "source": "src/cycles/engine/ega_clip_and_write_pixel.asm",
+  "source_sha256": "917113863c8cea7ad8d9a7d051e4c5c0f31647249163849c629784cffcc04007",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0de6b",
+  "expected_fixups": [
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E94",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 37,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E8C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 106,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E8C",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 56939,
+      "end": 57075
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0a76c",
+  "source": "src/cycles/engine/ega_planar_descriptor_writer.asm",
+  "source_sha256": "e06f7e1b54510855e502986e80372295d7bb537f3b0cf384031f3174a7442c88",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0a76c",
+  "expected_fixups": [
+    {
+      "offset": 97,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7D3B9038",
+      "frame": "EGA_PLANAR_TEXT"
+    },
+    {
+      "offset": 208,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "EGA_PLANAR_TEXT",
+      "frame": "EGA_PLANAR_TEXT"
+    },
+    {
+      "offset": 359,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FATAL_ERROR",
+      "frame": "EGA_PLANAR_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 42860,
+      "end": 43223
+    }
+  }
+}

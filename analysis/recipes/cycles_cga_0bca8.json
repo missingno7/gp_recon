@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "cycles_cga_0bca8",
+  "source": "src/cycles/engine/clip_dispatch_cga.asm",
+  "source_sha256": "b7acdc7cd0caddb9a6ca54b1bec707431b33d2736e4b0397cfaf8b1e8dc0ebcb",
+  "profile": "masm510",
+  "public": "_fn_cycles_cga_0bca8",
+  "expected_fixups": [
+    {
+      "offset": 26,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_52D27303",
+      "frame": "_CYCLES_MAIN_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 48296,
+      "end": 48331
+    }
+  }
+}

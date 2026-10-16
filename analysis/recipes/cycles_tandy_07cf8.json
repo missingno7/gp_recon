@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_tandy_07cf8",
+  "source": "src/cycles/engine/clip_class_dispatch_tandy.asm",
+  "source_sha256": "4974e8292ebca12cd5241b01896042f6fd20bce9803e02cc8e3fecd13f754496",
+  "profile": "masm510",
+  "public": "_fn_cycles_tandy_07cf8",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_tandy": {
+      "start": 31992,
+      "end": 32002
+    }
+  }
+}

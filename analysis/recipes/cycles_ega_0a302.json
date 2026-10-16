@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0a302",
+  "source": "src/cycles/engine/ega_palette_bios.asm",
+  "source_sha256": "8c99d00bdd591148cd6ecc6dde92cc13581fd05f8b39ccd12413380eb2f7d529",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0a302",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 41730,
+      "end": 41748
+    },
+    "cycles_tandy": {
+      "start": 38824,
+      "end": 38842
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0de0c",
+  "source": "src/cycles/engine/clip_dispatch_ega.asm",
+  "source_sha256": "491e3dd2cd77f179e6ee6f6e406864bb48679b72c82afb3304b43b33462ee62d",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0de0c",
+  "expected_fixups": [
+    {
+      "offset": 26,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_EGA_0B7DA",
+      "frame": "_CYCLES_MAIN_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 56844,
+      "end": 56879
+    }
+  }
+}

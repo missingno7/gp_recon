@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "cycles_tandy_0b6aa",
+  "source": "src/cycles/engine/clip_dispatch_tandy.asm",
+  "source_sha256": "5a089062dd1331d44c04878da42492c2e150fe409b06341c1743394c26cb9419",
+  "profile": "masm510",
+  "public": "_fn_cycles_tandy_0b6aa",
+  "expected_fixups": [
+    {
+      "offset": 26,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_52D27303",
+      "frame": "_CYCLES_MAIN_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_tandy": {
+      "start": 46762,
+      "end": 46797
+    }
+  }
+}

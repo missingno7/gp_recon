@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "id": "polygon_edge_prepare_cga",
+  "source": "src/cycles/engine/polygon_edge_prepare_cga.asm",
+  "source_sha256": "f2dbd71d2378d9d101de413188788b9634af99caa9c7e1ca78a2704114588be1",
+  "profile": "masm510",
+  "public": "_fn_cycles_cga_0b788",
+  "expected_fixups": [
+    {
+      "offset": 74,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 170,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_05710",
+      "frame": "_FN_CYCLES_CGA_05710"
+    },
+    {
+      "offset": 244,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_07A0E",
+      "frame": "_FN_CYCLES_CGA_07A0E"
+    },
+    {
+      "offset": 276,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_07A1D",
+      "frame": "_FN_CYCLES_CGA_07A1D"
+    },
+    {
+      "offset": 306,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_0A836",
+      "frame": "_FN_CYCLES_CGA_0A836"
+    },
+    {
+      "offset": 371,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_07A0E",
+      "frame": "_FN_CYCLES_CGA_07A0E"
+    },
+    {
+      "offset": 403,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_07A1D",
+      "frame": "_FN_CYCLES_CGA_07A1D"
+    },
+    {
+      "offset": 449,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 451,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 453,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 455,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 457,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 459,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 461,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 463,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 465,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 504,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 515,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 522,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 533,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 549,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 562,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 587,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 602,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 613,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 628,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 639,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 654,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 676,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_05710",
+      "frame": "_FN_CYCLES_CGA_05710"
+    },
+    {
+      "offset": 766,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_POLYGON_SCAN_CONVERT",
+      "frame": "_POLYGON_SCAN_CONVERT"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 46984,
+      "end": 47776
+    }
+  }
+}

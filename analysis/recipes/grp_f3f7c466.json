@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "grp_f3f7c466",
+  "source": "src/cycles/engine/grp_f3f7c466.c",
+  "source_sha256": "b3f30f3c92559d9fe7bc9561a250dd246a1cabc849965084748656bb5e9ccb92",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_f3f7c466",
+  "expected_fixups": [
+    {
+      "offset": 43,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0024e",
+      "frame": "_g_0024e"
+    },
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_c8e2",
+      "frame": "_g_c8e2"
+    },
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_00438",
+      "frame": "_g_00438"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 64344,
+      "end": 64401
+    },
+    "cycles_cga": {
+      "start": 54258,
+      "end": 54315
+    },
+    "cycles_tandy": {
+      "start": 52712,
+      "end": 52769
+    }
+  }
+}

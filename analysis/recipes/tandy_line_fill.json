@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "tandy_line_fill",
+  "source": "src/cycles/engine/tandy_line_fill.asm",
+  "source_sha256": "33c63e016510ac44c17895e581c9490e2fcab52c3d858e96d7fe33e735fc7fff",
+  "profile": "masm510",
+  "public": "_tandy_line_fill",
+  "expected_fixups": [
+    {
+      "offset": 186,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_tandy": {
+      "start": 46208,
+      "end": 46402
+    }
+  }
+}

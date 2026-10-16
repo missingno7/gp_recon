@@ -5,60 +5,52 @@
   "source_sha256": "eed96f36ba4e5d2402476387f9af4b9796ff5e0c38beab6680b9cdd5f489883f",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_3f2832f6",
-  "targets": {
-    "cycles_cga": {
-      "start": 54082,
-      "end": 54191
-    }
-  },
   "expected_fixups": [
     {
       "offset": 98,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_0c2b2",
-      "frame": "_fn_cycles_cga_0c2b2",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_0c2b2"
     },
     {
       "offset": 87,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_grp_d33a06a1",
-      "frame": "_grp_d33a06a1",
-      "self_relative": false
+      "frame": "_grp_d33a06a1"
     },
     {
       "offset": 75,
       "loc": "offset16",
       "width": 2,
+      "self_relative": false,
       "target": "_g_0024e",
-      "frame": "_g_0024e",
-      "self_relative": false
+      "frame": "_g_0024e"
     },
     {
       "offset": 64,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_grp_3be77d36",
-      "frame": "_grp_3be77d36",
-      "self_relative": false
+      "frame": "_grp_3be77d36"
     },
     {
       "offset": 14,
       "loc": "pointer32",
       "width": 4,
+      "self_relative": false,
       "target": "_fn_cycles_cga_09f14",
-      "frame": "_fn_cycles_cga_09f14",
-      "self_relative": false
+      "frame": "_fn_cycles_cga_09f14"
     }
   ],
-  "expected_relocations": {
-    "cycles_cga": [
-      54182,
-      54171,
-      54148,
-      54098
-    ]
+  "targets": {
+    "cycles_cga": {
+      "start": 54082,
+      "end": 54191
+    }
   }
 }

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_tandy_07bb7",
+  "source": "src/cycles/engine/clip_coordinate_dispatch_tandy.asm",
+  "source_sha256": "f012d7bf53c01a610b2697f1a8094558822de227f44b00dfbfab0fbdea04ad9b",
+  "profile": "masm510",
+  "public": "_fn_cycles_tandy_07bb7",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_tandy": {
+      "start": 31671,
+      "end": 31698
+    }
+  }
+}

@@ -5,6 +5,32 @@
   "source_sha256": "33b3953673c9433364e1832e9bbda5a4524fa2cb39a3fdca7d0cf09d1e76e448",
   "profile": "msc510-medium-o_gs",
   "public": "_grp_464c8224",
+  "expected_fixups": [
+    {
+      "offset": 46,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_c8e2",
+      "frame": "_g_c8e2"
+    },
+    {
+      "offset": 41,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_00438",
+      "frame": "_g_00438"
+    },
+    {
+      "offset": 25,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0024e",
+      "frame": "_g_0024e"
+    }
+  ],
   "targets": {
     "cycles_cga": {
       "start": 54192,
@@ -18,36 +44,5 @@
       "start": 52646,
       "end": 52711
     }
-  },
-  "expected_fixups": [
-    {
-      "offset": 46,
-      "loc": "offset16",
-      "width": 2,
-      "target": "_g_c8e2",
-      "frame": "_g_c8e2",
-      "self_relative": false
-    },
-    {
-      "offset": 41,
-      "loc": "offset16",
-      "width": 2,
-      "target": "_g_00438",
-      "frame": "_g_00438",
-      "self_relative": false
-    },
-    {
-      "offset": 25,
-      "loc": "offset16",
-      "width": 2,
-      "target": "_g_0024e",
-      "frame": "_g_0024e",
-      "self_relative": false
-    }
-  ],
-  "expected_relocations": {
-    "cycles_cga": [],
-    "cycles_ega": [],
-    "cycles_tandy": []
   }
 }

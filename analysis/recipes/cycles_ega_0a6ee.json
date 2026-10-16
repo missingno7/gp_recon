@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0a6ee",
+  "source": "src/cycles/engine/fontdef_mask_ega.asm",
+  "source_sha256": "ade9717d83a15b84c8b586dd9db775d2833dcb13c77f57d6d0f93bb22908891f",
+  "profile": "masm510",
+  "public": "_fontdef_mask",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 42734,
+      "end": 42763
+    }
+  }
+}

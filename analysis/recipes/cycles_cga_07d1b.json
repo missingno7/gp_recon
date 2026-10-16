@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_cga_07d1b",
+  "source": "src/cycles/engine/clip_state_exit_cga.asm",
+  "source_sha256": "678704d81466ba1c631afaf6d5a56ce4543378d4076ad2b04566fd08a76c7e91",
+  "profile": "masm510",
+  "public": "_fn_cycles_cga_07d1b",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 32027,
+      "end": 32036
+    }
+  }
+}

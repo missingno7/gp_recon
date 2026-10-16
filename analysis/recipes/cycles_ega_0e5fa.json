@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0e5fa",
+  "source": "src/cycles/engine/memory_allocation_probe.c",
+  "source_sha256": "8b8e79cb003fe331f2c8a0430b95f8047ff055c9699eb85d7c7bed86f79cda90",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_ega_0e5fa",
+  "expected_fixups": [
+    {
+      "offset": 38,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_2e800973",
+      "frame": "_grp_2e800973"
+    },
+    {
+      "offset": 14,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_69b75d8c",
+      "frame": "_grp_69b75d8c"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 58874,
+      "end": 58926
+    },
+    "cycles_cga": {
+      "start": 48788,
+      "end": 48840
+    },
+    "cycles_tandy": {
+      "start": 47242,
+      "end": 47294
+    }
+  }
+}

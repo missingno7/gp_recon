@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0b7da",
+  "source": "src/cycles/engine/clip_far_entry_shims_ega.asm",
+  "source_sha256": "f5a05dbc4e0725c4d6e8a335cd3265a14a8041c83a365370dcc21ceee93ccea0",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0b7da",
+  "expected_fixups": [
+    {
+      "offset": 30,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "CYC_EGA_CLIP_ENTRY_TEXT",
+      "frame": "CYC_EGA_CLIP_ENTRY_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 47066,
+      "end": 47098
+    }
+  }
+}

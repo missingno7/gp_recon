@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0c73d",
+  "source": "src/cycles/engine/clip_coordinate_dispatch_ega.asm",
+  "source_sha256": "438f8eb242683abec55afa63249842d4093f6ec51d86545ce0da6bb1ce2417df",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0c73d",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 51005,
+      "end": 51032
+    }
+  }
+}

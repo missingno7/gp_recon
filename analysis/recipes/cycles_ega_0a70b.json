@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0a70b",
+  "source": "src/cycles/engine/fontdef_segment_write_ega.asm",
+  "source_sha256": "5ebbfc0dcd883bf72e5b8c19859536c3f5cf9d62b836be9c552bb7d83b0e3397",
+  "profile": "masm510",
+  "public": "_fontdef_segment_write",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 42763,
+      "end": 42786
+    }
+  }
+}

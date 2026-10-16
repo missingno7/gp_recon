@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_cga_0913a",
+  "source": "src/cycles/engine/clip_far_entry_shims_cga.asm",
+  "source_sha256": "bf57536801411ddd3c4899993bec126242eeacc6a329d670f5ea38feb7329630",
+  "profile": "masm510",
+  "public": "_fn_cycles_cga_0913a",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 37178,
+      "end": 37199
+    }
+  }
+}

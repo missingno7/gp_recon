@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0de30",
+  "source": "src/cycles/engine/ega_clip_and_write_pixel.asm",
+  "source_sha256": "917113863c8cea7ad8d9a7d051e4c5c0f31647249163849c629784cffcc04007",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0de30",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E9A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E9C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 25,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E96",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 43,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E98",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 86,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E94",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 96,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E8C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 165,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E8C",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 56880,
+      "end": 57075
+    }
+  }
+}

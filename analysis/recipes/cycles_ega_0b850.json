@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0b850",
+  "source": "src/cycles/engine/ega_xor_blitter_body.asm",
+  "source_sha256": "396902454e86334d760b33d0b7cfd43cb99ace6f6aeddc59084a4afe1773fcef",
+  "profile": "masm510-mx",
+  "public": "_fn_cycles_ega_0b850",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 47184,
+      "end": 47293
+    }
+  }
+}

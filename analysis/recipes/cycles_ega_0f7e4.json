@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0f7e4",
+  "source": "src/cycles/engine/strlen_select_global.c",
+  "source_sha256": "22113f4d1b3ac6b1c9fb1770dd42bf0df151a220df1d2067e6d6b2050f350d49",
+  "profile": "msc510-medium-o_gs",
+  "public": "_cycles_ega_0f7e4",
+  "expected_fixups": [
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0304",
+      "frame": "_g_cga_0304"
+    },
+    {
+      "offset": 7,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_STRLEN",
+      "frame": "_STRLEN"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 63460,
+      "end": 63489
+    },
+    "cycles_cga": {
+      "start": 53374,
+      "end": 53403
+    },
+    "cycles_tandy": {
+      "start": 51828,
+      "end": 51857
+    }
+  }
+}

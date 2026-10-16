@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_tandy_09ab9",
+  "source": "src/cycles/engine/fontdef_segment_write_tandy.asm",
+  "source_sha256": "95e3ba5acc2a5b010d2a228210d9231a4e018174904390460eec22531e6b1e7a",
+  "profile": "masm510",
+  "public": "_fontdef_segment_write",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_tandy": {
+      "start": 39609,
+      "end": 39632
+    }
+  }
+}

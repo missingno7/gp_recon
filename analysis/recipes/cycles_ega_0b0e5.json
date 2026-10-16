@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0b0e5",
+  "source": "src/cycles/engine/ega_write_pixel.asm",
+  "source_sha256": "738af2c96798a565ded3edf3204855111bf3ffe898521e8128ed6206ae617ec1",
+  "profile": "masm510",
+  "public": "_ega_write_pixel",
+  "expected_fixups": [
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E94",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 37,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E8C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 98,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E8C",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 45285,
+      "end": 45424
+    }
+  }
+}

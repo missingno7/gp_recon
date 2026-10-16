@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cycles_tandy_09b1a",
+  "source": "src/cycles/engine/tandy_descriptor_allocator.asm",
+  "source_sha256": "db4bf3f11b2eb8f91696e634c402fa79e874fb6c13ab6d91854e4da28dcf780b",
+  "profile": "masm510",
+  "public": "_fn_cycles_tandy_09b1a",
+  "expected_fixups": [
+    {
+      "offset": 42,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7D3B9038",
+      "frame": "CYCLES_TANDY_TEXT_0555"
+    },
+    {
+      "offset": 196,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B9EA",
+      "frame": "CYCLES_TANDY_TEXT_0555"
+    },
+    {
+      "offset": 205,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FATAL_ERROR",
+      "frame": "CYCLES_TANDY_TEXT_0555"
+    }
+  ],
+  "targets": {
+    "cycles_tandy": {
+      "start": 39706,
+      "end": 39915
+    }
+  }
+}

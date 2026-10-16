@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0c67c",
+  "source": "src/cycles/engine/clip_write_and_return.asm",
+  "source_sha256": "3509877511b842aa3b582b89d7dbe67bd6b21b924d24daae3c5d96f5ae61c66b",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0c67c",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 50812,
+      "end": 50832
+    },
+    "cycles_cga": {
+      "start": 31756,
+      "end": 31776
+    },
+    "cycles_tandy": {
+      "start": 31478,
+      "end": 31498
+    }
+  }
+}

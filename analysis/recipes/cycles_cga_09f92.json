@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cycles_cga_09f92",
+  "source": "src/cycles/engine/cga_descriptor_allocator.asm",
+  "source_sha256": "c376a7d39f1a9aa25efbb70d99094d0f8d07a7e600a97a0e1d8cb0a60fd94c06",
+  "profile": "masm510",
+  "public": "_fn_cycles_cga_09f92",
+  "expected_fixups": [
+    {
+      "offset": 44,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7D3B9038",
+      "frame": "CYCLES_CGA_TEXT_0555"
+    },
+    {
+      "offset": 197,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_B9EA",
+      "frame": "CYCLES_CGA_TEXT_0555"
+    },
+    {
+      "offset": 206,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FATAL_ERROR",
+      "frame": "CYCLES_CGA_TEXT_0555"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 40850,
+      "end": 41060
+    }
+  }
+}

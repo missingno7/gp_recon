@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0c47a",
+  "source": "src/cycles/engine/clip_entry_prefixes.asm",
+  "source_sha256": "8af4b9a78cd189cb028962f2b6c31e3d53a84e1bde661a5a40472a2364951cf3",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0c47a",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 50298,
+      "end": 50312
+    },
+    "cycles_cga": {
+      "start": 31246,
+      "end": 31260
+    },
+    "cycles_tandy": {
+      "start": 30972,
+      "end": 30986
+    }
+  }
+}

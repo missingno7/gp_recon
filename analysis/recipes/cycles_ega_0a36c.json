@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0a36c",
+  "source": "src/cycles/engine/ega_bitmap_blitter.asm",
+  "source_sha256": "00c39e597dbfc9b2f87bd01b4f35d94fb83fe071bc667f05d9c143f3faf3c186",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0a36c",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 41836,
+      "end": 42090
+    }
+  }
+}

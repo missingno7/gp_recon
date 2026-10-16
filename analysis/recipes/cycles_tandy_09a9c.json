@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_tandy_09a9c",
+  "source": "src/cycles/engine/fontdef_mask_tandy.asm",
+  "source_sha256": "f26b38008ff5f16639fd2e72b4b0f829385e60c3c2116433c41c7fd49d374c09",
+  "profile": "masm510",
+  "public": "_fontdef_mask",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_tandy": {
+      "start": 39580,
+      "end": 39609
+    }
+  }
+}

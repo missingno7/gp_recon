@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_tandy_09ad0",
+  "source": "src/cycles/engine/fontdef_state_copy_tandy.asm",
+  "source_sha256": "cfd139570c36e9df33a08eed9c0e50c19c823da908620f9db8d65e17127d1955",
+  "profile": "masm510",
+  "public": "_fn_cycles_tandy_09ad0",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_tandy": {
+      "start": 39632,
+      "end": 39666
+    }
+  }
+}

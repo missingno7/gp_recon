@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_tandy_08fe0",
+  "source": "src/cycles/engine/clip_far_entry_shims_tandy.asm",
+  "source_sha256": "854c5b34b5c4853e00e3b217bfc30938dc7fe72f5f61619564ea7eba3d42f8dc",
+  "profile": "masm510",
+  "public": "_fn_cycles_tandy_08fe0",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_tandy": {
+      "start": 36832,
+      "end": 36861
+    }
+  }
+}

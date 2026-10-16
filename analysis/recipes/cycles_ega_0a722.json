@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0a722",
+  "source": "src/cycles/engine/fontdef_state_copy_ega.asm",
+  "source_sha256": "2931d4fddeac380421a87b69034c161aad3c69c1d9cf95ce5b9e98d58c7e1898",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0a722",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 42786,
+      "end": 42820
+    }
+  }
+}

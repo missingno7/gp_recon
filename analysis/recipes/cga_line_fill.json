@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "cga_line_fill",
+  "source": "src/cycles/engine/cga_line_fill.asm",
+  "source_sha256": "aa8c2a6d9e3e4db31ea0f192fb2f5e1534983fb99a1178322a495a98972d1bbc",
+  "profile": "masm510",
+  "public": "_cga_line_fill",
+  "expected_fixups": [
+    {
+      "offset": 200,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 47776,
+      "end": 47984
+    }
+  }
+}

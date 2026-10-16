@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "cycles_cga_07efb",
+  "source": "src/cycles/engine/clip_line_cga.asm",
+  "source_sha256": "b29f053ef072c18e5ff863efb3b768fcf321ec8a0e82b3b19f56d270e0ee1829",
+  "profile": "masm510",
+  "public": "_fn_cycles_cga_07efb",
+  "expected_fixups": [
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 32507,
+      "end": 32527
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ega_planar_line_fill",
+  "source": "src/cycles/engine/ega_planar_line_fill.asm",
+  "source_sha256": "2a8a9fa3da9547b8cb2ba3489c3013c742adfe4ce2494ff3523300bf48427121",
+  "profile": "masm510",
+  "public": "_ega_planar_line_fill",
+  "expected_fixups": [
+    {
+      "offset": 60,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "BLIT_CYCLES_TEXT",
+      "frame": "BLIT_CYCLES_TEXT"
+    },
+    {
+      "offset": 266,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "BLIT_CYCLES_TEXT",
+      "frame": "BLIT_CYCLES_TEXT"
+    },
+    {
+      "offset": 306,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "BLIT_CYCLES_TEXT",
+      "frame": "BLIT_CYCLES_TEXT"
+    },
+    {
+      "offset": 339,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "BLIT_CYCLES_TEXT",
+      "frame": "BLIT_CYCLES_TEXT"
+    },
+    {
+      "offset": 476,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "BLIT_CYCLES_TEXT",
+      "frame": "BLIT_CYCLES_TEXT"
+    },
+    {
+      "offset": 487,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "BLIT_CYCLES_TEXT",
+      "frame": "BLIT_CYCLES_TEXT"
+    },
+    {
+      "offset": 624,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "BLIT_CYCLES_TEXT",
+      "frame": "BLIT_CYCLES_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 57810,
+      "end": 58436
+    }
+  }
+}

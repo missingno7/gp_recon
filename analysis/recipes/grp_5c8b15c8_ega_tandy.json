@@ -1,0 +1,276 @@
+{
+  "schema": 1,
+  "id": "grp_5c8b15c8_ega_tandy",
+  "source": "src/cycles/engine/grp_5c8b15c8_ega_tandy.c",
+  "source_sha256": "63278fc1f7c916342b272a4644c2cacec826efbb19b851e5193b81063a0e027d",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_5c8b15c8",
+  "expected_fixups": [
+    {
+      "offset": 351,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_10948",
+      "frame": "_fn_cycles_cga_10948"
+    },
+    {
+      "offset": 343,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_0563e",
+      "frame": "_fn_cycles_cga_0563e"
+    },
+    {
+      "offset": 323,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_06412",
+      "frame": "_fn_cycles_cga_06412"
+    },
+    {
+      "offset": 315,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_0F3D9549",
+      "frame": "_GRP_0F3D9549"
+    },
+    {
+      "offset": 295,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_072ee",
+      "frame": "_fn_cycles_cga_072ee"
+    },
+    {
+      "offset": 235,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_7a614cef",
+      "frame": "_grp_7a614cef"
+    },
+    {
+      "offset": 232,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_013A",
+      "frame": "_G_013A"
+    },
+    {
+      "offset": 228,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_013C",
+      "frame": "_G_013C"
+    },
+    {
+      "offset": 204,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_10948",
+      "frame": "_fn_cycles_cga_10948"
+    },
+    {
+      "offset": 196,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_GRP_7DE44506",
+      "frame": "_GRP_7DE44506"
+    },
+    {
+      "offset": 186,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0457a",
+      "frame": "_g_0457a"
+    },
+    {
+      "offset": 174,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_0563e",
+      "frame": "_fn_cycles_cga_0563e"
+    },
+    {
+      "offset": 143,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_e76f1ca2",
+      "frame": "_grp_e76f1ca2"
+    },
+    {
+      "offset": 132,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_0763a",
+      "frame": "_fn_cycles_cga_0763a"
+    },
+    {
+      "offset": 129,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_b9ea",
+      "frame": "_g_b9ea"
+    },
+    {
+      "offset": 125,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_b9ec",
+      "frame": "_g_b9ec"
+    },
+    {
+      "offset": 116,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_9d44a3bf",
+      "frame": "_grp_9d44a3bf"
+    },
+    {
+      "offset": 106,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_7a614cef",
+      "frame": "_grp_7a614cef"
+    },
+    {
+      "offset": 103,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_013A",
+      "frame": "_G_013A"
+    },
+    {
+      "offset": 99,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_013C",
+      "frame": "_G_013C"
+    },
+    {
+      "offset": 86,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_9d44a3bf",
+      "frame": "_grp_9d44a3bf"
+    },
+    {
+      "offset": 76,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_7a614cef",
+      "frame": "_grp_7a614cef"
+    },
+    {
+      "offset": 73,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_013A",
+      "frame": "_G_013A"
+    },
+    {
+      "offset": 69,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_013C",
+      "frame": "_G_013C"
+    },
+    {
+      "offset": 56,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_9d44a3bf",
+      "frame": "_grp_9d44a3bf"
+    },
+    {
+      "offset": 46,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_7a614cef",
+      "frame": "_grp_7a614cef"
+    },
+    {
+      "offset": 43,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_013A",
+      "frame": "_G_013A"
+    },
+    {
+      "offset": 39,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_013C",
+      "frame": "_G_013C"
+    },
+    {
+      "offset": 26,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_e76f1ca2",
+      "frame": "_grp_e76f1ca2"
+    },
+    {
+      "offset": 15,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_0763a",
+      "frame": "_fn_cycles_cga_0763a"
+    },
+    {
+      "offset": 12,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0457a",
+      "frame": "_g_0457a"
+    },
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0457c",
+      "frame": "_g_0457c"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 59426,
+      "end": 59785
+    },
+    "cycles_tandy": {
+      "start": 47794,
+      "end": 48153
+    }
+  }
+}

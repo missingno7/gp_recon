@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "polygon_scan_convert_cga",
+  "source": "src/cycles/engine/polygon_scan_convert_cga.asm",
+  "source_sha256": "e92b2404896b38c9cd0eeb916beb67a27a6519e0c193a9cc23072784f0f4cc2b",
+  "profile": "masm510",
+  "public": "_polygon_scan_convert",
+  "expected_fixups": [
+    {
+      "offset": 320,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 392,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_0B5A2",
+      "frame": "_FN_CYCLES_CGA_0B5A2"
+    },
+    {
+      "offset": 466,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CYCLES_CGA_0B5CC",
+      "frame": "_FN_CYCLES_CGA_0B5CC"
+    },
+    {
+      "offset": 617,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_CGA_LINE_FILL",
+      "frame": "_CGA_LINE_FILL"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 45868,
+      "end": 46498
+    }
+  }
+}

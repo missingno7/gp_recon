@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0ea18",
+  "source": "src/cycles/engine/forwarding_wrappers.c",
+  "source_sha256": "8008949d966be3c25d0efeb1e0ac809694d051e97bacce3ea33ded5e240b6e02",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_ega_0ea18",
+  "expected_fixups": [
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_cycles_ega_0ea04",
+      "frame": "_fn_cycles_ega_0ea04"
+    },
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_cycles_ega_0e9dc",
+      "frame": "_fn_cycles_ega_0e9dc"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 59928,
+      "end": 59937
+    },
+    "cycles_cga": {
+      "start": 49842,
+      "end": 49851
+    },
+    "cycles_tandy": {
+      "start": 48296,
+      "end": 48305
+    }
+  }
+}

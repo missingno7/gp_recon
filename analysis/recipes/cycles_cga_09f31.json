@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_cga_09f31",
+  "source": "src/cycles/engine/fontdef_segment_write_cga.asm",
+  "source_sha256": "c90b803dcb44a75cd014ea072f1b8f591d47797795c59dad36628a82d2131506",
+  "profile": "masm510",
+  "public": "_fontdef_segment_write",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 40753,
+      "end": 40776
+    }
+  }
+}

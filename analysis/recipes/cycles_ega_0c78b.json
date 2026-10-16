@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0c78b",
+  "source": "src/cycles/engine/clip_state_exit_ega.asm",
+  "source_sha256": "199d6aaea9030b87a7bc87cdd4a789766e95d829a0c44e51e7c72e73b42ea5f0",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0c78b",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_ega": {
+      "start": 51083,
+      "end": 51092
+    }
+  }
+}

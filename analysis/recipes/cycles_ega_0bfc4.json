@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0bfc4",
+  "source": "src/cycles/engine/ega_vector_angle.asm",
+  "source_sha256": "53645c81c7b410ba2cfa1915b35cfa46580fd7753ccfe1ce32256e4f8a32399b",
+  "profile": "masm510",
+  "public": "_vector_angle_from_delta",
+  "expected_fixups": [
+    {
+      "offset": 77,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 79,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 81,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 83,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 85,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 87,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 89,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 91,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 49092,
+      "end": 49226
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_cga_09f14",
+  "source": "src/cycles/engine/fontdef_mask_cga.asm",
+  "source_sha256": "8c6f7fc25dd3e32d1a7e93a674436431862f392a86af7b071cb3b63b7a3b79ca",
+  "profile": "masm510",
+  "public": "_fontdef_mask",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 40724,
+      "end": 40753
+    }
+  }
+}

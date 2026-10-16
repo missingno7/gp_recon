@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "id": "polygon_edge_prepare_ega",
+  "source": "src/cycles/engine/polygon_edge_prepare_ega.asm",
+  "source_sha256": "87be2c80f616704e42297f8c0e71f8977d1b8c168fb8cc5a780ebd4ba1d4b60f",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0d880",
+  "expected_fixups": [
+    {
+      "offset": 74,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 170,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_05710",
+      "frame": "_FN_CYCLES_CGA_05710"
+    },
+    {
+      "offset": 244,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_EGA_0C47A",
+      "frame": "_FN_CYCLES_EGA_0C47A"
+    },
+    {
+      "offset": 276,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_EGA_0C489",
+      "frame": "_FN_CYCLES_EGA_0C489"
+    },
+    {
+      "offset": 306,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_EGA_0B0E5",
+      "frame": "_FN_CYCLES_EGA_0B0E5"
+    },
+    {
+      "offset": 371,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_EGA_0C47A",
+      "frame": "_FN_CYCLES_EGA_0C47A"
+    },
+    {
+      "offset": 403,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_EGA_0C489",
+      "frame": "_FN_CYCLES_EGA_0C489"
+    },
+    {
+      "offset": 451,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 453,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 455,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 457,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 459,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 461,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 463,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 465,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 504,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 515,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 522,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 533,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 549,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 562,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 587,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 602,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 613,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 628,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 639,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CGA_A4F6",
+      "frame": "_G_CGA_A4F6"
+    },
+    {
+      "offset": 654,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 676,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_05710",
+      "frame": "_FN_CYCLES_CGA_05710"
+    },
+    {
+      "offset": 766,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_POLYGON_SCAN_CONVERT",
+      "frame": "_POLYGON_SCAN_CONVERT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 55424,
+      "end": 56216
+    }
+  }
+}

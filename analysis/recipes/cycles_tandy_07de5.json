@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "cycles_tandy_07de5",
+  "source": "src/cycles/engine/clip_line_tandy.asm",
+  "source_sha256": "f4d81269749352b0a2d454f76bf90acd118b4dc6f41cf06095884f505808e1e9",
+  "profile": "masm510",
+  "public": "_fn_cycles_tandy_07de5",
+  "expected_fixups": [
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_tandy": {
+      "start": 32229,
+      "end": 32249
+    }
+  }
+}

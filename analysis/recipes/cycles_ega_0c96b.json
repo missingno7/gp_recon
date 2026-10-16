@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0c96b",
+  "source": "src/cycles/engine/clip_line_ega.asm",
+  "source_sha256": "34664058232ee27ac2737e144ae08b853900e6c9b72c13ca8c984cf9c6ec8179",
+  "profile": "masm510",
+  "public": "_fn_cycles_ega_0c96b",
+  "expected_fixups": [
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 51563,
+      "end": 51583
+    }
+  }
+}

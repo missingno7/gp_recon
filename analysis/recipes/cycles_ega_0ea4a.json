@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0ea4a",
+  "source": "src/cycles/engine/forwarding_wrappers.c",
+  "source_sha256": "8008949d966be3c25d0efeb1e0ac809694d051e97bacce3ea33ded5e240b6e02",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_ega_0ea4a",
+  "expected_fixups": [
+    {
+      "offset": 4,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_e76f1ca2",
+      "frame": "_grp_e76f1ca2"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 59978,
+      "end": 59990
+    },
+    "cycles_cga": {
+      "start": 49892,
+      "end": 49904
+    },
+    "cycles_tandy": {
+      "start": 48346,
+      "end": 48358
+    }
+  }
+}

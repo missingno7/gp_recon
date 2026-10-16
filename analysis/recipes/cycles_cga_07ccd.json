@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_cga_07ccd",
+  "source": "src/cycles/engine/clip_coordinate_dispatch_cga.asm",
+  "source_sha256": "f6cdbec1df0605b16ffe9a36b344c41380884a2ee5208b41437347939af3216d",
+  "profile": "masm510",
+  "public": "_fn_cycles_cga_07ccd",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 31949,
+      "end": 31976
+    }
+  }
+}

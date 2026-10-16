@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "cycles_cga_09f6a",
+  "source": "src/cycles/engine/fontdef_copy_cga.asm",
+  "source_sha256": "a89861eff1bd352b7e4e300b53249765d55a2bdedcd4e31ec7cbbaa032cd44fc",
+  "profile": "masm510",
+  "public": "_fontdef_copy",
+  "expected_fixups": [],
+  "targets": {
+    "cycles_cga": {
+      "start": 40810,
+      "end": 40838
+    }
+  }
+}

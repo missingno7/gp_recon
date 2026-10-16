@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "cycles_ega_0fd34",
+  "source": "src/cycles/engine/resource_status_probe.c",
+  "source_sha256": "3be790f1951b526acae132eda5730538cbb6db7d511d8403900b504127163b92",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_ega_0fd34",
+  "expected_fixups": [
+    {
+      "offset": 34,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0098",
+      "frame": "_g_0098"
+    },
+    {
+      "offset": 21,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_10948",
+      "frame": "_fn_cycles_cga_10948"
+    },
+    {
+      "offset": 13,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_0563e",
+      "frame": "_fn_cycles_cga_0563e"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 64820,
+      "end": 64865
+    },
+    "cycles_cga": {
+      "start": 54734,
+      "end": 54779
+    },
+    "cycles_tandy": {
+      "start": 53188,
+      "end": 53233
+    }
+  }
+}
