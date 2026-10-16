@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_initialize_heap_08150_91f0",
+  "source": "src/circuit/engine/circuit_initialize_heap.c",
+  "source_sha256": "780fe492b54cff4e3703adce26961b20191f1a33bea0b3740a4383ae40515b49",
+  "profile": "msc510-small-o_gs",
+  "public": "_circuit_initialize_heap_08150",
+  "expected_fixups": [
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_e8a09c59",
+      "frame": "_grp_e8a09c59"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 33104,
+      "end": 33115
+    },
+    "circuit_cga": {
+      "start": 37360,
+      "end": 37371
+    }
+  }
+}

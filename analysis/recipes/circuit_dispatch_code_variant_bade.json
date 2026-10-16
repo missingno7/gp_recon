@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "circuit_dispatch_code_variant_bade",
+  "source": "src/circuit/engine/dispatch_code_variant_cga.asm",
+  "source_sha256": "0ce221791db44c4feb5b5c470e24487ed59b94068379832b78ec813fb8ad68ac",
+  "profile": "masm510",
+  "public": "_fn_circuit_cga_0bade",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_BA6C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0B672",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 47838,
+      "end": 47871
+    }
+  }
+}

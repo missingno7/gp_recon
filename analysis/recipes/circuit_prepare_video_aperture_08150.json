@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_prepare_video_aperture_08150",
+  "source": "src/circuit/engine/prepare_video_aperture.c",
+  "source_sha256": "509137d1c4ee036308ddd1c8bcfd56bb5c6dac72444f77a1ac7ae93adaf3d3e3",
+  "profile": "msc510-small-o_gs",
+  "public": "_fn_circuit_ega_08150",
+  "expected_fixups": [
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_e8a09c59",
+      "frame": "_grp_e8a09c59"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 33104,
+      "end": 33115
+    },
+    "circuit_cga": {
+      "start": 37360,
+      "end": 37371
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "grp_b1f1df1b",
+  "source": "src/circuit/engine/resource_list_resolve.asm",
+  "source_sha256": "e5286af2fb3d972bf0f8ae5c131a631f29b97dd98161d67e3d389f2b9edfc1ca",
+  "profile": "masm510",
+  "public": "_grp_b1f1df1b",
+  "expected_fixups": [
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F2",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_3919C85A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 62,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TAIL",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 76,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F0",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 89,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F0",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 129,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F2",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 135,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F2",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 139,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_420C3CF4",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 146,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F2",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 150,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F0",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 173,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F2",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 178,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_2A1DACEA",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 33649,
+      "end": 33834
+    },
+    "circuit_cga": {
+      "start": 37905,
+      "end": 38090
+    }
+  }
+}

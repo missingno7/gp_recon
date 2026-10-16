@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_dos_delete_file_fe7c",
+  "source": "src/circuit/system/dos_delete_file.asm",
+  "source_sha256": "eadbb94b546daed81d3ddf8c12d784667f065a797167cc68b2a0fc4a1513743a",
+  "profile": "masm510",
+  "public": "_dos_delete_file",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0E522",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 65148,
+      "end": 65161
+    },
+    "circuit_cga": {
+      "start": 50254,
+      "end": 50267
+    }
+  }
+}

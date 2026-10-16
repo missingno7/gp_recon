@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "circuit_cga_copy_blitter_template_b418",
+  "source": "src/circuit/graphics/cga_copy_blitter_template_b418.asm",
+  "source_sha256": "881d2d95fac789ec5d71a66012ab1b2b1c7ecdfad9557b3f1e7a6352fa506079",
+  "profile": "masm510",
+  "public": "_fn_circuit_cga_0b418",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 46104,
+      "end": 46133
+    }
+  }
+}

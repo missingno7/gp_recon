@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "circuit_fixed_point_mul_helper_10285_de03",
+  "source": "src/circuit/engine/fixed_point_multiply_helpers.asm",
+  "source_sha256": "d335b41e32178de723b1caf7d36d0257703bbee8bcd945a1c2fb083988d7c8ea",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_10285",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 66181,
+      "end": 66203
+    },
+    "circuit_cga": {
+      "start": 56835,
+      "end": 56857
+    }
+  }
+}

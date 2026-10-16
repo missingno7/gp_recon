@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "id": "circuit_graphics_raster_body_0a05a_cga",
+  "source": "src/circuit/graphics/cga_raster_entry_0a05a.asm",
+  "source_sha256": "0469d574e22d8e7381d8ebf3532cbfc3571e0e2c52334799ec6c2342ef185742",
+  "profile": "masm510",
+  "public": "_fn_circuit_cga_0a05a",
+  "expected_fixups": [
+    {
+      "offset": 41,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4810",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 50,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7CC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 69,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4810",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 91,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7CC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 136,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 145,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 165,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 187,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 220,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7BC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 230,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_480A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 243,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_A14F",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 245,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_A157",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 247,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_A17B",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 249,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_A1C2",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 251,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_A20E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 287,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 358,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 434,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 504,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 41050,
+      "end": 41556
+    }
+  }
+}

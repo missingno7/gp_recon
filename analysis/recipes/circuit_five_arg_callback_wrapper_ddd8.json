@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "circuit_five_arg_callback_wrapper_ddd8",
+  "source": "src/circuit/engine/five_arg_callback_wrapper.c",
+  "source_sha256": "aa68768c1eb66bae6607b8d95ea26cdbce75bf712fc2aa3f553a5eba2f9ba691",
+  "profile": "msc510-small-o_gs",
+  "public": "_fn_circuit_ega_0ddd8",
+  "expected_fixups": [
+    {
+      "offset": 34,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_report_error_and_exit",
+      "frame": "_report_error_and_exit"
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_e5a16c1f",
+      "frame": "_grp_e5a16c1f"
+    },
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_06ffe",
+      "frame": "_fn_circuit_ega_06ffe"
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0776f",
+      "frame": "_fn_circuit_ega_0776f"
+    },
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_072fc",
+      "frame": "_fn_circuit_ega_072fc"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 56792,
+      "end": 56830
+    },
+    "circuit_cga": {
+      "start": 47030,
+      "end": 47068
+    }
+  }
+}

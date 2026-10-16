@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "circuit_state_pair_write_mode3_08bc6",
+  "source": "src/circuit/engine/state_pair_write_mode3.asm",
+  "source_sha256": "8e2d411e34f8a072faf6661e6ebedcf1c3363dc2c98ea0c35a42f467f71863cc",
+  "profile": "masm510",
+  "public": "_state_pair_write_mode3",
+  "expected_fixups": [
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8017",
+      "frame": "_G_8017"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_800A",
+      "frame": "_G_CIR_800A"
+    },
+    {
+      "offset": 21,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_800C",
+      "frame": "_G_CIR_800C"
+    },
+    {
+      "offset": 25,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8018",
+      "frame": "_G_8018"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35782,
+      "end": 35813
+    },
+    "circuit_cga": {
+      "start": 43622,
+      "end": 43653
+    }
+  }
+}

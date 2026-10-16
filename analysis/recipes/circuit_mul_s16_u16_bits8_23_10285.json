@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "circuit_mul_s16_u16_bits8_23_10285",
+  "source": "src/circuit/engine/mul_s16_u16_bits8_23.asm",
+  "source_sha256": "02eb4b47e52d9e864f98a4a7eeadc0382fbe9829c5cca57be8776c18de2b942d",
+  "profile": "masm510",
+  "public": "_mul_s16_u16_bits8_23",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 66181,
+      "end": 66203
+    },
+    "circuit_cga": {
+      "start": 56835,
+      "end": 56857
+    }
+  }
+}

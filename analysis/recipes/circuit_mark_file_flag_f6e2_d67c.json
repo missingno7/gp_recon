@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "circuit_mark_file_flag_f6e2_d67c",
+  "source": "src/circuit/engine/mark_file_flag.asm",
+  "source_sha256": "8376f92cb7277667a4ec3d21353fc7361112b29b64d56b7fe2fe6864d57b923e",
+  "profile": "masm510",
+  "public": "_mark_file_flag",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 63202,
+      "end": 63220
+    },
+    "circuit_cga": {
+      "start": 54908,
+      "end": 54926
+    }
+  }
+}

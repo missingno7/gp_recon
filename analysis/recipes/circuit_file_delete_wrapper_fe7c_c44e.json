@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_file_delete_wrapper_fe7c_c44e",
+  "source": "src/circuit/system/file_delete_wrapper.asm",
+  "source_sha256": "6fa8c7f4e94e260589b20f16063edcabfce1506010cc6bc8824e036f8d07dd43",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0fe7c",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0E522",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 65148,
+      "end": 65161
+    },
+    "circuit_cga": {
+      "start": 50254,
+      "end": 50267
+    }
+  }
+}

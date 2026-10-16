@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "circuit_atomic_counter_accumulate_08c1d",
+  "source": "src/circuit/engine/atomic_counter_accumulate.c",
+  "source_sha256": "0dda87bf6e020c7da998373292ad53d649df454174f23fc20e3f82d5bb2ad86a",
+  "profile": "msc510-small-o_gs",
+  "public": "_fn_circuit_ega_08c1d",
+  "expected_fixups": [
+    {
+      "offset": 17,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8b40",
+      "frame": "_g_cir_8b40"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8b40",
+      "frame": "_g_cir_8b40"
+    },
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08bf2",
+      "frame": "_fn_circuit_ega_08bf2"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35869,
+      "end": 35890
+    },
+    "circuit_cga": {
+      "start": 43709,
+      "end": 43730
+    }
+  }
+}

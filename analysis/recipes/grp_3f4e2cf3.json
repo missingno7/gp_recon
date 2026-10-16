@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "grp_3f4e2cf3",
+  "source": "src/circuit/loader/resource_cursor_reserve.asm",
+  "source_sha256": "85c411694c94c3485d07ae7be51e158fd36660a188e357cc31edc563aa339fd6",
+  "profile": "masm510",
+  "public": "_grp_3f4e2cf3",
+  "expected_fixups": [
+    {
+      "offset": 30,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_RESOURCE_CURSOR",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 37,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_RESOURCE_CURSOR",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 45,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_04EA201C",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35622,
+      "end": 35677
+    },
+    "circuit_cga": {
+      "start": 43010,
+      "end": 43065
+    }
+  }
+}

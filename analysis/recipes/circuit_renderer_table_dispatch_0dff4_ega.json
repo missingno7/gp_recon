@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "circuit_renderer_table_dispatch_0dff4_ega",
+  "source": "src/circuit/graphics/renderer_table_dispatch.asm",
+  "source_sha256": "346e724aa50acbff80a2111251aff8181eb6b6311b830fb8ff52d2ce1d6fc3bf",
+  "profile": "masm510",
+  "public": "_setup_renderer_from_table_dff4",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_DF9A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_EGA_SETUP_BODY_0D8EE",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 57332,
+      "end": 57365
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_file_mode_filter_0f4bb",
+  "source": "src/circuit/system/file_mode_filter.asm",
+  "source_sha256": "df0dd5bf2cda13c1b578c1aa1b615de844060028b82d77ffa7b548a33d0b018d",
+  "profile": "masm510",
+  "public": "_file_mode_filter",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8C3D",
+      "frame": "_G_CIR_8C3D"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 62651,
+      "end": 62668
+    },
+    "circuit_cga": {
+      "start": 49185,
+      "end": 49202
+    }
+  }
+}

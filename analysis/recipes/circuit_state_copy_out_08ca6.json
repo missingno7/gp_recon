@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_state_copy_out_08ca6",
+  "source": "src/circuit/engine/state_copy_helpers.asm",
+  "source_sha256": "8f44d981b50a391aeeeec6242aeaad21e2d64d9cd10bf9ee892a8264dc71aad0",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_08ca6",
+  "expected_fixups": [
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8B44",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 36006,
+      "end": 36031
+    },
+    "circuit_cga": {
+      "start": 43846,
+      "end": 43871
+    }
+  }
+}

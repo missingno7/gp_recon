@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "circuit_dos_close_handle_checked_f28e",
+  "source": "src/circuit/fileio/dos_close_handle_checked.asm",
+  "source_sha256": "b996ee61237d22e8bfcc20b65edf47260ca43050c6b1202fdee2051f2e6c82e3",
+  "profile": "masm510",
+  "public": "_dos_close_handle_checked",
+  "expected_fixups": [
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8C48",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8C4A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 30,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0E522",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 62094,
+      "end": 62126
+    },
+    "circuit_cga": {
+      "start": 48628,
+      "end": 48660
+    }
+  }
+}

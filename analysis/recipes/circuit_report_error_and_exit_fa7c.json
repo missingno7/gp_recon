@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "circuit_report_error_and_exit_fa7c",
+  "source": "src/circuit/system/report_error_and_exit.asm",
+  "source_sha256": "233d1b40938fa5885b47166340428457d8fd8c8e72f17234508a73abc8a3a896",
+  "profile": "masm510",
+  "public": "_report_error_and_exit",
+  "expected_fixups": [
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_97985841",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_DA1E7B44",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 22,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_80E23552",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 64124,
+      "end": 64152
+    },
+    "circuit_cga": {
+      "start": 49908,
+      "end": 49936
+    }
+  }
+}

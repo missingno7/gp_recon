@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "circuit_state_ring_rotate_byte_08b08_ega",
+  "source": "src/circuit/engine/state_ring_rotate_byte.asm",
+  "source_sha256": "a79399f57a7e70e5a62ffa12686d91ca9f1c6385292e868af6b3b743a0479f26",
+  "profile": "masm510",
+  "public": "_state_ring_rotate_byte",
+  "expected_fixups": [
+    {
+      "offset": 3,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8A1E",
+      "frame": "_G_CIR_8A1E"
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8A1E",
+      "frame": "_G_CIR_8A1E"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8A20",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8A20",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35592,
+      "end": 35621
+    },
+    "circuit_cga": {
+      "start": 42680,
+      "end": 42709
+    }
+  }
+}

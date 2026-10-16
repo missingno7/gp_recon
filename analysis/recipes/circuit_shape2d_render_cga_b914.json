@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "circuit_shape2d_render_cga_b914",
+  "source": "src/circuit/graphics/shape2d_render_cga.asm",
+  "source_sha256": "5bf891a7747b845a5108291b591d6cc7162d7fbc1d990d817a575df83ad88266",
+  "profile": "masm510",
+  "public": "_fn_circuit_cga_0b914",
+  "expected_fixups": [
+    {
+      "offset": 52,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "DGROUP",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 57,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_7D50CA88",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 172,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 335,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 341,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 47380,
+      "end": 47723
+    }
+  }
+}

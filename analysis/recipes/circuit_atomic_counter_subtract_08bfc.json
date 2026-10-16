@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "circuit_atomic_counter_subtract_08bfc",
+  "source": "src/circuit/engine/atomic_counter_subtract.asm",
+  "source_sha256": "a5c6e6c3c8b1f37a578d46cca6322e235149120dc22482f38c5ab3beb958e14b",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_08bfc",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_7FE4",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_7FE6",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35836,
+      "end": 35860
+    },
+    "circuit_cga": {
+      "start": 43676,
+      "end": 43700
+    }
+  }
+}

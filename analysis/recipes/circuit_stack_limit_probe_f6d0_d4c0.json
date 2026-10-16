@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_stack_limit_probe_f6d0_d4c0",
+  "source": "src/circuit/system/stack_limit_probe.asm",
+  "source_sha256": "98aaf11c25ad0f70b4d44b7a77f0a9edf18fcc08024b807d05c6e6fbdcca2153",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0f6d0",
+  "expected_fixups": [
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8C74",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 63184,
+      "end": 63202
+    },
+    "circuit_cga": {
+      "start": 54464,
+      "end": 54482
+    }
+  }
+}

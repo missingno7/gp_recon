@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "circuit_ega_blitter_setup_0b184",
+  "source": "src/circuit/graphics/ega_blitter_setup_0b184.asm",
+  "source_sha256": "a041dacfb1b1062dee58a5609826f6d9739ddd578e0658ad614f863b57dedf54",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0b184",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 45444,
+      "end": 45494
+    }
+  }
+}

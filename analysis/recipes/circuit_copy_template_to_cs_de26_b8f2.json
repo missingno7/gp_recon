@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_copy_template_to_cs_de26_b8f2",
+  "source": "src/circuit/engine/copy_template_to_cs.asm",
+  "source_sha256": "7a4adbf1d5f07fa662cd74f275b56db934d62cb8c3dff15354005f05f12ba899",
+  "profile": "masm510",
+  "public": "_copy_template_to_cs",
+  "expected_fixups": [
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_TEMPLATE_COPY_SOURCE",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 56870,
+      "end": 56898
+    },
+    "circuit_cga": {
+      "start": 47346,
+      "end": 47374
+    }
+  }
+}

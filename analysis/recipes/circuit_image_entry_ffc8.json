@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "circuit_image_entry_ffc8",
+  "source": "src/circuit/system/circuit_image_entry.asm",
+  "source_sha256": "406dea9561787433920d85bec54e6018af4374a6fc10eb4699f755649477f8f3",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0ffc8",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_05EBE",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7188",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_66C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 17,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_66E",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 20,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_2005C197",
+      "frame": "ROMSEG"
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_BBB9E788",
+      "frame": "ROMSEG"
+    },
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_C3FF30EB",
+      "frame": "ROMSEG"
+    },
+    {
+      "offset": 40,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_E4A1C50F",
+      "frame": "ROMSEG"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 65480,
+      "end": 65523
+    },
+    "circuit_cga": {
+      "start": 56134,
+      "end": 56177
+    }
+  }
+}

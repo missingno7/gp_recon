@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "circuit_raster_mode_entry_cga_09b70",
+  "source": "src/circuit/graphics/raster_tail_entries_cga.asm",
+  "source_sha256": "f189ca819b01bedeb07461982c636acf0a3196a415aae317fcbc2c6b887b286a",
+  "profile": "masm510",
+  "public": "_fn_circuit_cga_09b70",
+  "expected_fixups": [
+    {
+      "offset": 12,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8B4A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8B4C",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 39792,
+      "end": 39814
+    }
+  }
+}

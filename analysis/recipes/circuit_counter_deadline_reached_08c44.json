@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "circuit_counter_deadline_reached_08c44",
+  "source": "src/circuit/engine/counter_deadline.asm",
+  "source_sha256": "dfc6a53a0342a5fddbd89e1b22d0c410b285547b85a4ae6d844cf8ec9da465ae",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_08c44",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_08BF2",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8B42",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8B40",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35908,
+      "end": 35932
+    },
+    "circuit_cga": {
+      "start": 43748,
+      "end": 43772
+    }
+  }
+}

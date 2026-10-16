@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "circuit_raster_mode_body_ega_0b9e9",
+  "source": "src/circuit/graphics/raster_tail_entries_ega.asm",
+  "source_sha256": "4ac254344ef85c11c422d522e4be3eeae229097f148f9acc6a27b3d69e338aaa",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0b9e9",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_C7BC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8B44",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8B46",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 58,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_C7CE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_C7BC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8B5A",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 47593,
+      "end": 47687
+    }
+  }
+}

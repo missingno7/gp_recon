@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "circuit_graphics_renderer_point_entry_08ff2_cga",
+  "source": "src/circuit/graphics/cga_renderer_point_entry.asm",
+  "source_sha256": "f072c5fc5000383db421b0ffbfa43eb28b91d44082bec847f99640e4e8ab798c",
+  "profile": "masm510",
+  "public": "_fn_circuit_cga_068ac",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 26796,
+      "end": 26831
+    }
+  }
+}

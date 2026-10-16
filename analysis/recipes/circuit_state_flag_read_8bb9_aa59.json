@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_state_flag_read_8bb9_aa59",
+  "source": "src/circuit/engine/circuit_state_flag_read.asm",
+  "source_sha256": "d11899cd3226d5bf9a318467803a8ec8420174c7ac3c3b7cfee974ca938d948c",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_08bb9",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8018",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35769,
+      "end": 35775
+    },
+    "circuit_cga": {
+      "start": 43609,
+      "end": 43615
+    }
+  }
+}

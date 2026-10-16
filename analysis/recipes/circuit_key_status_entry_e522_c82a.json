@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "circuit_key_status_entry_e522_c82a",
+  "source": "src/circuit/engine/circuit_key_status_entries.asm",
+  "source_sha256": "b33e6b045cc1023730bcb47529af7ed57009a074c4e8d2914e41e0c824bbd9f7",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0e522",
+  "expected_fixups": [
+    {
+      "offset": 12,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CIRCUIT_KEYCODE_TRANSLATE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 22,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_CIRCUIT_KEYCODE_TRANSLATE",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 58658,
+      "end": 58690
+    },
+    "circuit_cga": {
+      "start": 51242,
+      "end": 51274
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_read_state_byte_08bb9",
+  "source": "src/circuit/engine/read_state_byte.asm",
+  "source_sha256": "1e2f1336703657336c887e304dc95dadaeeed8e83f0dc7a9c8babc99e9ce3999",
+  "profile": "masm510",
+  "public": "_read_circuit_state_byte",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8018",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35769,
+      "end": 35775
+    },
+    "circuit_cga": {
+      "start": 43609,
+      "end": 43615
+    }
+  }
+}

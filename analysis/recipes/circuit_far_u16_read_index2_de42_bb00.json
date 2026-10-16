@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "circuit_far_u16_read_index2_de42_bb00",
+  "source": "src/circuit/engine/far_u16_read_index2.asm",
+  "source_sha256": "44f3ecf42265b06bbb0d91ff1c307667621a3f5b58bc6e053b5e710b5185b681",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0de42",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 56898,
+      "end": 56915
+    },
+    "circuit_cga": {
+      "start": 47872,
+      "end": 47889
+    }
+  }
+}

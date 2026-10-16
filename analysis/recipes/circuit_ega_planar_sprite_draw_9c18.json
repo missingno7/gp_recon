@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "circuit_ega_planar_sprite_draw_9c18",
+  "source": "src/circuit/graphics/ega_planar_sprite_draw_9c18.asm",
+  "source_sha256": "9f0c57c7810d1b152b5d76da2c49d750e2803c812a5b1e33672dd16972038181",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_09c18",
+  "expected_fixups": [
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7BC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 80,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_9BD8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 92,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_9BF8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 140,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_9BD8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 150,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_9DA7",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 181,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_9BD8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 191,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_9DBC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 217,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E94",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 248,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_9BB8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 303,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_9BC4",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 389,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 39960,
+      "end": 40359
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "schema": 1,
+  "id": "circuit_cga_planar_region_blitter_6bee",
+  "source": "src/circuit/graphics/cga_planar_region_blitter_6bee.asm",
+  "source_sha256": "45b8e1706c617e7563f6bbd1b7963605678dcdde61e59be39d7acfb3b88bc8b7",
+  "profile": "masm510",
+  "public": "_fn_circuit_cga_06bee",
+  "expected_fixups": [
+    {
+      "offset": 16,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7BC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 20,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0A846",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 31,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0A848",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 49,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0A84A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 61,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7CC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 79,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A844",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 148,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_6BDE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 158,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_6BE2",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 195,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_6BE6",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 205,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_6BE6",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 211,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 239,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 264,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0A84A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 273,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0A84A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 280,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0A84A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 285,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7CC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 296,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7CC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 307,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A844",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 326,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_6BEA",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 351,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 558,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0A84A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 565,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7CC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 598,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 606,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0A84A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 613,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7CC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 627,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A844",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 639,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_6BEA",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 676,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 694,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0A84A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 701,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7CC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 724,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 729,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7CC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 753,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A844",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 765,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_6BEA",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 802,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 27630,
+      "end": 28434
+    }
+  }
+}

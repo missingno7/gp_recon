@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "circuit_ega_graphics_controller_init_9dee",
+  "source": "src/circuit/graphics/ega_graphics_controller_init.asm",
+  "source_sha256": "4bea746a98a2c08d680f2fde37fd5d469802f882ba2953d5148570cca98e05a8",
+  "profile": "masm510",
+  "public": "_ega_graphics_controller_init",
+  "expected_fixups": [
+    {
+      "offset": 45,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_FE15C5CD",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 40430,
+      "end": 40519
+    }
+  }
+}

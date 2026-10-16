@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "circuit_copy_far_field_pair_deb2",
+  "source": "src/circuit/engine/copy_far_field_pair.asm",
+  "source_sha256": "ec5c91e02b9cb6b31f368d742b02fc28bbe6dec55746faf790c5f38393af45c6",
+  "profile": "masm510",
+  "public": "_copy_far_field_pair",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 57010,
+      "end": 57046
+    },
+    "circuit_cga": {
+      "start": 47984,
+      "end": 48020
+    }
+  }
+}

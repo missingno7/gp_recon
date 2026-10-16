@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_format_long_to_ascii_fa72",
+  "source": "src/circuit/engine/format_long_to_ascii.asm",
+  "source_sha256": "2353ebb8068c342fb5de15421773d974d8ec9429cbed039965587b3d77f09634",
+  "profile": "masm510",
+  "public": "_format_long_to_ascii",
+  "expected_fixups": [
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "__CLTOASUB",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 64114,
+      "end": 64124
+    },
+    "circuit_cga": {
+      "start": 54996,
+      "end": 55006
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "grp_04ea201c",
+  "source": "src/circuit/engine/resource_slot_update.asm",
+  "source_sha256": "96cedb16f3267af911fa12e929b8698bf014ca98bdfcd0743cb56f0598f56522",
+  "profile": "masm510",
+  "public": "_grp_04ea201c",
+  "expected_fixups": [
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8904",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8902",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CATALOG_ERROR_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 36,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0DDD8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 45,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8904",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 60,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8904",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 34363,
+      "end": 34429
+    },
+    "circuit_cga": {
+      "start": 38619,
+      "end": 38685
+    }
+  }
+}

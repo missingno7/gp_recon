@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_dos_error_return_0e535",
+  "source": "src/circuit/system/dos_error_return.asm",
+  "source_sha256": "0261e3ed3cfca038f3d9ac09b64f83c73887c55529f6521c22b2ef90ab23b421",
+  "profile": "masm510",
+  "public": "_dos_error_return",
+  "expected_fixups": [
+    {
+      "offset": 3,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_42D76EE3",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 58677,
+      "end": 58690
+    },
+    "circuit_cga": {
+      "start": 51261,
+      "end": 51274
+    }
+  }
+}

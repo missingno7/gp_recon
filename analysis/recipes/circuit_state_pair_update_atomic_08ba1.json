@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "circuit_state_pair_update_atomic_08ba1",
+  "source": "src/circuit/engine/state_pair_update_atomic.asm",
+  "source_sha256": "64a2c6c73aa53a4c66452a9e57dd0f11b2f0190a5c166fb534f9aadb373857ad",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_08ba1",
+  "expected_fixups": [
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_800A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_800C",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_8018",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35745,
+      "end": 35769
+    },
+    "circuit_cga": {
+      "start": 43585,
+      "end": 43609
+    }
+  }
+}

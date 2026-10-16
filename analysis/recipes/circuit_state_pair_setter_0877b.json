@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "circuit_state_pair_setter_0877b",
+  "source": "src/circuit/engine/state_pair_setters.c",
+  "source_sha256": "e769a4c8a32f23aa575091e94f87bf2390b3f3f86ac27f931eb09a049f17f864",
+  "profile": "msc510-small-o_gs",
+  "public": "_fn_circuit_ega_0877b",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_895f",
+      "frame": "_g_cir_895f"
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_895d",
+      "frame": "_g_cir_895d"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 34683,
+      "end": 34700
+    },
+    "circuit_cga": {
+      "start": 40075,
+      "end": 40092
+    }
+  }
+}

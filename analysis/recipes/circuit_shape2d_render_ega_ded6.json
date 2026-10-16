@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "circuit_shape2d_render_ega_ded6",
+  "source": "src/circuit/graphics/shape2d_render_ega.asm",
+  "source_sha256": "014ec51a1fdd3e46659b6210e83379caf2ad6b0a941372bd7d74e14cbf741664",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0ded6",
+  "expected_fixups": [
+    {
+      "offset": 40,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "DGROUP",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 45,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_7D50CA88",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 57046,
+      "end": 57242
+    }
+  }
+}

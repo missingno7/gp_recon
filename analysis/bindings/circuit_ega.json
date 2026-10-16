@@ -90,6 +90,15 @@
         "single_02cb6"
       ]
     },
+    "GRP_B6CBA47C": {
+      "address": "0000:FF2E",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_ega_0ff2e; Pascal external spelling for grp_b6cba47c, inventory/group evidence",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_random_next_fcf6_c428"
+      ]
+    },
     "INIT_TABLE_TEXT": {
       "address": "0000:0000",
       "confidence": "high",
@@ -3589,6 +3598,15 @@
         "runtime_grp_9fab0c54"
       ]
     },
+    "__cltoasub": {
+      "address": "0000:FBEE",
+      "confidence": "high",
+      "provenance": "Public __cltoasub in pinned MSC 5.10 SLIBCR.LIB member xtoa.asm; exact 95-byte run at circuit_ega:0xfbee in analysis/runtime_libraries.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_format_long_to_ascii_fa72"
+      ]
+    },
     "_catalog_error_text": {
       "address": "0000:86B1",
       "confidence": "medium",
@@ -3599,6 +3617,16 @@
         "grp_3f05a1a6"
       ]
     },
+    "_circuit_keycode_translate": {
+      "address": "0000:E548",
+      "confidence": "medium",
+      "provenance": "inventory start for the matching keycode-normalization helper at circuit_ega:0000:E548; direct callee of the paired status entries",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_key_status_entry_e522_c82a",
+        "circuit_key_status_entry_e535_c83d"
+      ]
+    },
     "_cs_resource_cursor": {
       "address": "0000:CAD2",
       "confidence": "medium",
@@ -3606,6 +3634,15 @@
       "staged_by": "decomp-circuit-b",
       "uses": [
         "grp_3f4e2cf3"
+      ]
+    },
+    "_ega_setup_body_0d8ee": {
+      "address": "0000:D8EE",
+      "confidence": "high",
+      "provenance": "inventory function circuit_ega_0d8ee start; direct call target from circuit_ega:0xe00d",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_renderer_table_dispatch_0dff4"
       ]
     },
     "_fn_circuit_ega_0010": {
@@ -4093,6 +4130,15 @@
         "single_refresh_status_5783"
       ]
     },
+    "_fn_circuit_ega_0b163": {
+      "address": "0000:B163",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_ega_0b163 start; source of the tail-entry at 0x8ff2",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_graphics_renderer_point_entry_08ff2"
+      ]
+    },
     "_fn_circuit_ega_0b184": {
       "address": "0000:B184",
       "confidence": "medium",
@@ -4165,6 +4211,15 @@
         "single_update_display_item_4553"
       ]
     },
+    "_fn_circuit_ega_0d8ee": {
+      "address": "0000:D8EE",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_ega_0d8ee start; direct near call from circuit_ega_0dff4.",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0dff4"
+      ]
+    },
     "_fn_circuit_ega_0ddd8": {
       "address": "0000:DDD8",
       "confidence": "medium",
@@ -4184,6 +4239,12 @@
       "address": "0000:DE26",
       "confidence": "medium",
       "provenance": "inventory callee entry referenced by grp_d1ec52d7",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0ded6": {
+      "address": "0000:DED6",
+      "confidence": "medium",
+      "provenance": "inventory function fn_circuit_ega_0ded6 start; direct callee of grp_aa88d69b",
       "staged_by": "decomp-circuit-b"
     },
     "_fn_circuit_ega_0dff4": {
@@ -4249,6 +4310,15 @@
       "provenance": "inventory function circuit_ega_0e276 entry",
       "staged_by": "decomp-circuit-b"
     },
+    "_fn_circuit_ega_0e522": {
+      "address": "0000:E522",
+      "confidence": "medium",
+      "provenance": "inventory function start for Circuit key-status entry at circuit_ega:0000:E522; paired entry verified by strict wrapper branch target",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_file_delete_wrapper_fe7c_c44e"
+      ]
+    },
     "_fn_circuit_ega_0e535": {
       "address": "0000:E535",
       "confidence": "medium",
@@ -4305,6 +4375,12 @@
       "uses": [
         "grp_2de0858f"
       ]
+    },
+    "_fn_circuit_ega_0fcf6": {
+      "address": "0000:FCF6",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_ega_0fcf6; paired by matching four caller anchors and LCG body",
+      "staged_by": "decomp-circuit-b"
     },
     "_fn_circuit_ega_3fa0": {
       "address": "0000:3fa0",
@@ -7335,6 +7411,663 @@
         "grp_d1ec52d7"
       ]
     },
+    "_g_cir_5d52": {
+      "address": "108F:5D52",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte table displacement indexed by BX at circuit_ega:0x102A4, 0x102B0; DGROUP base from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_signed_byte_table_lookup_1029b"
+      ]
+    },
+    "_g_cir_718a": {
+      "address": "108F:718A",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS word add/store at circuit_ega:0x10224/0x1023B and circuit_cga:0xDDA2/0xDDB9; DGROUP bases from analysis/inventory",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_clamp_integrated_offset_1021a"
+      ]
+    },
+    "_g_cir_7fe4": {
+      "address": "108F:7FE4",
+      "confidence": "medium",
+      "provenance": "operand-derived DS word read in the paired atomic snapshot routine (EGA 0x8BF3 / CGA 0xAA93); EGA offset defines the Circuit symbol name",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_atomic_counter_snapshot_read"
+      ]
+    },
+    "_g_cir_7fe6": {
+      "address": "108F:7FE6",
+      "confidence": "medium",
+      "provenance": "operand-derived DS word read in the paired atomic snapshot routine (EGA 0x8BF6 / CGA 0xAA96); EGA offset defines the Circuit symbol name",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_atomic_counter_snapshot_read"
+      ]
+    },
+    "_g_cir_800a": {
+      "address": "108F:800A",
+      "confidence": "medium",
+      "provenance": "operand-derived DS writes in setter at circuit_ega:0x8ba1 / circuit_cga:0xaa41",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_state_pair_update_atomic_08ba1",
+        "circuit_publish_interrupt_hook_08b70"
+      ]
+    },
+    "_g_cir_800c": {
+      "address": "108F:800C",
+      "confidence": "medium",
+      "provenance": "operand-derived DS writes in setter at circuit_ega:0x8ba1 / circuit_cga:0xaa41",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_state_pair_update_atomic_08ba1",
+        "circuit_publish_interrupt_hook_08b70"
+      ]
+    },
+    "_g_cir_800e": {
+      "address": "108F:800E",
+      "confidence": "medium",
+      "provenance": "operand-derived word store at circuit_ega:0x8B77 / circuit_cga:0xAA17; DGROUP base from analysis/inventory",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_publish_interrupt_hook_08b70"
+      ]
+    },
+    "_g_cir_8010": {
+      "address": "108F:8010",
+      "confidence": "medium",
+      "provenance": "operand-derived word store at circuit_ega:0x8B7D / circuit_cga:0xAA1D; DGROUP base from analysis/inventory",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_publish_interrupt_hook_08b70"
+      ]
+    },
+    "_g_cir_8018": {
+      "address": "108F:8018",
+      "confidence": "medium",
+      "provenance": "absolute DS byte read at circuit_ega:0x8bb9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_read_flag_8bb9"
+      ]
+    },
+    "_g_cir_8019": {
+      "address": "108F:8019",
+      "confidence": "medium",
+      "provenance": "absolute DS byte write at circuit_ega:0x8b9b; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_clear_flag_8b9b"
+      ]
+    },
+    "_g_cir_892f": {
+      "address": "108F:892F",
+      "confidence": "medium",
+      "provenance": "operand-derived DS word stores in circuit_state_pair_setter_0876a; EGA offsets determine the shared source name",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_state_pair_setter_0876a"
+      ]
+    },
+    "_g_cir_8931": {
+      "address": "108F:8931",
+      "confidence": "medium",
+      "provenance": "operand-derived DS word stores in circuit_state_pair_setter_0876a; EGA offsets determine the shared source name",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_state_pair_setter_0876a"
+      ]
+    },
+    "_g_cir_895d": {
+      "address": "108F:895D",
+      "confidence": "medium",
+      "provenance": "operand-derived DS word stores in circuit_state_pair_setter_0877b; EGA offsets determine the shared source name",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_state_pair_setter_0877b"
+      ]
+    },
+    "_g_cir_895f": {
+      "address": "108F:895F",
+      "confidence": "medium",
+      "provenance": "operand-derived DS word stores in circuit_state_pair_setter_0877b; EGA offsets determine the shared source name",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_state_pair_setter_0877b"
+      ]
+    },
+    "_g_cir_8a1e": {
+      "address": "108F:8A1E",
+      "confidence": "medium",
+      "provenance": "operand-derived DGROUP addresses from circuit_ega:0x8b09/0x8b0d and indexed byte accesses at 0x8b15/0x8b1d; DGROUP base 0x108f0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_state_ring_rotate_byte_08b08"
+      ]
+    },
+    "_g_cir_8a20": {
+      "address": "108F:8A20",
+      "confidence": "medium",
+      "provenance": "operand-derived DGROUP addresses from circuit_ega:0x8b09/0x8b0d and indexed byte accesses at 0x8b15/0x8b1d; DGROUP base 0x108f0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_state_ring_rotate_byte_08b08"
+      ]
+    },
+    "_g_cir_8b40": {
+      "address": "108F:8B40",
+      "confidence": "medium",
+      "provenance": "operand-derived DS dword store at circuit_ega:0x8c29/0x8c2c or circuit_cga:0xaac9/0xaacc",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_atomic_counter_accumulate_08c1d",
+        "circuit_counter_deadline_reached_08c44"
+      ]
+    },
+    "_g_cir_8b42": {
+      "address": "108F:8B42",
+      "confidence": "medium",
+      "provenance": "operand-derived DS word read in comparator at circuit_ega:0x8c47; target offset 0x81fe in CGA counterpart",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_counter_deadline_reached_08c44"
+      ]
+    },
+    "_g_cir_8b44": {
+      "address": "108F:8B44",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8b46": {
+      "address": "108F:8B46",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8b48": {
+      "address": "108F:8B48",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8b4a": {
+      "address": "108F:8B4A",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8b4c": {
+      "address": "108F:8B4C",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8b50": {
+      "address": "108F:8B50",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8b52": {
+      "address": "108F:8B52",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8b56": {
+      "address": "108F:8B56",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8b58": {
+      "address": "108F:8B58",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8b5a": {
+      "address": "108F:8B5A",
+      "confidence": "medium",
+      "provenance": "operand-derived: absolute DS operand in Circuit EGA raster-mode entries at 0xB9D2/0xB9E9; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b9d2",
+        "circuit_raster_mode_body_b9e9"
+      ]
+    },
+    "_g_cir_8ba6": {
+      "address": "108F:8BA6",
+      "confidence": "medium",
+      "provenance": "operand-derived from circuit_ega:0xA464; operand-derived indexed DS pointer table; use grp_aa88d69b",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_cir_8bac": {
+      "address": "108F:8BAC",
+      "confidence": "medium",
+      "provenance": "operand-derived: immediate DGROUP offset 0x8bac passed to grp_f93ec5a2 at circuit_ega:0xc9c7; used_by circuit_ega_0c97e",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0c97e"
+      ]
+    },
+    "_g_cir_8bb3": {
+      "address": "108F:8BB3",
+      "confidence": "medium",
+      "provenance": "operand-derived: immediate DGROUP offset 0x8bb3 passed to the diagnostic routine at circuit_ega:0xcacb; used_by circuit_ega_0c97e",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0c97e"
+      ]
+    },
+    "_g_cir_8c3d": {
+      "address": "108F:8C3D",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS word read at circuit_ega:0xf4bb; DGROUP base 0x108f0 per analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_file_mode_filter_0f4bb"
+      ]
+    },
+    "_g_cir_8c48": {
+      "address": "108F:8C48",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS word compare at 0xF294; DGROUP base from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_dos_close_handle_checked_f28e"
+      ]
+    },
+    "_g_cir_8c4a": {
+      "address": "108F:8C4A",
+      "confidence": "medium",
+      "provenance": "operand-derived DS byte table base in indexed write at 0xF2A6; DGROUP base from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_dos_close_handle_checked_f28e"
+      ]
+    },
+    "_g_cir_8c74": {
+      "address": "108F:8C74",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS word operand in stack probe 0xF6D0; DGROUP base from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_stack_limit_probe_f6d0_d4c0"
+      ]
+    },
+    "_g_cir_8c8e": {
+      "address": "108F:8C8E",
+      "confidence": "medium",
+      "provenance": "operand-derived table-start pointer loaded at circuit_ega_0e576:0xE57E; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json.",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0e576"
+      ]
+    },
+    "_g_cir_8da6": {
+      "address": "108F:8DA6",
+      "confidence": "medium",
+      "provenance": "operand-derived end-pointer word compared at circuit_ega_0e576:0xE59A; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json.",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0e576"
+      ]
+    },
+    "_g_cir_8db6": {
+      "address": "108F:8DB6",
+      "confidence": "medium",
+      "provenance": "operand-derived: table-base immediate in circuit_ega_0f264; DGROUP base from analysis/inventory/circuit_ega.json.",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0f264"
+      ]
+    },
+    "_g_cir_8de4": {
+      "address": "108F:8DE4",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS word store at circuit_ega:0xfcea; DGROUP base 0x108f0 per inventory",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_set_far_pointer_from_offset_0fce4",
+        "circuit_random_next_fcf6_c428"
+      ]
+    },
+    "_g_cir_8de6": {
+      "address": "108F:8DE6",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS word store at circuit_ega:0xfced; DGROUP base 0x108f0 per inventory",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_set_far_pointer_from_offset_0fce4",
+        "circuit_random_next_fcf6_c428"
+      ]
+    },
+    "_g_cir_954e": {
+      "address": "108F:954E",
+      "confidence": "medium",
+      "provenance": "operand-derived from circuit_ega:0xA464; operand-derived DS string passed to case-insensitive compare; use grp_aa88d69b",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_cir_9554": {
+      "address": "108F:9554",
+      "confidence": "medium",
+      "provenance": "operand-derived from circuit_ega:0xA464; operand-derived DS string passed to resource allocation; use grp_aa88d69b",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_cir_9684": {
+      "address": "108F:9684",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS compare at 0xF1C4; DGROUP base from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_conditional_character_emit_f1ba"
+      ]
+    },
+    "_g_cir_9688": {
+      "address": "108F:9688",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS compare at 0xF1CB; DGROUP base from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_conditional_character_emit_f1ba"
+      ]
+    },
+    "_g_cir_968c": {
+      "address": "108F:968C",
+      "confidence": "medium",
+      "provenance": "operand-derived absolute DS word compare at circuit_ega:0xF1A2; DGROUP base 0x108F0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_emit_mode_marker_f1a2"
+      ]
+    },
+    "_g_cir_seg0000_8656": {
+      "address": "0000:8656",
+      "confidence": "medium",
+      "provenance": "operand-derived code-segment address immediate at circuit_ega:0x82ff in grp_f93ec5a2",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_cir_seg0000_8680": {
+      "address": "0000:8680",
+      "confidence": "medium",
+      "provenance": "operand-derived code-segment address immediate at circuit_ega:0x82ce in grp_f93ec5a2",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_g_cir_seg0000_8d44": {
+      "address": "0000:8D44",
+      "confidence": "medium",
+      "provenance": "operand-derived CS-relative table pointer loaded at circuit_ega:0x8cf9; code segment base 0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_graphics_shared_entry_08cf6",
+        "circuit_graphics_shared_entry_08d10_ega",
+        "circuit_graphics_shared_entry_08d2a_ega"
+      ]
+    },
+    "_g_cir_seg0000_9040": {
+      "address": "0000:9040",
+      "confidence": "medium",
+      "provenance": "operand-derived CS-relative pointer loaded at circuit_ega:0x8ff5; target lies in physical code segment 0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_graphics_renderer_entry_09026_ega",
+        "circuit_graphics_renderer_point_entry_08ff2"
+      ]
+    },
+    "_g_cir_seg0000_94c8": {
+      "address": "0000:94C8",
+      "confidence": "medium",
+      "provenance": "operand-derived: CS-indexed plane/mask table via BX-0x6b38 at circuit_ega:0x95ac and later loops",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_094d0"
+      ]
+    },
+    "_g_cir_seg0000_9bb8": {
+      "address": "0000:9BB8",
+      "confidence": "medium",
+      "provenance": "operand-derived CS-indexed byte table displacement 0x9bb8 at circuit_ega:0x9d0d",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_09c18"
+      ]
+    },
+    "_g_cir_seg0000_9bc4": {
+      "address": "0000:9BC4",
+      "confidence": "medium",
+      "provenance": "operand-derived CS-indexed byte table displacement 0x9bc4 at circuit_ega:0x9d44",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_09c18"
+      ]
+    },
+    "_g_cir_seg0000_9bd8": {
+      "address": "0000:9BD8",
+      "confidence": "medium",
+      "provenance": "operand-derived CS-indexed word table displacement 0x9bd8 at circuit_ega:0x9c65 and 0x9ca1",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_09c18"
+      ]
+    },
+    "_g_cir_seg0000_9bf8": {
+      "address": "0000:9BF8",
+      "confidence": "medium",
+      "provenance": "operand-derived CS-indexed word table displacement 0x9bf8 at circuit_ega:0x9c71",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_09c18"
+      ]
+    },
+    "_g_cir_seg0000_9da7": {
+      "address": "0000:9DA7",
+      "confidence": "medium",
+      "provenance": "operand-derived CS offset constant used as a table pointer at circuit_ega:0x9cad",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_09c18"
+      ]
+    },
+    "_g_cir_seg0000_9dbc": {
+      "address": "0000:9DBC",
+      "confidence": "medium",
+      "provenance": "operand-derived CS offset constant used as a table pointer at circuit_ega:0x9cd6",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_09c18"
+      ]
+    },
+    "_g_cir_seg0000_a6c1": {
+      "address": "0000:A6C1",
+      "confidence": "medium",
+      "provenance": "operand-derived near-jump target at circuit_ega:0x8d27 into shared renderer body; code segment base 0 from inventory",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_graphics_shared_entry_08d10_ega"
+      ]
+    },
+    "_g_cir_seg0000_a6f3": {
+      "address": "0000:A6F3",
+      "confidence": "medium",
+      "provenance": "operand-derived near-jump target at circuit_ega:0x8d41 into the shared renderer body; segment base 0 from inventory",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_graphics_shared_entry_08d2a_ega",
+        "circuit_graphics_renderer_entry_0bbae_ega"
+      ]
+    },
+    "_g_cir_seg0000_aa78": {
+      "address": "0000:AA78",
+      "confidence": "medium",
+      "provenance": "operand-derived CS-relative table pointer loaded at circuit_ega:0x8cff; code segment base 0 from analysis/inventory/circuit_ega.json",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_graphics_renderer_entry_0bb7a_ega",
+        "circuit_graphics_shared_entry_08cf6",
+        "circuit_graphics_shared_entry_08d10_ega",
+        "circuit_graphics_shared_entry_08d2a_ega",
+        "circuit_graphics_renderer_entry_0bbae_ega"
+      ]
+    },
+    "_g_cir_seg0000_b19b": {
+      "address": "0000:B19B",
+      "confidence": "medium",
+      "provenance": "operand-derived near code address loaded by tail jump at circuit_ega:0xd91f; physical segment base 0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_setup_body_0d908"
+      ]
+    },
+    "_g_cir_seg0000_b1cd": {
+      "address": "0000:B1CD",
+      "confidence": "medium",
+      "provenance": "operand-derived near-jump target at circuit_ega:0x903d into the same physical code segment",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_graphics_renderer_entry_09026_ega"
+      ]
+    },
+    "_g_cir_seg0000_b4a2": {
+      "address": "0000:B4A2",
+      "confidence": "medium",
+      "provenance": "operand-derived CS-relative pointer loaded at circuit_ega:0x8ffb; target lies in physical code segment 0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_graphics_renderer_entry_09026_ega",
+        "circuit_graphics_renderer_point_entry_08ff2"
+      ]
+    },
+    "_g_cir_seg0000_bbc8": {
+      "address": "0000:BBC8",
+      "confidence": "medium",
+      "provenance": "operand-derived CS-relative table pointer loaded at circuit_ega:0xbb7d; segment base 0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_graphics_renderer_entry_0bb7a_ega",
+        "circuit_graphics_renderer_entry_0bbae_ega"
+      ]
+    },
+    "_g_cir_seg0000_beb0": {
+      "address": "0000:BEB0",
+      "confidence": "medium",
+      "provenance": "operand-derived CS address loaded from immediates at circuit_ega:0xbe65 and circuit_ega:0xbe99; physical segment base 0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_setup_body_0be62",
+        "circuit_ega_setup_body_0be96"
+      ]
+    },
+    "_g_cir_seg0000_c4b0": {
+      "address": "0000:C4B0",
+      "confidence": "medium",
+      "provenance": "operand-derived CS reference in Circuit EGA planar blitter; code_segment_bases identifies main text segment base 0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0c4e4",
+        "circuit_ega_0c508"
+      ]
+    },
+    "_g_cir_seg0000_c7bc": {
+      "address": "0000:C7BC",
+      "confidence": "medium",
+      "provenance": "operand-derived CS reference in raster-mode body; code_segment_bases identifies physical CS base 0 for this main-text table",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_raster_mode_body_ega_0b9e9"
+      ]
+    },
+    "_g_cir_seg0000_c7ce": {
+      "address": "0000:C7CE",
+      "confidence": "medium",
+      "provenance": "operand-derived CS reference in raster-mode body; code_segment_bases identifies physical CS base 0 for this main-text table",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_raster_mode_body_ega_0b9e9"
+      ]
+    },
+    "_g_cir_seg0000_c7de": {
+      "address": "0000:C7DE",
+      "confidence": "medium",
+      "provenance": "operand-derived CS reference in Circuit EGA planar blitter; code_segment_bases identifies main text segment base 0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0c4e4",
+        "circuit_ega_0c508",
+        "circuit_ega_0c5be"
+      ]
+    },
+    "_g_cir_seg0000_d93c": {
+      "address": "0000:D93C",
+      "confidence": "medium",
+      "provenance": "operand-derived CS address loaded from immediates at circuit_ega:0xd8f1/0xd90b/0xd925 and 0xd8f7/0xd911/0xd92b; physical segment base 0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_setup_body_0d8ee",
+        "circuit_ega_setup_body_0d908",
+        "circuit_ega_setup_body_0d922"
+      ]
+    },
+    "_g_cir_seg0000_d94c": {
+      "address": "0000:D94C",
+      "confidence": "medium",
+      "provenance": "operand-derived CS address loaded from immediates at circuit_ega:0xd8f1/0xd90b/0xd925 and 0xd8f7/0xd911/0xd92b; physical segment base 0",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_setup_body_0d8ee",
+        "circuit_ega_setup_body_0d908",
+        "circuit_ega_setup_body_0d922"
+      ]
+    },
+    "_g_cir_seg0000_df9a": {
+      "address": "0000:DF9A",
+      "confidence": "medium",
+      "provenance": "operand-derived CS table base in circuit_ega_0dff4 at 0xDFFC (indexed by BX); physical code segment base 0 from analysis/inventory/circuit_ega.json.",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0dff4"
+      ]
+    },
     "_g_exit_data": {
       "address": "108F:8E14",
       "confidence": "medium",
@@ -7444,6 +8177,16 @@
       "provenance": "inventory member start for correspondence group grp_0b895b36",
       "staged_by": "decomp-circuit-b"
     },
+    "_grp_1499ba74": {
+      "address": "0000:9226",
+      "confidence": "medium",
+      "provenance": "inventory correspondence group grp_1499ba74 includes circuit_ega_09226 at 0x9226; direct near call from the planar blitter body.",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b184",
+        "circuit_ega_0b1b6"
+      ]
+    },
     "_grp_15791916": {
       "address": "0000:6e32",
       "confidence": "medium",
@@ -7461,6 +8204,15 @@
       "used_by": [
         "single_video_status_setup_3fa0",
         "single_clear_video_state_3fca"
+      ]
+    },
+    "_grp_177cf142": {
+      "address": "0000:E9E2",
+      "confidence": "medium",
+      "provenance": "inventory membership in grp_177cf142; circuit_ega_0e9e2 starts at 0xE9E2 and is called from circuit_ega_0e576.",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0e576"
       ]
     },
     "_grp_1a02eb1b": {
@@ -7495,6 +8247,21 @@
       "used_by": [
         "single_initialize_ega_video_4cf4"
       ]
+    },
+    "_grp_2005c197": {
+      "address": "0FFC:0033",
+      "confidence": "medium",
+      "provenance": "inventory membership in correspondence group grp_2005c197; circuit_ega_0fff3",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_image_entry_ffc8"
+      ]
+    },
+    "_grp_2a1dacea": {
+      "address": "0000:8306",
+      "confidence": "high",
+      "provenance": "inventory/group start circuit_ega_08306; correspondence group grp_2a1dacea; called by grp_b1f1df1b",
+      "staged_by": "decomp-circuit-b"
     },
     "_grp_2a8a2e47": {
       "address": "0000:1740",
@@ -7544,6 +8311,12 @@
         "single_initialize_ega_video_4cf4"
       ]
     },
+    "_grp_3919c85a": {
+      "address": "0000:8249",
+      "confidence": "high",
+      "provenance": "inventory/group start circuit_ega_08249 in grp_3919c85a; called by grp_f93ec5a2 at 0x8289",
+      "staged_by": "decomp-circuit-b"
+    },
     "_grp_3cb306f6": {
       "address": "0000:fabc",
       "confidence": "medium",
@@ -7578,6 +8351,12 @@
         "single_prepare_main_menu_3992"
       ]
     },
+    "_grp_420c3cf4": {
+      "address": "0000:81AE",
+      "confidence": "high",
+      "provenance": "inventory/group start circuit_ega_081ae; correspondence group grp_420c3cf4; called by grp_b1f1df1b",
+      "staged_by": "decomp-circuit-b"
+    },
     "_grp_427898b6": {
       "address": "0000:7938",
       "confidence": "medium",
@@ -7585,6 +8364,15 @@
       "staged_by": "decomp-circuit-b",
       "uses": [
         "grp_5306dd97"
+      ]
+    },
+    "_grp_42d76ee3": {
+      "address": "0000:E548",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_ega_0e548 start; member of correspondence group grp_42d76ee3",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_dos_error_return_0e535"
       ]
     },
     "_grp_42d943b6": {
@@ -7641,6 +8429,12 @@
       "provenance": "inventory function circuit_ega_07996; correspondence group grp_5306dd97",
       "staged_by": "decomp-circuit-b"
     },
+    "_grp_56eef547": {
+      "address": "0000:7BCE",
+      "confidence": "medium",
+      "provenance": "inventory function grp_56eef547 start; direct callee of grp_aa88d69b",
+      "staged_by": "decomp-circuit-b"
+    },
     "_grp_57a83843": {
       "address": "0000:1aa8",
       "confidence": "medium",
@@ -7683,6 +8477,15 @@
         "grp_d687851f"
       ]
     },
+    "_grp_63882bd9": {
+      "address": "0000:EFD4",
+      "confidence": "medium",
+      "provenance": "inventory membership in call-graph-anchored group grp_63882bd9; called by emit_mode_marker at circuit_ega:0xF1B2",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_emit_mode_marker_f1a2"
+      ]
+    },
     "_grp_64baada8": {
       "address": "0000:5687",
       "confidence": "medium",
@@ -7711,6 +8514,12 @@
         "single_02f80",
         "single_7f64"
       ]
+    },
+    "_grp_7d50ca88": {
+      "address": "0000:DE53",
+      "confidence": "high",
+      "provenance": "inventory/group start in grp_7d50ca88; called by shape2d renderer counterpart at circuit_ega",
+      "staged_by": "decomp-circuit-b"
     },
     "_grp_802d395c": {
       "address": "0000:6897",
@@ -7779,6 +8588,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "single_02cb6"
+      ]
+    },
+    "_grp_97985841": {
+      "address": "0000:E4B7",
+      "confidence": "medium",
+      "provenance": "inventory membership in correspondence group grp_97985841; called by circuit system exit wrapper at its inventory row",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_report_error_and_exit_fa7c"
       ]
     },
     "_grp_9a41e916": {
@@ -7897,6 +8715,15 @@
         "single_00c3c"
       ]
     },
+    "_grp_c3ff30eb": {
+      "address": "0FFC:0119",
+      "confidence": "medium",
+      "provenance": "inventory membership in correspondence group grp_c3ff30eb; circuit_ega_100d9",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_image_entry_ffc8"
+      ]
+    },
     "_grp_c4c674f2": {
       "address": "0000:12a4",
       "confidence": "medium",
@@ -7947,6 +8774,25 @@
       "provenance": "inventory member start for correspondence group grp_d1ec52d7",
       "staged_by": "decomp-circuit-b"
     },
+    "_grp_d6da2a1e": {
+      "address": "0000:C67A",
+      "confidence": "medium",
+      "provenance": "inventory correspondence group grp_d6da2a1e includes circuit_ega_0c67a at 0xC67A; direct near call from the planar blitter body.",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_ega_0b184",
+        "circuit_ega_0b1b6"
+      ]
+    },
+    "_grp_da1e7b44": {
+      "address": "0000:FC5A",
+      "confidence": "medium",
+      "provenance": "inventory membership in correspondence group grp_da1e7b44; called by circuit system exit wrapper at its inventory row",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_report_error_and_exit_fa7c"
+      ]
+    },
     "_grp_dcbf0860": {
       "address": "0FFC:03D9",
       "confidence": "medium",
@@ -7990,6 +8836,15 @@
         "single_02f80"
       ]
     },
+    "_grp_e4a1c50f": {
+      "address": "0FFC:027F",
+      "confidence": "medium",
+      "provenance": "inventory membership in correspondence group grp_e4a1c50f; circuit_ega_1023f",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_image_entry_ffc8"
+      ]
+    },
     "_grp_e507b43b": {
       "address": "0000:3aba",
       "confidence": "low",
@@ -7997,6 +8852,30 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "single_prepare_main_menu_3992"
+      ]
+    },
+    "_grp_e5a16c1f": {
+      "address": "0000:E6D4",
+      "confidence": "medium",
+      "provenance": "inventory membership in grp_e5a16c1f; EGA member circuit_ega_0e6d4",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_five_arg_callback_wrapper_ddd8"
+      ]
+    },
+    "_grp_e61cb645": {
+      "address": "0000:6AE2",
+      "confidence": "medium",
+      "provenance": "inventory function grp_e61cb645 start; direct callee of grp_aa88d69b",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_grp_e8a09c59": {
+      "address": "0000:80E8",
+      "confidence": "medium",
+      "provenance": "inventory member start for correspondence group grp_e8a09c59 (analysis/inventory/groups.json); called by the paired Circuit heap initializer",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_initialize_heap_08150_91f0"
       ]
     },
     "_grp_ea09637f": {
@@ -8340,6 +9219,15 @@
         "grp_dcbf0860"
       ]
     },
+    "_report_error_and_exit": {
+      "address": "0000:FA7C",
+      "confidence": "medium",
+      "provenance": "inventory function circuit_ega_0fa7c; paired by matching wrapper call scaffold",
+      "staged_by": "decomp-circuit-b",
+      "uses": [
+        "circuit_five_arg_callback_wrapper_ddd8"
+      ]
+    },
     "_selection_delay": {
       "address": "108f:98e8",
       "confidence": "high",
@@ -8399,6 +9287,18 @@
       "used_by": [
         "single_059e"
       ]
+    },
+    "_strcpy": {
+      "address": "0000:F9A0",
+      "confidence": "medium",
+      "provenance": "inventory function strcpy start; direct callee of grp_aa88d69b",
+      "staged_by": "decomp-circuit-b"
+    },
+    "_stricmp": {
+      "address": "0000:FB80",
+      "confidence": "medium",
+      "provenance": "inventory function stricmp start; direct callee of grp_aa88d69b",
+      "staged_by": "decomp-circuit-b"
     },
     "_template_copy_source": {
       "address": "0000:C7BA",

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_startup_error_2_exit_e25a",
+  "source": "src/circuit/system/startup_error_2_exit.asm",
+  "source_sha256": "83d03be42ffc6ce6d244dd247e542b546afec9123d5d3e9c8e494c235e18afb0",
+  "profile": "masm510",
+  "public": "_set_dos_error_2_exit",
+  "expected_fixups": [
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0E0BA",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 57946,
+      "end": 57952
+    },
+    "circuit_cga": {
+      "start": 50618,
+      "end": 50624
+    }
+  }
+}

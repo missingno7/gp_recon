@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "circuit_ega_shape_blit_origin_entry_c4e4",
+  "source": "src/circuit/graphics/ega_shape_blit_entries.asm",
+  "source_sha256": "9382e1504fc329624d5f20789fcef420b0a6846aee2947d2c42ab917dcd5d4bb",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0c4e4",
+  "expected_fixups": [
+    {
+      "offset": 97,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_C7DE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 169,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_C4B0",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 50404,
+      "end": 50621
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "circuit_set_far_pointer_from_offset_fce4",
+  "source": "src/circuit/system/set_far_pointer_from_offset.c",
+  "source_sha256": "3654edb17c93ca69733a6f96de051e9a3489144df13bf6454a65d0ee8cdfcc40",
+  "profile": "msc510-small-o_gs",
+  "public": "_set_far_pointer_from_offset",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8de6",
+      "frame": "_g_cir_8de6"
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8de4",
+      "frame": "_g_cir_8de4"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 64740,
+      "end": 64757
+    },
+    "circuit_cga": {
+      "start": 50198,
+      "end": 50215
+    }
+  }
+}

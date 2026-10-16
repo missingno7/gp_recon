@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "circuit_clamp_integrated_offset_1021a",
+  "source": "src/circuit/engine/clamp_integrated_offset.asm",
+  "source_sha256": "ee503f3f08f171732a61cf367c46dac021d0ebec879c270da8808121953f2b17",
+  "profile": "masm510",
+  "public": "_clamp_integrated_offset",
+  "expected_fixups": [
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_7548",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 12,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_718A",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 34,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_718A",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 66074,
+      "end": 66111
+    },
+    "circuit_cga": {
+      "start": 56728,
+      "end": 56765
+    }
+  }
+}

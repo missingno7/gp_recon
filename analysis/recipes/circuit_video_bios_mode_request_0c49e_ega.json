@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "circuit_video_bios_mode_request_0c49e_ega",
+  "source": "src/circuit/graphics/video_bios_mode_request.asm",
+  "source_sha256": "23da4e48cad08e8dafdf662be6eb9b3d25b77a79a9780d0174f15be7064fbca4",
+  "profile": "masm510",
+  "public": "_video_bios_mode_request",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 50334,
+      "end": 50352
+    }
+  }
+}

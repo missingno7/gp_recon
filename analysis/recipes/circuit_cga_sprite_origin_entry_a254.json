@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "circuit_cga_sprite_origin_entry_a254",
+  "source": "src/circuit/graphics/cga_sprite_origin_entry.asm",
+  "source_sha256": "1d47209c4447baaaecfd4157f17269c40cb8157bd81d7e226dd7d1dfe7e97e7d",
+  "profile": "masm510",
+  "public": "_fn_circuit_cga_0a254",
+  "expected_fixups": [
+    {
+      "offset": 34,
+      "loc": "lobyte",
+      "width": 1,
+      "self_relative": true,
+      "target": "_GRP_5B2E6DBB",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 41556,
+      "end": 41591
+    }
+  }
+}

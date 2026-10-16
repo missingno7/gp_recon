@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "circuit_signed_byte_table_lookup_1029b",
+  "source": "src/circuit/engine/signed_byte_table_lookup.asm",
+  "source_sha256": "8950f4f606ae7c5c2b8e478cf450ecf3578509437df9fb64cb6cec7bc9edd21d",
+  "profile": "masm510",
+  "public": "_signed_byte_table_lookup",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_5D52",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_5D52",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 66203,
+      "end": 66232
+    },
+    "circuit_cga": {
+      "start": 56857,
+      "end": 56886
+    }
+  }
+}

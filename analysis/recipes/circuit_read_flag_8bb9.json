@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "circuit_read_flag_8bb9",
+  "source": "src/circuit/engine/circuit_read_flag_8bb9.asm",
+  "source_sha256": "3a0924e3baa88201ade259fbd5df3272c990d3957bbdc55375946af5ebac63fa",
+  "profile": "masm510",
+  "public": "_circuit_read_flag_8bb9",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 35769,
+      "end": 35775
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "grp_3f05a1a6",
+  "source": "src/circuit/engine/resource_record_insert.asm",
+  "source_sha256": "8bf1c94ee0c95b6bea29647e8dc4d41986c21490ab51c9594b87c633bfc170fc",
+  "profile": "masm510",
+  "public": "_grp_3f05a1a6",
+  "expected_fixups": [
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8904",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8902",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CATALOG_ERROR_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 36,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0DDD8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 50,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8904",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 56,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8904",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 60,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8906",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 82,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8906",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 101,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8906",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 127,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_C9818520",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 134,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8904",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 149,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_8904",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 33915,
+      "end": 34076
+    },
+    "circuit_cga": {
+      "start": 38171,
+      "end": 38332
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "circuit_lookup_record_by_id_867d_971d",
+  "source": "src/circuit/engine/lookup_record_by_id.asm",
+  "source_sha256": "cc5c271911f22711061c49df3a01566360c56b1a8a7ff5aa7b38f1c1b3bd134d",
+  "profile": "masm510",
+  "public": "_lookup_record_by_id",
+  "expected_fixups": [
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2F0",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_A2EE",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 31,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CATALOG_ERROR_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0DDD8",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 34429,
+      "end": 34472
+    },
+    "circuit_cga": {
+      "start": 38685,
+      "end": 38728
+    }
+  }
+}

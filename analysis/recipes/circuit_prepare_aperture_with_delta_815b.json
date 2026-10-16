@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "circuit_prepare_aperture_with_delta_815b",
+  "source": "src/circuit/engine/prepare_aperture_with_delta.asm",
+  "source_sha256": "8e4caafda538fa73630b174c2d3be74bdc9697fc3a46013c42fee2af0bbbf1d3",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0815b",
+  "expected_fixups": [
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_E8A09C59",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_TAIL",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 25,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_9F62",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 33115,
+      "end": 33144
+    },
+    "circuit_cga": {
+      "start": 37371,
+      "end": 37400
+    }
+  }
+}

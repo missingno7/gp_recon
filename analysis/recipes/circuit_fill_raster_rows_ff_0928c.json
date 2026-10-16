@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "circuit_fill_raster_rows_ff_0928c",
+  "source": "src/circuit/graphics/fill_raster_rows_ff.asm",
+  "source_sha256": "ab763f48d6652a3a407198eba6f31d5a61f207492f623fdbf8472b94b7842597",
+  "profile": "masm510",
+  "public": "_fill_raster_rows_ff",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 37516,
+      "end": 37535
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "circuit_ega_shape_renderer_setup_0b163",
+  "source": "src/circuit/graphics/ega_shape_renderer_setup_0b163.asm",
+  "source_sha256": "b2355a7ff2b929888410fe274e818ee336fabd0ab9f5da511a6e3d642811708f",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0b163",
+  "expected_fixups": [
+    {
+      "offset": 31,
+      "loc": "lobyte",
+      "width": 1,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0B1B6",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 45411,
+      "end": 45444
+    }
+  }
+}

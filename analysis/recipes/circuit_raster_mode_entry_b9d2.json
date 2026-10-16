@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "circuit_raster_mode_entry_b9d2",
+  "source": "src/circuit/engine/circuit_raster_mode_body_ega.asm",
+  "source_sha256": "414fddc2b5d4a173fa6d13c512526c640c8667f823663a6f3941b0f0f88773e3",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0b9d2",
+  "expected_fixups": [
+    {
+      "offset": 223,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E8C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 294,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 422,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 47570,
+      "end": 47994
+    }
+  }
+}

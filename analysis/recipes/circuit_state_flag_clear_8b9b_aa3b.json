@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "circuit_state_flag_clear_8b9b_aa3b",
+  "source": "src/circuit/system/circuit_state_accessors.c",
+  "source_sha256": "2e8e0e2587e2ddef8242204c02a1486db84fe01ee304a2ca2ab470cef931f5b8",
+  "profile": "msc510-small-o_gs",
+  "public": "_fn_circuit_ega_08b9b",
+  "expected_fixups": [
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8019",
+      "frame": "_g_cir_8019"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35739,
+      "end": 35745
+    },
+    "circuit_cga": {
+      "start": 43579,
+      "end": 43585
+    }
+  }
+}

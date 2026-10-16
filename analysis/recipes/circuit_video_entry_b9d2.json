@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "circuit_video_entry_b9d2",
+  "source": "src/circuit/engine/circuit_video_entry_b9d2.asm",
+  "source_sha256": "23964cd3f526f77065588e6371a0d60733097893c89f2c6a80e5e4cb95d78e66",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_0b9d2",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 47570,
+      "end": 47592
+    }
+  }
+}

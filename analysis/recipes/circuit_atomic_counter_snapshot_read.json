@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "circuit_atomic_counter_snapshot_read",
+  "source": "src/circuit/engine/atomic_counter_snapshot_read.asm",
+  "source_sha256": "314099ca946144fbe262a1294223b049613f44529c149166359a9bf9341fdaa2",
+  "profile": "masm510",
+  "public": "_atomic_counter_snapshot_read",
+  "expected_fixups": [
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_7FE4",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_7FE6",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35826,
+      "end": 35836
+    },
+    "circuit_cga": {
+      "start": 43666,
+      "end": 43676
+    }
+  }
+}

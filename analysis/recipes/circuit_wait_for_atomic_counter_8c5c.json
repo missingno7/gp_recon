@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "circuit_wait_for_atomic_counter_8c5c",
+  "source": "src/circuit/engine/wait_for_atomic_counter.c",
+  "source_sha256": "d48a34f06f40837894e3054fe9bfd8a7fb8c2ee9e4efa7db222d1d60a329552c",
+  "profile": "msc510-small-o_gs",
+  "public": "_fn_circuit_ega_08c5c",
+  "expected_fixups": [
+    {
+      "offset": 22,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08bf2",
+      "frame": "_fn_circuit_ega_08bf2"
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_08bf2",
+      "frame": "_fn_circuit_ega_08bf2"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35932,
+      "end": 35972
+    },
+    "circuit_cga": {
+      "start": 43772,
+      "end": 43812
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "circuit_atomic_counter_read_08bf2",
+  "source": "src/circuit/engine/atomic_counter_read.asm",
+  "source_sha256": "535527c472b9530267c33bfba57aff1527de33b27b9780362315a2e630b4866f",
+  "profile": "masm510",
+  "public": "_fn_circuit_ega_08bf2",
+  "expected_fixups": [
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_7FE4",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_7FE6",
+      "frame": "DGROUP"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35826,
+      "end": 35836
+    },
+    "circuit_cga": {
+      "start": 43666,
+      "end": 43676
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "circuit_far_field_read_offset4",
+  "source": "src/circuit/engine/far_field_accessors.asm",
+  "source_sha256": "dc66ee404350a855eea1ccb08f418083f2edc236a677c64566140271a8ff6760",
+  "profile": "masm510",
+  "public": "_read_far_word_offset4",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 56898,
+      "end": 56915
+    },
+    "circuit_cga": {
+      "start": 47872,
+      "end": 47889
+    }
+  }
+}

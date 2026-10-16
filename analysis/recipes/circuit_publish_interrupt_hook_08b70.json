@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "circuit_publish_interrupt_hook_08b70",
+  "source": "src/circuit/system/publish_interrupt_hook.c",
+  "source_sha256": "a70db0ff00c93883c7822972164b20c65184baf0d8e9110349d3416979bc6c92",
+  "profile": "msc510-small-o_gs",
+  "public": "_fn_circuit_ega_08b70",
+  "expected_fixups": [
+    {
+      "offset": 38,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_800c",
+      "frame": "_g_cir_800c"
+    },
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_800a",
+      "frame": "_g_cir_800a"
+    },
+    {
+      "offset": 23,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_8018",
+      "frame": "_g_8018"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8019",
+      "frame": "_g_cir_8019"
+    },
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8010",
+      "frame": "_g_cir_8010"
+    },
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_800e",
+      "frame": "_g_cir_800e"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35696,
+      "end": 35739
+    },
+    "circuit_cga": {
+      "start": 43536,
+      "end": 43579
+    }
+  }
+}

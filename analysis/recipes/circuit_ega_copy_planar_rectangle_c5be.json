@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "circuit_ega_copy_planar_rectangle_c5be",
+  "source": "src/circuit/graphics/ega_copy_planar_rectangle.asm",
+  "source_sha256": "709bb5817319a8d948504995fb42993700194c315374840dcfd77ad91c5d0511",
+  "profile": "masm510",
+  "public": "_copy_ega_planar_rectangle",
+  "expected_fixups": [
+    {
+      "offset": 53,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_CIR_SEG0000_C7DE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 81,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E94",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 94,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_4E9E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 105,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7BC",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 132,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_G_0C7BC",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 50622,
+      "end": 50801
+    }
+  }
+}

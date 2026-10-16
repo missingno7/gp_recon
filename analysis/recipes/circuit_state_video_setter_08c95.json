@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "circuit_state_video_setter_08c95",
+  "source": "src/circuit/engine/state_video_setters.c",
+  "source_sha256": "333070333acf85a34e85f2dd48e5d36b082f283e0d361c575bc7b55bedecbda6",
+  "profile": "msc510-small-o_gs",
+  "public": "_fn_circuit_ega_08c95",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8b4c",
+      "frame": "_g_cir_8b4c"
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8b4a",
+      "frame": "_g_cir_8b4a"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 35989,
+      "end": 36006
+    },
+    "circuit_cga": {
+      "start": 43829,
+      "end": 43846
+    }
+  }
+}

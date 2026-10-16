@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "circuit_count_valid_records_e576_d88e",
+  "source": "src/circuit/engine/count_valid_records.c",
+  "source_sha256": "a9bbffa226b5612840a4e26db89a89d5d65dc1d7ca3ba755abe2f2d3f2db65ed",
+  "profile": "msc510-small-o_gs",
+  "public": "_count_valid_records",
+  "expected_fixups": [
+    {
+      "offset": 38,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8da6",
+      "frame": "_g_cir_8da6"
+    },
+    {
+      "offset": 24,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_177cf142",
+      "frame": "_grp_177cf142"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cir_8c8e",
+      "frame": "_g_cir_8c8e"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 58742,
+      "end": 58792
+    },
+    "circuit_cga": {
+      "start": 55438,
+      "end": 55488
+    }
+  }
+}
