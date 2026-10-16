@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "id": "grp_7037b130",
+  "source": "src/cycles/graphics/grp_7037b130.c",
+  "source_sha256": "c44a2edd43770fe42e8da074fb60043464d15b7f3a122c21d241a372d8d75e8f",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_7037b130",
+  "expected_fixups": [
+    {
+      "offset": 114,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_35c9a713",
+      "frame": "_grp_35c9a713"
+    },
+    {
+      "offset": 111,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_b78c",
+      "frame": "_g_cga_b78c"
+    },
+    {
+      "offset": 107,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_b78e",
+      "frame": "_g_cga_b78e"
+    },
+    {
+      "offset": 103,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_cd0c",
+      "frame": "_g_cga_cd0c"
+    },
+    {
+      "offset": 99,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_cd0e",
+      "frame": "_g_cga_cd0e"
+    },
+    {
+      "offset": 90,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_10076",
+      "frame": "_FN_CYCLES_CGA_10076"
+    },
+    {
+      "offset": 82,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_05ef9_long",
+      "frame": "_fn_cycles_cga_05ef9_long"
+    },
+    {
+      "offset": 73,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_cycles_main_0030",
+      "frame": "_cycles_main_0030"
+    },
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_cycles_main_0030",
+      "frame": "_cycles_main_0030"
+    },
+    {
+      "offset": 62,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_05ef9_long",
+      "frame": "_fn_cycles_cga_05ef9_long"
+    },
+    {
+      "offset": 53,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_cycles_main_0020",
+      "frame": "_cycles_main_0020"
+    },
+    {
+      "offset": 50,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_cycles_main_0020",
+      "frame": "_cycles_main_0020"
+    },
+    {
+      "offset": 42,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_05ef9_long",
+      "frame": "_fn_cycles_cga_05ef9_long"
+    },
+    {
+      "offset": 33,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_cycles_main_0010",
+      "frame": "_cycles_main_0010"
+    },
+    {
+      "offset": 30,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_cycles_main_0010",
+      "frame": "_cycles_main_0010"
+    },
+    {
+      "offset": 22,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_05ada",
+      "frame": "_fn_cycles_cga_05ada"
+    },
+    {
+      "offset": 17,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_cycles_aux_0920",
+      "frame": "_cycles_aux_0920"
+    },
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_cycles_aux_0920",
+      "frame": "_cycles_aux_0920"
+    },
+    {
+      "offset": 9,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_059e2",
+      "frame": "_fn_cycles_cga_059e2"
+    },
+    {
+      "offset": 4,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_063c6",
+      "frame": "_fn_cycles_cga_063c6"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 77272,
+      "end": 77395
+    },
+    "cycles_cga": {
+      "start": 67184,
+      "end": 67307
+    },
+    "cycles_tandy": {
+      "start": 65640,
+      "end": 65763
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "set_state_word_08e76",
+  "source": "src/cycles/startup/set_state_word_08e76.c",
+  "source_sha256": "e214dea46bf8daab269790edcec3a6c639050c921c6ffe211e09eda0b4562dde",
+  "profile": "msc510-medium-o_gs",
+  "public": "_set_state_word_08e76",
+  "expected_fixups": [
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_08e76",
+      "frame": "_g_08e76"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 75742,
+      "end": 75749
+    },
+    "cycles_cga": {
+      "start": 65654,
+      "end": 65661
+    },
+    "cycles_tandy": {
+      "start": 64110,
+      "end": 64117
+    }
+  }
+}

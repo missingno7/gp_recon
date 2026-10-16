@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_tandy_0e630",
+  "source": "src/cycles/startup/prepare_device_state.c",
+  "source_sha256": "83d449211438ddec0ca879985d78211fb7b99bc2420820e0c7d5755e52f85b3c",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_tandy_0e630",
+  "expected_fixups": [
+    {
+      "offset": 44,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_b478",
+      "frame": "_g_cga_b478"
+    },
+    {
+      "offset": 38,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_b7aa",
+      "frame": "_g_b7aa"
+    },
+    {
+      "offset": 22,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_b462",
+      "frame": "_g_cga_b462"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0070c",
+      "frame": "_g_0070c"
+    },
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_b7e6",
+      "frame": "_g_cga_b7e6"
+    },
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_b462",
+      "frame": "_g_cga_b462"
+    }
+  ],
+  "targets": {
+    "cycles_tandy": {
+      "start": 58928,
+      "end": 58978
+    }
+  }
+}

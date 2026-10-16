@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_ega_114f0",
+  "source": "src/cycles/progress/cycles_gap_114f0.c",
+  "source_sha256": "ff0359f99624ce07fdbd7d6fafdf141eb3af520be0c45262cd25f86e575ee11a",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_ega_114f0",
+  "expected_fixups": [
+    {
+      "offset": 63,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_b7bc",
+      "frame": "_g_cga_b7bc"
+    },
+    {
+      "offset": 60,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_70E",
+      "frame": "_G_70E"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_c86a",
+      "frame": "_g_cga_c86a"
+    },
+    {
+      "offset": 50,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_c86a",
+      "frame": "_g_cga_c86a"
+    },
+    {
+      "offset": 46,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_70E",
+      "frame": "_G_70E"
+    },
+    {
+      "offset": 42,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_00718",
+      "frame": "_g_00718"
+    },
+    {
+      "offset": 31,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_00718",
+      "frame": "_g_00718"
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0712",
+      "frame": "_g_cga_0712"
+    },
+    {
+      "offset": 24,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0712",
+      "frame": "_g_cga_0712"
+    },
+    {
+      "offset": 12,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_b7e6",
+      "frame": "_g_cga_b7e6"
+    },
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_b462",
+      "frame": "_g_cga_b462"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 70896,
+      "end": 70963
+    },
+    "cycles_cga": {
+      "start": 60808,
+      "end": 60875
+    },
+    "cycles_tandy": {
+      "start": 59264,
+      "end": 59331
+    }
+  }
+}

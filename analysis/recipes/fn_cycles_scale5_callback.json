@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_scale5_callback",
+  "source": "src/cycles/helpers/gap_130b6.c",
+  "source_sha256": "59484fc788dadb0db861b558f8884e3539c7bafab5ca6756ac9dd07909f6093c",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_scale5_callback",
+  "expected_fixups": [
+    {
+      "offset": 39,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_bc055bb1",
+      "frame": "_grp_bc055bb1"
+    },
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0098",
+      "frame": "_g_0098"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 78006,
+      "end": 78054
+    },
+    "cycles_cga": {
+      "start": 67918,
+      "end": 67966
+    },
+    "cycles_tandy": {
+      "start": 66374,
+      "end": 66422
+    }
+  }
+}

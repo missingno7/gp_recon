@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_cga_10948",
+  "source": "src/cycles/helpers/gap_130b0_cycles_cga.c",
+  "source_sha256": "29a08f30637f4da604ef6347202298e5ec3bd66b161f49327bad073ae2776a1c",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_cga_10948",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_055e0",
+      "frame": "_fn_cycles_cga_055e0"
+    }
+  ],
+  "targets": {
+    "cycles_cga": {
+      "start": 67912,
+      "end": 67918
+    }
+  }
+}

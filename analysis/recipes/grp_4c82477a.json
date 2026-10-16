@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "grp_4c82477a",
+  "source": "src/cycles/helpers/grp_4c82477a.c",
+  "source_sha256": "f72290aa497db68e029662acc9ff56737d466a8a23b3362f41a25f7174c6262b",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_4c82477a",
+  "expected_fixups": [
+    {
+      "offset": 29,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_4b75cabe",
+      "frame": "_grp_4b75cabe"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0b26",
+      "frame": "_g_cga_0b26"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 75030,
+      "end": 75068
+    },
+    "cycles_cga": {
+      "start": 64942,
+      "end": 64980
+    },
+    "cycles_tandy": {
+      "start": 63398,
+      "end": 63436
+    }
+  }
+}

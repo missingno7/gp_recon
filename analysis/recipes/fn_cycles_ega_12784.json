@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_ega_12784",
+  "source": "src/cycles/helpers/gap_clear_status.c",
+  "source_sha256": "770bd3a514c3b38e99d863766cd1938415b26b3bd13168ff18914f0ae93788f7",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_ega_12784",
+  "expected_fixups": [
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_08e74",
+      "frame": "_g_08e74"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 75652,
+      "end": 75659
+    },
+    "cycles_cga": {
+      "start": 65564,
+      "end": 65571
+    },
+    "cycles_tandy": {
+      "start": 64020,
+      "end": 64027
+    }
+  }
+}

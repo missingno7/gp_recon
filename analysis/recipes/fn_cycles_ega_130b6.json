@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_ega_130b6",
+  "source": "src/cycles/startup/fn_cycles_ega_130b6.c",
+  "source_sha256": "47180b8c99cc0348ec6eb92769cba742c50447c32da9313ea6340395e5364b58",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_ega_130b6",
+  "expected_fixups": [
+    {
+      "offset": 39,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_grp_3328fcba",
+      "frame": "_grp_3328fcba"
+    },
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0098",
+      "frame": "_g_0098"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 78006,
+      "end": 78054
+    }
+  }
+}

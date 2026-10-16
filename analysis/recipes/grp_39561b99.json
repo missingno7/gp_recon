@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "grp_39561b99",
+  "source": "src/cycles/graphics/grp_39561b99.c",
+  "source_sha256": "5b3ebff40ad85d484bdbfe7ba0b58415003be196f84c9d810e0264a23f64da65",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_39561b99",
+  "expected_fixups": [
+    {
+      "offset": 112,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_05710",
+      "frame": "_FN_CYCLES_CGA_05710"
+    },
+    {
+      "offset": 108,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0ba0",
+      "frame": "_g_cga_0ba0"
+    },
+    {
+      "offset": 100,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0ba2",
+      "frame": "_g_cga_0ba2"
+    },
+    {
+      "offset": 87,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0ba4",
+      "frame": "_g_cga_0ba4"
+    },
+    {
+      "offset": 77,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0ba5",
+      "frame": "_g_cga_0ba5"
+    },
+    {
+      "offset": 57,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0b7c",
+      "frame": "_g_cga_0b7c"
+    },
+    {
+      "offset": 47,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0b6a",
+      "frame": "_g_cga_0b6a"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_45be",
+      "frame": "_g_45be"
+    },
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0b8e",
+      "frame": "_g_cga_0b8e"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 79102,
+      "end": 79226
+    },
+    "cycles_cga": {
+      "start": 69014,
+      "end": 69138
+    },
+    "cycles_tandy": {
+      "start": 67470,
+      "end": 67594
+    }
+  }
+}

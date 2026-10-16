@@ -1,4 +1,7 @@
 typedef struct { unsigned short off, seg; } FarAddress;
+struct grp_eb_row_block { unsigned short words[0x6c]; };
+struct grp_fc68458d_state { char near *cursor; int count; };
+struct grp_fc68458d_locals { struct grp_fc68458d_state near *state; char ch; };
 struct cycle_service {
     void (far *begin)(int, int, int, int);
     char reserved[16];
@@ -20,6 +23,7 @@ extern unsigned short g_4602[256];
 extern unsigned short g_a9a[256];
 extern int g_0024e;
 extern unsigned char g_b9ee[];
+void *memset(void *, int, unsigned);
 extern int g_00254;
 extern int g_00438;
 extern unsigned char g_b9fc[];
@@ -87,6 +91,7 @@ void far grp_35c9a713(unsigned char far *map, unsigned char far *texts, int inde
 void grp_c5bcbe1c(void);
 void grp_51debc93(void);
 void grp_cf3195ac(void);
+#pragma alloc_text(GAP_FC68458D_TEXT, grp_fc68458d, grp_eb3159ee, grp_5695e2e6, grp_925127fd, grp_e6057061)
 
 int far grp_69059c1b(void)
 {
@@ -116,36 +121,34 @@ int far grp_69059c1b(void)
 
 void far grp_fc68458d(void)
 {
-    unsigned state_address;
-    char ch;
-    state_address = grp_69b75d8c(0x0aad, 0x0aaa);
-    if (state_address == 0)
+    struct grp_fc68458d_locals loc;
+    loc.state = (struct grp_fc68458d_state near *)grp_69b75d8c(0x0aad, 0x0aaa);
+    if (loc.state == 0)
         fn_cycles_cga_0559e(0x0ab8);
-    grp_599ebf4e(0xb9ee, 0xd8, g_0024e, state_address);
-    ch = (char)grp_925127fd(0xb9ee, 0xd8 * g_0024e, 0x11);
-    if (--*(int near *)(state_address + 2) >= 0) {
-        *((char near *)*(unsigned near *)state_address) = ch;
-        ++*(unsigned near *)state_address;
+    grp_599ebf4e((int)g_b9ee, 0xd8, g_0024e, (int)loc.state);
+    loc.ch = (char)grp_925127fd((unsigned char near *)g_b9ee,
+                                0xd8 * g_0024e, 0x11);
+    if (--loc.state->count >= 0) {
+        *loc.state->cursor++ = loc.ch;
     } else {
-        grp_63468620(state_address, (signed char)ch);
+        grp_63468620((signed char)loc.ch, (int)loc.state);
     }
-    grp_2e800973(state_address);
+    grp_2e800973((int)loc.state);
 }
 
 void far grp_eb3159ee(void)
 {
-    int row, column, address;
+    int row, column;
     for (row = 0; row < 3; ++row) {
         for (column = 0; column < 4; ++column) {
-            address = row * 0x48 + column * 0x12;
-            *(unsigned near *)(g_b9ee + address - 0x4604) = 0xffff;
-            *(unsigned near *)(g_b9ee + address - 0x4602) = 0xffff;
-            grp_63468620((unsigned)(g_b9ee + address + 0xd), 0, 0xd);
+            *((unsigned short near *)&g_b9ee[row * 0x48 + column * 0x12 + 0x0e]) = 0xffff;
+            *((unsigned short near *)&g_b9ee[row * 0x48 + column * 0x12 + 0x10]) = 0xffff;
+            memset(&g_b9ee[row * 0x48 + column * 0x12], 0, 0x0d);
         }
     }
     for (row = 1; row < g_0024e; ++row) {
-        memcpy(g_b9ee + row * 0xd8 - 0x4612,
-               g_b9ee + row * 0xd8 - 0x46ea, 0xd8);
+        *(struct grp_eb_row_block near *)(g_b9ee + row * 0xd8) =
+            *(struct grp_eb_row_block near *)(g_b9ee + row * 0xd8 - 0xd8);
     }
     grp_fc68458d();
 }

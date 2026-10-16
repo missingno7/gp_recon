@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "grp_58b11c1a",
+  "source": "src/cycles/resource/cycle_file_loader.c",
+  "source_sha256": "5ac0b2c386b5d3eae04d51ec80cdad4ab5270be97503fdf47311162607cf60d9",
+  "profile": "msc510-medium-o_gs",
+  "public": "_grp_58b11c1a",
+  "expected_fixups": [
+    {
+      "offset": 42,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_FN_CYCLES_CGA_03A98",
+      "frame": "_FN_CYCLES_CGA_03A98"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 82738,
+      "end": 82837
+    },
+    "cycles_cga": {
+      "start": 72724,
+      "end": 72823
+    },
+    "cycles_tandy": {
+      "start": 71180,
+      "end": 71279
+    }
+  }
+}

@@ -38,6 +38,15 @@
         "grp_9c73fa69"
       ]
     },
+    "CYCLES_DOS_EXEC_TEXT": {
+      "address": "143B:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for cycles_ega_143c2; segment_base 0x143b0 from analysis/inventory/cycles_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_143c2"
+      ]
+    },
     "CYCLES_EGA_BASEINIT_TEXT": {
       "address": "0000:0000",
       "confidence": "high",
@@ -63,6 +72,62 @@
       "staged_by": "decomp-shared",
       "uses": []
     },
+    "CYCLES_EVENT_MENU_TEXT": {
+      "address": "1058:0000",
+      "confidence": "high",
+      "provenance": "Own code-segment base from analysis/inventory/cycles_ega.json code_segment_bases (0x10580, segment 0x1058); grp_944fa82f range lies within this segment.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_10d9a",
+        "cycles_tandy_0e02a"
+      ]
+    },
+    "CYCLES_FILELOAD_TEXT": {
+      "address": "1422:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_181f4d04 and grp_58b11c1a; inventory member cycles_ega_14224 begins in physical segment base 0x14220 from analysis/inventory/cycles_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_181f4d04",
+        "grp_58b11c1a"
+      ]
+    },
+    "CYCLES_SCROLL_SETUP_TEXT": {
+      "address": "14A6:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_ca7d59e7; cycles_ega_14b6e segment base from analysis/inventory/cycles_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ca7d59e7_ega_tandy"
+      ]
+    },
+    "CYCLES_STATE_INIT_TEXT": {
+      "address": "1058:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for cycles_reset_state; inventory member cycles_ega_114ae has segment_base 0x10580 from analysis/inventory/cycles_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_reset_state"
+      ]
+    },
+    "CYCLES_TIMER_UPDATE_TEXT": {
+      "address": "1058:0000",
+      "confidence": "high",
+      "provenance": "Own code-segment base from analysis/inventory/cycles_ega.json code_segment_bases (0x10580, segment 0x1058); cycles_ega_115fc range is within this segment.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_115fc"
+      ]
+    },
+    "CYCLES_TOKEN_MAP_TEXT": {
+      "address": "14A6:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for cycles_map_token_list; inventory member cycles_ega_14a66 has segment_base 0x14a60 from analysis/inventory/cycles_ega.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_map_token_list"
+      ]
+    },
     "DGROUP": {
       "address": "1599:0000",
       "confidence": "high",
@@ -82,6 +147,15 @@
       "staged_by": "decomp-shared",
       "uses": [
         "grp_829a14c2"
+      ]
+    },
+    "EF48A1E7_EGA_TEXT": {
+      "address": "1505:0000",
+      "confidence": "high",
+      "provenance": "Own code segment for cycles_ega_1505c, from analysis/inventory/cycles_ega.json code_segment_bases (base 15050, physical segment 1505). The public range is independently catalogued in the function row.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ef48a1e7"
       ]
     },
     "EGARASTER_TEXT": {
@@ -154,6 +228,18 @@
       "staged_by": "decomp-shared",
       "uses": [
         "grp_0376aefe"
+      ]
+    },
+    "FN_CYCLES_CGA_10948_EGA_TEXT": {
+      "address": "12D6:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for function row cycles_ega_130b0: inventory segment base is 0x12d60 (paragraph 12D6). Bound base contains the function range at offset 0x350.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_130b0",
+        "fn_cycles_ega_13114",
+        "fn_cycles_ega_1311a",
+        "fn_cycles_ega_130b6"
       ]
     },
     "FN_CYCLES_EGA_03C9C": {
@@ -1262,6 +1348,37 @@
       "staged_by": "decomp-shared",
       "uses": [
         "grp_bcfca761"
+      ]
+    },
+    "_GAP_7037B130_TEXT": {
+      "address": "12D6:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment from inventory row cycles_ega_12dd8; base 0x12d60 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_GAP_71323DE6_TEXT": {
+      "address": "13F9:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment from inventory row cycles_ega_1418a; base 0x13f90 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_GAP_FC68458D_TEXT": {
+      "address": "11F8:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for cycles_ega_121a8 and grp_eb3159ee; inventory code_segment_bases gives base 0x11f80, physical segment 0x11f8.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_fc68458d",
+        "grp_eb3159ee",
+        "grp_5695e2e6",
+        "grp_925127fd",
+        "grp_e6057061"
       ]
     },
     "_GRP_06026D94": {
@@ -4327,6 +4444,42 @@
       "provenance": "CS absolute save slot operand in hand-written grp_31639679 member: CS:[000E]. Segment base inferred from that member segment; offset is explicit operand.",
       "staged_by": "decomp-cycles-b"
     },
+    "_cycles_aux_0920": {
+      "address": "11F8:0920",
+      "confidence": "medium",
+      "provenance": "Far pointer segment:offset loaded and passed at cycles_ega_12dd8 (operand at entry+0x10); target alias from the observed segmented operand.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_cycles_main_0010": {
+      "address": "056A:0010",
+      "confidence": "high",
+      "provenance": "Far code-segment pointer 056a:0010 constructed by instructions in cycles_ega_12dd8; main segment base is in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_cycles_main_0020": {
+      "address": "056A:0020",
+      "confidence": "high",
+      "provenance": "Far code-segment pointer 056a:0020 constructed by instructions in cycles_ega_12dd8; main segment base is in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_cycles_main_0030": {
+      "address": "056A:0030",
+      "confidence": "high",
+      "provenance": "Far code-segment pointer 056a:0030 constructed by instructions in cycles_ega_12dd8; main segment base is in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
     "_ega_planar_line_fill": {
       "address": "056A:8B32",
       "confidence": "medium",
@@ -4786,6 +4939,34 @@
         "grp_0376aefe"
       ]
     },
+    "_fn_cycles_ega_05722": {
+      "address": "056A:0082",
+      "confidence": "high",
+      "provenance": "Inventory row cycles_ega_05722 starts at linear 0x5722 in code segment base 0x56a0; symbol address is derived from that row. The far-call operand in cycles_ega_130b0 corroborates it.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_130b0",
+        "fn_cycles_cga_10948"
+      ]
+    },
+    "_fn_cycles_ega_068b6": {
+      "address": "056A:1216",
+      "confidence": "high",
+      "provenance": "Inventory row cycles_ega_068b6 starts at its listed image offset; physical code segment base 0x56a0 from analysis/inventory/cycles_ega.json code_segment_bases. Counterpart anchor is the same 66-byte wrapper call ordinal in the three target images.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_map_token_list_alt"
+      ]
+    },
+    "_fn_cycles_ega_07098": {
+      "address": "056A:19F8",
+      "confidence": "high",
+      "provenance": "Inventory row cycles_ega_07098 starts at image offset 0x7098; analysis/inventory/cycles_ega.json code_segment_bases contains physical base 0x56a0, so this segment-relative entry is 056A:19F8, matching the existing far-call operand in cycles_ega_130e6.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_130e6"
+      ]
+    },
     "_fn_cycles_ega_0a76c": {
       "address": "056A:50CC",
       "confidence": "high",
@@ -4849,6 +5030,15 @@
       "provenance": "Inventory-derived start from analysis/inventory/cycles_ega.json row cycles_ega_0d880; code-segment offset from segment_base 0x56A0.",
       "staged_by": "decomp-cycles-b"
     },
+    "_fn_cycles_ega_0de0c": {
+      "address": "056A:876C",
+      "confidence": "high",
+      "provenance": "Inventory row cycles_ega_0de0c starts at 0xde0c; physical code segment base 0x56a0 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_148a0"
+      ]
+    },
     "_fn_cycles_ega_0e9dc": {
       "address": "0E73:02AC",
       "confidence": "high",
@@ -4880,6 +5070,15 @@
         "cycles_ega_0ea34",
         "cycles_cga_0c2ce",
         "cycles_tandy_0bcc4"
+      ]
+    },
+    "_fn_cycles_ega_13426": {
+      "address": "12D6:06C6",
+      "confidence": "high",
+      "provenance": "Inventory row cycles_ega_13426 starts at 0x13426, physical code segment base 0x12d60 from analysis/inventory/cycles_ega.json; counterpart is the direct near-call callee of the paired startup member in the same translation unit.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13126"
       ]
     },
     "_fn_cycles_ega_14ce6": {
@@ -5681,6 +5880,116 @@
       "provenance": "operand-derived DGROUP offset from cycles_ega_104e0; same symbol consistently denotes this global across the three grp_8a299fba members.",
       "staged_by": "decomp-cycles-b"
     },
+    "_g_cga_0710": {
+      "address": "1599:0710",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0710 in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_0712": {
+      "address": "1599:0712",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0712 in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_114f0",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_0714": {
+      "address": "1599:0714",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0714 in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_071a": {
+      "address": "1599:071A",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x071a in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_071c": {
+      "address": "1599:071C",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x071c in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_071e": {
+      "address": "1599:071E",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x071e in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_0720": {
+      "address": "1599:0720",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0720 in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_0722": {
+      "address": "1599:0722",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0722 in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_0724": {
+      "address": "1599:0724",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0724 in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_0726": {
+      "address": "1599:0726",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0726 in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_0b26": {
+      "address": "1599:0B26",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0x0b26 in cycles_ega_12516; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_4c82477a"
+      ]
+    },
     "_g_cga_0b2a": {
       "address": "1599:0B2A",
       "confidence": "medium",
@@ -5714,6 +6023,87 @@
       "provenance": "operand-derived DGROUP offset from cycles_ega_104e0; same symbol consistently denotes this global across the three grp_8a299fba members.",
       "staged_by": "decomp-cycles-b"
     },
+    "_g_cga_0b56": {
+      "address": "1599:0B56",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0x0b56 in cycles_ega startup helper (member of the grp_4f? callsite family); DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13126"
+      ]
+    },
+    "_g_cga_0b58": {
+      "address": "1599:0B58",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0x0b58 in cycles_ega startup helper (member of the grp_4f? callsite family); DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13126"
+      ]
+    },
+    "_g_cga_0b6a": {
+      "address": "1599:0B6A",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb6a in cycles_ega_134fe; element type inferred from byte/word instruction width. DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0b7c": {
+      "address": "1599:0B7C",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb7c in cycles_ega_134fe; element type inferred from byte/word instruction width. DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0b8e": {
+      "address": "1599:0B8E",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb8e in cycles_ega_134fe; element type inferred from byte/word instruction width. DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0ba0": {
+      "address": "1599:0BA0",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xba0 in cycles_ega_134fe; element type inferred from byte/word instruction width. DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0ba2": {
+      "address": "1599:0BA2",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xba2 in cycles_ega_134fe; element type inferred from byte/word instruction width. DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0ba4": {
+      "address": "1599:0BA4",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xba4 in cycles_ega_134fe; element type inferred from byte/word instruction width. DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0ba5": {
+      "address": "1599:0BA5",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xba5 in cycles_ega_134fe; element type inferred from byte/word instruction width. DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
     "_g_cga_0c85c": {
       "address": "1599:C74C",
       "confidence": "medium",
@@ -5746,6 +6136,78 @@
       ],
       "provenance": "operand-derived immediate address passed as the 1st far-helper argument in grp_324ee638; member-specific value recorded from independent disassembly.",
       "staged_by": "decomp-cycles-b"
+    },
+    "_g_cga_2118": {
+      "address": "1599:211A",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0x211a in cycles_ega startup helper (member of the grp_4f? callsite family); DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13126"
+      ]
+    },
+    "_g_cga_8cc4": {
+      "address": "1599:8CD2",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8cd2 in cycles_ega_1418a; word-array width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8d84": {
+      "address": "1599:8D92",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8d92 in cycles_ega_1418a; word-array width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8e44": {
+      "address": "1599:8E52",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8e52 in cycles_ega_1418a; word width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8e46": {
+      "address": "1599:8E54",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8e54 in cycles_ega_1418a; word width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8e4a": {
+      "address": "1599:8E58",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8e58 in cycles_ega_1418a; byte-array width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8e56": {
+      "address": "1599:8E64",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8e64 in cycles_ega_1418a; byte-array width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_9108": {
+      "address": "1599:9108",
+      "confidence": "high",
+      "provenance": "Operand-derived indexed DS table base: instruction at cycles_ega_130e6 uses [bx-0x6ef8], yielding displacement 0x9108. DGROUP paragraph from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_130e6"
+      ]
     },
     "_g_cga_99ce": {
       "address": "1599:99CE",
@@ -5781,6 +6243,200 @@
       "staged_by": "decomp-cycles-b",
       "uses": [
         "cycles_ega_0bfc4"
+      ]
+    },
+    "_g_cga_a8c2": {
+      "address": "1599:A7B0",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xa7b0 in cycles_ega_1418a; word width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_a8c4": {
+      "address": "1599:A7B2",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xa7b2 in cycles_ega_1418a; word width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_a8c6": {
+      "address": "1599:A7B4",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xa7b4 in cycles_ega_1418a; word width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_a8c8": {
+      "address": "1599:A7B6",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xa7b6 in cycles_ega_1418a; word width inferred from operand. DGROUP paragraph 1599 in analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_b462": {
+      "address": "1599:B352",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS operand at fn_cycles_ega_113a0 and operand-equivalent corresponding startup function; DGROUP paragraph from analysis/inventory/cycles_ega.json. Name uses cycles_cga DGROUP offset for shared Cycles code.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114f0",
+        "fn_cycles_ega_113a0"
+      ]
+    },
+    "_g_cga_b478": {
+      "address": "1599:B368",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS operand at fn_cycles_ega_113a0 and operand-equivalent corresponding startup function; DGROUP paragraph from analysis/inventory/cycles_ega.json. Name uses cycles_cga DGROUP offset for shared Cycles code.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_113a0"
+      ]
+    },
+    "_g_cga_b57a": {
+      "address": "1599:B46A",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP word offset for store at cycles_ega_108a2; DGROUP base from analysis/inventory/cycles_ega.json. Symbol name uses the cycles_cga offset 0xb57a. Used by grp_faa59520.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_faa59520"
+      ]
+    },
+    "_g_cga_b78c": {
+      "address": "1599:B67C",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb67c in cycles_ega_12dd8; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_g_cga_b78e": {
+      "address": "1599:B67E",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb67e in cycles_ega_12dd8; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_g_cga_b7bc": {
+      "address": "1599:B6AC",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0xb6ac in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_114f0"
+      ]
+    },
+    "_g_cga_b7c2": {
+      "address": "1599:B6B2",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xb6b2 in cycles_ega_148a0; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_148a0"
+      ]
+    },
+    "_g_cga_b7c4": {
+      "address": "1599:B6B4",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xb6b4 in cycles_ega_148a0; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_148a0"
+      ]
+    },
+    "_g_cga_b7e6": {
+      "address": "1599:B6D6",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS operand at fn_cycles_ega_113a0 and operand-equivalent corresponding startup function; DGROUP paragraph from analysis/inventory/cycles_ega.json. Name uses cycles_cga DGROUP offset for shared Cycles code.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114f0",
+        "fn_cycles_ega_113a0"
+      ]
+    },
+    "_g_cga_b7e8": {
+      "address": "1599:B6D8",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xb6d8 in cycles_ega_148a0; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_148a0"
+      ]
+    },
+    "_g_cga_c76e": {
+      "address": "1599:C65E",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xc65e in cycles_ega_148a0; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_148a0"
+      ]
+    },
+    "_g_cga_c86a": {
+      "address": "1599:C75A",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0xc75a in cycles_ega_114ae; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_114ae",
+        "cycles_ega_114f0",
+        "cycles_ega_115fc"
+      ]
+    },
+    "_g_cga_c87a": {
+      "address": "1599:C76A",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xc76a in cycles_ega_148a0; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_148a0"
+      ]
+    },
+    "_g_cga_c87c": {
+      "address": "1599:C76C",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xc76c in corresponding function cycles_ega_13426; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13426"
+      ]
+    },
+    "_g_cga_c896": {
+      "address": "1599:C786",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xc786 in corresponding function cycles_ega_13426; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13426"
+      ]
+    },
+    "_g_cga_cd0c": {
+      "address": "1599:CBFC",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xcbfc in cycles_ega_12dd8; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_g_cga_cd0e": {
+      "address": "1599:CBFE",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xcbfe in cycles_ega_12dd8; DGROUP paragraph 1599 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
       ]
     },
     "_g_context_pointer": {
@@ -6092,11 +6748,38 @@
       "provenance": "Function start inventory row 0x119c6 in cycles_ega, group grp_32a3cf0e; direct transfer operand in grp_409e3ded confirms target.",
       "staged_by": "decomp-cycles-b"
     },
+    "_grp_3328fcba": {
+      "address": "056A:0D82",
+      "confidence": "high",
+      "provenance": "Inventory group grp_3328fcba member cycles_ega_06422 starts at 0x6422; analysis/inventory/cycles_ega.json code_segment_bases independently lists physical base 0x56a0, giving far alias 056A:0D82.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_130b6"
+      ]
+    },
+    "_grp_35c9a713": {
+      "address": "11F8:05BC",
+      "confidence": "high",
+      "provenance": "Inventory start cycles_ega_1253c in analysis/inventory/cycles_ega.json and group membership in analysis/inventory/groups.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
     "_grp_3be77d36": {
       "address": "056A:1986",
       "confidence": "medium",
       "provenance": "Exact function start row 0x7026 in analysis/inventory/cycles_ega.json; direct call operand in grp_3f2832f6. Ungrouped functions use a low-confidence cross-target call-position alias.",
       "staged_by": "decomp-cycles-b"
+    },
+    "_grp_3e7bebe2": {
+      "address": "056A:08F8",
+      "confidence": "high",
+      "provenance": "Inventory group grp_3e7bebe2 member cycles_ega_05f98 starts at image offset 0x5f98; code_segment_bases contains physical segment base 0x56a0, so this alias is 056a:08f8. The matching direct far call in wrapper grp members confirms this segment representation.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_1311a"
+      ]
     },
     "_grp_409e3ded": {
       "address": "1058:10E6",
@@ -6133,6 +6816,15 @@
       "confidence": "medium",
       "provenance": "Function start inventory row 0x118fa in cycles_ega, group grp_4b39b4e7; direct transfer operand in grp_409e3ded confirms target.",
       "staged_by": "decomp-cycles-b"
+    },
+    "_grp_4b75cabe": {
+      "address": "0000:1CDC",
+      "confidence": "high",
+      "provenance": "Inventory group grp_4b75cabe member cycles_ega_01cdc starts at 0x1cdc, physical code segment base 0x0 from analysis/inventory/cycles_ega.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_4c82477a"
+      ]
     },
     "_grp_4ff9c48b": {
       "address": "148C:0004",
@@ -6341,6 +7033,15 @@
       "provenance": "Function start inventory row 0x03b80 in cycles_ega, group grp_b9f628fc; direct transfer operand in grp_409e3ded confirms target.",
       "staged_by": "decomp-cycles-b"
     },
+    "_grp_bc055bb1": {
+      "address": "056A:0D82",
+      "confidence": "high",
+      "provenance": "Inventory group grp_bc055bb1 member plus the far-call operand in cycles_ega counterpart; segment:offset preserves the encoded frame at the call site.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_scale5_callback"
+      ]
+    },
     "_grp_c3517998": {
       "address": "12D6:0006",
       "confidence": "medium",
@@ -6404,6 +7105,15 @@
       "provenance": "Exact function start row 0x7350 in analysis/inventory/cycles_ega.json; direct call operand in grp_8c455c08.",
       "staged_by": "decomp-cycles-b"
     },
+    "_grp_fc68458d": {
+      "address": "11F8:0228",
+      "confidence": "high",
+      "provenance": "Inventory group grp_fc68458d member cycles_ega_121a8 starts at 0x121a8; own segment base 0x11f80 gives 11F8:0228.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_eb3159ee"
+      ]
+    },
     "_grp_fd0b3279": {
       "address": "0EF4:13CC",
       "confidence": "medium",
@@ -6439,6 +7149,42 @@
       "confidence": "medium",
       "provenance": "Operand-derived far text address in grp_1c2275e7: immediate offset and relocated code/data segment word. Text contents are not independently named.",
       "staged_by": "decomp-cycles-b"
+    },
+    "_introseg_056a_0753_ef48a1e7": {
+      "address": "056A:0753",
+      "confidence": "high",
+      "provenance": "Operand-derived far code-segment text pointer used by cycles_ega_1505c; address follows the immediate far-pointer operands in the six calls.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ef48a1e7"
+      ]
+    },
+    "_introseg_056a_076c_ef48a1e7": {
+      "address": "056A:076C",
+      "confidence": "high",
+      "provenance": "Operand-derived far code-segment text pointer used by cycles_ega_1505c; address follows the immediate far-pointer operands in the six calls.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ef48a1e7"
+      ]
+    },
+    "_introseg_056a_07ab_ef48a1e7": {
+      "address": "056A:07AB",
+      "confidence": "high",
+      "provenance": "Operand-derived far code-segment text pointer used by cycles_ega_1505c; address follows the immediate far-pointer operands in the six calls.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ef48a1e7"
+      ]
+    },
+    "_memset": {
+      "address": "0000:3C46",
+      "confidence": "high",
+      "provenance": "Inventory group grp_d3982dd3 member cycles_ega_03c46; runtime attribution identifies this exact run as memset.asm.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_eb3159ee"
+      ]
     },
     "_polygon_scan_convert": {
       "address": "056A:7D80",

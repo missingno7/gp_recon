@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_ega_130e6",
+  "source": "src/cycles/helpers/gap_130e6.c",
+  "source_sha256": "04f88eb8ac0c468a673573773edae2ee94bb401e983194c12c63692c221c1faa",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_ega_130e6",
+  "expected_fixups": [
+    {
+      "offset": 25,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_ega_07098",
+      "frame": "_fn_cycles_ega_07098"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_9108",
+      "frame": "_g_cga_9108"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 78054,
+      "end": 78100
+    }
+  }
+}

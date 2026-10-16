@@ -20,6 +20,53 @@
         "grp_15791916"
       ]
     },
+    "CYCLES_DOS_EXEC_TEXT": {
+      "address": "114B:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for cycles_tandy_114b8; segment_base 0x114b0 from analysis/inventory/cycles_tandy.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_114b8"
+      ]
+    },
+    "CYCLES_EVENT_MENU_TEXT": {
+      "address": "0D81:0000",
+      "confidence": "high",
+      "provenance": "Own code-segment base from analysis/inventory/cycles_tandy.json code_segment_bases (0xd810, segment 0xd81); grp_944fa82f range lies within this segment.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_10d9a",
+        "cycles_tandy_0e02a"
+      ]
+    },
+    "CYCLES_FILELOAD_TEXT": {
+      "address": "114F:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_181f4d04 and grp_58b11c1a; inventory member cycles_tandy_114fe begins in physical segment base 0x114f0 from analysis/inventory/cycles_tandy.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_181f4d04",
+        "grp_58b11c1a"
+      ]
+    },
+    "CYCLES_SCROLL_SETUP_TEXT": {
+      "address": "11D0:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for grp_ca7d59e7; cycles_tandy_11e16 segment base from analysis/inventory/cycles_tandy.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ca7d59e7_ega_tandy"
+      ]
+    },
+    "CYCLES_STATE_INIT_TEXT": {
+      "address": "0D81:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for cycles_reset_state; inventory member cycles_tandy_0e73e has segment_base 0xd810 from analysis/inventory/cycles_tandy.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_reset_state"
+      ]
+    },
     "CYCLES_TANDY_BASEINIT_TEXT": {
       "address": "0000:0000",
       "confidence": "high",
@@ -85,6 +132,24 @@
         "grp_54458be1"
       ]
     },
+    "CYCLES_TIMER_UPDATE_TEXT": {
+      "address": "0D81:0000",
+      "confidence": "high",
+      "provenance": "Own code-segment base from analysis/inventory/cycles_tandy.json code_segment_bases (0xd810, segment 0xd81); cycles_tandy_0e88c range is within this segment.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "CYCLES_TOKEN_MAP_TEXT": {
+      "address": "11D0:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for cycles_map_token_list; inventory member cycles_tandy_11d0e has segment_base 0x11d00 from analysis/inventory/cycles_tandy.json code_segment_bases.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_map_token_list"
+      ]
+    },
     "DGROUP": {
       "address": "12D9:0000",
       "confidence": "high",
@@ -124,6 +189,15 @@
         "grp_829a14c2"
       ]
     },
+    "EF48A1E7_TANDY_TEXT": {
+      "address": "122C:0000",
+      "confidence": "high",
+      "provenance": "Own code segment for cycles_tandy_122c4, from analysis/inventory/cycles_tandy.json code_segment_bases (base 122C0, physical segment 122C). The public range is independently catalogued in the function row.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ef48a1e7"
+      ]
+    },
     "FCINIT_TEXT": {
       "address": "0D81:0000",
       "confidence": "high",
@@ -149,6 +223,18 @@
       "staged_by": "decomp-shared",
       "uses": [
         "grp_e76f1ca2"
+      ]
+    },
+    "FN_CYCLES_CGA_10948_TANDY_TEXT": {
+      "address": "0FFF:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for function row cycles_tandy_10340: inventory segment base is 0xfff0 (paragraph 0FFF). Bound base contains the function range at offset 0x350.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_ega_130b0",
+        "fn_cycles_tandy_103a4",
+        "fn_cycles_tandy_103aa",
+        "fn_cycles_tandy_10346"
       ]
     },
     "FN_CYCLES_EGA_03C9C": {
@@ -1258,6 +1344,37 @@
       "staged_by": "decomp-shared",
       "uses": [
         "grp_bcfca761"
+      ]
+    },
+    "_GAP_7037B130_TEXT": {
+      "address": "0FFF:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment from inventory row cycles_tandy_10068; base 0xfff0 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_GAP_71323DE6_TEXT": {
+      "address": "1122:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment from inventory row cycles_tandy_1141a; base 0x11220 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_GAP_FC68458D_TEXT": {
+      "address": "0F21:0000",
+      "confidence": "high",
+      "provenance": "Own physical code segment for cycles_tandy_0f438 and grp_eb3159ee; inventory code_segment_bases gives base 0xf210, physical segment 0xf21.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_fc68458d",
+        "grp_eb3159ee",
+        "grp_5695e2e6",
+        "grp_925127fd",
+        "grp_e6057061"
       ]
     },
     "_GRP_06026D94": {
@@ -4321,6 +4438,42 @@
       "provenance": "CS absolute save slot operand in hand-written grp_31639679 member: CS:[0004]. Segment base inferred from that member segment; offset is explicit operand.",
       "staged_by": "decomp-cycles-b"
     },
+    "_cycles_aux_0920": {
+      "address": "0F21:0920",
+      "confidence": "medium",
+      "provenance": "Far pointer segment:offset loaded and passed at cycles_tandy_10068 (operand at entry+0x10); target alias from the observed segmented operand.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_cycles_main_0010": {
+      "address": "0555:0014",
+      "confidence": "high",
+      "provenance": "Far code-segment pointer 0555:0010 constructed by instructions in cycles_tandy_10068; main segment base is in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_cycles_main_0020": {
+      "address": "0555:0024",
+      "confidence": "high",
+      "provenance": "Far code-segment pointer 0555:0020 constructed by instructions in cycles_tandy_10068; main segment base is in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_cycles_main_0030": {
+      "address": "0555:0034",
+      "confidence": "high",
+      "provenance": "Far code-segment pointer 0555:0030 constructed by instructions in cycles_tandy_10068; main segment base is in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
     "_fatal_error": {
       "address": "0555:0044",
       "confidence": "medium",
@@ -4744,6 +4897,15 @@
       "provenance": "inventory-derived ungrouped callee cycles_tandy_03b50; segment base 0x0000 and entry independently recorded in analysis/inventory/cycles_tandy.json.",
       "staged_by": "decomp-cycles-b"
     },
+    "_fn_cycles_ega_068b6": {
+      "address": "0555:136C",
+      "confidence": "high",
+      "provenance": "Inventory row cycles_tandy_068bc starts at its listed image offset; physical code segment base 0x5550 from analysis/inventory/cycles_tandy.json code_segment_bases. Counterpart anchor is the same 66-byte wrapper call ordinal in the three target images.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_map_token_list_alt"
+      ]
+    },
     "_fn_cycles_ega_0e9dc": {
       "address": "0B9C:02AC",
       "confidence": "high",
@@ -4777,6 +4939,15 @@
         "cycles_tandy_0bcc4"
       ]
     },
+    "_fn_cycles_ega_13426": {
+      "address": "0FFF:06C6",
+      "confidence": "high",
+      "provenance": "Inventory row cycles_tandy_106b6 starts at 0x106b6, physical code segment base 0xfff0 from analysis/inventory/cycles_tandy.json; counterpart is the direct near-call callee of the paired startup member in the same translation unit.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13126"
+      ]
+    },
     "_fn_cycles_tandy_00010": {
       "address": "0000:0010",
       "confidence": "high",
@@ -4802,6 +4973,16 @@
       "staged_by": "decomp-shared",
       "uses": [
         "grp_0376aefe"
+      ]
+    },
+    "_fn_cycles_tandy_055d6": {
+      "address": "0555:0086",
+      "confidence": "high",
+      "provenance": "Inventory row cycles_tandy_055d6 starts at 0x55d6 in code segment base 0x5550; target-specific counterpart anchored by same call ordinal in four correspondence-group callers of cycles_ega_130b0.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_130b0",
+        "fn_cycles_cga_10948"
       ]
     },
     "_fn_cycles_tandy_078fc": {
@@ -4866,6 +5047,15 @@
       ],
       "provenance": "Inventory-derived start from analysis/inventory/cycles_tandy.json row cycles_tandy_0b168; code-segment offset from segment_base 0x5550.",
       "staged_by": "decomp-cycles-b"
+    },
+    "_fn_cycles_tandy_0b6aa": {
+      "address": "0555:615A",
+      "confidence": "high",
+      "provenance": "Inventory row cycles_tandy_0b6aa starts at 0xb6aa; physical code segment base 0x5550 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_tandy_11b48"
+      ]
     },
     "_fn_cycles_tandy_11f8e": {
       "address": "11F8:000E",
@@ -5666,6 +5856,116 @@
       "provenance": "operand-derived DGROUP offset from cycles_tandy_0d770; same symbol consistently denotes this global across the three grp_8a299fba members.",
       "staged_by": "decomp-cycles-b"
     },
+    "_g_cga_0710": {
+      "address": "12D9:0710",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0710 in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_0712": {
+      "address": "12D9:0712",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0712 in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e780",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_0714": {
+      "address": "12D9:0714",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0714 in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_071a": {
+      "address": "12D9:071A",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x071a in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_071c": {
+      "address": "12D9:071C",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x071c in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_071e": {
+      "address": "12D9:071E",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x071e in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_0720": {
+      "address": "12D9:0720",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0720 in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_0722": {
+      "address": "12D9:0722",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0722 in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_0724": {
+      "address": "12D9:0724",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0724 in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_0726": {
+      "address": "12D9:0726",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0x0726 in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_0b26": {
+      "address": "12D9:0B26",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0x0b26 in cycles_tandy_0f7a6; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_4c82477a"
+      ]
+    },
     "_g_cga_0b2a": {
       "address": "12D9:0B2A",
       "confidence": "medium",
@@ -5699,6 +5999,87 @@
       "provenance": "operand-derived DGROUP offset from cycles_tandy_0d770; same symbol consistently denotes this global across the three grp_8a299fba members.",
       "staged_by": "decomp-cycles-b"
     },
+    "_g_cga_0b56": {
+      "address": "12D9:0B56",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0x0b56 in cycles_tandy startup helper (member of the grp_4f? callsite family); DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13126"
+      ]
+    },
+    "_g_cga_0b58": {
+      "address": "12D9:0B58",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0x0b58 in cycles_tandy startup helper (member of the grp_4f? callsite family); DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13126"
+      ]
+    },
+    "_g_cga_0b6a": {
+      "address": "12D9:0B6A",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb6a in cycles_tandy_1078e; element type inferred from byte/word instruction width. DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0b7c": {
+      "address": "12D9:0B7C",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb7c in cycles_tandy_1078e; element type inferred from byte/word instruction width. DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0b8e": {
+      "address": "12D9:0B8E",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb8e in cycles_tandy_1078e; element type inferred from byte/word instruction width. DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0ba0": {
+      "address": "12D9:0BA0",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xba0 in cycles_tandy_1078e; element type inferred from byte/word instruction width. DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0ba2": {
+      "address": "12D9:0BA2",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xba2 in cycles_tandy_1078e; element type inferred from byte/word instruction width. DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0ba4": {
+      "address": "12D9:0BA4",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xba4 in cycles_tandy_1078e; element type inferred from byte/word instruction width. DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
+    "_g_cga_0ba5": {
+      "address": "12D9:0BA5",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xba5 in cycles_tandy_1078e; element type inferred from byte/word instruction width. DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_39561b99"
+      ]
+    },
     "_g_cga_0c85c": {
       "address": "12D9:C75C",
       "confidence": "medium",
@@ -5731,6 +6112,263 @@
       ],
       "provenance": "operand-derived immediate address passed as the 1st far-helper argument in grp_324ee638; member-specific value recorded from independent disassembly.",
       "staged_by": "decomp-cycles-b"
+    },
+    "_g_cga_2118": {
+      "address": "12D9:2116",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0x2116 in cycles_tandy startup helper (member of the grp_4f? callsite family); DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13126"
+      ]
+    },
+    "_g_cga_8cc4": {
+      "address": "12D9:8CB0",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8cb0 in cycles_tandy_1141a; word-array width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8d84": {
+      "address": "12D9:8D70",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8d70 in cycles_tandy_1141a; word-array width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8e44": {
+      "address": "12D9:8E30",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8e30 in cycles_tandy_1141a; word width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8e46": {
+      "address": "12D9:8E32",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8e32 in cycles_tandy_1141a; word width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8e4a": {
+      "address": "12D9:8E36",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8e36 in cycles_tandy_1141a; byte-array width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_8e56": {
+      "address": "12D9:8E42",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0x8e42 in cycles_tandy_1141a; byte-array width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_a8c2": {
+      "address": "12D9:A7B8",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xa7b8 in cycles_tandy_1141a; word width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_a8c4": {
+      "address": "12D9:A7BA",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xa7ba in cycles_tandy_1141a; word width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_a8c6": {
+      "address": "12D9:A7BC",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xa7bc in cycles_tandy_1141a; word width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_a8c8": {
+      "address": "12D9:A7BE",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xa7be in cycles_tandy_1141a; word width inferred from operand. DGROUP paragraph 12d9 in analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_71323de6"
+      ]
+    },
+    "_g_cga_b462": {
+      "address": "12D9:B362",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS operand at fn_cycles_tandy_0e630 and operand-equivalent corresponding startup function; DGROUP paragraph from analysis/inventory/cycles_tandy.json. Name uses cycles_cga DGROUP offset for shared Cycles code.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e780",
+        "fn_cycles_tandy_0e630"
+      ]
+    },
+    "_g_cga_b478": {
+      "address": "12D9:B378",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS operand at fn_cycles_tandy_0e630 and operand-equivalent corresponding startup function; DGROUP paragraph from analysis/inventory/cycles_tandy.json. Name uses cycles_cga DGROUP offset for shared Cycles code.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_tandy_0e630"
+      ]
+    },
+    "_g_cga_b57a": {
+      "address": "12D9:B47A",
+      "confidence": "high",
+      "provenance": "Operand-derived DS/DGROUP word offset for store at cycles_tandy_0db32; DGROUP base from analysis/inventory/cycles_tandy.json. Symbol name uses the cycles_cga offset 0xb57a. Used by grp_faa59520.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_faa59520"
+      ]
+    },
+    "_g_cga_b78c": {
+      "address": "12D9:B68C",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb68c in cycles_tandy_10068; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_g_cga_b78e": {
+      "address": "12D9:B68E",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xb68e in cycles_tandy_10068; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_g_cga_b7bc": {
+      "address": "12D9:B6BC",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0xb6bc in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e780"
+      ]
+    },
+    "_g_cga_b7c2": {
+      "address": "12D9:B6C2",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xb6c2 in cycles_tandy_11b48; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_tandy_11b48"
+      ]
+    },
+    "_g_cga_b7c4": {
+      "address": "12D9:B6C4",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xb6c4 in cycles_tandy_11b48; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_tandy_11b48"
+      ]
+    },
+    "_g_cga_b7e6": {
+      "address": "12D9:B6E6",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS operand at fn_cycles_tandy_0e630 and operand-equivalent corresponding startup function; DGROUP paragraph from analysis/inventory/cycles_tandy.json. Name uses cycles_cga DGROUP offset for shared Cycles code.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e780",
+        "fn_cycles_tandy_0e630"
+      ]
+    },
+    "_g_cga_b7e8": {
+      "address": "12D9:B6E8",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xb6e8 in cycles_tandy_11b48; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_tandy_11b48"
+      ]
+    },
+    "_g_cga_c76e": {
+      "address": "12D9:C66E",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xc66e in cycles_tandy_11b48; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_tandy_11b48"
+      ]
+    },
+    "_g_cga_c86a": {
+      "address": "12D9:C76A",
+      "confidence": "high",
+      "provenance": "operand-derived DS/DGROUP displacement 0xc76a in cycles_tandy_0e73e; DGROUP paragraph 12D9 from analysis/inventory/cycles_tandy.json. Shared Cycles data name uses cycles_cga DGROUP offset.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "cycles_tandy_0e73e",
+        "cycles_tandy_0e780",
+        "cycles_tandy_0e88c"
+      ]
+    },
+    "_g_cga_c87a": {
+      "address": "12D9:C77A",
+      "confidence": "high",
+      "provenance": "Operand-derived direct DS displacement 0xc77a in cycles_tandy_11b48; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_tandy_11b48"
+      ]
+    },
+    "_g_cga_c87c": {
+      "address": "12D9:C77C",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xc77c in corresponding function cycles_tandy_13426; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13426"
+      ]
+    },
+    "_g_cga_c896": {
+      "address": "12D9:C796",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xc796 in corresponding function cycles_tandy_13426; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_13426"
+      ]
+    },
+    "_g_cga_cd0c": {
+      "address": "12D9:CC0C",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xcc0c in cycles_tandy_10068; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
+    "_g_cga_cd0e": {
+      "address": "12D9:CC0E",
+      "confidence": "high",
+      "provenance": "Operand-derived DGROUP displacement 0xcc0e in cycles_tandy_10068; DGROUP paragraph 12d9 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
     },
     "_g_context_pointer": {
       "address": "12D9:4578",
@@ -6041,11 +6679,39 @@
       "provenance": "Function start inventory row 0x0ec56 in cycles_tandy, group grp_32a3cf0e; direct transfer operand in grp_409e3ded confirms target.",
       "staged_by": "decomp-cycles-b"
     },
+    "_grp_3328fcba": {
+      "address": "0555:0ED8",
+      "confidence": "high",
+      "provenance": "Inventory group grp_3328fcba member cycles_tandy_06428 starts at 0x6428; analysis/inventory/cycles_tandy.json code_segment_bases independently lists physical base 0x5550, giving far alias 0555:0ED8.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_tandy_10346"
+      ]
+    },
+    "_grp_35c9a713": {
+      "address": "0F21:05BC",
+      "confidence": "high",
+      "provenance": "Inventory start cycles_tandy_0f7cc in analysis/inventory/cycles_tandy.json and group membership in analysis/inventory/groups.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_7037b130"
+      ]
+    },
     "_grp_3be77d36": {
       "address": "0555:1ADC",
       "confidence": "medium",
       "provenance": "Exact function start row 0x702c in analysis/inventory/cycles_tandy.json; direct call operand in grp_3f2832f6. Ungrouped functions use a low-confidence cross-target call-position alias.",
       "staged_by": "decomp-cycles-b"
+    },
+    "_grp_3e7bebe2": {
+      "address": "0555:0A4E",
+      "confidence": "high",
+      "provenance": "Inventory group grp_3e7bebe2 member cycles_tandy_05f9e starts at image offset 0x5f9e; code_segment_bases contains physical segment base 0x5550, so this alias is 0555:0a4e. The matching direct far call in wrapper grp members confirms this segment representation.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_ega_1311a",
+        "fn_cycles_tandy_103aa"
+      ]
     },
     "_grp_409e3ded": {
       "address": "0D81:10E6",
@@ -6082,6 +6748,15 @@
       "confidence": "medium",
       "provenance": "Function start inventory row 0x0eb8a in cycles_tandy, group grp_4b39b4e7; direct transfer operand in grp_409e3ded confirms target.",
       "staged_by": "decomp-cycles-b"
+    },
+    "_grp_4b75cabe": {
+      "address": "0000:1BB0",
+      "confidence": "high",
+      "provenance": "Inventory group grp_4b75cabe member cycles_tandy_01bb0 starts at 0x1bb0, physical code segment base 0x0 from analysis/inventory/cycles_tandy.json.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_4c82477a"
+      ]
     },
     "_grp_4ff9c48b": {
       "address": "11B6:000C",
@@ -6290,6 +6965,15 @@
       "provenance": "Function start inventory row 0x03a34 in cycles_tandy, group grp_b9f628fc; direct transfer operand in grp_409e3ded confirms target.",
       "staged_by": "decomp-cycles-b"
     },
+    "_grp_bc055bb1": {
+      "address": "0555:0ED8",
+      "confidence": "high",
+      "provenance": "Inventory group grp_bc055bb1 member plus the far-call operand in cycles_tandy counterpart; segment:offset preserves the encoded frame at the call site.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "fn_cycles_scale5_callback"
+      ]
+    },
     "_grp_c3517998": {
       "address": "0FFF:0006",
       "confidence": "medium",
@@ -6353,6 +7037,15 @@
       "provenance": "Exact function start row 0x7356 in analysis/inventory/cycles_tandy.json; direct call operand in grp_8c455c08.",
       "staged_by": "decomp-cycles-b"
     },
+    "_grp_fc68458d": {
+      "address": "0F21:0228",
+      "confidence": "high",
+      "provenance": "Inventory group grp_fc68458d member cycles_tandy_0f438 starts at 0xf438; own segment base 0xf210 gives 0F21:0228.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_eb3159ee"
+      ]
+    },
     "_grp_fd0b3279": {
       "address": "0C1D:13CC",
       "confidence": "medium",
@@ -6388,6 +7081,42 @@
       "confidence": "medium",
       "provenance": "Operand-derived far text address in grp_1c2275e7: immediate offset and relocated code/data segment word. Text contents are not independently named.",
       "staged_by": "decomp-cycles-b"
+    },
+    "_introseg_0555_08a9_ef48a1e7": {
+      "address": "0555:08A9",
+      "confidence": "high",
+      "provenance": "Operand-derived far code-segment text pointer used by cycles_tandy_122c4; address follows the immediate far-pointer operands in the six calls.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ef48a1e7"
+      ]
+    },
+    "_introseg_0555_08c2_ef48a1e7": {
+      "address": "0555:08C2",
+      "confidence": "high",
+      "provenance": "Operand-derived far code-segment text pointer used by cycles_tandy_122c4; address follows the immediate far-pointer operands in the six calls.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ef48a1e7"
+      ]
+    },
+    "_introseg_0555_0901_ef48a1e7": {
+      "address": "0555:0901",
+      "confidence": "high",
+      "provenance": "Operand-derived far code-segment text pointer used by cycles_tandy_122c4; address follows the immediate far-pointer operands in the six calls.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_ef48a1e7"
+      ]
+    },
+    "_memset": {
+      "address": "0000:3AFA",
+      "confidence": "high",
+      "provenance": "Inventory group grp_d3982dd3 member cycles_tandy_03afa; runtime attribution identifies this exact run as memset.asm.",
+      "staged_by": "decomp-shared",
+      "uses": [
+        "grp_eb3159ee"
+      ]
     },
     "_polygon_scan_convert": {
       "address": "0555:57C0",

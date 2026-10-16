@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_ega_13126",
+  "source": "src/cycles/helpers/gap_init_pair.c",
+  "source_sha256": "bd93ba3bfa09077870842eca83155f75b18241c0b51967a5e45f5c57cbaf54a4",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_ega_13126",
+  "expected_fixups": [
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_cycles_ega_13426",
+      "frame": "_fn_cycles_ega_13426"
+    },
+    {
+      "offset": 20,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_2118",
+      "frame": "_g_cga_2118"
+    },
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_b7c6",
+      "frame": "_g_b7c6"
+    },
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0b56",
+      "frame": "_g_cga_0b56"
+    },
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_cga_0b58",
+      "frame": "_g_cga_0b58"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 78118,
+      "end": 78147
+    },
+    "cycles_cga": {
+      "start": 68030,
+      "end": 68059
+    },
+    "cycles_tandy": {
+      "start": 66486,
+      "end": 66515
+    }
+  }
+}

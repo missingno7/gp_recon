@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "grp_31639679",
+  "source": "src/cycles/system/cycles_dos_exec.asm",
+  "source_sha256": "816c71989701d0e7207ce438d395a7958a3775e5fad2051123f2df64a4007073",
+  "profile": "masm510",
+  "public": "_grp_31639679",
+  "expected_fixups": [
+    {
+      "offset": 16,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_08E62",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 20,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_08E64",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_G_08E62",
+      "frame": "DGROUP"
+    },
+    {
+      "offset": 36,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_SAVED_SS",
+      "frame": "CYCLES_DOS_EXEC_TEXT"
+    },
+    {
+      "offset": 41,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_SAVED_SP",
+      "frame": "CYCLES_DOS_EXEC_TEXT"
+    },
+    {
+      "offset": 54,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_SAVED_SS",
+      "frame": "CYCLES_DOS_EXEC_TEXT"
+    },
+    {
+      "offset": 59,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_CS_SAVED_SP",
+      "frame": "CYCLES_DOS_EXEC_TEXT"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 82882,
+      "end": 82951
+    },
+    "cycles_cga": {
+      "start": 72384,
+      "end": 72453
+    },
+    "cycles_tandy": {
+      "start": 70840,
+      "end": 70909
+    }
+  }
+}

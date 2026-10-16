@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_tandy_10340",
+  "source": "src/cycles/helpers/gap_130b0_cycles_tandy.c",
+  "source_sha256": "2ff15944724f456610d56bcc0833e2b68bcdaa041515b27c7da5b05365fbdd16",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_tandy_10340",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_tandy_055d6",
+      "frame": "_fn_cycles_tandy_055d6"
+    }
+  ],
+  "targets": {
+    "cycles_tandy": {
+      "start": 66368,
+      "end": 66374
+    }
+  }
+}

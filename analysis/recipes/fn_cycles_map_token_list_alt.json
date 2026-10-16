@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_map_token_list_alt",
+  "source": "src/cycles/resource/token_map.c",
+  "source_sha256": "c717dabdf5ff51474f147b7e24beb281ca97924265e47f37a21665bd1588a2a4",
+  "profile": "msc510-medium-o_gs",
+  "public": "_cycles_map_token_list_alt",
+  "expected_fixups": [
+    {
+      "offset": 24,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_ega_068b6",
+      "frame": "_fn_cycles_ega_068b6"
+    }
+  ],
+  "targets": {
+    "cycles_ega": {
+      "start": 84648,
+      "end": 84714
+    },
+    "cycles_cga": {
+      "start": 74584,
+      "end": 74650
+    },
+    "cycles_tandy": {
+      "start": 73040,
+      "end": 73106
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "fn_cycles_tandy_103a4",
+  "source": "src/cycles/intro/fn_cycles_tandy_103a4.c",
+  "source_sha256": "9293b6caa0f35e88ca04828d36cd70407178b4ff9474278a52312fa89ed980e2",
+  "profile": "msc510-medium-o_gs",
+  "public": "_fn_cycles_tandy_103a4",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "_fn_cycles_cga_063c6",
+      "frame": "_fn_cycles_cga_063c6"
+    }
+  ],
+  "targets": {
+    "cycles_tandy": {
+      "start": 66468,
+      "end": 66474
+    }
+  }
+}
