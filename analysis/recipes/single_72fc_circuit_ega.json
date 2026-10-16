@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_72fc_circuit_ega",
+  "source": "src/circuit/video/single_72fc_circuit_ega.asm",
+  "source_sha256": "70945af831851276e825fcca7f6ecdc9246b18f657fa3761d34c657ba9b9ee70",
+  "profile": "masm510",
+  "public": "_grp_72fc",
+  "expected_fixups": [
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_FE15C5CD",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 29436,
+      "end": 29478
+    }
+  }
+}

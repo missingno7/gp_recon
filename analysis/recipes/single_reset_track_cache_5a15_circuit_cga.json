@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_reset_track_cache_5a15_circuit_cga",
+  "source": "src/circuit/video/single_reset_track_cache_5a15_circuit_cga.asm",
+  "source_sha256": "521b7ef86e2b4a9bfb88baa81b39b29c2effb891d507711065ec80c68559b250",
+  "profile": "masm510",
+  "public": "_reset_track_cache_5a15",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 22731,
+      "end": 22768
+    }
+  }
+}

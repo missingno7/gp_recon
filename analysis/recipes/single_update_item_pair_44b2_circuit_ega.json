@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_update_item_pair_44b2_circuit_ega",
+  "source": "src/circuit/video/single_update_item_pair_44b2_circuit_ega.asm",
+  "source_sha256": "95021186ae0bd458a82192f1cf54353f5e5a220d7454d5623942445ba6d0ec82",
+  "profile": "masm510",
+  "public": "_update_item_pair_44b2",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 17586,
+      "end": 17614
+    }
+  }
+}

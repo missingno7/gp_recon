@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "single_configure_player_items_369e_circuit_ega",
+  "source": "src/circuit/state/single_configure_player_items_369e_ega.c",
+  "source_sha256": "fac354503c63417a87281729f03b5c7418b5f6cf327ead24293944631bb51dfa",
+  "profile": "msc510-small-o_gs",
+  "public": "_configure_player_items_369e",
+  "expected_fixups": [
+    {
+      "offset": 102,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0f28e",
+      "frame": "_fn_circuit_ega_0f28e"
+    },
+    {
+      "offset": 84,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_2de0858f",
+      "frame": "_grp_2de0858f"
+    },
+    {
+      "offset": 78,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_098f0",
+      "frame": "_g_098f0"
+    },
+    {
+      "offset": 57,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_1a9a5e95",
+      "frame": "_grp_1a9a5e95"
+    },
+    {
+      "offset": 51,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_098ec",
+      "frame": "_g_098ec"
+    },
+    {
+      "offset": 47,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_098ee",
+      "frame": "_g_098ee"
+    },
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_3cb306f6",
+      "frame": "_grp_3cb306f6"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_0376aefe",
+      "frame": "_grp_0376aefe"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 13982,
+      "end": 14090
+    }
+  }
+}

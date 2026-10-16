@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "id": "single_circuit_startup_0315_circuit_ega",
+  "source": "src/circuit/startup/single_circuit_startup_0315_ega.asm",
+  "source_sha256": "eb56252dd2adf26fd9bc2c6c4e65a82ae5a193a056e31b4c8092cdea6db91d71",
+  "profile": "masm510",
+  "public": "_single_circuit_startup_0315",
+  "expected_fixups": [
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0C97E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0C97E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 115,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0C97E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 168,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_E4004F71",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 190,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_E4004F71",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 212,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_E4004F71",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 234,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_E4004F71",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 256,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_E4004F71",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 292,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_DATA",
+      "frame": "_DATA"
+    },
+    {
+      "offset": 309,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0C97E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 331,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_DATA",
+      "frame": "_DATA"
+    },
+    {
+      "offset": 373,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_DATA",
+      "frame": "_DATA"
+    },
+    {
+      "offset": 390,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0C97E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 412,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_DATA",
+      "frame": "_DATA"
+    },
+    {
+      "offset": 444,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_DATA",
+      "frame": "_DATA"
+    },
+    {
+      "offset": 468,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0C97E",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 490,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_DATA",
+      "frame": "_DATA"
+    },
+    {
+      "offset": 510,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_08CD8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 524,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0B1B6",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 530,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_06EE8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 538,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_08B70",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 557,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_07040",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 789,
+      "end": 1352
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_560e_circuit_ega",
+  "source": "src/circuit/video/single_560e_circuit_ega.asm",
+  "source_sha256": "713a93aec942f20b67df57e58d2731a8579159a5b070e17d6fe2b572f920d7b1",
+  "profile": "masm510",
+  "public": "_signed_multiply_560e",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 22030,
+      "end": 22041
+    }
+  }
+}

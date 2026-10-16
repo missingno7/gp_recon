@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_64ac_circuit_ega",
+  "source": "src/circuit/video/single_64ac_circuit_ega.asm",
+  "source_sha256": "10bd5133fc796ecb8a2c2937b7aa622d35896a011dfed37443b108b1981f4ff1",
+  "profile": "masm510",
+  "public": "_grp_64ac",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 25772,
+      "end": 25801
+    }
+  }
+}

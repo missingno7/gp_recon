@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "single_update_video_state_4e9b_circuit_ega",
+  "source": "src/circuit/video/single_update_video_state_4e9b_circuit_ega.asm",
+  "source_sha256": "02a9baf6c0728091cde6027827f74665ef86f81aebfeb4c91ee034c003c014ba",
+  "profile": "masm510",
+  "public": "_update_video_state_4e9b",
+  "expected_fixups": [
+    {
+      "offset": 70,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_055B6",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 73,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_05562",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 76,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 184,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 199,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_TEXT",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 20123,
+      "end": 20510
+    }
+  }
+}

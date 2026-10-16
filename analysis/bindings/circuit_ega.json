@@ -81,6 +81,15 @@
         "grp_0376aefe"
       ]
     },
+    "GRP_94FFB100": {
+      "address": "0000:ff62",
+      "confidence": "medium",
+      "provenance": "Pascal ABI alias of _grp_94ffb100; inventory function start at ff62 and grp_94ffb100 membership.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6"
+      ]
+    },
     "INIT_TABLE_TEXT": {
       "address": "0000:0000",
       "confidence": "high",
@@ -144,6 +153,17 @@
         "grp_1a4c7479"
       ]
     },
+    "ROMSEG": {
+      "address": "0ffc:0000",
+      "confidence": "high",
+      "provenance": "operand-derived absolute far-call segment in the startup function; the local far label has offset 0008.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010",
+        "single_circuit_startup_01eb",
+        "single_video_init_5f94"
+      ]
+    },
     "SEEK_FILE_TEXT": {
       "address": "0000:0000",
       "confidence": "high",
@@ -162,6 +182,65 @@
         "grp_37b665e9"
       ]
     },
+    "_CS_G_0C7BE": {
+      "address": "0000:c7be",
+      "confidence": "high",
+      "provenance": "operand-derived from CS direct reference [0xc7be] in single_initialize_ega_video_4cf4; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_CS_G_0C7C0": {
+      "address": "0000:c7c0",
+      "confidence": "high",
+      "provenance": "operand-derived from CS direct reference [0xc7c0] in single_initialize_ega_video_4cf4; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_CS_G_0C7C2": {
+      "address": "0000:c7c2",
+      "confidence": "high",
+      "provenance": "operand-derived from CS direct reference [0xc7c2] in single_initialize_ega_video_4cf4; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_CS_G_0C7C6": {
+      "address": "0000:c7c6",
+      "confidence": "high",
+      "provenance": "operand-derived from CS direct reference [0xc7c6] in single_initialize_ega_video_4cf4; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4",
+        "single_configure_ega_display_564d",
+        "single_set_display_rect_696b"
+      ]
+    },
+    "_CS_G_0C7C8": {
+      "address": "0000:c7c8",
+      "confidence": "high",
+      "provenance": "operand-derived from CS direct reference [0xc7c8] in single_initialize_ega_video_4cf4; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4",
+        "single_configure_ega_display_564d",
+        "single_set_display_rect_696b"
+      ]
+    },
+    "_CS_G_0C7CA": {
+      "address": "0000:c7ca",
+      "confidence": "high",
+      "provenance": "operand-derived from CS direct reference [0xc7ca] in single_initialize_ega_video_4cf4; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4",
+        "single_set_display_rect_696b"
+      ]
+    },
     "_CS_G_0C7CC": {
       "address": "0000:c7cc",
       "confidence": "high",
@@ -169,6 +248,16 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_27e0affb"
+      ]
+    },
+    "_DATA": {
+      "address": "108f:0000",
+      "confidence": "high",
+      "provenance": "segment alias in the MASM module; value is the inventory-selected DGROUP base for circuit_ega.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0136",
+        "single_circuit_startup_0315"
       ]
     },
     "_EXT_9226": {
@@ -195,6 +284,70 @@
       "provenance": "Direct near CALL target 0xC67A is independently reached at callsites 0xA9D6 and 0xB408; the latter lies outside the raster entry module.",
       "staged_by": "raster-map"
     },
+    "_FN_CIRCUIT_EGA_00136": {
+      "address": "0000:0136",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_00136 at 0x0136; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_00145": {
+      "address": "0000:0145",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_00145 at 0x0145; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_0016D": {
+      "address": "0000:016d",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0016d at 0x016d; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0136"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_001EB": {
+      "address": "0000:01eb",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_001eb at 0x01eb; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_00315": {
+      "address": "0000:0315",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_00315 at 0x0315; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010",
+        "single_circuit_startup_0136"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_006AA": {
+      "address": "0000:06aa",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_006aa; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_00C3C": {
+      "address": "0000:0c3c",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_00c3c; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
     "_FN_CIRCUIT_EGA_015B0": {
       "address": "0000:15b0",
       "confidence": "medium",
@@ -211,6 +364,24 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_86c0d060"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_0275E": {
+      "address": "0000:275e",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0275e at 0x275e; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_02856": {
+      "address": "0000:2856",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_02856 at 0x2856; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
       ]
     },
     "_FN_CIRCUIT_EGA_029F0": {
@@ -274,6 +445,35 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_0ab05b10"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_03992": {
+      "address": "0000:3992",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_03992 at 0x3992; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_03FA0": {
+      "address": "0000:3fa0",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_03fa0; call operand in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_06aa",
+        "single_00c3c"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_03FCA": {
+      "address": "0000:3fca",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_03fca; call operand in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_06aa",
+        "single_00c3c"
       ]
     },
     "_FN_CIRCUIT_EGA_0423B": {
@@ -375,6 +575,24 @@
         "grp_93d4ba6d"
       ]
     },
+    "_FN_CIRCUIT_EGA_04C0A": {
+      "address": "0000:4c0a",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_04c0a at 0x4c0a; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_video_init_5f94"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_04CF4": {
+      "address": "0000:4cf4",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_04cf4 at 0x4cf4; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_01eb"
+      ]
+    },
     "_FN_CIRCUIT_EGA_0560E": {
       "address": "0000:560e",
       "confidence": "medium",
@@ -393,6 +611,24 @@
         "grp_fd52719f"
       ]
     },
+    "_FN_CIRCUIT_EGA_0564D": {
+      "address": "0000:564d",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0564d at 0x564d; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0136"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_0566E": {
+      "address": "0000:566e",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0566e at 0x566e; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_01eb"
+      ]
+    },
     "_FN_CIRCUIT_EGA_056DA": {
       "address": "0000:56da",
       "confidence": "medium",
@@ -400,6 +636,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_64baada8"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_05728": {
+      "address": "0000:5728",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_05728 at 0x5728; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_01eb"
       ]
     },
     "_FN_CIRCUIT_EGA_05A15": {
@@ -465,6 +710,24 @@
         "grp_b9d4e504"
       ]
     },
+    "_FN_CIRCUIT_EGA_05F4B": {
+      "address": "0000:5f4b",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_05f4b at 0x5f4b; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_video_init_5f94"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_05F94": {
+      "address": "0000:5f94",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_05f94 at 0x5f94; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_01eb"
+      ]
+    },
     "_FN_CIRCUIT_EGA_06367": {
       "address": "0000:6367",
       "confidence": "medium",
@@ -472,6 +735,24 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_b0ef0812"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_06558": {
+      "address": "0000:6558",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_06558 at 0x6558; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_066B2": {
+      "address": "0000:66b2",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_066b2 at 0x66b2; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
       ]
     },
     "_FN_CIRCUIT_EGA_06738": {
@@ -501,6 +782,15 @@
         "grp_aace91da"
       ]
     },
+    "_FN_CIRCUIT_EGA_06868": {
+      "address": "0000:6868",
+      "confidence": "medium",
+      "provenance": "inventory function start for called helper _FN_CIRCUIT_EGA_06868 in circuit_ega; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "grp_802d395c"
+      ]
+    },
     "_FN_CIRCUIT_EGA_06872": {
       "address": "0000:6872",
       "confidence": "medium",
@@ -519,6 +809,43 @@
         "grp_aace91da"
       ]
     },
+    "_FN_CIRCUIT_EGA_06EE8": {
+      "address": "0000:6ee8",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_06ee8 at 0x6ee8; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0315"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_06F16": {
+      "address": "0000:6f16",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_06f16 at 0x6f16; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010",
+        "single_059e"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_07040": {
+      "address": "0000:7040",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_07040 at 0x7040; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0315"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_0743D": {
+      "address": "0000:743d",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0743d; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
     "_FN_CIRCUIT_EGA_078A0": {
       "address": "0000:78a0",
       "confidence": "medium",
@@ -526,6 +853,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_bfa4f1cf"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_078B9": {
+      "address": "0000:78b9",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_078b9; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
       ]
     },
     "_FN_CIRCUIT_EGA_078D2": {
@@ -555,6 +891,42 @@
         "grp_e507b43b"
       ]
     },
+    "_FN_CIRCUIT_EGA_07DA1": {
+      "address": "0000:7da1",
+      "confidence": "medium",
+      "provenance": "inventory function start at 0x7da1; callee from 0x38c6 operand.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_38c6"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_08150": {
+      "address": "0000:8150",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_08150; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_0847B": {
+      "address": "0000:847b",
+      "confidence": "medium",
+      "provenance": "inventory function start at 0x847b; callee from 0x38c6 operand.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_38c6"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_0876A": {
+      "address": "0000:876a",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0876a; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
     "_FN_CIRCUIT_EGA_08B08": {
       "address": "0000:8b08",
       "confidence": "medium",
@@ -573,6 +945,15 @@
         "grp_fcb524ba"
       ]
     },
+    "_FN_CIRCUIT_EGA_08B70": {
+      "address": "0000:8b70",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_08b70 at 0x8b70; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0315"
+      ]
+    },
     "_FN_CIRCUIT_EGA_08B9B": {
       "address": "0000:08b9b",
       "confidence": "medium",
@@ -580,6 +961,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_fcb524ba"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_08BB9": {
+      "address": "0000:8bb9",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_08bb9 at 0x8bb9; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_01eb"
       ]
     },
     "_FN_CIRCUIT_EGA_08BF2": {
@@ -699,6 +1089,24 @@
         "grp_bfa4f1cf"
       ]
     },
+    "_FN_CIRCUIT_EGA_09DEE": {
+      "address": "0000:9dee",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_09dee; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_0A464": {
+      "address": "0000:a464",
+      "confidence": "medium",
+      "provenance": "inventory function start at 0xa464; callee from 0x38c6 operand.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_38c6"
+      ]
+    },
     "_FN_CIRCUIT_EGA_0A672": {
       "address": "0000:a672",
       "confidence": "medium",
@@ -715,6 +1123,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_f8ffa5a4"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_0A6DC": {
+      "address": "0000:a6dc",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0a6dc; direct call in circuit_ega_01828.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_01828"
       ]
     },
     "_FN_CIRCUIT_EGA_0B184": {
@@ -753,6 +1170,15 @@
         "grp_1f3dd2b2"
       ]
     },
+    "_FN_CIRCUIT_EGA_0BBAE": {
+      "address": "0000:bbae",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0bbae at 0xbbae; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_video_init_5f94"
+      ]
+    },
     "_FN_CIRCUIT_EGA_0BE62": {
       "address": "0000:be62",
       "confidence": "medium",
@@ -778,6 +1204,17 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_fd52719f"
+      ]
+    },
+    "_FN_CIRCUIT_EGA_0C97E": {
+      "address": "0000:c97e",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0c97e; direct call in circuit_ega_01828.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0315",
+        "single_059e",
+        "single_01828"
       ]
     },
     "_FN_CIRCUIT_EGA_0D908": {
@@ -834,6 +1271,15 @@
         "grp_0ab05b10"
       ]
     },
+    "_FN_CIRCUIT_EGA_0FCE4": {
+      "address": "0000:fce4",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0fce4; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
     "_FN_CIRCUIT_EGA_0FCF6": {
       "address": "0000:fcf6",
       "confidence": "medium",
@@ -877,6 +1323,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_0ab05b10"
+      ]
+    },
+    "_GRP_0CB3FCB5": {
+      "address": "0000:57a6",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_057a6 belongs to grp_0cb3fcb5; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_01eb"
       ]
     },
     "_GRP_1490DEE1": {
@@ -943,6 +1398,15 @@
         "grp_8628d686"
       ]
     },
+    "_GRP_2BAE8498": {
+      "address": "0000:61de",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_061de belongs to grp_2bae8498; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_01eb"
+      ]
+    },
     "_GRP_2C45569D": {
       "address": "0000:F73D",
       "confidence": "low",
@@ -979,6 +1443,15 @@
         "grp_34d2b405"
       ]
     },
+    "_GRP_389C6FA6": {
+      "address": "0000:4c6e",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_04c6e belongs to grp_389c6fa6; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_video_init_5f94"
+      ]
+    },
     "_GRP_3F05A1A6": {
       "address": "0000:847b",
       "confidence": "medium",
@@ -995,6 +1468,15 @@
       "staged_by": "decomp-shared",
       "uses": [
         "grp_829a14c2"
+      ]
+    },
+    "_GRP_43F58D0A": {
+      "address": "0000:027a",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_0027a is a member of grp_43f58d0a; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
       ]
     },
     "_GRP_487BD94E": {
@@ -1114,6 +1596,15 @@
         "grp_86c0d060"
       ]
     },
+    "_GRP_8E9BB1AC": {
+      "address": "0000:6198",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_06198 is a member of grp_8e9bb1ac; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
+      ]
+    },
     "_GRP_921AA84F": {
       "address": "0000:8c5c",
       "confidence": "medium",
@@ -1168,6 +1659,15 @@
         "grp_aace91da"
       ]
     },
+    "_GRP_B0EF0812": {
+      "address": "0000:60b8",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_060b8 is a member of grp_b0ef0812; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
+      ]
+    },
     "_GRP_B6CBA47C": {
       "address": "0000:ff2e",
       "confidence": "medium",
@@ -1175,6 +1675,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_b9245f92"
+      ]
+    },
+    "_GRP_B84A76B6": {
+      "address": "0000:021e",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_0021e is a member of grp_b84a76b6; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0136"
       ]
     },
     "_GRP_B9245F92": {
@@ -1339,6 +1848,15 @@
         "grp_86c0d060"
       ]
     },
+    "_GRP_FCB524BA": {
+      "address": "0000:0548",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_00548 is a member of grp_fcb524ba; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0010"
+      ]
+    },
     "_GRP_FD52719F": {
       "address": "0000:585b",
       "confidence": "medium",
@@ -1346,6 +1864,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_fd52719f"
+      ]
+    },
+    "_GRP_FE15C5CD": {
+      "address": "0000:9360",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_09360 is a member of grp_fe15c5cd; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0136"
       ]
     },
     "_G_0006A": {
@@ -3081,6 +3608,24 @@
         "grp_3f4e2cf3"
       ]
     },
+    "_fn_circuit_ega_0010": {
+      "address": "0000:0010",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_00010 at 0x0010; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_fn_circuit_ega_00534": {
+      "address": "0000:0534",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_00534 at 0x0534; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
     "_fn_circuit_ega_01026f": {
       "address": "0FFC:02AF",
       "confidence": "medium",
@@ -3100,6 +3645,114 @@
         "grp_d687851f"
       ]
     },
+    "_fn_circuit_ega_02790": {
+      "address": "0000:2790",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_02790 at 0x2790; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_5728"
+      ]
+    },
+    "_fn_circuit_ega_03fa0": {
+      "address": "0000:3fa0",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_03fa0 at 0x3fa0; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_fn_circuit_ega_03fca": {
+      "address": "0000:3fca",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_03fca at 0x3fca; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_fn_circuit_ega_044b2": {
+      "address": "0000:44b2",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_044b2 at 0x44b2; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_fn_circuit_ega_04a5b": {
+      "address": "0000:4a5b",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_04a5b at 0x4a5b; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5c6d"
+      ]
+    },
+    "_fn_circuit_ega_04bcb": {
+      "address": "0000:4bcb",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_04bcb at 0x4bcb; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_fn_circuit_ega_04c0a": {
+      "address": "0000:4c0a",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_04c0a at 0x4c0a; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_fn_circuit_ega_05562": {
+      "address": "0000:5562",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_05562 at 0x5562; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_fn_circuit_ega_055b6": {
+      "address": "0000:55b6",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_055b6 at 0x55b6; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_fn_circuit_ega_0560e": {
+      "address": "0000:560e",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0560e at 0x560e; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_fn_circuit_ega_05641": {
+      "address": "0000:5641",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_05641 at 0x5641; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_show_display_566e"
+      ]
+    },
+    "_fn_circuit_ega_0564d": {
+      "address": "0000:564d",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_0564d at 0x564d; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_5728"
+      ]
+    },
     "_fn_circuit_ega_056f0": {
       "address": "0000:56f0",
       "confidence": "medium",
@@ -3109,6 +3762,24 @@
         "grp_d139669e"
       ]
     },
+    "_fn_circuit_ega_05783": {
+      "address": "0000:5783",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_05783 at 0x5783; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_5728"
+      ]
+    },
+    "_fn_circuit_ega_067da": {
+      "address": "0000:67da",
+      "confidence": "medium",
+      "provenance": "inventory/group membership confirms callee start circuit_ega_067da at 0x67da; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_016d"
+      ]
+    },
     "_fn_circuit_ega_0681e": {
       "address": "0000:681e",
       "confidence": "medium",
@@ -3116,6 +3787,15 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_eb4416fe"
+      ]
+    },
+    "_fn_circuit_ega_06868": {
+      "address": "0000:6868",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_06868 at 0x6868; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_set_timer_6872"
       ]
     },
     "_fn_circuit_ega_06872": {
@@ -3166,11 +3846,30 @@
       "provenance": "inventory function circuit_ega_06a7a entry; corresponding CGA call target is independently inventory-confirmed",
       "staged_by": "decomp-circuit-b"
     },
+    "_fn_circuit_ega_06f16": {
+      "address": "0000:6f16",
+      "confidence": "medium",
+      "provenance": "inventory row circuit_ega_06f16 starts at 0x6f16; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_clear_video_state_3fca"
+      ]
+    },
     "_fn_circuit_ega_06ffe": {
       "address": "0000:6FFE",
       "confidence": "medium",
       "provenance": "inventory callee entry referenced by grp_d1ec52d7",
       "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_07040": {
+      "address": "0000:7040",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_07040 at 0x7040; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0534",
+        "single_video_status_setup_3fa0"
+      ]
     },
     "_fn_circuit_ega_072fc": {
       "address": "0000:72FC",
@@ -3193,11 +3892,29 @@
         "grp_73e02359"
       ]
     },
+    "_fn_circuit_ega_076e5": {
+      "address": "0000:76e5",
+      "confidence": "medium",
+      "provenance": "inventory row circuit_ega_076e5 starts at 0x76e5; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0"
+      ]
+    },
     "_fn_circuit_ega_0776f": {
       "address": "0000:776F",
       "confidence": "medium",
       "provenance": "inventory callee entry referenced by grp_d1ec52d7",
       "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_078a0": {
+      "address": "0000:78a0",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_078a0 at 0x78a0; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_78ea"
+      ]
     },
     "_fn_circuit_ega_078b9": {
       "address": "0000:78B9",
@@ -3256,6 +3973,24 @@
       "provenance": "inventory callee entry referenced by grp_d1ec52d7",
       "staged_by": "decomp-circuit-b"
     },
+    "_fn_circuit_ega_08ba1": {
+      "address": "0000:8ba1",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_08ba1 at 0x8ba1; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_fn_circuit_ega_08bf2": {
+      "address": "0000:8bf2",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_08bf2 at 0x8bf2; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_78ea"
+      ]
+    },
     "_fn_circuit_ega_08c1d": {
       "address": "0000:8c1d",
       "confidence": "medium",
@@ -3289,11 +4024,74 @@
       "provenance": "inventory callee entry referenced by grp_d1ec52d7",
       "staged_by": "decomp-circuit-b"
     },
+    "_fn_circuit_ega_08cf6": {
+      "address": "0000:8cf6",
+      "confidence": "low",
+      "provenance": "inventory function start circuit_ega_08cf6 at 0x8cf6; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_fn_circuit_ega_08d2a": {
+      "address": "0000:8d2a",
+      "confidence": "medium",
+      "provenance": "inventory/group membership or function start confirms circuit_ega_08d2a at 0x8d2a; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_table_index_05f4b"
+      ]
+    },
+    "_fn_circuit_ega_09026": {
+      "address": "0000:9026",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_09026 at 0x9026; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
     "_fn_circuit_ega_09394": {
       "address": "0000:9394",
       "confidence": "medium",
       "provenance": "inventory callee entry referenced by grp_d1ec52d7",
       "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_094d0": {
+      "address": "0000:94d0",
+      "confidence": "low",
+      "provenance": "inventory function start circuit_ega_094d0 at 0x94d0; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_render_phase_4401"
+      ]
+    },
+    "_fn_circuit_ega_09c18": {
+      "address": "0000:9c18",
+      "confidence": "low",
+      "provenance": "inventory function start circuit_ega_09c18 at 0x9c18; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_fn_circuit_ega_0a672": {
+      "address": "0000:a672",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_0a672 at 0xa672; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_calc_screen_y_4c38"
+      ]
+    },
+    "_fn_circuit_ega_0a6dc": {
+      "address": "0000:a6dc",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_0a6dc at 0xa6dc; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_refresh_status_5783"
+      ]
     },
     "_fn_circuit_ega_0b184": {
       "address": "0000:B184",
@@ -3319,6 +4117,33 @@
         "grp_d139669e"
       ]
     },
+    "_fn_circuit_ega_0bb7a": {
+      "address": "0000:bb7a",
+      "confidence": "low",
+      "provenance": "inventory function start circuit_ega_0bb7a at 0xbb7a; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_fn_circuit_ega_0bbae": {
+      "address": "0000:bbae",
+      "confidence": "medium",
+      "provenance": "inventory/group membership or function start confirms circuit_ega_0bbae at 0xbbae; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_table_index_05f4b"
+      ]
+    },
+    "_fn_circuit_ega_0be96": {
+      "address": "0000:be96",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_0be96 at 0xbe96; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
     "_fn_circuit_ega_0c5be": {
       "address": "0000:C5BE",
       "confidence": "medium",
@@ -3330,6 +4155,15 @@
       "confidence": "medium",
       "provenance": "inventory callee entry referenced by grp_d1ec52d7",
       "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0d2a4": {
+      "address": "0000:d2a4",
+      "confidence": "low",
+      "provenance": "inventory function start circuit_ega_0d2a4 at 0xd2a4; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
     },
     "_fn_circuit_ega_0ddd8": {
       "address": "0000:DDD8",
@@ -3351,6 +4185,15 @@
       "confidence": "medium",
       "provenance": "inventory callee entry referenced by grp_d1ec52d7",
       "staged_by": "decomp-circuit-b"
+    },
+    "_fn_circuit_ega_0dff4": {
+      "address": "0000:dff4",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_0dff4 at 0xdff4; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6e10"
+      ]
     },
     "_fn_circuit_ega_0e0ab": {
       "address": "0000:E0AB",
@@ -3418,6 +4261,15 @@
       "provenance": "inventory function circuit_ega_0ea4a entry",
       "staged_by": "decomp-circuit-b"
     },
+    "_fn_circuit_ega_0f28e": {
+      "address": "0000:f28e",
+      "confidence": "medium",
+      "provenance": "inventory row circuit_ega_0f28e starts at 0xf28e; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_configure_player_items_369e"
+      ]
+    },
     "_fn_circuit_ega_0f4bb": {
       "address": "0000:F4BB",
       "confidence": "high",
@@ -3454,10 +4306,176 @@
         "grp_2de0858f"
       ]
     },
+    "_fn_circuit_ega_3fa0": {
+      "address": "0000:3fa0",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_03fa0 at 0x3fa0; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_fn_circuit_ega_3fca": {
+      "address": "0000:3fca",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_03fca at 0x3fca; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_fn_circuit_ega_5aed": {
+      "address": "0000:5aed",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_05aed at 0x5aed; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_fn_circuit_ega_78a0": {
+      "address": "0000:78a0",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_078a0 at 0x78a0; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_fn_circuit_ega_8c1d": {
+      "address": "0000:8c1d",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_08c1d at 0x8c1d; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_fn_circuit_ega_8c84": {
+      "address": "0000:8c84",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_08c84 at 0x8c84; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6"
+      ]
+    },
+    "_fn_circuit_ega_8cd8": {
+      "address": "0000:8cd8",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_08cd8 at 0x8cd8; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_02f80"
+      ]
+    },
+    "_fn_circuit_ega_9394": {
+      "address": "0000:9394",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_09394 at 0x9394; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_02f80"
+      ]
+    },
+    "_fn_circuit_ega_9c18": {
+      "address": "0000:9c18",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_09c18 at 0x9c18; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_fn_circuit_ega_b1b6": {
+      "address": "0000:b1b6",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0b1b6 at 0xb1b6; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_02f80"
+      ]
+    },
+    "_fn_circuit_ega_b9d2": {
+      "address": "0000:b9d2",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0b9d2 at 0xb9d2; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_02f80"
+      ]
+    },
+    "_fn_circuit_ega_b9e9": {
+      "address": "0000:b9e9",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0b9e9 at 0xb9e9; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6"
+      ]
+    },
+    "_fn_circuit_ega_c97e": {
+      "address": "0000:c97e",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0c97e at 0xc97e; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_fn_circuit_ega_d922": {
+      "address": "0000:d922",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0d922 at 0xd922; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
     "_format_u8_decimal3": {
       "address": 22276,
       "confidence": "high for entry address; reconstructed descriptive name",
       "provenance": "analysis/compiler/decimal_proof.json; direct callers documented in docs/decimal.md"
+    },
+    "_g_00010": {
+      "address": "108F:0010",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0010] in single_72fc; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_72fc"
+      ]
+    },
+    "_g_00022": {
+      "address": "108F:0022",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0022] in single_6ffe; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6ffe"
+      ]
+    },
+    "_g_00024": {
+      "address": "108F:0024",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0024] in single_776f; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_776f"
+      ]
+    },
+    "_g_00026": {
+      "address": "108F:0026",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0026] in single_776f; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_776f"
+      ]
     },
     "_g_0004a": {
       "address": "108f:004a",
@@ -3466,6 +4484,24 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_d687851f"
+      ]
+    },
+    "_g_0004c": {
+      "address": "108f:004c",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
+    "_g_0004e": {
+      "address": "108f:004e",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operands in circuit_ega_006aa.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_06aa"
       ]
     },
     "_g_00052": {
@@ -3486,6 +4522,73 @@
         "grp_eb4416fe"
       ]
     },
+    "_g_00056": {
+      "address": "108f:0056",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operands in circuit_ega_006aa.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_06aa"
+      ]
+    },
+    "_g_00058": {
+      "address": "108F:0058",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0058] in single_776f; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_776f"
+      ]
+    },
+    "_g_0005a": {
+      "address": "108F:005a",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x005a] in single_776f; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_776f"
+      ]
+    },
+    "_g_0006a": {
+      "address": "108f:006a",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x006a in circuit_ega helper at 0x1a72; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_size_fields_1a72",
+        "single_update_motion_3fe0"
+      ]
+    },
+    "_g_0006c": {
+      "address": "108f:006c",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x006c in circuit_ega helper at 0x1a72; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_size_fields_1a72",
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_0006e": {
+      "address": "108f:006e",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x006e in circuit_ega helper at 0x1a72; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_size_fields_1a72",
+        "single_6317"
+      ]
+    },
+    "_g_000ee": {
+      "address": "108f:00ee",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x00ee; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be",
+        "single_update_gear_state_5aed"
+      ]
+    },
     "_g_00162": {
       "address": "108f:0162",
       "confidence": "high",
@@ -3493,6 +4596,36 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_f293cd72"
+      ]
+    },
+    "_g_00288": {
+      "address": "108f:0288",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x0288; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be",
+        "single_02cb6",
+        "single_38c6"
+      ]
+    },
+    "_g_0028a": {
+      "address": "108f:028a",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x028a in circuit_ega function 0x1c10; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_selection_1c10"
+      ]
+    },
+    "_g_0028c": {
+      "address": "108f:028c",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x028c; consistently referenced by single_02f80.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_00c3c",
+        "single_02f80"
       ]
     },
     "_g_0028e": {
@@ -3513,6 +4646,25 @@
         "grp_d139669e"
       ]
     },
+    "_g_00292": {
+      "address": "108f:0292",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x0292 in reset routine 0x2856; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_reset_selection_2856",
+        "single_update_selection_stats_2898"
+      ]
+    },
+    "_g_00294": {
+      "address": "108f:0294",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x0294 in reset routine 0x2856; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_reset_selection_2856"
+      ]
+    },
     "_g_00296": {
       "address": "108f:0296",
       "confidence": "high",
@@ -3531,6 +4683,441 @@
         "grp_d687851f"
       ]
     },
+    "_g_0029a": {
+      "address": "108f:029a",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x029a; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_reset_selection_2856"
+      ]
+    },
+    "_g_0029c": {
+      "address": "108f:029c",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x029c; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_reset_selection_2856"
+      ]
+    },
+    "_g_0029e": {
+      "address": "108f:029e",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x029e; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_reset_selection_2856"
+      ]
+    },
+    "_g_002a0": {
+      "address": "108f:02a0",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x02a0; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_reset_selection_2856"
+      ]
+    },
+    "_g_002a2": {
+      "address": "108f:02a2",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x02a2; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_reset_selection_2856"
+      ]
+    },
+    "_g_002a4": {
+      "address": "108f:02a4",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x02a4; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_reset_selection_2856"
+      ]
+    },
+    "_g_002a6": {
+      "address": "108f:02a6",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x02a6; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_reset_selection_2856"
+      ]
+    },
+    "_g_002a8": {
+      "address": "108f:02a8",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x02a8; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6"
+      ]
+    },
+    "_g_0033a": {
+      "address": "108f:033a",
+      "confidence": "high",
+      "provenance": "operand-derived from DS operand/immediate pointer 0x033a in function at 0x3992; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_g_0033c": {
+      "address": "108f:033c",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x033c in circuit_ega helper at 0x1a72; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_size_fields_1a72",
+        "single_copy_lap_counter_5ae6"
+      ]
+    },
+    "_g_0033e": {
+      "address": "108f:033e",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x033e in circuit_ega helper at 0x1a72; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_size_fields_1a72"
+      ]
+    },
+    "_g_0047a": {
+      "address": "108f:047a",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x047a in circuit_ega motion routine at 0x3fe0; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0"
+      ]
+    },
+    "_g_00670": {
+      "address": "108f:0670",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand 0x0670 in corrected display updater at 0x4553; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_g_00708": {
+      "address": "108f:0708",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand 0x0708 in corrected display updater at 0x4553; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_g_0070a": {
+      "address": "108f:070a",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand 0x070a in corrected display updater at 0x4553; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_g_007ce": {
+      "address": "108f:07ce",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand 0x07ce in corrected display updater at 0x4553; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_g_007d4": {
+      "address": "108f:07d4",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x07d4] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764"
+      ]
+    },
+    "_g_007de": {
+      "address": "108f:07de",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x07de] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764"
+      ]
+    },
+    "_g_007e2": {
+      "address": "108f:07e2",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x07e2] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764"
+      ]
+    },
+    "_g_007e4": {
+      "address": "108f:07e4",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x07e4] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764"
+      ]
+    },
+    "_g_007ee": {
+      "address": "108f:07ee",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x07ee] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764",
+        "single_5c6d"
+      ]
+    },
+    "_g_007f0": {
+      "address": "108f:07f0",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x07f0] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764",
+        "single_5c6d"
+      ]
+    },
+    "_g_008e2": {
+      "address": "108F:08e2",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x08e2] in single_4b82; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_4b82"
+      ]
+    },
+    "_g_008e3": {
+      "address": "108F:08e3",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x08e3] in single_4b82; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_4b82"
+      ]
+    },
+    "_g_008e4": {
+      "address": "108F:08e4",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x08e4] in single_4b82; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_4b82"
+      ]
+    },
+    "_g_008e5": {
+      "address": "108F:08e5",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x08e5] in single_4b82; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_4b82"
+      ]
+    },
+    "_g_008e6": {
+      "address": "108F:08e6",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x08e6] in single_calc_screen_y_4c38; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_calc_screen_y_4c38"
+      ]
+    },
+    "_g_008ea": {
+      "address": "108F:08ea",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x08ea] in single_calc_screen_y_4c38; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_calc_screen_y_4c38"
+      ]
+    },
+    "_g_008f0": {
+      "address": "108F:08f0",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x08f0] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_008f1": {
+      "address": "108F:08f1",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x08f1] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_00906": {
+      "address": "108F:0906",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0906] in single_calc_screen_y_4c38; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_calc_screen_y_4c38"
+      ]
+    },
+    "_g_00996": {
+      "address": "108F:0996",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0996] in single_5562; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5562"
+      ]
+    },
+    "_g_00998": {
+      "address": "108F:0998",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0998] in single_format_frame_time_5687; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_format_frame_time_5687"
+      ]
+    },
+    "_g_00999": {
+      "address": "108F:0999",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0999] in single_format_frame_time_5687; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_format_frame_time_5687"
+      ]
+    },
+    "_g_0099a": {
+      "address": "108F:099a",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x099a] in single_format_frame_time_5687; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_format_frame_time_5687"
+      ]
+    },
+    "_g_009d0": {
+      "address": "108F:09d0",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x09d0] in single_reset_track_cache_5a15; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_reset_track_cache_5a15"
+      ]
+    },
+    "_g_009fa": {
+      "address": "108F:09fa",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x09fa] in single_reset_track_cache_5a15; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_reset_track_cache_5a15"
+      ]
+    },
+    "_g_009fc": {
+      "address": "108F:09fc",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x09fc] in single_reset_track_cache_5a15; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_reset_track_cache_5a15"
+      ]
+    },
+    "_g_009fe": {
+      "address": "108F:09fe",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x09fe] in single_reset_track_cache_5a15; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_reset_track_cache_5a15"
+      ]
+    },
+    "_g_00a08": {
+      "address": "108F:0a08",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0a08] in single_reset_track_cache_5a15; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_reset_track_cache_5a15",
+        "single_check_track_value_5a3a"
+      ]
+    },
+    "_g_00a12": {
+      "address": "108F:0a12",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0a12] in single_reset_track_cache_5a15; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_reset_track_cache_5a15",
+        "single_check_lap_value_5a9a"
+      ]
+    },
+    "_g_00a72": {
+      "address": "108F:0a72",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0a72] in single_5c6d; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5c6d"
+      ]
+    },
+    "_g_00a7c": {
+      "address": "108F:0a7c",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0a7c] in single_5c6d; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5c6d"
+      ]
+    },
+    "_g_00a88": {
+      "address": "108F:0a88",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0a88] in single_5c6d; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5c6d"
+      ]
+    },
+    "_g_00c36": {
+      "address": "108F:0c36",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0c36] in single_66b2; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_66b2"
+      ]
+    },
+    "_g_00c4a": {
+      "address": "108F:0c4a",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0c4a] in single_66b2; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_66b2"
+      ]
+    },
+    "_g_00d12": {
+      "address": "108F:0d12",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x0d12] in single_648f; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_648f"
+      ]
+    },
     "_g_012d8": {
       "address": "108f:12d8",
       "confidence": "high",
@@ -3538,6 +5125,330 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_d687851f"
+      ]
+    },
+    "_g_0288": {
+      "address": "108f:0288",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS word operand in circuit_ega indexed-word helper at 0x67da.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_indexed_word_store_67da"
+      ]
+    },
+    "_g_033c": {
+      "address": "108f:033c",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS word operand in circuit_ega helper at 0x5ae6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_copy_config_word_5ae6"
+      ]
+    },
+    "_g_0570c": {
+      "address": "108F:570c",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x570c] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_0570e": {
+      "address": "108F:570e",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x570e] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05710": {
+      "address": "108F:5710",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5710] in single_55b6; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_55b6"
+      ]
+    },
+    "_g_05714": {
+      "address": "108F:5714",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5714] in single_copy_lap_state_5ad3; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_copy_lap_state_5ad3"
+      ]
+    },
+    "_g_05716": {
+      "address": "108F:5716",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5716] in single_copy_lap_state_5ad3; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_copy_lap_state_5ad3"
+      ]
+    },
+    "_g_05718": {
+      "address": "108F:5718",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5718] in single_copy_lap_state_5ad3; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_copy_lap_state_5ad3"
+      ]
+    },
+    "_g_0571a": {
+      "address": "108F:571a",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x571a] in single_copy_lap_state_5ad3; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_copy_lap_state_5ad3"
+      ]
+    },
+    "_g_0571c": {
+      "address": "108F:571c",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x571c] in single_copy_lap_state_5ad3; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_copy_lap_state_5ad3"
+      ]
+    },
+    "_g_0571e": {
+      "address": "108F:571e",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x571e] in single_copy_lap_state_5ad3; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_copy_lap_state_5ad3"
+      ]
+    },
+    "_g_05720": {
+      "address": "108F:5720",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5720] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05e26": {
+      "address": "108F:5e26",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e26] in single_initialize_ega_video_4cf4; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_g_05e28": {
+      "address": "108F:5e28",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e28] in single_initialize_ega_video_4cf4; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_g_05e2c": {
+      "address": "108F:5e2c",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e2c] in single_initialize_ega_video_4cf4; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_g_05e2e": {
+      "address": "108F:5e2e",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e2e] in single_initialize_ega_video_4cf4; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_g_05e30": {
+      "address": "108F:5e30",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e30] in single_5537; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5537"
+      ]
+    },
+    "_g_05e32": {
+      "address": "108F:5e32",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e32] in single_5537; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5537",
+        "single_update_display_5728"
+      ]
+    },
+    "_g_05e34": {
+      "address": "108f:5e34",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand 0x5e34 in corrected display updater at 0x4553; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_g_05e36": {
+      "address": "108F:5e36",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e36] in single_refresh_status_5783; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_refresh_status_5783"
+      ]
+    },
+    "_g_05e38": {
+      "address": "108F:5e38",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e38] in single_refresh_status_5783; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_refresh_status_5783"
+      ]
+    },
+    "_g_05e3a": {
+      "address": "108F:5e3a",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e3a] in single_refresh_status_5783; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_refresh_status_5783"
+      ]
+    },
+    "_g_05e3c": {
+      "address": "108F:5e3c",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e3c] in single_refresh_status_5783; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_refresh_status_5783"
+      ]
+    },
+    "_g_05e3e": {
+      "address": "108f:5e3e",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand 0x5e3e in corrected function 0x4401; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_render_phase_4401"
+      ]
+    },
+    "_g_05e46": {
+      "address": "108F:5e46",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e46] in single_5c6d; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5c6d"
+      ]
+    },
+    "_g_05e48": {
+      "address": "108F:5e48",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e48] in single_5c6d; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5c6d"
+      ]
+    },
+    "_g_05e50": {
+      "address": "108F:5e50",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e50] in single_configure_ega_display_564d; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_configure_ega_display_564d"
+      ]
+    },
+    "_g_05e54": {
+      "address": "108F:5e54",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e54] in single_show_display_566e; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_show_display_566e"
+      ]
+    },
+    "_g_05e56": {
+      "address": "108f:5e56",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x5e56] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764",
+        "single_show_display_566e"
+      ]
+    },
+    "_g_05e58": {
+      "address": "108f:5e58",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x5e58] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764",
+        "single_fill_planes_4bcb",
+        "single_initialize_ega_video_4cf4",
+        "single_draw_6738",
+        "single_draw_6785"
+      ]
+    },
+    "_g_05e7e": {
+      "address": "108F:5e7e",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5e7e] in single_5537; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5537"
+      ]
+    },
+    "_g_05eb4": {
+      "address": "108F:5eb4",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5eb4] in single_5562; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5562",
+        "single_55b6"
+      ]
+    },
+    "_g_05eba": {
+      "address": "108F:5eba",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5eba] in single_6360; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6360"
+      ]
+    },
+    "_g_05ebe": {
+      "address": "108f:5ebe",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x5ebe] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764",
+        "single_5c6d",
+        "single_66b2"
+      ]
+    },
+    "_g_05ec2": {
+      "address": "108F:5ec2",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5ec2] in single_66b2; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_66b2"
       ]
     },
     "_g_05ec4": {
@@ -3549,6 +5460,933 @@
         "grp_d139669e"
       ]
     },
+    "_g_05ec6": {
+      "address": "108F:5ec6",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5ec6] in single_623a; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_623a"
+      ]
+    },
+    "_g_05ecc": {
+      "address": "108F:5ecc",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5ecc] in single_623a; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_623a"
+      ]
+    },
+    "_g_05ed4": {
+      "address": "108f:5ed4",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand 0x5ed4 in corrected display updater at 0x4553; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_g_05ed6": {
+      "address": "108f:5ed6",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand 0x5ed6 in corrected display updater at 0x4553; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_g_05ede": {
+      "address": "108F:5ede",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5ede] in single_55ed; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_55ed"
+      ]
+    },
+    "_g_05edf": {
+      "address": "108F:5edf",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5edf] in single_55b6; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_55b6"
+      ]
+    },
+    "_g_05ee2": {
+      "address": "108F:5ee2",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5ee2] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b",
+        "single_5562",
+        "single_55b6",
+        "single_55ed"
+      ]
+    },
+    "_g_05ee6": {
+      "address": "108F:5ee6",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5ee6] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05ee8": {
+      "address": "108F:5ee8",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5ee8] in single_5537; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_5537"
+      ]
+    },
+    "_g_05ee9": {
+      "address": "108F:5ee9",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5ee9] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05eea": {
+      "address": "108F:5eea",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5eea] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05eef": {
+      "address": "108F:5eef",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5eef] in single_55b6; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_55b6",
+        "single_5562",
+        "single_check_lap_value_5a9a"
+      ]
+    },
+    "_g_05ef0": {
+      "address": "108F:5ef0",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5ef0] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b",
+        "single_update_display_5728"
+      ]
+    },
+    "_g_05f3a": {
+      "address": "108F:5f3a",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5f3a] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b",
+        "single_55b6"
+      ]
+    },
+    "_g_05f3b": {
+      "address": "108F:5f3b",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5f3b] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b",
+        "single_5562",
+        "single_55b6"
+      ]
+    },
+    "_g_05f3c": {
+      "address": "108F:5f3c",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5f3c] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05f3d": {
+      "address": "108F:5f3d",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5f3d] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05f3e": {
+      "address": "108F:5f3e",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5f3e] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05f44": {
+      "address": "108F:5f44",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5f44] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05f46": {
+      "address": "108F:5f46",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x5f46] in single_update_video_state_4e9b; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05f48": {
+      "address": "108f:5f48",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x5f48 in circuit_ega motion routine at 0x3fe0; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0"
+      ]
+    },
+    "_g_05fd4": {
+      "address": "108f:5fd4",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x5fd4 in circuit_ega motion routine at 0x3fe0; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0"
+      ]
+    },
+    "_g_05fd6": {
+      "address": "108f:5fd6",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x5fd6 in circuit_ega motion routine at 0x3fe0; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0"
+      ]
+    },
+    "_g_05fd8": {
+      "address": "108f:5fd8",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x5fd8 in circuit_ega motion routine at 0x3fe0; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0",
+        "single_update_video_state_4e9b"
+      ]
+    },
+    "_g_05fda": {
+      "address": "108f:5fda",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x5fda in circuit_ega motion routine at 0x3fe0; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0",
+        "single_calc_screen_y_4c38"
+      ]
+    },
+    "_g_05fe0": {
+      "address": "108f:5fe0",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x5fe0 in circuit_ega motion routine at 0x3fe0; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0"
+      ]
+    },
+    "_g_06180": {
+      "address": "108f:6180",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x6180] in the paired 0x2790 update routine; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_06182": {
+      "address": "108f:6182",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x6182] in the paired 0x2790 update routine; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_06184": {
+      "address": "108f:6184",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x6184] in the paired 0x2790 update routine; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_06186": {
+      "address": "108f:6186",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x6186] in the paired 0x2790 update routine; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_06188": {
+      "address": "108f:6188",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x6188] in the paired 0x2790 update routine; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_0618a": {
+      "address": "108f:618a",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x618a] in the paired 0x2790 update routine; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_0618c": {
+      "address": "108f:618c",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x618c] in the paired 0x2790 update routine; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_0618e": {
+      "address": "108f:618e",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x618e] in the paired 0x2790 update routine; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_06310": {
+      "address": "108F:6310",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6310] in single_calc_screen_y_4c38; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_calc_screen_y_4c38"
+      ]
+    },
+    "_g_06312": {
+      "address": "108F:6312",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6312] in single_calc_screen_y_4c38; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_calc_screen_y_4c38"
+      ]
+    },
+    "_g_06ba6": {
+      "address": "108F:6ba6",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6ba6] in single_initialize_ega_video_4cf4; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_g_06ba8": {
+      "address": "108F:6ba8",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6ba8] in single_initialize_ega_video_4cf4; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_g_06baa": {
+      "address": "108F:6baa",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6baa] in single_initialize_ega_video_4cf4; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_g_06bac": {
+      "address": "108F:6bac",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6bac] in single_initialize_ega_video_4cf4; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_g_06c10": {
+      "address": "108F:6c10",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6c10] in single_fill_planes_4bcb; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fill_planes_4bcb",
+        "single_clear_planes_4c0a",
+        "single_initialize_ega_video_4cf4",
+        "single_draw_6785"
+      ]
+    },
+    "_g_06c12": {
+      "address": "108F:6c12",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6c12] in single_fill_planes_4bcb; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fill_planes_4bcb",
+        "single_clear_planes_4c0a",
+        "single_initialize_ega_video_4cf4",
+        "single_draw_6738",
+        "single_draw_6785"
+      ]
+    },
+    "_g_06c14": {
+      "address": "108F:6c14",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6c14] in single_fill_planes_4bcb; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fill_planes_4bcb",
+        "single_clear_planes_4c0a",
+        "single_initialize_ega_video_4cf4",
+        "single_draw_6738",
+        "single_draw_6785"
+      ]
+    },
+    "_g_06c16": {
+      "address": "108F:6c16",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x6c16] in single_fill_planes_4bcb; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fill_planes_4bcb",
+        "single_clear_planes_4c0a",
+        "single_initialize_ega_video_4cf4",
+        "single_draw_6738",
+        "single_draw_6785"
+      ]
+    },
+    "_g_06c42": {
+      "address": "108f:6c42",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x6c42] in video loop at 0x4764; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_fullscreen_video_loop_4764",
+        "single_5c6d"
+      ]
+    },
+    "_g_07188": {
+      "address": "108f:7188",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand 0x7188 in corrected display updater at 0x4553; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
+    },
+    "_g_077ae": {
+      "address": "108F:77ae",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x77ae] in single_wait_timer_681e; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_wait_timer_681e",
+        "single_set_timer_6872"
+      ]
+    },
+    "_g_077b0": {
+      "address": "108F:77b0",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x77b0] in single_wait_timer_681e; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_wait_timer_681e",
+        "single_set_timer_6872"
+      ]
+    },
+    "_g_07f44": {
+      "address": "108f:7f44",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x7f44] in the shared near-return block reached by single_find_files_6b3b; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_find_files_6b3b"
+      ]
+    },
+    "_g_07fe8": {
+      "address": "108F:7fe8",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x7fe8] in single_read_timer_6868; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_read_timer_6868"
+      ]
+    },
+    "_g_07fea": {
+      "address": "108F:7fea",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x7fea] in single_read_timer_6868; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_read_timer_6868"
+      ]
+    },
+    "_g_07fec": {
+      "address": "108F:7fec",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x7fec] in single_6ee8; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6ee8",
+        "single_6f16"
+      ]
+    },
+    "_g_07fed": {
+      "address": "108F:7fed",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x7fed] in single_6f16; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6f16"
+      ]
+    },
+    "_g_07fee": {
+      "address": "108F:7fee",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x7fee] in single_6ee8; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6ee8"
+      ]
+    },
+    "_g_07ff0": {
+      "address": "108F:7ff0",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x7ff0] in single_6ee8; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6ee8",
+        "single_6f16"
+      ]
+    },
+    "_g_07ff2": {
+      "address": "108F:7ff2",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x7ff2] in single_6ee8; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6ee8",
+        "single_6f16"
+      ]
+    },
+    "_g_0802e": {
+      "address": "108F:802e",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x802e] in single_6ee8; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6ee8",
+        "single_6f16"
+      ]
+    },
+    "_g_08030": {
+      "address": "108F:8030",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x8030] in single_6ee8; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6ee8",
+        "single_6f16"
+      ]
+    },
+    "_g_0836e": {
+      "address": "108F:836e",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x836e] in single_73e4; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_73e4"
+      ]
+    },
+    "_g_08398": {
+      "address": "108F:8398",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x8398] in single_76e5; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_76e5"
+      ]
+    },
+    "_g_0839e": {
+      "address": "108F:839e",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x839e] in single_76e5; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_76e5"
+      ]
+    },
+    "_g_083b6": {
+      "address": "108F:83b6",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x83b6] in single_76e5; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_76e5"
+      ]
+    },
+    "_g_083ba": {
+      "address": "108f:83ba",
+      "confidence": "high",
+      "provenance": "operand-derived from indexed table access in paired nibble lookup at EGA 0x76d4 / CGA 0x8180; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_76d4"
+      ]
+    },
+    "_g_083ca": {
+      "address": "108F:83ca",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x83ca] in single_776f; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_776f"
+      ]
+    },
+    "_g_083cc": {
+      "address": "108F:83cc",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x83cc] in single_776f; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_776f"
+      ]
+    },
+    "_g_083ce": {
+      "address": "108F:83ce",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x83ce] in single_776f; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_776f"
+      ]
+    },
+    "_g_083d0": {
+      "address": "108F:83d0",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x83d0] in single_776f; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_776f"
+      ]
+    },
+    "_g_085f8": {
+      "address": "108F:85f8",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x85f8] in single_78b9; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_78b9"
+      ]
+    },
+    "_g_085fa": {
+      "address": "108F:85fa",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x85fa] in single_78b9; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_78b9"
+      ]
+    },
+    "_g_086e2": {
+      "address": "108F:86e2",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x86e2] in single_7f64; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_7f64"
+      ]
+    },
+    "_g_086e4": {
+      "address": "108F:86e4",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x86e4] in single_7f64; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_7f64"
+      ]
+    },
+    "_g_08904": {
+      "address": "108F:8904",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x8904] in single_7f64; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_7f64"
+      ]
+    },
+    "_g_08906": {
+      "address": "108F:8906",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x8906] in single_7f64; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_7f64"
+      ]
+    },
+    "_g_08b40": {
+      "address": "108F:8b40",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x8b40] in single_78ea; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_78ea"
+      ]
+    },
+    "_g_08b42": {
+      "address": "108F:8b42",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x8b42] in single_78ea; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_78ea"
+      ]
+    },
+    "_g_08b7e": {
+      "address": "108f:8b7e",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x8b7e in circuit_ega motion routine at 0x3fe0; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0",
+        "single_update_video_state_4e9b",
+        "single_7536"
+      ]
+    },
+    "_g_093de": {
+      "address": "108f:93de",
+      "confidence": "high",
+      "provenance": "operand-derived from DS operand/immediate pointer 0x93de in function at 0x3992; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_g_093e8": {
+      "address": "108f:93e8",
+      "confidence": "high",
+      "provenance": "operand-derived from DS operand/immediate pointer 0x93e8 in function at 0x3992; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_g_093f0": {
+      "address": "108f:93f0",
+      "confidence": "high",
+      "provenance": "operand-derived from DS operand/immediate pointer 0x93f0 in function at 0x3992; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_g_096a0": {
+      "address": "108f:96a0",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS word operand 0x96a0 in circuit_ega helper at 0x3fa0; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_video_status_setup_3fa0",
+        "single_clear_video_state_3fca",
+        "single_059e"
+      ]
+    },
+    "_g_096a2": {
+      "address": "108f:96a2",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS word operand 0x96a2 in circuit_ega helper at 0x3fa0; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_video_status_setup_3fa0",
+        "single_clear_video_state_3fca",
+        "single_059e"
+      ]
+    },
+    "_g_096a4": {
+      "address": "108f:96a4",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand in circuit_ega_01828.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_00c3c",
+        "single_01828"
+      ]
+    },
+    "_g_096a8": {
+      "address": "108f:96a8",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96a8; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_096aa": {
+      "address": "108f:96aa",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96aa; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_096ac": {
+      "address": "108f:96ac",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96ac; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be",
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_g_096ae": {
+      "address": "108f:96ae",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96ae; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_096b0": {
+      "address": "108f:96b0",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96b0; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be",
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_g_096b2": {
+      "address": "108f:96b2",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96b2; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_096b4": {
+      "address": "108f:96b4",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96b4; consistently referenced by single_02f80.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_g_096b6": {
+      "address": "108f:96b6",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96b6; consistently referenced by single_02f80.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_g_096b8": {
+      "address": "108f:96b8",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96b8; consistently referenced by single_02f80.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_g_096ce": {
+      "address": "108f:96ce",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x96ce in circuit_ega function 0x275e; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_selection_stats_2898",
+        "single_update_video_state_4e9b",
+        "single_2790"
+      ]
+    },
+    "_g_096d2": {
+      "address": "108f:96d2",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96d2; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_096d4": {
+      "address": "108f:96d4",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x96d4; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_096d6": {
+      "address": "108f:96d6",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x96d6 in circuit_ega function 0x275e; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_096dc": {
+      "address": "108f:96dc",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operands in circuit_ega_006aa.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_06aa"
+      ]
+    },
+    "_g_096e0": {
+      "address": "108f:96e0",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
+    "_g_096e2": {
+      "address": "108f:96e2",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
     "_g_096e4": {
       "address": "108f:96e4",
       "confidence": "high",
@@ -3558,6 +6396,15 @@
         "grp_d687851f"
       ]
     },
+    "_g_098e8": {
+      "address": "108f:98e8",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x98e8 in circuit_ega function 0x275e; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
     "_g_098ea": {
       "address": "108f:98ea",
       "confidence": "high",
@@ -3565,6 +6412,114 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_d139669e"
+      ]
+    },
+    "_g_098ec": {
+      "address": "108f:98ec",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x98ec in EGA item setup at 0x369e; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_configure_player_items_369e"
+      ]
+    },
+    "_g_098ee": {
+      "address": "108f:98ee",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x98ee in EGA item setup at 0x369e; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_configure_player_items_369e"
+      ]
+    },
+    "_g_098f0": {
+      "address": "108f:98f0",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x98f0 in EGA item setup at 0x369e; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_configure_player_items_369e"
+      ]
+    },
+    "_g_09900": {
+      "address": "108f:9900",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9900; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_09902": {
+      "address": "108f:9902",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9902; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_09904": {
+      "address": "108F:9904",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x9904] in single_6e10; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6e10"
+      ]
+    },
+    "_g_09906": {
+      "address": "108F:9906",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x9906] in single_6e10; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6e10"
+      ]
+    },
+    "_g_09908": {
+      "address": "108f:9908",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9908; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_0990a": {
+      "address": "108f:990a",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x990a; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
+    },
+    "_g_0990c": {
+      "address": "108f:990c",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x990c in circuit_ega function 0x275e; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_selection_stats_2898"
+      ]
+    },
+    "_g_0990e": {
+      "address": "108f:0990e",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS operands in circuit_ega_38c6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_38c6"
+      ]
+    },
+    "_g_09910": {
+      "address": "108F:9910",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x9910] in single_6e10; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6e10"
       ]
     },
     "_g_09b12": {
@@ -3585,6 +6540,63 @@
         "grp_fadcab13"
       ]
     },
+    "_g_09ba6": {
+      "address": "108F:9ba6",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x9ba6] in single_6e10; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6e10"
+      ]
+    },
+    "_g_09bbc": {
+      "address": "108f:9bbc",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS:[0x9bbc] in the paired 0x2790 update routine; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_2790"
+      ]
+    },
+    "_g_09bc0": {
+      "address": "108f:9bc0",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9bc0; consistently referenced by single_02f80.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_g_09bc2": {
+      "address": "108f:9bc2",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9bc2; consistently referenced by single_02f80.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_g_09bc4": {
+      "address": "108f:9bc4",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9bc4; consistently referenced by single_02f80.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02f80"
+      ]
+    },
+    "_g_09bd4": {
+      "address": "108f:9bd4",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x9bd4 in circuit_ega helper at 0x1a72; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_size_fields_1a72",
+        "single_initialize_ega_video_4cf4",
+        "single_check_track_value_5a3a",
+        "single_copy_lap_counter_5ae6"
+      ]
+    },
     "_g_09bd6": {
       "address": "108f:9bd6",
       "confidence": "high",
@@ -3601,6 +6613,137 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_d139669e"
+      ]
+    },
+    "_g_09c2e": {
+      "address": "108f:9c2e",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9c2e; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_01828",
+        "single_020be",
+        "single_02cb6",
+        "single_02f80",
+        "single_059e",
+        "single_38c6",
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_g_09c30": {
+      "address": "108f:9c30",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9c30; consistently referenced by single_02cb6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be",
+        "single_02cb6",
+        "single_02f80",
+        "single_059e",
+        "single_38c6"
+      ]
+    },
+    "_g_09cbe": {
+      "address": "108F:9cbe",
+      "confidence": "high",
+      "provenance": "operand-derived from DS direct reference [0x9cbe] in single_6e10; DGROUP base 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6e10"
+      ]
+    },
+    "_g_09cc0": {
+      "address": "108f:9cc0",
+      "confidence": "high",
+      "provenance": "operand-derived from DS operand/immediate pointer 0x9cc0 in function at 0x3992; DGROUP base 0x108f.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_g_09cf2": {
+      "address": "108f:9cf2",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS reference in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_00c3c"
+      ]
+    },
+    "_g_09cf6": {
+      "address": "108f:9cf6",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x9cf6 in circuit_ega motion routine at 0x3fe0; DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_motion_3fe0"
+      ]
+    },
+    "_g_09cf8": {
+      "address": "108f:9cf8",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9cf8; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be",
+        "single_2790"
+      ]
+    },
+    "_g_09cfa": {
+      "address": "108f:9cfa",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9cfa; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be",
+        "single_2790"
+      ]
+    },
+    "_g_09cfc": {
+      "address": "108f:9cfc",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9cfc; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be",
+        "single_2790"
+      ]
+    },
+    "_g_09cfe": {
+      "address": "108f:9cfe",
+      "confidence": "high",
+      "provenance": "operand-derived DGROUP offset 0x9cfe; consistently referenced by single_020be.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be",
+        "single_2790"
+      ]
+    },
+    "_g_09d00": {
+      "address": "108f:9d00",
+      "confidence": "high",
+      "provenance": "operand-derived from direct DS reference in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_00c3c"
+      ]
+    },
+    "_g_12fc": {
+      "address": "108f:12fc",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS word operand in circuit_ega indexed-word helper at 0x67da.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_indexed_word_store_67da"
+      ]
+    },
+    "_g_12fe": {
+      "address": "108f:12fe",
+      "confidence": "high",
+      "provenance": "operand-derived: base displacement 0x12fe in DS indexed-word access in circuit_ega routine.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_indexed_word_store_67da"
       ]
     },
     "_g_1f5c": {
@@ -3628,6 +6771,34 @@
       "staged_by": "decomp-circuit-b",
       "uses": [
         "grp_1a02eb1b"
+      ]
+    },
+    "_g_5ebc": {
+      "address": "108f:5ebc",
+      "confidence": "medium",
+      "provenance": "operand-derived: direct DS word operand in circuit_ega startup initializer at 0x0173 or 0x0179.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_016d"
+      ]
+    },
+    "_g_5efe": {
+      "address": "108f:5efe",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS word operands in circuit_ega startup tail at 0x0534.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0534"
+      ]
+    },
+    "_g_5f00": {
+      "address": "108f:5f00",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS word operands in circuit_ega startup tail at 0x0534.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_0534",
+        "single_prepare_main_menu_3992"
       ]
     },
     "_g_66a": {
@@ -3918,6 +7089,16 @@
         "grp_73e02359"
       ]
     },
+    "_g_85f8": {
+      "address": "108f:85f8",
+      "confidence": "high",
+      "provenance": "operand-derived: EGA routine loads a 32-bit far pointer from DS words 0x85f8 and 0x85fa at 0x78ca.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_get_far_global_78ca",
+        "single_indirect_call_78a0"
+      ]
+    },
     "_g_8626": {
       "address": "108F:8626",
       "confidence": "medium",
@@ -4126,6 +7307,24 @@
         "grp_03f22b25"
       ]
     },
+    "_g_9bbe": {
+      "address": "108f:9bbe",
+      "confidence": "medium",
+      "provenance": "operand-derived: direct DS word operand in circuit_ega startup initializer at 0x0173 or 0x0179.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_016d"
+      ]
+    },
+    "_g_9bd4": {
+      "address": "108f:9bd4",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS word operand in circuit_ega helper at 0x5ae6.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_copy_config_word_5ae6"
+      ]
+    },
     "_g_c7d4": {
       "address": "0000:C7D4",
       "confidence": "medium",
@@ -4206,6 +7405,15 @@
         "grp_2a1dacea"
       ]
     },
+    "_grp_0376aefe": {
+      "address": "0000:f328",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_0f328 starts at 0xf328; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_configure_player_items_369e"
+      ]
+    },
     "_grp_03f22b25": {
       "address": "0000:E0CA",
       "confidence": "medium",
@@ -4236,11 +7444,57 @@
       "provenance": "inventory member start for correspondence group grp_0b895b36",
       "staged_by": "decomp-circuit-b"
     },
+    "_grp_15791916": {
+      "address": "0000:6e32",
+      "confidence": "medium",
+      "provenance": "group/inventory member circuit_ega_06e32; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
+    "_grp_17077521": {
+      "address": "0000:872c",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_0872c begins at 0x872c; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_video_status_setup_3fa0",
+        "single_clear_video_state_3fca"
+      ]
+    },
     "_grp_1a02eb1b": {
       "address": "0FFC:018B",
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_1014b; correspondence group grp_1a02eb1b",
       "staged_by": "decomp-circuit-b"
+    },
+    "_grp_1a9a5e95": {
+      "address": "0000:f2ae",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_0f2ae starts at 0xf2ae; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_configure_player_items_369e"
+      ]
+    },
+    "_grp_1f3dd2b2": {
+      "address": "0000:08d8",
+      "confidence": "medium",
+      "provenance": "group grp_1f3dd2b2 member circuit_ega_008d8; direct call operand from circuit_ega_006aa.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_06aa"
+      ]
+    },
+    "_grp_1f63ab13": {
+      "address": "0000:4c38",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_04c38 at 0x4c38; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
     },
     "_grp_2a8a2e47": {
       "address": "0000:1740",
@@ -4263,6 +7517,67 @@
       "provenance": "inventory function circuit_ega_0f5a8; correspondence group grp_2de0858f",
       "staged_by": "decomp-circuit-b"
     },
+    "_grp_32a19da2": {
+      "address": "0000:66da",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_066da at 0x66da; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_grp_36bf69de": {
+      "address": "0000:a056",
+      "confidence": "medium",
+      "provenance": "group/inventory member circuit_ega_0a056; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
+    "_grp_389c6fa6": {
+      "address": "0000:4c6e",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_04c6e at 0x4c6e; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
+    "_grp_3cb306f6": {
+      "address": "0000:fabc",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_0fabc starts at 0xfabc; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_configure_player_items_369e"
+      ]
+    },
+    "_grp_3f05a1a6": {
+      "address": "0000:847b",
+      "confidence": "low",
+      "provenance": "group grp_3f05a1a6 inventory member circuit_ega_0847b; call operand in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_00c3c",
+        "single_020be",
+        "single_02cb6",
+        "single_02f80",
+        "single_06aa",
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_grp_3f4e2cf3": {
+      "address": "0000:8b26",
+      "confidence": "medium",
+      "provenance": "group grp_3f4e2cf3 inventory member circuit_ega_08b26; direct call in circuit_ega_01828.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_01828",
+        "single_020be",
+        "single_prepare_main_menu_3992"
+      ]
+    },
     "_grp_427898b6": {
       "address": "0000:7938",
       "confidence": "medium",
@@ -4270,6 +7585,15 @@
       "staged_by": "decomp-circuit-b",
       "uses": [
         "grp_5306dd97"
+      ]
+    },
+    "_grp_42d943b6": {
+      "address": "0000:44ce",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_044ce at 0x44ce; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
       ]
     },
     "_grp_43ff7e15": {
@@ -4281,11 +7605,29 @@
         "grp_da1e7b44"
       ]
     },
+    "_grp_448d2ff6": {
+      "address": "0000:770c",
+      "confidence": "medium",
+      "provenance": "group/inventory member circuit_ega_0770c; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
     "_grp_495a145f": {
       "address": "0000:E48C",
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_0e48c; member of correspondence group grp_495a145f",
       "staged_by": "decomp-circuit-b"
+    },
+    "_grp_4aaa407a": {
+      "address": "0000:4513",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_04513 at 0x4513; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_update_display_item_4553"
+      ]
     },
     "_grp_4e684612": {
       "address": "0000:E8A6",
@@ -4299,11 +7641,29 @@
       "provenance": "inventory function circuit_ega_07996; correspondence group grp_5306dd97",
       "staged_by": "decomp-circuit-b"
     },
+    "_grp_57a83843": {
+      "address": "0000:1aa8",
+      "confidence": "medium",
+      "provenance": "group/inventory member circuit_ega_01aa8; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
+    },
     "_grp_58b528f2": {
       "address": "0000:F4CC",
       "confidence": "medium",
       "provenance": "inventory member start for correspondence group grp_58b528f2",
       "staged_by": "decomp-circuit-b"
+    },
+    "_grp_5d64301a": {
+      "address": "0000:7b9e",
+      "confidence": "medium",
+      "provenance": "group/inventory member circuit_ega_07b9e; direct call operand in circuit_ega function at 0x059e.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
     },
     "_grp_61d67937": {
       "address": "0000:F64E",
@@ -4332,6 +7692,26 @@
         "grp_d139669e"
       ]
     },
+    "_grp_7644de05": {
+      "address": "0000:56da",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_056da at 0x56da; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_format_unsigned_56f0"
+      ]
+    },
+    "_grp_7b77c400": {
+      "address": "0000:fb2a",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_0fb2a at 0xfb2a; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6",
+        "single_02f80",
+        "single_7f64"
+      ]
+    },
     "_grp_802d395c": {
       "address": "0000:6897",
       "confidence": "medium",
@@ -4350,6 +7730,15 @@
         "grp_da1e7b44"
       ]
     },
+    "_grp_8fa8dedb": {
+      "address": "0000:6f6e",
+      "confidence": "medium",
+      "provenance": "inventory/group membership: circuit_ega_06f6e begins at 0x6f6e; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_video_status_setup_3fa0"
+      ]
+    },
     "_grp_921aa84f": {
       "address": "0000:8c5c",
       "confidence": "medium",
@@ -4359,11 +7748,47 @@
         "grp_d687851f"
       ]
     },
+    "_grp_9240eae1": {
+      "address": "0000:0ce6",
+      "confidence": "medium",
+      "provenance": "group grp_9240eae1 inventory member circuit_ega_00ce6; call operand in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_00c3c"
+      ]
+    },
+    "_grp_93d4ba6d": {
+      "address": "0000:4184",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_04184 at 0x4184; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_ega_video_4cf4"
+      ]
+    },
     "_grp_94d6": {
       "address": "0000:F89C",
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_0f89c; member of correspondence group grp_94d6",
       "staged_by": "decomp-circuit-b"
+    },
+    "_grp_94ffb100": {
+      "address": "0000:ff62",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_0ff62 at 0xff62; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_02cb6"
+      ]
+    },
+    "_grp_9a41e916": {
+      "address": "0000:7c14",
+      "confidence": "medium",
+      "provenance": "inventory function start circuit_ega_07c14 at 0x7c14; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_020be"
+      ]
     },
     "_grp_9c73fa69": {
       "address": "0000:98EC",
@@ -4383,6 +7808,29 @@
         "grp_9e3efdaa"
       ]
     },
+    "_grp_aa88d69b": {
+      "address": "0000:a464",
+      "confidence": "low",
+      "provenance": "group grp_aa88d69b inventory member circuit_ega_0a464; call operand in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_00c3c",
+        "single_020be",
+        "single_02cb6",
+        "single_02f80",
+        "single_06aa",
+        "single_prepare_main_menu_3992"
+      ]
+    },
+    "_grp_aace91da": {
+      "address": "0000:6b50",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_06b50 at 0x6b50; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_6dd2"
+      ]
+    },
     "_grp_b0ef0812": {
       "address": "0000:60b8",
       "confidence": "medium",
@@ -4397,6 +7845,15 @@
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_08371; correspondence group grp_b1f1df1b",
       "staged_by": "decomp-circuit-b"
+    },
+    "_grp_b22bb864": {
+      "address": "0000:0180",
+      "confidence": "medium",
+      "provenance": "inventory/group membership confirms callee start circuit_ega_00180 at 0x0180; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_circuit_startup_016d"
+      ]
     },
     "_grp_b6cba47c": {
       "address": "0000:FF2E",
@@ -4431,6 +7888,24 @@
       "provenance": "inventory function circuit_ega_10031; correspondence group grp_bbb9e788",
       "staged_by": "decomp-circuit-b"
     },
+    "_grp_c0a2b1d4": {
+      "address": "0000:15e0",
+      "confidence": "medium",
+      "provenance": "group grp_c0a2b1d4 inventory member circuit_ega_015e0; call operand in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_00c3c"
+      ]
+    },
+    "_grp_c4c674f2": {
+      "address": "0000:12a4",
+      "confidence": "medium",
+      "provenance": "group grp_c4c674f2 inventory member circuit_ega_012a4; call operand in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_00c3c"
+      ]
+    },
     "_grp_c5efae67": {
       "address": "0000:FE8A",
       "confidence": "medium",
@@ -4455,6 +7930,15 @@
         "grp_2a1dacea",
         "grp_5306dd97",
         "grp_3f05a1a6"
+      ]
+    },
+    "_grp_d139669e": {
+      "address": "0000:28ce",
+      "confidence": "medium",
+      "provenance": "inventory/group function start circuit_ega_028ce at 0x28ce; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_refresh_status_5783"
       ]
     },
     "_grp_d1ec52d7": {
@@ -4487,6 +7971,34 @@
         "grp_d139669e"
       ]
     },
+    "_grp_e26c8dbc": {
+      "address": "0000:ddfe",
+      "confidence": "low",
+      "provenance": "inventory/group function start circuit_ega_0ddfe at 0xddfe; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_7f64"
+      ]
+    },
+    "_grp_e4004f71": {
+      "address": "0000:7e64",
+      "confidence": "medium",
+      "provenance": "group grp_e4004f71 inventory member circuit_ega_07e64; direct call in circuit_ega_01828.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_01828",
+        "single_02f80"
+      ]
+    },
+    "_grp_e507b43b": {
+      "address": "0000:3aba",
+      "confidence": "low",
+      "provenance": "inventory function start circuit_ega_03aba at 0x3aba; code segment base 0x0000.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_prepare_main_menu_3992"
+      ]
+    },
     "_grp_ea09637f": {
       "address": "0000:7A2E",
       "confidence": "medium",
@@ -4496,11 +8008,29 @@
         "grp_5306dd97"
       ]
     },
+    "_grp_eb4416fe": {
+      "address": "0000:0bfa",
+      "confidence": "medium",
+      "provenance": "group grp_eb4416fe member circuit_ega_00bfa; direct call operand from circuit_ega_006aa.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_06aa"
+      ]
+    },
     "_grp_f3a4e254": {
       "address": "0000:7DA1",
       "confidence": "medium",
       "provenance": "inventory function circuit_ega_07da1; correspondence group grp_f3a4e254",
       "staged_by": "decomp-circuit-b"
+    },
+    "_grp_f8ffa5a4": {
+      "address": "0000:0796",
+      "confidence": "medium",
+      "provenance": "group grp_f8ffa5a4 member circuit_ega_00796; direct call operand from circuit_ega_006aa.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_06aa"
+      ]
     },
     "_grp_f93ec5a2": {
       "address": "0000:8268",
@@ -4515,6 +8045,17 @@
       "staged_by": "decomp-circuit-a",
       "used_by": [
         "grp_d687851f"
+      ]
+    },
+    "_grp_fe15c5cd": {
+      "address": "0000:9360",
+      "confidence": "medium",
+      "provenance": "group grp_fe15c5cd inventory member circuit_ega_09360; call operand in circuit_ega_00c3c.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_7f64",
+        "single_06aa",
+        "single_00c3c"
       ]
     },
     "_hook_int09": {
@@ -4799,11 +8340,65 @@
         "grp_dcbf0860"
       ]
     },
+    "_selection_delay": {
+      "address": "108f:98e8",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x98e8 in the selection initializer at 0x275e; target DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_selection_275e"
+      ]
+    },
+    "_selection_mode": {
+      "address": "108f:028c",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x028c in the selection initializer at 0x275e; target DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_selection_275e"
+      ]
+    },
+    "_selection_state_a": {
+      "address": "108f:96ce",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x96ce in the selection initializer at 0x275e; target DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_selection_275e"
+      ]
+    },
+    "_selection_state_b": {
+      "address": "108f:990c",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x990c in the selection initializer at 0x275e; target DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_selection_275e"
+      ]
+    },
+    "_selection_state_c": {
+      "address": "108f:96d6",
+      "confidence": "high",
+      "provenance": "operand-derived: direct DS operand 0x96d6 in the selection initializer at 0x275e; target DGROUP base is 0x108f0.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_initialize_selection_275e"
+      ]
+    },
     "_sprite1_unknown2": {
       "address": "0000:9956",
       "confidence": "medium",
       "provenance": "Census records a low-confidence reachable-call-target start at 0x9956 with a BP-frame prologue; the near callee is called by independent routines at 0x26c8, 0x955f, and 0x95c7, in addition to four calls in sprite_1_unk4. Those callsites pass the same five rectangle arguments.",
       "staged_by": "port-shape"
+    },
+    "_strcmp": {
+      "address": "0000:f9d2",
+      "confidence": "high",
+      "provenance": "MSC 5.10 runtime attribution: strcmp.asm at this call target.",
+      "staged_by": "decomp-circuit-a",
+      "used_by": [
+        "single_059e"
+      ]
     },
     "_template_copy_source": {
       "address": "0000:C7BA",

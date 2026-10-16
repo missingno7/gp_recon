@@ -20,7 +20,10 @@ class BindingFileTests(unittest.TestCase):
                     linear, _ = pipeline.address(row)
                     self.assertGreaterEqual(linear, 0)
                     if size is not None:
-                        self.assertLess(linear, 0x100000)
+                        # Uninitialized DGROUP data (BSS) lies beyond the load image.
+                        dgroup = json.loads((ROOT / "analysis/inventory" / f"{target}.json")
+                                            .read_text(encoding="utf-8"))["dgroup_base"]
+                        self.assertLess(linear, max(size, dgroup + 0x10000))
 
     def test_out_of_range_segment_offset_rejected(self):
         for bad in ("15990:070C", "0000:14CE6"):

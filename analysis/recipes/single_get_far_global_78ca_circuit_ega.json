@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "single_get_far_global_78ca_circuit_ega",
+  "source": "src/circuit/engine/single_get_far_global_78ca.c",
+  "source_sha256": "7f1d6538342bb76e4de99806b4a74a837921774422876283e0ffe3ed9433e9c4",
+  "profile": "msc510-small-o_gs",
+  "public": "_get_far_global_78ca",
+  "expected_fixups": [
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_85f8",
+      "frame": "_g_85f8"
+    },
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_85f8",
+      "frame": "_g_85f8"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 30922,
+      "end": 30930
+    }
+  }
+}

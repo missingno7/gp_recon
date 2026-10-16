@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_6317_circuit_cga",
+  "source": "src/circuit/video/single_6317_circuit_cga.asm",
+  "source_sha256": "7c6afcfd3b128d384ee5eb3cc30042107568365dc56f917ebe042863eab3dc3f",
+  "profile": "masm510",
+  "public": "_grp_6317",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 25021,
+      "end": 25060
+    }
+  }
+}

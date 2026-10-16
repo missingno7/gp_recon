@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_copy_lap_state_5ad3_circuit_cga",
+  "source": "src/circuit/video/single_copy_lap_state_5ad3_circuit_cga.asm",
+  "source_sha256": "8e40360fd1a874fe0e67b06631c17de48f8de2f696403f3d64da9788e72f7b28",
+  "profile": "masm510",
+  "public": "_copy_lap_state_5ad3",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 22921,
+      "end": 22940
+    }
+  }
+}

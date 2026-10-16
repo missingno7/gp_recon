@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_keyboard_read_78a5_circuit_ega",
+  "source": "src/circuit/video/single_keyboard_read_78a5_circuit_ega.asm",
+  "source_sha256": "c9dcd4b7d7d85423c02fcc72c11fd9fe7352aeff27206b55f3cada7e87e0c896",
+  "profile": "masm510",
+  "public": "_keyboard_read",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 30885,
+      "end": 30905
+    }
+  }
+}

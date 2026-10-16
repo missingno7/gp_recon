@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_draw_6738_circuit_cga",
+  "source": "src/circuit/video/single_draw_6738_circuit_cga.asm",
+  "source_sha256": "6d2aad0d994343e53825d691912e0b30b01f5de1a9c9a96d7830658e7af31a3c",
+  "profile": "masm510",
+  "public": "_draw_point_rows",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 26078,
+      "end": 26138
+    }
+  }
+}

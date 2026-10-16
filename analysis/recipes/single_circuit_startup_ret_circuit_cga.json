@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_circuit_startup_ret_circuit_cga",
+  "source": "src/circuit/startup/single_circuit_startup_ret_cga.c",
+  "source_sha256": "d041160e038b4385d339a4d958b03a94c314720d33951506261b4f90923b02b6",
+  "profile": "msc510-small-o_gs",
+  "public": "_circuit_startup_return_stub",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 487,
+      "end": 488
+    }
+  }
+}

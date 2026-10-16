@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_set_video_state_7040_circuit_ega",
+  "source": "src/circuit/video/single_set_video_state_7040_circuit_ega.asm",
+  "source_sha256": "51dbabf5e941b3eaef0153aaac954420029e949eace5cfdaf85370d5b64d284b",
+  "profile": "masm510",
+  "public": "_set_video_state_7040",
+  "expected_fixups": [
+    {
+      "offset": 24,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0DDD8",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 28736,
+      "end": 28774
+    }
+  }
+}

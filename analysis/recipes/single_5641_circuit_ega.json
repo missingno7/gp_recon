@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_5641_circuit_ega",
+  "source": "src/circuit/video/single_5641_circuit_ega.asm",
+  "source_sha256": "7ca4f39ab5907f810011837c47acc55e02fb27e5c86a114fa530e9defe3d6a39",
+  "profile": "masm510",
+  "public": "_display_state_5641",
+  "expected_fixups": [
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_08CD8",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 22081,
+      "end": 22093
+    }
+  }
+}

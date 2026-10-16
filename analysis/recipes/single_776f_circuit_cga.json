@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_776f_circuit_cga",
+  "source": "src/circuit/video/single_776f_circuit_cga.asm",
+  "source_sha256": "520634b2ec083402052ecd2f4070f349aa68a284f64b0558c1b6adeeb16bd2de",
+  "profile": "masm510",
+  "public": "_grp_776f",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 33307,
+      "end": 33364
+    }
+  }
+}

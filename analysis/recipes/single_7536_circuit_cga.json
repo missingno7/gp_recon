@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_7536_circuit_cga",
+  "source": "src/circuit/video/single_7536_circuit_cga.asm",
+  "source_sha256": "63192456a478fc8f3b3be69652b1bbfc746803a4077b0d38dac136f86589aa33",
+  "profile": "masm510",
+  "public": "_grp_7536",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 32738,
+      "end": 32748
+    }
+  }
+}

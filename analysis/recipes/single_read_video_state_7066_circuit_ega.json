@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_read_video_state_7066_circuit_ega",
+  "source": "src/circuit/video/single_read_video_state_7066_circuit_ega.asm",
+  "source_sha256": "fecbdf4d7d3819544dbe64ded3af119eaf699148a99abdda2a025c2c3c7c375b",
+  "profile": "masm510",
+  "public": "_read_video_state_7066",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 28774,
+      "end": 28797
+    }
+  }
+}

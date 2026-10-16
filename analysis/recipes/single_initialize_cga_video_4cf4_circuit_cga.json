@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "single_initialize_cga_video_4cf4_circuit_cga",
+  "source": "src/circuit/video/single_initialize_cga_video_4cf4_circuit_cga.asm",
+  "source_sha256": "df9aa9ea64171bec2c7f1c1aa7c1a6ab4b8e8b666e886efb4c0df93159ca6a21",
+  "profile": "masm510",
+  "public": "_initialize_cga_video_4cf4",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_05503",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 53,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_04AFD",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 56,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_1F63AB13",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 59,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_389C6FA6",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 62,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_93D4BA6D",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 88,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_068EE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 94,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_5B2E6DBB",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 100,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_32A19DA2",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 19412,
+      "end": 19515
+    }
+  }
+}

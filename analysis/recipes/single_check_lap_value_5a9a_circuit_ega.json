@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_check_lap_value_5a9a_circuit_ega",
+  "source": "src/circuit/video/single_check_lap_value_5a9a_circuit_ega.asm",
+  "source_sha256": "fcf95feceb2e5379a275e226d80854a6ae5e26a07ff306bc022b33c81d971e76",
+  "profile": "masm510",
+  "public": "_check_lap_value_5a9a",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 23194,
+      "end": 23204
+    }
+  }
+}

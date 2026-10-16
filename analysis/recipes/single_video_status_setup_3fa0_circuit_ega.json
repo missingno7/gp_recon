@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "single_video_status_setup_3fa0_circuit_ega",
+  "source": "src/circuit/state/single_video_status_setup_3fa0_ega.c",
+  "source_sha256": "eba2e7c18ce53a4708d123b185609e7fa140edc75e0f7eae7331e6f6145a3584",
+  "profile": "msc510-small-o_gs",
+  "public": "_video_status_setup_3fa0",
+  "expected_fixups": [
+    {
+      "offset": 35,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_17077521",
+      "frame": "_grp_17077521"
+    },
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_096a0",
+      "frame": "_g_096a0"
+    },
+    {
+      "offset": 28,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_096a2",
+      "frame": "_g_096a2"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_07040",
+      "frame": "_fn_circuit_ega_07040"
+    },
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_8fa8dedb",
+      "frame": "_grp_8fa8dedb"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 16288,
+      "end": 16330
+    }
+  }
+}

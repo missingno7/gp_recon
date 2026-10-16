@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_clear_planes_4c0a_circuit_ega",
+  "source": "src/circuit/video/single_clear_planes_4c0a_circuit_ega.asm",
+  "source_sha256": "ed0b5afcea8a2e1c5a029f26a7456e98753ec64aeedc386cd9045db1b6e10aa3",
+  "profile": "masm510",
+  "public": "_clear_planes_4c0a",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 19466,
+      "end": 19512
+    }
+  }
+}

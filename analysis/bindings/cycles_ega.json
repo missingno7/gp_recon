@@ -3498,33 +3498,6 @@
       "provenance": "operand-derived: observed data or BP-based displacement 0x233c in cycles_ega_0244f; DGROUP paragraph is independently startup-bound.",
       "staged_by": "decomp-cycles-a"
     },
-    "_G_BUFFER": {
-      "address": "1599:B0FA",
-      "confidence": "medium",
-      "evidence_functions": [
-        "cycles_ega_04a80"
-      ],
-      "provenance": "operand-derived: direct DS reference to DGROUP+0xb0fa in cycles_ega_04a80; DSEG base independently startup-bound.",
-      "staged_by": "decomp-cycles-a"
-    },
-    "_G_BUFFER_COUNT": {
-      "address": "1599:B10E",
-      "confidence": "medium",
-      "evidence_functions": [
-        "cycles_ega_04a80"
-      ],
-      "provenance": "operand-derived: direct DS reference to DGROUP+0xb10e in cycles_ega_04a80; DSEG base independently startup-bound.",
-      "staged_by": "decomp-cycles-a"
-    },
-    "_G_BUFFER_ERROR": {
-      "address": "1599:B110",
-      "confidence": "medium",
-      "evidence_functions": [
-        "cycles_ega_04a80"
-      ],
-      "provenance": "operand-derived: direct DS reference to DGROUP+0xb110 in cycles_ega_04a80; DSEG base independently startup-bound.",
-      "staged_by": "decomp-cycles-a"
-    },
     "_G_C86C": {
       "address": "1599:C75C",
       "confidence": "medium",
@@ -4581,12 +4554,6 @@
       "provenance": "Inventory start 0xb81a, ordinal far-call target of grp_9c6141b6.",
       "staged_by": "decomp-cycles-b"
     },
-    "_fn_cycles_cga_0c276": {
-      "address": "C020:03BC",
-      "confidence": "high",
-      "provenance": "Operand-derived far data reference or exact far call target in grp_d33a06a1; callees cross-checked against inventory starts.",
-      "staged_by": "decomp-cycles-b"
-    },
     "_fn_cycles_cga_0c2b2": {
       "address": "0E73:02E8",
       "confidence": "low",
@@ -5018,36 +4985,6 @@
       "provenance": "Operand-derived DS word displacement 0xa694, loaded into ES in grp_fecf1db3 before reading ES:[0x4818]; DGROUP segment 1599 from analysis/inventory/cycles_ega.json.",
       "staged_by": "decomp-cycles-b"
     },
-    "_g_0a966": {
-      "address": "1599:A854",
-      "confidence": "medium",
-      "provenance": "Operand-derived table base immediate 0xa854 loaded into SI and indexed in grp_fb4d04d5; DGROUP segment 1599 from analysis/inventory/cycles_ega.json dgroup_base.",
-      "staged_by": "decomp-cycles-b"
-    },
-    "_g_0b7ac": {
-      "address": "1599:B69C",
-      "confidence": "medium",
-      "provenance": "Operand-derived DS array base from grp_9ea5b57e displacement and BX index; first contiguous 8-byte zeroed region; the second starts at +8. DGROUP segment 1599 from analysis/inventory/cycles_ega.json.",
-      "staged_by": "decomp-cycles-b"
-    },
-    "_g_0b9ea": {
-      "address": "1599:B8DA",
-      "confidence": "medium",
-      "provenance": "Operand-derived absolute DS reference 0xb8da (target offset adjusted per corresponding member where noted) in grp_409e3ded; DGROUP from inventory.",
-      "staged_by": "decomp-cycles-b"
-    },
-    "_g_0c8e2": {
-      "address": "1599:C7D2",
-      "confidence": "medium",
-      "provenance": "Operand-derived DS location 0xc7d2 in grp_f3f7c466 (array base derived from the BX displacement and 0x46*i index); DGROUP segment 1599 from analysis/inventory/cycles_ega.json.",
-      "staged_by": "decomp-cycles-b"
-    },
-    "_g_0cd14": {
-      "address": "1599:CC04",
-      "confidence": "medium",
-      "provenance": "Operand-derived DS array base from grp_9ea5b57e displacement and BX index; first contiguous 4-byte zeroed region; the second starts at +4. DGROUP segment 1599 from analysis/inventory/cycles_ega.json.",
-      "staged_by": "decomp-cycles-b"
-    },
     "_g_0eea": {
       "address": "1599:0EEA",
       "confidence": "medium",
@@ -5381,18 +5318,6 @@
       "provenance": "Operand-derived far data reference or exact far call target in grp_d33a06a1; callees cross-checked against inventory starts.",
       "staged_by": "decomp-cycles-b"
     },
-    "_g_b57a": {
-      "address": "1599:B46A",
-      "confidence": "high",
-      "provenance": "Operand-derived absolute DS reference in grp_faa59520; exact target offset and DGROUP segment from inventory.",
-      "staged_by": "decomp-cycles-b"
-    },
-    "_g_b57c": {
-      "address": "1599:B46C",
-      "confidence": "high",
-      "provenance": "Operand-derived DS global or negative-displacement array base referenced in grp_9c6141b6.",
-      "staged_by": "decomp-cycles-b"
-    },
     "_g_b7aa": {
       "address": "1599:B69A",
       "confidence": "medium",
@@ -5408,12 +5333,6 @@
       "provenance": "Operand-derived DS address accessed by grp_0ea93981.",
       "staged_by": "decomp-cycles-b"
     },
-    "_g_b7de": {
-      "address": "1599:B6CE",
-      "confidence": "high",
-      "provenance": "Operand-derived DS global or negative-displacement array base referenced in grp_9c6141b6.",
-      "staged_by": "decomp-cycles-b"
-    },
     "_g_b9ea": {
       "address": "1599:B8DA",
       "confidence": "high",
@@ -5426,44 +5345,11 @@
       "provenance": "Operand-derived absolute DS reference in grp_07686202; exact member offset. DGROUP segment from the target inventory.",
       "staged_by": "decomp-cycles-b"
     },
-    "_g_b9ee": {
-      "address": "1599:B8DE",
-      "confidence": "medium",
-      "provenance": "Operand-derived buffer table address from grp_324ee638 and inventory/cycles_ega.json DGROUP. Used by grp_324ee638.",
-      "staged_by": "decomp-cycles-b"
-    },
     "_g_b9fc": {
       "address": "1599:B8EC",
       "confidence": "medium",
       "provenance": "Operand-derived DS reference in grp_f53aee67: global 0xb8ec or combined BX/SI table base resolving to 0xb8ec; DGROUP segment from inventory.",
       "staged_by": "decomp-cycles-b"
-    },
-    "_g_buffer": {
-      "address": "1599:B0FA",
-      "confidence": "medium",
-      "evidence_functions": [
-        "cycles_ega_04a80"
-      ],
-      "provenance": "operand-derived: direct DS reference to DGROUP+0xb0fa in cycles_ega_04a80; DSEG base independently startup-bound.",
-      "staged_by": "decomp-cycles-a"
-    },
-    "_g_buffer_count": {
-      "address": "1599:B10E",
-      "confidence": "medium",
-      "evidence_functions": [
-        "cycles_ega_04a80"
-      ],
-      "provenance": "operand-derived: direct DS reference to DGROUP+0xb10e in cycles_ega_04a80; DSEG base independently startup-bound.",
-      "staged_by": "decomp-cycles-a"
-    },
-    "_g_buffer_error": {
-      "address": "1599:B110",
-      "confidence": "medium",
-      "evidence_functions": [
-        "cycles_ega_04a80"
-      ],
-      "provenance": "operand-derived: direct DS reference to DGROUP+0xb110 in cycles_ega_04a80; DSEG base independently startup-bound.",
-      "staged_by": "decomp-cycles-a"
     },
     "_g_c86c": {
       "address": "1599:C75C",
@@ -5474,28 +5360,10 @@
       "provenance": "operand-derived: direct DS word/byte store in cycles_ega_001cb; DGROUP independently bound by inventory.",
       "staged_by": "decomp-cycles-a"
     },
-    "_g_c86e": {
-      "address": "1599:C75E",
-      "confidence": "high",
-      "provenance": "Operand-derived DS global or negative-displacement array base referenced in grp_9c6141b6.",
-      "staged_by": "decomp-cycles-b"
-    },
-    "_g_c894": {
-      "address": "1599:C784",
-      "confidence": "high",
-      "provenance": "Operand-derived DGROUP reference in grp_4b63e505.",
-      "staged_by": "decomp-cycles-b"
-    },
     "_g_c8e2": {
       "address": "1599:C7D2",
       "confidence": "medium",
       "provenance": "Operand-derived table base: BX=70*index and indexed read uses DS:[BX-0x382e]; resolves to offset 0xc7d2 in grp_464c8224. DGROUP segment from analysis/inventory.",
-      "staged_by": "decomp-cycles-b"
-    },
-    "_g_c8e4": {
-      "address": "1599:C7D4",
-      "confidence": "medium",
-      "provenance": "Operand-derived DS table base: displacement -0x382c wraps to 0xc7d4 in grp_324ee638; DGROUP from inventory/cycles_ega.json. Used by grp_324ee638.",
       "staged_by": "decomp-cycles-b"
     },
     "_g_context_pointer": {
@@ -5548,12 +5416,6 @@
       ],
       "provenance": "operand-derived: direct DS operand or address immediate at DGROUP+0x2350 in cycles_ega_02414; the target's DSEG base is independently inventory-bound",
       "staged_by": "decomp-cycles-a"
-    },
-    "_g_entry_buffer": {
-      "address": "1599:A854",
-      "confidence": "high",
-      "provenance": "Operand-derived DS offset 0xa854 referenced by grp_c5bcbe1c.",
-      "staged_by": "decomp-cycles-b"
     },
     "_g_f3a": {
       "address": "1599:0F3A",

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_calc_screen_y_4c38_circuit_ega",
+  "source": "src/circuit/video/single_calc_screen_y_4c38_circuit_ega.asm",
+  "source_sha256": "4f27f5c8ed980f5fde08ef9451d924a48079fdd5290a1a206ca14cd6676972b7",
+  "profile": "masm510",
+  "public": "_calc_screen_y",
+  "expected_fixups": [
+    {
+      "offset": 48,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0A672",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 19512,
+      "end": 19566
+    }
+  }
+}

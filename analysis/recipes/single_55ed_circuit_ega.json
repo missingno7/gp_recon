@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_55ed_circuit_ega",
+  "source": "src/circuit/video/single_55ed_circuit_ega.asm",
+  "source_sha256": "cc25da8fab16821b0b977fe139a0e034dc34b8994ef6fdf25d765ba6967c3319",
+  "profile": "masm510",
+  "public": "_speed_convert_55ed",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 21997,
+      "end": 22030
+    }
+  }
+}

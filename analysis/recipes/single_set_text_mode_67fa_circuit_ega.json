@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_set_text_mode_67fa_circuit_ega",
+  "source": "src/circuit/video/single_set_text_mode_67fa_circuit_ega.asm",
+  "source_sha256": "033ef4d704db8327f19ea38bbd2dc42d50251e6c9bc5fe38a2d2e62159f708fd",
+  "profile": "masm510",
+  "public": "_set_text_mode",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 26618,
+      "end": 26632
+    }
+  }
+}

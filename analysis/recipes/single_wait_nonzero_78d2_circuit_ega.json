@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_wait_nonzero_78d2_circuit_ega",
+  "source": "src/circuit/engine/single_wait_nonzero_78d2.asm",
+  "source_sha256": "e9d8c23642cd742bc80905194a92b4c98b39ab0fc722405448afe593963deeb2",
+  "profile": "masm510",
+  "public": "_wait_nonzero_78d2",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_078A0",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 30930,
+      "end": 30939
+    }
+  }
+}

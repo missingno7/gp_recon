@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_update_gear_state_5aed_circuit_cga",
+  "source": "src/circuit/video/single_update_gear_state_5aed_circuit_cga.asm",
+  "source_sha256": "e01128697911fc19e24c82fa0f06e7124d55455baac6f765f57cccdde879be3a",
+  "profile": "masm510",
+  "public": "_update_gear_state_5aed",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 22959,
+      "end": 22984
+    }
+  }
+}

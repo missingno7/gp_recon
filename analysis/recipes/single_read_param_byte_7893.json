@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_read_param_byte_7893",
+  "source": "src/circuit/engine/single_read_param_byte_7893.asm",
+  "source_sha256": "a0b80b32d035acfe0e8d3becc0dc933925791f6abce1b58bc3e0bf5a083222b0",
+  "profile": "masm510",
+  "public": "_read_param_byte_7893",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 30867,
+      "end": 30879
+    }
+  }
+}

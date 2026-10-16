@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_55b6_circuit_ega",
+  "source": "src/circuit/video/single_55b6_circuit_ega.asm",
+  "source_sha256": "e9fc2f580e81fab929a248a11c079072d692777383571daa1ae151972db5066e",
+  "profile": "masm510",
+  "public": "_speed_update_55b6",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 21942,
+      "end": 21990
+    }
+  }
+}

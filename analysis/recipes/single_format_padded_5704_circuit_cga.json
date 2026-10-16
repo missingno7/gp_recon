@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_format_padded_5704_circuit_cga",
+  "source": "src/circuit/video/single_format_padded_5704_circuit_cga.asm",
+  "source_sha256": "662d9dab1eff6994c040cafb10e1172eae22655b603684d289afed5f939ee3df",
+  "profile": "masm510",
+  "public": "_format_padded_5704",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 21946,
+      "end": 21982
+    }
+  }
+}

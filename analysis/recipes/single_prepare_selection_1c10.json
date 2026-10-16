@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "single_prepare_selection_1c10",
+  "source": "src/circuit/state/single_prepare_selection_1c10.c",
+  "source_sha256": "312e4df4f01158e225098d1d4a5c24b742829df0f5634c5532c3be5368f91a8e",
+  "profile": "msc510-small-o_gs",
+  "public": "_single_prepare_selection_1c10",
+  "expected_fixups": [
+    {
+      "offset": 30,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_fadcab13",
+      "frame": "_grp_fadcab13"
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_020be",
+      "frame": "_fn_circuit_ega_020be"
+    },
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_09bd6",
+      "frame": "_g_09bd6"
+    },
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_096e4",
+      "frame": "_g_096e4"
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0028a",
+      "frame": "_g_0028a"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 7184,
+      "end": 7223
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_78b9_circuit_ega",
+  "source": "src/circuit/video/single_78b9_circuit_ega.asm",
+  "source_sha256": "4126974d76b3e5eba3e260fbfcd59860aed320912ed5f126073a8a79f20528fd",
+  "profile": "masm510",
+  "public": "_grp_78b9",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 30905,
+      "end": 30922
+    }
+  }
+}

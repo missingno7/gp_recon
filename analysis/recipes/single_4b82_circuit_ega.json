@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_4b82_circuit_ega",
+  "source": "src/circuit/video/single_4b82_circuit_ega.asm",
+  "source_sha256": "4348d66ad45701532e9bb5c39afe2c0468da0eaea1c48a24bad7852ad81c1665",
+  "profile": "masm510",
+  "public": "_single_4b82",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 19330,
+      "end": 19403
+    }
+  }
+}

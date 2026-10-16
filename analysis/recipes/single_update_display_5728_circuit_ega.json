@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "single_update_display_5728_circuit_ega",
+  "source": "src/circuit/video/single_update_display_5728_circuit_ega.asm",
+  "source_sha256": "096485f3f683ec01a6a1afaced9a8cd0d5c6caf4c4bb408ed1a43a1776f3fe7a",
+  "profile": "masm510",
+  "public": "_update_display_5728",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0564D",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_05783",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_02790",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 22312,
+      "end": 22354
+    }
+  }
+}

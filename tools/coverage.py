@@ -18,10 +18,49 @@ def number(value) -> int:
     return int(value, 0) if isinstance(value, str) else value
 
 
+def gaps(target: str, as_json: bool) -> int:
+    covered = set()
+    for path in (ROOT / "analysis/recipes").glob("*.json"):
+        extent = json.loads(path.read_text(encoding="utf-8"))["targets"].get(target)
+        if extent:
+            covered.update(range(number(extent["start"]), number(extent["end"])))
+    runtime = set()
+    attribution = ROOT / "analysis/runtime_attribution.json"
+    if attribution.is_file():
+        data = json.loads(attribution.read_text(encoding="utf-8"))
+        rows = data.get("functions") or []
+        for row in rows:
+            if row.get("target") == target and row.get("start") is not None:
+                runtime.update(range(number(row["start"]), number(row["end"])))
+    groups = {}
+    for group in json.loads((ROOT / "analysis/inventory/groups.json").read_text(encoding="utf-8"))["groups"]:
+        for member in group["members"]:
+            groups[member] = group["id"]
+    inventory = json.loads((ROOT / "analysis/inventory" / f"{target}.json").read_text(encoding="utf-8"))
+    out = []
+    for f in inventory["functions"]:
+        span = set(range(f["start"], f["end"]))
+        if f.get("classification") == "MSC runtime" or span & runtime or not span or len(span & covered) * 2 >= len(span):
+            continue
+        out.append({"id": f["id"], "start": f["start"], "end": f["end"], "size": f["end"] - f["start"],
+                    "classification": f.get("classification"), "group": groups.get(f["id"])})
+    if as_json:
+        print(json.dumps(out, indent=2))
+    else:
+        for row in out:
+            print(f"{row['id']:<22}{row['start']:#08x} {row['size']:>6}  {row['classification'] or '-':<14}{row['group'] or '-'}")
+        print(f"{len(out)} uncovered functions, {sum(r['size'] for r in out)} bytes")
+    return 0
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--json", action="store_true")
+    p.add_argument("--gaps", metavar="TARGET",
+                   help="list inventory functions of TARGET not covered by any recipe and not runtime-attributed")
     args = p.parse_args()
+    if args.gaps:
+        return gaps(args.gaps, args.json)
     spans = {t: {"game_c": [], "game_asm": [], "runtime_c": [], "runtime_asm": []} for t in TARGETS}
     recipes = 0
     for path in sorted((ROOT / "analysis/recipes").glob("*.json")):

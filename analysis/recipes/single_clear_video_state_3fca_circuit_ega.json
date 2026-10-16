@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "single_clear_video_state_3fca_circuit_ega",
+  "source": "src/circuit/video/single_clear_video_state_3fca_ega.c",
+  "source_sha256": "d008d095195781c6fc85eff16a104f1df42d2466c56c81e2d041a3a50dcab204",
+  "profile": "msc510-small-o_gs",
+  "public": "_clear_video_state_3fca",
+  "expected_fixups": [
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_06f16",
+      "frame": "_fn_circuit_ega_06f16"
+    },
+    {
+      "offset": 12,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_17077521",
+      "frame": "_grp_17077521"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_096a0",
+      "frame": "_g_096a0"
+    },
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_096a2",
+      "frame": "_g_096a2"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 16330,
+      "end": 16351
+    }
+  }
+}

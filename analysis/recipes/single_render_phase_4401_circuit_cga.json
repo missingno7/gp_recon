@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "single_render_phase_4401_circuit_cga",
+  "source": "src/circuit/video/single_render_phase_4401_circuit_cga.asm",
+  "source_sha256": "104c5529a2f4c8e9d880c86c03aed6ecb127df418acde41e448126e4cd48b00f",
+  "profile": "masm510",
+  "public": "_render_phase_4401",
+  "expected_fixups": [
+    {
+      "offset": 92,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_06BEE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 98,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_06BEE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 104,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_06BEE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 171,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_097CC",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 17419,
+      "end": 17596
+    }
+  }
+}

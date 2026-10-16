@@ -1,0 +1,14 @@
+_DATA SEGMENT WORD PUBLIC 'DATA'
+_DATA ENDS
+DGROUP GROUP _DATA
+_TEXT SEGMENT WORD PUBLIC 'CODE'
+ASSUME CS:_TEXT, DS:DGROUP
+PUBLIC _grp_6360
+_g_05e9e EQU 5e9eh
+_grp_6360 PROC NEAR
+        mov dx, word ptr ds:[_g_05e9e]
+        jmp short $++3ch
+        nop
+_grp_6360 ENDP
+_TEXT ENDS
+END

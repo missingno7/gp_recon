@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_set_display_rect_696b_circuit_cga",
+  "source": "src/circuit/video/single_set_display_rect_696b_circuit_cga.asm",
+  "source_sha256": "e6c4f471a4687ecf14e19b8eca94ad6d9027af5e87fed5122f3accf36aa83899",
+  "profile": "masm510",
+  "public": "_set_display_rect",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 27473,
+      "end": 27506
+    }
+  }
+}

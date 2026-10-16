@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_check_track_value_5a3a_circuit_cga",
+  "source": "src/circuit/video/single_check_track_value_5a3a_circuit_cga.asm",
+  "source_sha256": "5545b8be0df866355a0a6e0b4164a258b6fe5367d4ea2faf9669ee8a126870ac",
+  "profile": "masm510",
+  "public": "_check_track_value_5a3a",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 22768,
+      "end": 22778
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_read_timer_6868_circuit_cga",
+  "source": "src/circuit/video/single_read_timer_6868_circuit_cga.asm",
+  "source_sha256": "43ce804b35633fbdaf0fee909a96127f6467c65a24173b0cf0273bb894e4decb",
+  "profile": "masm510",
+  "public": "_read_timer_counter",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 27240,
+      "end": 27250
+    }
+  }
+}

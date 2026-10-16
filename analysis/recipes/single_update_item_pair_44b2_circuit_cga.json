@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_update_item_pair_44b2_circuit_cga",
+  "source": "src/circuit/video/single_update_item_pair_44b2_circuit_cga.asm",
+  "source_sha256": "c1a65f62fbd2f712b27c5b0ea29074f6acf8f4cca4c24604097906cc98db7a11",
+  "profile": "masm510",
+  "public": "_update_item_pair_44b2",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 17596,
+      "end": 17624
+    }
+  }
+}

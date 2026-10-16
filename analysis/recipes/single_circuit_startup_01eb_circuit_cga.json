@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "single_circuit_startup_01eb_circuit_cga",
+  "source": "src/circuit/startup/single_circuit_startup_01eb_cga.asm",
+  "source_sha256": "e82b8e6726c9aaa89811a1d9c2f22d56b41027a9dfaa3b740516c49af880d10d",
+  "profile": "masm510",
+  "public": "_single_circuit_startup_01eb",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "pointer32",
+      "width": 4,
+      "self_relative": false,
+      "target": "ROMSEG",
+      "frame": "ROMSEG"
+    },
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_2BAE8498",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_04BD4",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 12,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_05E64",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_055DE",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 18,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_05524",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 21,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_FD52719F",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 24,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_0CB3FCB5",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 27,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0AA59",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 34,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0AA3B",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 44,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0834C",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 488,
+      "end": 539
+    }
+  }
+}

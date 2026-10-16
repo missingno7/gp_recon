@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_indirect_call_78a0_circuit_ega",
+  "source": "src/circuit/engine/single_indirect_call_78a0.c",
+  "source_sha256": "84559bdcd6c374ecf7656b341297733ea9208985a0b848d451f4c3b6ee87efa3",
+  "profile": "msc510-small-o_gs",
+  "public": "_call_vector_78a0",
+  "expected_fixups": [
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_85f8",
+      "frame": "_g_85f8"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 30880,
+      "end": 30885
+    }
+  }
+}

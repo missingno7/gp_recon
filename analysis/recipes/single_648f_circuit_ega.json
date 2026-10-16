@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_648f_circuit_ega",
+  "source": "src/circuit/video/single_648f_circuit_ega.asm",
+  "source_sha256": "718ec7d4b0cbe72772f270c4e94c09bc28353850a4943fa2ab1307b90eca932a",
+  "profile": "masm510",
+  "public": "_grp_648f",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 25743,
+      "end": 25772
+    }
+  }
+}

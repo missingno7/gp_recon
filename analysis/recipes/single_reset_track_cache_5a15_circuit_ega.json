@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_reset_track_cache_5a15_circuit_ega",
+  "source": "src/circuit/video/single_reset_track_cache_5a15_circuit_ega.asm",
+  "source_sha256": "ff737625044ca6620d7ec44c963c2b621fcecf86b49f52ddc41316b0c34e1902",
+  "profile": "masm510",
+  "public": "_reset_track_cache_5a15",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 23061,
+      "end": 23098
+    }
+  }
+}

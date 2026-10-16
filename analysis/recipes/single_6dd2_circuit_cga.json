@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_6dd2_circuit_cga",
+  "source": "src/circuit/video/single_6dd2_circuit_cga.asm",
+  "source_sha256": "a659e98d29433bdcd1bcdf060d1c074338709fa66aba210798684784288ef39b",
+  "profile": "masm510",
+  "public": "_grp_6dd2",
+  "expected_fixups": [
+    {
+      "offset": 51,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_AACE91DA",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 30268,
+      "end": 30329
+    }
+  }
+}

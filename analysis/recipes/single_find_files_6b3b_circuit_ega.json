@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_find_files_6b3b_circuit_ega",
+  "source": "src/circuit/video/single_find_files_6b3b_circuit_ega.asm",
+  "source_sha256": "3ba3b5a39224180f2bc4cd9acdfad9681199d2305e49ace756d7c88773cc1192",
+  "profile": "masm510",
+  "public": "_find_files",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 27451,
+      "end": 27472
+    }
+  }
+}

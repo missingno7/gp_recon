@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_set_display_rect_696b_circuit_ega",
+  "source": "src/circuit/video/single_set_display_rect_696b_circuit_ega.asm",
+  "source_sha256": "65225d3542e7e6bec10f49bfee8bc2ba6a0ef51ddab60c53f77279682ebf5a7d",
+  "profile": "masm510",
+  "public": "_set_display_rect",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 26987,
+      "end": 27020
+    }
+  }
+}

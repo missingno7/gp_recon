@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_743d_circuit_ega",
+  "source": "src/circuit/video/single_743d_circuit_ega.asm",
+  "source_sha256": "993b63d9038180bd8c66352331263083712eefab463ebc3aff9b77697d3e80f0",
+  "profile": "masm510",
+  "public": "_grp_743d",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 29757,
+      "end": 29783
+    }
+  }
+}

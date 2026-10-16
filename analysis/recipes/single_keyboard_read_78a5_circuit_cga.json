@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_keyboard_read_78a5_circuit_cga",
+  "source": "src/circuit/video/single_keyboard_read_78a5_circuit_cga.asm",
+  "source_sha256": "619c6a40ae7a393b5accfcfba83f3e9609ef9be91f54f4c3b24c31478316f930",
+  "profile": "masm510",
+  "public": "_keyboard_read",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 33617,
+      "end": 33637
+    }
+  }
+}

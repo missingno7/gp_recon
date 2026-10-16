@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_66b2_circuit_ega",
+  "source": "src/circuit/video/single_66b2_circuit_ega.asm",
+  "source_sha256": "cd0382b4bf201c03e1dfce21dad712c40d446a935bc4b8b393be8b6f46e8ca06",
+  "profile": "masm510",
+  "public": "_grp_66b2",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 26290,
+      "end": 26329
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "single_video_poll_15b0_circuit_cga",
+  "source": "src/circuit/input/single_video_poll_15b0_cga.c",
+  "source_sha256": "2007a02f8a3bb1f1f1a82e9a487aec0a734fdc809565cdb057fa0bc8da430178",
+  "profile": "msc510-small-o_gs",
+  "public": "_single_video_poll_15b0",
+  "expected_fixups": [
+    {
+      "offset": 30,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0004a",
+      "frame": "_g_0004a"
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_cga_06a1e",
+      "frame": "_fn_circuit_cga_06a1e"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_cga_06a72",
+      "frame": "_fn_circuit_cga_06a72"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 5550,
+      "end": 5591
+    }
+  }
+}

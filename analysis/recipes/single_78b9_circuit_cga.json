@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_78b9_circuit_cga",
+  "source": "src/circuit/video/single_78b9_circuit_cga.asm",
+  "source_sha256": "fe59501c016366e5eebf77fe74ed51b6a00b8e73f07485dd328d5c096a53bd63",
+  "profile": "masm510",
+  "public": "_grp_78b9",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 33637,
+      "end": 33654
+    }
+  }
+}

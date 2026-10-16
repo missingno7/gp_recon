@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_copy_lap_counter_5ae6_circuit_ega",
+  "source": "src/circuit/video/single_copy_lap_counter_5ae6_circuit_ega.asm",
+  "source_sha256": "ae2cdbe5190082d0dd1e9be6341b9d08c008800d566e66efa40438e525740862",
+  "profile": "masm510",
+  "public": "_copy_lap_counter_5ae6",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 23270,
+      "end": 23277
+    }
+  }
+}

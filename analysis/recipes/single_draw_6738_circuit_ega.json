@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_draw_6738_circuit_ega",
+  "source": "src/circuit/video/single_draw_6738_circuit_ega.asm",
+  "source_sha256": "7249dbcd17a97ffb44d46245cf7ffef69ed84919ef9cd20b77f7ccbd75e82ae9",
+  "profile": "masm510",
+  "public": "_draw_point_rows",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 26424,
+      "end": 26501
+    }
+  }
+}

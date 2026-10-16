@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_read_interrupt_vector_6ffe_circuit_ega",
+  "source": "src/circuit/video/single_read_interrupt_vector_6ffe_circuit_ega.asm",
+  "source_sha256": "124e37f6aafd54456dfb09db74b9cb35862942eeed9b2ec55656f72f93bd6b19",
+  "profile": "masm510",
+  "public": "_read_interrupt_vector",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 28670,
+      "end": 28685
+    }
+  }
+}

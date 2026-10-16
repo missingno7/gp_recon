@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "single_initialize_selection_275e",
+  "source": "src/circuit/state/single_initialize_selection_275e.c",
+  "source_sha256": "717dd25cdf08f42880c29b8f2862966c07425927668c5cc1ff07c77eb907bc66",
+  "profile": "msc510-small-o_gs",
+  "public": "_init_selection_275e",
+  "expected_fixups": [
+    {
+      "offset": 44,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_selection_state_c",
+      "frame": "_selection_state_c"
+    },
+    {
+      "offset": 38,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_selection_delay",
+      "frame": "_selection_delay"
+    },
+    {
+      "offset": 22,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_selection_state_a",
+      "frame": "_selection_state_a"
+    },
+    {
+      "offset": 15,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_selection_mode",
+      "frame": "_selection_mode"
+    },
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_selection_state_b",
+      "frame": "_selection_state_b"
+    },
+    {
+      "offset": 5,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_selection_state_a",
+      "frame": "_selection_state_a"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 10078,
+      "end": 10128
+    },
+    "circuit_cga": {
+      "start": 10074,
+      "end": 10124
+    }
+  }
+}

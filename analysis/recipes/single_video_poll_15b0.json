@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "single_video_poll_15b0",
+  "source": "src/circuit/input/single_video_poll_15b0.c",
+  "source_sha256": "dd2b26346a7da26d42d327a6bdfb61cd725907b2e9b12e56911f718a6915a7d2",
+  "profile": "msc510-small-o_gs",
+  "public": "_single_video_poll_15b0",
+  "expected_fixups": [
+    {
+      "offset": 30,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0004a",
+      "frame": "_g_0004a"
+    },
+    {
+      "offset": 19,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_0681e",
+      "frame": "_fn_circuit_ega_0681e"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_ega_06872",
+      "frame": "_fn_circuit_ega_06872"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 5552,
+      "end": 5593
+    }
+  }
+}

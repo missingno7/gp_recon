@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_format_unsigned_56f0_circuit_cga",
+  "source": "src/circuit/video/single_format_unsigned_56f0_circuit_cga.asm",
+  "source_sha256": "dd22b12552ba1d30fef86fad80850525def1c480d7c64c513ea144cb26dbb72d",
+  "profile": "masm510",
+  "public": "_format_unsigned_56f0",
+  "expected_fixups": [
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_7644DE05",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 21926,
+      "end": 21946
+    }
+  }
+}

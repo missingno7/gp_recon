@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "single_circuit_startup_016d_circuit_cga",
+  "source": "src/circuit/startup/single_circuit_startup_016d_cga.c",
+  "source_sha256": "40cde13d9a077334103025fd1af5d42bb8088c841738edf05aa7c1fbf2b6786c",
+  "profile": "msc510-small-o_gs",
+  "public": "_circuit_startup_init_state",
+  "expected_fixups": [
+    {
+      "offset": 14,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_9bbe",
+      "frame": "_g_9bbe"
+    },
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_5ebc",
+      "frame": "_g_5ebc"
+    },
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_fn_circuit_cga_06646",
+      "frame": "_fn_circuit_cga_06646"
+    },
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_grp_b22bb864",
+      "frame": "_grp_b22bb864"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 362,
+      "end": 381
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_623a_circuit_ega",
+  "source": "src/circuit/video/single_623a_circuit_ega.asm",
+  "source_sha256": "e930bbbef081152b5aaa6c8e01c87275f5ebb3805f67c453cef5280f10a1c7da",
+  "profile": "masm510",
+  "public": "_grp_623a",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 25146,
+      "end": 25175
+    }
+  }
+}

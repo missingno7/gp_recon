@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_5562_circuit_ega",
+  "source": "src/circuit/video/single_5562_circuit_ega.asm",
+  "source_sha256": "01591480ea129566f7f3973d7f577346f8f5c43cbbaf9ee166ad7a78c841e205",
+  "profile": "masm510",
+  "public": "_speed_threshold_5562",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 21858,
+      "end": 21942
+    }
+  }
+}

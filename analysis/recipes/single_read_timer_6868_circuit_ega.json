@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_read_timer_6868_circuit_ega",
+  "source": "src/circuit/video/single_read_timer_6868_circuit_ega.asm",
+  "source_sha256": "5f4e38dfeda881dd2186e751163942e930f280090bb3f8555863ce4a20439613",
+  "profile": "masm510",
+  "public": "_read_timer_counter",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 26728,
+      "end": 26738
+    }
+  }
+}

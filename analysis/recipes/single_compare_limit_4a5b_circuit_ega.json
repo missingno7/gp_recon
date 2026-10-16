@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_compare_limit_4a5b_circuit_ega",
+  "source": "src/circuit/video/single_compare_limit_4a5b_circuit_ega.asm",
+  "source_sha256": "a4bd4e3e13ade1eb7e27f076a6c0a2c8f8a18e908bfdae5980676a998c27baac",
+  "profile": "masm510",
+  "public": "_single_compare_limit_4a5b",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 19035,
+      "end": 19044
+    }
+  }
+}

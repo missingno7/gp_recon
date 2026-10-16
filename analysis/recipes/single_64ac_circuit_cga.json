@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_64ac_circuit_cga",
+  "source": "src/circuit/video/single_64ac_circuit_cga.asm",
+  "source_sha256": "4a6156960c1bca39f7e4a294001c0485a785383667b3cf04aa1aec2c1aa08c4a",
+  "profile": "masm510",
+  "public": "_grp_64ac",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 25426,
+      "end": 25455
+    }
+  }
+}

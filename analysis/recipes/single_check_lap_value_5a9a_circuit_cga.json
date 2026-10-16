@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_check_lap_value_5a9a_circuit_cga",
+  "source": "src/circuit/video/single_check_lap_value_5a9a_circuit_cga.asm",
+  "source_sha256": "18857c594e06cbf0c10f680a8aebfb130fe924a95f656f7d25f28cffea7a6283",
+  "profile": "masm510",
+  "public": "_check_lap_value_5a9a",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 22864,
+      "end": 22874
+    }
+  }
+}

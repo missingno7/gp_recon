@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_copy_lap_counter_5ae6_circuit_cga",
+  "source": "src/circuit/video/single_copy_lap_counter_5ae6_circuit_cga.asm",
+  "source_sha256": "b286bd9c064f27d32e8c7421c9d2070a5bf905e940a53fa4c26f96ae55c19944",
+  "profile": "masm510",
+  "public": "_copy_lap_counter_5ae6",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 22940,
+      "end": 22947
+    }
+  }
+}

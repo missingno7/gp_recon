@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "single_78ea_circuit_cga",
+  "source": "src/circuit/video/single_78ea_circuit_cga.asm",
+  "source_sha256": "5926504ce8804bc31f99b95275b49f33cbbf6bf4a88b379142dd159efcaf21f3",
+  "profile": "masm510",
+  "public": "_grp_78ea",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0834C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0AA92",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 33686,
+      "end": 33714
+    }
+  }
+}

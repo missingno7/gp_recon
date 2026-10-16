@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_keyboard_drain_78db_circuit_ega",
+  "source": "src/circuit/input/single_keyboard_drain_78db.asm",
+  "source_sha256": "bffb3a7a72598da4f6c4207db106f6de95cd5d2a532488dd913a2a8bee543a7b",
+  "profile": "masm510",
+  "public": "_drain_keyboard_buffer_78db",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 30939,
+      "end": 30954
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_configure_cga_display_564d_circuit_cga",
+  "source": "src/circuit/video/single_configure_cga_display_564d_circuit_cga.asm",
+  "source_sha256": "6c27f9e6dd7a68696c676afeb8a3120e206dd371b2f8c178337f84f8fb49a750",
+  "profile": "masm510",
+  "public": "_configure_display_564d",
+  "expected_fixups": [
+    {
+      "offset": 6,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0B418",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 21763,
+      "end": 21796
+    }
+  }
+}

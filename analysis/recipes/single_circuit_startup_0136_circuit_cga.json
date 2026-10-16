@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "single_circuit_startup_0136_circuit_cga",
+  "source": "src/circuit/startup/single_circuit_startup_0136_cga.asm",
+  "source_sha256": "b67953696a0febba7bc216049e99adea751267a0617e70935ade15f81ebfc5d7",
+  "profile": "masm510",
+  "public": "_single_circuit_startup_0136",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "base16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_DATA",
+      "frame": "_DATA"
+    },
+    {
+      "offset": 7,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0016A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 10,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_B84A76B6",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 13,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_00312",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 26,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_054F7",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 32,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_06B72",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 46,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_9D44A3BF",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 310,
+      "end": 362
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_calc_screen_y_4c38_circuit_cga",
+  "source": "src/circuit/video/single_calc_screen_y_4c38_circuit_cga.asm",
+  "source_sha256": "5448c11645b3bcae0565d741f17a9e533d224d5b959065a678955a05f2d0e367",
+  "profile": "masm510",
+  "public": "_calc_screen_y",
+  "expected_fixups": [
+    {
+      "offset": 48,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_097CC",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 19224,
+      "end": 19278
+    }
+  }
+}

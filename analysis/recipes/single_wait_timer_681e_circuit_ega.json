@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "single_wait_timer_681e_circuit_ega",
+  "source": "src/circuit/video/single_wait_timer_681e_circuit_ega.asm",
+  "source_sha256": "ffd8ee8870e5ceba4e7b364cd895cfe2d427cb4b4f4869ae0ff534fd7edac2b5",
+  "profile": "masm510",
+  "public": "_wait_timer",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_078A0",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_06868",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 26654,
+      "end": 26680
+    }
+  }
+}

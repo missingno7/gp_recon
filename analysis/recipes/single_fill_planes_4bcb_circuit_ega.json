@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_fill_planes_4bcb_circuit_ega",
+  "source": "src/circuit/video/single_fill_planes_4bcb_circuit_ega.asm",
+  "source_sha256": "340c31d56ec3635d892eac0ce8df24830c3e7b1a3520cb13a260254b78b57d1e",
+  "profile": "masm510",
+  "public": "_fill_planes_4bcb",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 19403,
+      "end": 19466
+    }
+  }
+}

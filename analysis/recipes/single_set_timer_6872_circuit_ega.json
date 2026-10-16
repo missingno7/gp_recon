@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "single_set_timer_6872_circuit_ega",
+  "source": "src/circuit/video/single_set_timer_6872_circuit_ega.asm",
+  "source_sha256": "d5d899c76fe59163e96408aaefed97e9c5480c3d859309871c6a835b50d6858f",
+  "profile": "masm510",
+  "public": "_set_timer_deadline",
+  "expected_fixups": [
+    {
+      "offset": 4,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_06868",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 26738,
+      "end": 26759
+    }
+  }
+}

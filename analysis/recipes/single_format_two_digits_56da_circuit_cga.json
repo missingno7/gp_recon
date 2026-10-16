@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_format_two_digits_56da_circuit_cga",
+  "source": "src/circuit/video/single_format_two_digits_56da_circuit_cga.asm",
+  "source_sha256": "fe56799dcb5f600ac42a104cb3dc3d96a58a90a8dc2bbae473bdf1e1e2750e57",
+  "profile": "masm510",
+  "public": "_format_two_digits",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 21904,
+      "end": 21926
+    }
+  }
+}

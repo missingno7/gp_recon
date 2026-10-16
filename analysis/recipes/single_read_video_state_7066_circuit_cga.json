@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_read_video_state_7066_circuit_cga",
+  "source": "src/circuit/video/single_read_video_state_7066_circuit_cga.asm",
+  "source_sha256": "2981661ac849f74ba8023da11729fb52d2328dd6460a70fea85de6ad31dac455",
+  "profile": "masm510",
+  "public": "_read_video_state_7066",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 30980,
+      "end": 31003
+    }
+  }
+}

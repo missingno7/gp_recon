@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_76e5_circuit_ega",
+  "source": "src/circuit/video/single_76e5_circuit_ega.asm",
+  "source_sha256": "065c066f425c2ac42d2b7c9f001ffda3fc2a2fc0f2c8372673a182bebcc7cf4e",
+  "profile": "masm510",
+  "public": "_grp_76e5",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 30437,
+      "end": 30456
+    }
+  }
+}

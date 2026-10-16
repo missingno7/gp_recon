@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_find_files_6b3b_circuit_cga",
+  "source": "src/circuit/video/single_find_files_6b3b_circuit_cga.asm",
+  "source_sha256": "5ab177f646deb65f9fc9131d31fd1ffdb3d08a03cd71162a225f243950c9c084",
+  "profile": "masm510",
+  "public": "_find_files",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 29605,
+      "end": 29626
+    }
+  }
+}

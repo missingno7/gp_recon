@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_check_track_value_5a3a_circuit_ega",
+  "source": "src/circuit/video/single_check_track_value_5a3a_circuit_ega.asm",
+  "source_sha256": "96e8180d06aabcca650d13fe1aaff41372ac6746709822e725c6f506cb720d51",
+  "profile": "masm510",
+  "public": "_check_track_value_5a3a",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 23098,
+      "end": 23108
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "single_wait_timer_681e_circuit_cga",
+  "source": "src/circuit/video/single_wait_timer_681e_circuit_cga.asm",
+  "source_sha256": "fdd666d289272965c8f0ebc5ceda3dedd4d4ad12fdb342c4d7205798091bb65d",
+  "profile": "masm510",
+  "public": "_wait_timer",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0834C",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 9,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_06A68",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 27166,
+      "end": 27192
+    }
+  }
+}

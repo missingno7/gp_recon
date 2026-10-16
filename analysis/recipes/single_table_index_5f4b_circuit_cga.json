@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "single_table_index_5f4b_circuit_cga",
+  "source": "src/circuit/engine/single_table_index_5f4b_cga.asm",
+  "source_sha256": "dd4b81cf35e4a3e973d784f7195fe4ee2af4c09241fd6842dd906d8739f2a0ef",
+  "profile": "masm510",
+  "public": "_single_table_index_5f4b",
+  "expected_fixups": [
+    {
+      "offset": 55,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_066A8",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 66,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_CGA_0A05A",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_cga": {
+      "start": 24091,
+      "end": 24163
+    }
+  }
+}

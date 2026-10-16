@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "single_initialize_ega_video_4cf4_circuit_ega",
+  "source": "src/circuit/video/single_initialize_ega_video_4cf4_circuit_ega.asm",
+  "source_sha256": "9600e56192d7981a1b59c02da9cf8d770d8291d8fd15d489f4124eb8e2ce9e1b",
+  "profile": "masm510",
+  "public": "_initialize_ega_video_4cf4",
+  "expected_fixups": [
+    {
+      "offset": 1,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0564D",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 81,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_04BCB",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 84,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_1F63AB13",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 87,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_389C6FA6",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 102,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_04C0A",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 105,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_93D4BA6D",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 131,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_09026",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 137,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_FN_CIRCUIT_EGA_0BE96",
+      "frame": "_TEXT"
+    },
+    {
+      "offset": 143,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": true,
+      "target": "_GRP_32A19DA2",
+      "frame": "_TEXT"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 19700,
+      "end": 19846
+    }
+  }
+}

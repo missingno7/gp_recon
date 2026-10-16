@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_66b2_circuit_cga",
+  "source": "src/circuit/video/single_66b2_circuit_cga.asm",
+  "source_sha256": "9a5bffe22f3799a089870324fdf08615cf99278c22c92a0dee0ee99dc28a96ed",
+  "profile": "masm510",
+  "public": "_grp_66b2",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_cga": {
+      "start": 25944,
+      "end": 25983
+    }
+  }
+}

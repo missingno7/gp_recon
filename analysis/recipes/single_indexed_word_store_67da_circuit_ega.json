@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "single_indexed_word_store_67da_circuit_ega",
+  "source": "src/circuit/state/single_indexed_word_store_67da_ega.c",
+  "source_sha256": "8159d62a27aee72c10f7ff1559072f99b1b9d5471a31778a13665d80365d8696",
+  "profile": "msc510-small-o_gs",
+  "public": "_store_indexed_word_67da",
+  "expected_fixups": [
+    {
+      "offset": 11,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_12fc",
+      "frame": "_g_12fc"
+    },
+    {
+      "offset": 8,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_12fe",
+      "frame": "_g_12fe"
+    },
+    {
+      "offset": 2,
+      "loc": "offset16",
+      "width": 2,
+      "self_relative": false,
+      "target": "_g_0288",
+      "frame": "_g_0288"
+    }
+  ],
+  "targets": {
+    "circuit_ega": {
+      "start": 26586,
+      "end": 26600
+    }
+  }
+}

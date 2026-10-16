@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "id": "single_copy_lap_state_5ad3_circuit_ega",
+  "source": "src/circuit/video/single_copy_lap_state_5ad3_circuit_ega.asm",
+  "source_sha256": "7e94b82f3ef7bff88c35a2c8d48b8e50d30217f949b836df0aa576cc8ce76244",
+  "profile": "masm510",
+  "public": "_copy_lap_state_5ad3",
+  "expected_fixups": [],
+  "targets": {
+    "circuit_ega": {
+      "start": 23251,
+      "end": 23270
+    }
+  }
+}
